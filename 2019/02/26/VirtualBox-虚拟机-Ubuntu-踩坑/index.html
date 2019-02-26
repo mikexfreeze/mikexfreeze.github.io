@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="学习日志,">
+  <meta name="keywords" content="技术日志,">
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="算法学习面试中的 10 大排序算法总结 1.冒泡排序 2.选择排序  冒泡排序优化  3.插入排序  类似扑克整理，又似反向的选择排序  4.快速排序  取序列第一个数为基准数x，从后向前寻找比x小的数找到后(设为r)填充至x位（x位+1），再从前向后寻找比x大的数找到后填充至r位（r位-1）。重复这个动作直到x位和r位相等。把x填充到这个相等位当中。此时x左边的数全部小于x，右边的数全部大于x。">
-<meta name="keywords" content="学习日志">
+<meta name="description" content="虚拟机-网络设置 使用网络桥接模式保证host和虚拟机可以互访，虚拟机可连接Internet。 host系统下网卡设置共享 subnet 地址计算器">
+<meta name="keywords" content="技术日志">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2018-05-23 09:17:58 晴|">
-<meta property="og:url" content="http://blog.duandiwang.com/2018/05/23/2018年5月23日/index.html">
+<meta property="og:title" content="VirtualBox 虚拟机 Ubuntu 踩坑">
+<meta property="og:url" content="http://blog.duandiwang.com/2019/02/26/VirtualBox-虚拟机-Ubuntu-踩坑/index.html">
 <meta property="og:site_name" content="蕭阳的日志">
-<meta property="og:description" content="算法学习面试中的 10 大排序算法总结 1.冒泡排序 2.选择排序  冒泡排序优化  3.插入排序  类似扑克整理，又似反向的选择排序  4.快速排序  取序列第一个数为基准数x，从后向前寻找比x小的数找到后(设为r)填充至x位（x位+1），再从前向后寻找比x大的数找到后填充至r位（r位-1）。重复这个动作直到x位和r位相等。把x填充到这个相等位当中。此时x左边的数全部小于x，右边的数全部大于x。">
+<meta property="og:description" content="虚拟机-网络设置 使用网络桥接模式保证host和虚拟机可以互访，虚拟机可连接Internet。 host系统下网卡设置共享 subnet 地址计算器">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-30T08:20:27.022Z">
+<meta property="og:updated_time" content="2019-02-26T09:30:09.921Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2018-05-23 09:17:58 晴|">
-<meta name="twitter:description" content="算法学习面试中的 10 大排序算法总结 1.冒泡排序 2.选择排序  冒泡排序优化  3.插入排序  类似扑克整理，又似反向的选择排序  4.快速排序  取序列第一个数为基准数x，从后向前寻找比x小的数找到后(设为r)填充至x位（x位+1），再从前向后寻找比x大的数找到后填充至r位（r位-1）。重复这个动作直到x位和r位相等。把x填充到这个相等位当中。此时x左边的数全部小于x，右边的数全部大于x。">
+<meta name="twitter:title" content="VirtualBox 虚拟机 Ubuntu 踩坑">
+<meta name="twitter:description" content="虚拟机-网络设置 使用网络桥接模式保证host和虚拟机可以互访，虚拟机可连接Internet。 host系统下网卡设置共享 subnet 地址计算器">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.duandiwang.com/2018/05/23/2018年5月23日/">
+  <link rel="canonical" href="http://blog.duandiwang.com/2019/02/26/VirtualBox-虚拟机-Ubuntu-踩坑/">
 
 
 
 
 
-  <title>2018-05-23 09:17:58 晴| | 蕭阳的日志</title>
+  <title>VirtualBox 虚拟机 Ubuntu 踩坑 | 蕭阳的日志</title>
   
 
 
@@ -262,7 +262,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.duandiwang.com/2018/05/23/2018年5月23日/">
+    <link itemprop="mainEntityOfPage" href="http://blog.duandiwang.com/2019/02/26/VirtualBox-虚拟机-Ubuntu-踩坑/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Xiao Yang">
@@ -279,7 +279,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">2018-05-23 09:17:58 晴|</h1>
+          <h1 class="post-title" itemprop="name headline">VirtualBox 虚拟机 Ubuntu 踩坑</h1>
         
 
         <div class="post-meta">
@@ -291,8 +291,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-23T17:17:58+08:00">
-                2018-05-23
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-26T17:28:08+08:00">
+                2019-02-26
               </time>
             
 
@@ -302,28 +302,6 @@
           </span>
 
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/学习日志/" itemprop="url" rel="index">
-                    <span itemprop="name">学习日志</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
 
           
             
@@ -332,8 +310,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/05/23/2018年5月23日/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/05/23/2018年5月23日/" itemprop="commentCount"></span>
+                <a href="/2019/02/26/VirtualBox-虚拟机-Ubuntu-踩坑/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/02/26/VirtualBox-虚拟机-Ubuntu-踩坑/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -361,20 +339,11 @@
       
 
       
-        <h3 id="算法学习"><a href="#算法学习" class="headerlink" title="算法学习"></a>算法学习</h3><p><a href="http://www.codeceo.com/article/10-sort-algorithm-interview.html#0-tsina-1-10490-397232819ff9a47a7b7e80a40613cfe1" target="_blank" rel="noopener">面试中的 10 大排序算法总结</a></p>
-<p>1.冒泡排序</p>
-<p>2.选择排序</p>
-<blockquote>
-<p>冒泡排序优化</p>
-</blockquote>
-<p>3.插入排序</p>
-<blockquote>
-<p>类似扑克整理，又似反向的选择排序</p>
-</blockquote>
-<p>4.快速排序</p>
-<blockquote>
-<p>取序列第一个数为基准数x，从后向前寻找比x小的数找到后(设为r)填充至x位（x位+1），再从前向后寻找比x大的数找到后填充至r位（r位-1）。重复这个动作直到x位和r位相等。把x填充到这个相等位当中。此时x左边的数全部小于x，右边的数全部大于x。<br>再对左右的数列重复上面的操作直至全部排序完毕。</p>
-</blockquote>
+        <h3 id="虚拟机-网络设置"><a href="#虚拟机-网络设置" class="headerlink" title="虚拟机-网络设置"></a>虚拟机-网络设置</h3><ol>
+<li>使用网络桥接模式保证host和虚拟机可以互访，虚拟机可连接Internet。</li>
+<li>host系统下网卡设置共享</li>
+<li>subnet <a href="http://www.subnet-calculator.com/subnet.php?net_class=B" target="_blank" rel="noopener">地址计算器</a></li>
+</ol>
 
       
     </div>
@@ -392,7 +361,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/学习日志/" rel="tag"># 学习日志</a>
+            <a href="/tags/技术日志/" rel="tag"># 技术日志</a>
           
         </div>
       
@@ -405,8 +374,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/05/2018年5月5日/" rel="next" title="2018-05-5 10:11:16 晴|">
-                <i class="fa fa-chevron-left"></i> 2018-05-5 10:11:16 晴|
+              <a href="/2019/02/25/Docker-学习记录/" rel="next" title="Docker 学习记录">
+                <i class="fa fa-chevron-left"></i> Docker 学习记录
               </a>
             
           </div>
@@ -414,10 +383,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/07/05/2018年7月5日/" rel="prev" title="2018-07-05 02:56:28 雨">
-                2018-07-05 02:56:28 雨 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -558,7 +523,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#算法学习"><span class="nav-number">1.</span> <span class="nav-text">算法学习</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#虚拟机-网络设置"><span class="nav-number">1.</span> <span class="nav-text">虚拟机-网络设置</span></a></li></ol></div>
             
 
           </div>
@@ -707,9 +672,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://blog.duandiwang.com/2018/05/23/2018年5月23日/';
-          this.page.identifier = '2018/05/23/2018年5月23日/';
-          this.page.title = '2018-05-23 09:17:58 晴|';
+          this.page.url = 'http://blog.duandiwang.com/2019/02/26/VirtualBox-虚拟机-Ubuntu-踩坑/';
+          this.page.identifier = '2019/02/26/VirtualBox-虚拟机-Ubuntu-踩坑/';
+          this.page.title = 'VirtualBox 虚拟机 Ubuntu 踩坑';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://blog-frrsfxm8vv.disqus.com/embed.js';
