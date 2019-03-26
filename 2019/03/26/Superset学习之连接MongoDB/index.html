@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="日记,">
+  <meta name="keywords" content="Hexo, NexT">
 
 
 
@@ -79,18 +79,17 @@
 
 
 
-<meta name="description" content="7月初入职爱云，非常不错的公司。 开始React的学习，框架搭建。 9月初基础框架基本完善开始AConn项目使用React架构的开发工作。">
-<meta name="keywords" content="日记">
+<meta name="description" content="集成 MongoDB方法一：mongodb-BI，已验证MongoDB需要安装mongdoDB BI-connector 插件，该插件的功能是使mongoDB支持Sql查询语句，从而应对各种BI工具的连接，官方文档中列举了其支持的各种BI工具。Superset不在官方支持列表当中，当然官方支持BI工具当中也没有类似Superset这种开源的PAAS类工具。为了连通Superset，Superset">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2018-09-30 晴">
-<meta property="og:url" content="http://blog.duandiwang.com/2018/09/30/2018年9月30日/index.html">
+<meta property="og:title" content="Superset学习之连接MongoDB">
+<meta property="og:url" content="http://blog.duandiwang.com/2019/03/26/Superset学习之连接MongoDB/index.html">
 <meta property="og:site_name" content="蕭阳的日志">
-<meta property="og:description" content="7月初入职爱云，非常不错的公司。 开始React的学习，框架搭建。 9月初基础框架基本完善开始AConn项目使用React架构的开发工作。">
+<meta property="og:description" content="集成 MongoDB方法一：mongodb-BI，已验证MongoDB需要安装mongdoDB BI-connector 插件，该插件的功能是使mongoDB支持Sql查询语句，从而应对各种BI工具的连接，官方文档中列举了其支持的各种BI工具。Superset不在官方支持列表当中，当然官方支持BI工具当中也没有类似Superset这种开源的PAAS类工具。为了连通Superset，Superset">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-30T08:48:29.799Z">
+<meta property="og:updated_time" content="2019-03-26T03:51:28.509Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2018-09-30 晴">
-<meta name="twitter:description" content="7月初入职爱云，非常不错的公司。 开始React的学习，框架搭建。 9月初基础框架基本完善开始AConn项目使用React架构的开发工作。">
+<meta name="twitter:title" content="Superset学习之连接MongoDB">
+<meta name="twitter:description" content="集成 MongoDB方法一：mongodb-BI，已验证MongoDB需要安装mongdoDB BI-connector 插件，该插件的功能是使mongoDB支持Sql查询语句，从而应对各种BI工具的连接，官方文档中列举了其支持的各种BI工具。Superset不在官方支持列表当中，当然官方支持BI工具当中也没有类似Superset这种开源的PAAS类工具。为了连通Superset，Superset">
 
 
 
@@ -120,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.duandiwang.com/2018/09/30/2018年9月30日/">
+  <link rel="canonical" href="http://blog.duandiwang.com/2019/03/26/Superset学习之连接MongoDB/">
 
 
 
 
 
-  <title>2018-09-30 晴 | 蕭阳的日志</title>
+  <title>Superset学习之连接MongoDB | 蕭阳的日志</title>
   
 
 
@@ -262,7 +261,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.duandiwang.com/2018/09/30/2018年9月30日/">
+    <link itemprop="mainEntityOfPage" href="http://blog.duandiwang.com/2019/03/26/Superset学习之连接MongoDB/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Xiao Yang">
@@ -279,7 +278,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">2018-09-30 晴</h1>
+          <h1 class="post-title" itemprop="name headline">Superset学习之连接MongoDB</h1>
         
 
         <div class="post-meta">
@@ -291,8 +290,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-30T16:42:34+08:00">
-                2018-09-30
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-26T11:35:53+08:00">
+                2019-03-26
               </time>
             
 
@@ -302,28 +301,6 @@
           </span>
 
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/日记/" itemprop="url" rel="index">
-                    <span itemprop="name">日记</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
 
           
             
@@ -332,8 +309,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/09/30/2018年9月30日/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/09/30/2018年9月30日/" itemprop="commentCount"></span>
+                <a href="/2019/03/26/Superset学习之连接MongoDB/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/03/26/Superset学习之连接MongoDB/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -361,9 +338,10 @@
       
 
       
-        <p>7月初入职爱云，非常不错的公司。</p>
-<p>开始React的学习，框架搭建。</p>
-<p>9月初基础框架基本完善开始AConn项目使用React架构的开发工作。</p>
+        <h1 id="集成-MongoDB"><a href="#集成-MongoDB" class="headerlink" title="集成 MongoDB"></a>集成 MongoDB</h1><h5 id="方法一：mongodb-BI，已验证"><a href="#方法一：mongodb-BI，已验证" class="headerlink" title="方法一：mongodb-BI，已验证"></a>方法一：<a href="https://www.mongodb.com/products/bi-connector" target="_blank" rel="noopener">mongodb-BI</a>，已验证</h5><p>MongoDB需要安装mongdoDB BI-connector 插件，该插件的功能是使mongoDB支持Sql查询语句，从而应对各种BI工具的连接，<a href="https://docs.mongodb.com/bi-connector/current/client-applications/" target="_blank" rel="noopener">官方文档</a>中列举了其支持的各种BI工具。Superset不在官方支持列表当中，当然官方支持BI工具当中也没有类似Superset这种开源的PAAS类工具。<br>为了连通Superset，Superset侧也需要一个插件<a href="https://pypi.org/project/sqlalchemy-mongobi/" target="_blank" rel="noopener">sqlalchemy-mongobi</a>（PS:该插件是收费的）。</p>
+<h3 id="其他可能的实现方法"><a href="#其他可能的实现方法" class="headerlink" title="其他可能的实现方法"></a>其他可能的实现方法</h3><h5 id="方法二：转mongoDB至关系型数据库，举例mosql"><a href="#方法二：转mongoDB至关系型数据库，举例mosql" class="headerlink" title="方法二：转mongoDB至关系型数据库，举例mosql"></a>方法二：转mongoDB至关系型数据库，举例<a href="https://github.com/stripe/mosql" target="_blank" rel="noopener">mosql</a></h5><h5 id="方法三：使用第三方的数据平台服务，举例dremio"><a href="#方法三：使用第三方的数据平台服务，举例dremio" class="headerlink" title="方法三：使用第三方的数据平台服务，举例dremio"></a>方法三：使用第三方的数据平台服务，举例<a href="https://www.dremio.com/" target="_blank" rel="noopener">dremio</a></h5><p>总结，Superset等其他BI工具基本支持的都是Sql且关系型数据库，在配置数据图表时实际就是在组织Sql语句。所以非关系型数据库整合BI的问题基本归结为如何让其支持Sql语句。</p>
+<h3 id="横向对比其他PAAS类BI"><a href="#横向对比其他PAAS类BI" class="headerlink" title="横向对比其他PAAS类BI"></a>横向对比其他PAAS类BI</h3><p>Grafana  star 27k+ 有企业版（收费）Live Demo</p>
+<p>Superset  star 23k+</p>
 
       
     </div>
@@ -379,12 +357,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/日记/" rel="tag"># 日记</a>
-          
-        </div>
-      
 
       
       
@@ -394,8 +366,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/07/05/EmacsIDEAs/" rel="next" title="EmacsIDEAs">
-                <i class="fa fa-chevron-left"></i> EmacsIDEAs
+              <a href="/2019/03/04/Superset学习体验/" rel="next" title="Superset学习体验">
+                <i class="fa fa-chevron-left"></i> Superset学习体验
               </a>
             
           </div>
@@ -403,10 +375,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/09/30/React、Vue比较/" rel="prev" title="React、Vue比较">
-                React、Vue比较 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -465,8 +433,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -528,6 +505,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#集成-MongoDB"><span class="nav-number">1.</span> <span class="nav-text">集成 MongoDB</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#方法一：mongodb-BI，已验证"><span class="nav-number">1.0.0.0.1.</span> <span class="nav-text">方法一：mongodb-BI，已验证</span></a></li></ol></li></ol><li class="nav-item nav-level-3"><a class="nav-link" href="#其他可能的实现方法"><span class="nav-number">1.0.1.</span> <span class="nav-text">其他可能的实现方法</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#方法二：转mongoDB至关系型数据库，举例mosql"><span class="nav-number">1.0.1.0.1.</span> <span class="nav-text">方法二：转mongoDB至关系型数据库，举例mosql</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#方法三：使用第三方的数据平台服务，举例dremio"><span class="nav-number">1.0.1.0.2.</span> <span class="nav-text">方法三：使用第三方的数据平台服务，举例dremio</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#横向对比其他PAAS类BI"><span class="nav-number">1.0.2.</span> <span class="nav-text">横向对比其他PAAS类BI</span></a></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -671,9 +664,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://blog.duandiwang.com/2018/09/30/2018年9月30日/';
-          this.page.identifier = '2018/09/30/2018年9月30日/';
-          this.page.title = '2018-09-30 晴';
+          this.page.url = 'http://blog.duandiwang.com/2019/03/26/Superset学习之连接MongoDB/';
+          this.page.identifier = '2019/03/26/Superset学习之连接MongoDB/';
+          this.page.title = 'Superset学习之连接MongoDB';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://blog-frrsfxm8vv.disqus.com/embed.js';

@@ -258,6 +258,139 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.duandiwang.com/2019/03/26/Superset学习之连接MongoDB/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xiao Yang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="蕭阳的日志">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/26/Superset学习之连接MongoDB/" itemprop="url">Superset学习之连接MongoDB</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-26T11:35:53+08:00">
+                2019-03-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/03/26/Superset学习之连接MongoDB/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/03/26/Superset学习之连接MongoDB/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="集成-MongoDB"><a href="#集成-MongoDB" class="headerlink" title="集成 MongoDB"></a>集成 MongoDB</h1><h5 id="方法一：mongodb-BI，已验证"><a href="#方法一：mongodb-BI，已验证" class="headerlink" title="方法一：mongodb-BI，已验证"></a>方法一：<a href="https://www.mongodb.com/products/bi-connector" target="_blank" rel="noopener">mongodb-BI</a>，已验证</h5><p>MongoDB需要安装mongdoDB BI-connector 插件，该插件的功能是使mongoDB支持Sql查询语句，从而应对各种BI工具的连接，<a href="https://docs.mongodb.com/bi-connector/current/client-applications/" target="_blank" rel="noopener">官方文档</a>中列举了其支持的各种BI工具。Superset不在官方支持列表当中，当然官方支持BI工具当中也没有类似Superset这种开源的PAAS类工具。<br>为了连通Superset，Superset侧也需要一个插件<a href="https://pypi.org/project/sqlalchemy-mongobi/" target="_blank" rel="noopener">sqlalchemy-mongobi</a>（PS:该插件是收费的）。</p>
+<h3 id="其他可能的实现方法"><a href="#其他可能的实现方法" class="headerlink" title="其他可能的实现方法"></a>其他可能的实现方法</h3><h5 id="方法二：转mongoDB至关系型数据库，举例mosql"><a href="#方法二：转mongoDB至关系型数据库，举例mosql" class="headerlink" title="方法二：转mongoDB至关系型数据库，举例mosql"></a>方法二：转mongoDB至关系型数据库，举例<a href="https://github.com/stripe/mosql" target="_blank" rel="noopener">mosql</a></h5><h5 id="方法三：使用第三方的数据平台服务，举例dremio"><a href="#方法三：使用第三方的数据平台服务，举例dremio" class="headerlink" title="方法三：使用第三方的数据平台服务，举例dremio"></a>方法三：使用第三方的数据平台服务，举例<a href="https://www.dremio.com/" target="_blank" rel="noopener">dremio</a></h5><p>总结，Superset等其他BI工具基本支持的都是Sql且关系型数据库，在配置数据图表时实际就是在组织Sql语句。所以非关系型数据库整合BI的问题基本归结为如何让其支持Sql语句。</p>
+<h3 id="横向对比其他PAAS类BI"><a href="#横向对比其他PAAS类BI" class="headerlink" title="横向对比其他PAAS类BI"></a>横向对比其他PAAS类BI</h3><p>Grafana  star 27k+ 有企业版（收费）Live Demo</p>
+<p>Superset  star 23k+</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.duandiwang.com/2019/03/04/Superset学习体验/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -1651,171 +1784,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.duandiwang.com/2018/05/23/2018年5月23日/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Xiao Yang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="蕭阳的日志">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/23/2018年5月23日/" itemprop="url">2018-05-23 09:17:58 晴|</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-23T17:17:58+08:00">
-                2018-05-23
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/学习日志/" itemprop="url" rel="index">
-                    <span itemprop="name">学习日志</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/05/23/2018年5月23日/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/05/23/2018年5月23日/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="算法学习"><a href="#算法学习" class="headerlink" title="算法学习"></a>算法学习</h3><p><a href="http://www.codeceo.com/article/10-sort-algorithm-interview.html#0-tsina-1-10490-397232819ff9a47a7b7e80a40613cfe1" target="_blank" rel="noopener">面试中的 10 大排序算法总结</a></p>
-<p>1.冒泡排序</p>
-<p>2.选择排序</p>
-<blockquote>
-<p>冒泡排序优化</p>
-</blockquote>
-<p>3.插入排序</p>
-<blockquote>
-<p>类似扑克整理，又似反向的选择排序</p>
-</blockquote>
-<p>4.快速排序</p>
-<blockquote>
-<p>取序列第一个数为基准数x，从后向前寻找比x小的数找到后(设为r)填充至x位（x位+1），再从前向后寻找比x大的数找到后填充至r位（r位-1）。重复这个动作直到x位和r位相等。把x填充到这个相等位当中。此时x左边的数全部小于x，右边的数全部大于x。<br>再对左右的数列重复上面的操作直至全部排序完毕。</p>
-</blockquote>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1866,7 +1834,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">24</span>
+                  <span class="site-state-item-count">25</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
