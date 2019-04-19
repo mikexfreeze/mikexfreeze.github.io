@@ -258,6 +258,164 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.duandiwang.com/2019/04/16/ajax接口接收文件排坑/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xiao Yang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="蕭阳的日志">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/16/ajax接口接收文件排坑/" itemprop="url">ajax接口接收文件排坑</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-16T11:14:45+08:00">
+                2019-04-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术日志/" itemprop="url" rel="index">
+                    <span itemprop="name">技术日志</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/04/16/ajax接口接收文件排坑/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/04/16/ajax接口接收文件排坑/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="先说结论"><a href="#先说结论" class="headerlink" title="先说结论"></a>先说结论</h3><p>如果你在用ajax接口接收文件时遇到文件保存后打开报错的情况，请尝试在请求header头中加入<code>responseType: arraybuffer</code></p>
+<h3 id="排坑过程"><a href="#排坑过程" class="headerlink" title="排坑过程"></a>排坑过程</h3><p>最近在对接前后端文件传输接口时遇到的问题，后端返回xlsx文件，前端使用<code>new blob()</code>方法从接口返回的数据中重新生成文件。但是<br>生成的文件用excel打开总是报错。尝试在浏览器或Postman中调用接口保存文件都没有问题。</p>
+<p>一开始各种尝试改变<code>new blob</code>方法的type参数没有效果。查看<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Blob" target="_blank" rel="noopener">blob方法文档</a>，<br>最坑的就是这里<code>Blob(blobParts[, options])</code>blobParts what fuck is blobParts? 文档中给出的示例有<br><code>new Blob([JSON.stringify(debug, null, 2),{type : &#39;application/json&#39;});</code>so 一个包含字符串的数组？还有一段从blob中读取数据<br><code>reader.readAsArrayBuffer(blob);</code>可以看出这里读出的数据应该是arraybuffer。</p>
+<p>再看一下<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest/responseType" target="_blank" rel="noopener">XMLHttp​Request​.response​Type的官方文档</a><br>arraybuffer的解释 <em>是一个包含二进制数据的 JavaScript ArrayBuffer 。</em>另外我在另一篇<a href="https://stackoverflow.com/questions/16245767/creating-a-blob-from-a-base64-string-in-javascript" target="_blank" rel="noopener">Creating a Blob from a base64 string in JavaScript</a><br>的提问中当中看到有高手给出的答案中指出了，想要得到blob你先要得到<em>ArrayBuffer, text, and JSON</em></p>
+<h3 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h3><p>到这里我们基本已经得到答案了，生成blob对象进而生成文件我们需要ArrayBuffer, text, or JSON这种三种数据类型的某一种。</p>
+<h3 id="测试验证"><a href="#测试验证" class="headerlink" title="测试验证"></a>测试验证</h3><p>后端Java，代码当中使用的是 <code>BufferedOutputStream</code> 类来返回数据。前端分别测试了”json””text”””arraybutter””blob”四种responseType<br>arraybutter和blob都可以正确的生成文件。</p>
+<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest/responseType" target="_blank" rel="noopener">MDN解释</a><br><a href="http://www.cnblogs.com/skywang12345/p/io_12.html" target="_blank" rel="noopener">java io系列12之 BufferedInputStream(缓冲输入流)的认知、源码和示例</a><br><a href="https://blog.csdn.net/wkyseo/article/details/78232485" target="_blank" rel="noopener">深入理解xhr的responseType中blob和arrayBuffer</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.duandiwang.com/2019/03/26/Superset学习之连接MongoDB/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -720,6 +878,28 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术日志/" itemprop="url" rel="index">
+                    <span itemprop="name">技术日志</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -1631,159 +1811,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.duandiwang.com/2018/07/05/2018年7月5日/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Xiao Yang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="蕭阳的日志">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/07/05/2018年7月5日/" itemprop="url">2018-07-05 02:56:28 雨</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-05T10:56:28+08:00">
-                2018-07-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/金句名言/" itemprop="url" rel="index">
-                    <span itemprop="name">金句名言</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/07/05/2018年7月5日/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/07/05/2018年7月5日/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Don’t repeat yourself 称为 DRY 原则。</p>
-<p>违反DRY原则的解决方案通常被称为WET，其有多种全称，包括“Write everything twice”（在每个地方写两次）、“We enjoy typing”（我们就是喜欢打字）或“Waste everyone’s time”（浪费大家的时间）。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1834,7 +1861,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">25</span>
+                  <span class="site-state-item-count">26</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1856,7 +1883,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

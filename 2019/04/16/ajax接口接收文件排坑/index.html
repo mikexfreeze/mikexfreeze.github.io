@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="学习日志,">
+  <meta name="keywords" content="技术日志,ajax,responseType,">
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="算法学习面试中的 10 大排序算法总结 1.冒泡排序 2.选择排序  冒泡排序优化  3.插入排序  类似扑克整理，又似反向的选择排序  4.快速排序  取序列第一个数为基准数x，从后向前寻找比x小的数找到后(设为r)填充至x位（x位+1），再从前向后寻找比x大的数找到后填充至r位（r位-1）。重复这个动作直到x位和r位相等。把x填充到这个相等位当中。此时x左边的数全部小于x，右边的数全部大于x。">
-<meta name="keywords" content="学习日志">
+<meta name="description" content="先说结论如果你在用ajax接口接收文件时遇到文件保存后打开报错的情况，请尝试在请求header头中加入responseType: arraybuffer 排坑过程最近在对接前后端文件传输接口时遇到的问题，后端返回xlsx文件，前端使用new blob()方法从接口返回的数据中重新生成文件。但是生成的文件用excel打开总是报错。尝试在浏览器或Postman中调用接口保存文件都没有问题。 一开始各种">
+<meta name="keywords" content="技术日志,ajax,responseType">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2018-05-23 09:17:58 晴|">
-<meta property="og:url" content="http://blog.duandiwang.com/2018/05/23/2018年5月23日/index.html">
+<meta property="og:title" content="ajax接口接收文件排坑">
+<meta property="og:url" content="http://blog.duandiwang.com/2019/04/16/ajax接口接收文件排坑/index.html">
 <meta property="og:site_name" content="蕭阳的日志">
-<meta property="og:description" content="算法学习面试中的 10 大排序算法总结 1.冒泡排序 2.选择排序  冒泡排序优化  3.插入排序  类似扑克整理，又似反向的选择排序  4.快速排序  取序列第一个数为基准数x，从后向前寻找比x小的数找到后(设为r)填充至x位（x位+1），再从前向后寻找比x大的数找到后填充至r位（r位-1）。重复这个动作直到x位和r位相等。把x填充到这个相等位当中。此时x左边的数全部小于x，右边的数全部大于x。">
+<meta property="og:description" content="先说结论如果你在用ajax接口接收文件时遇到文件保存后打开报错的情况，请尝试在请求header头中加入responseType: arraybuffer 排坑过程最近在对接前后端文件传输接口时遇到的问题，后端返回xlsx文件，前端使用new blob()方法从接口返回的数据中重新生成文件。但是生成的文件用excel打开总是报错。尝试在浏览器或Postman中调用接口保存文件都没有问题。 一开始各种">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-30T08:20:27.022Z">
+<meta property="og:updated_time" content="2019-04-19T06:37:30.786Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2018-05-23 09:17:58 晴|">
-<meta name="twitter:description" content="算法学习面试中的 10 大排序算法总结 1.冒泡排序 2.选择排序  冒泡排序优化  3.插入排序  类似扑克整理，又似反向的选择排序  4.快速排序  取序列第一个数为基准数x，从后向前寻找比x小的数找到后(设为r)填充至x位（x位+1），再从前向后寻找比x大的数找到后填充至r位（r位-1）。重复这个动作直到x位和r位相等。把x填充到这个相等位当中。此时x左边的数全部小于x，右边的数全部大于x。">
+<meta name="twitter:title" content="ajax接口接收文件排坑">
+<meta name="twitter:description" content="先说结论如果你在用ajax接口接收文件时遇到文件保存后打开报错的情况，请尝试在请求header头中加入responseType: arraybuffer 排坑过程最近在对接前后端文件传输接口时遇到的问题，后端返回xlsx文件，前端使用new blob()方法从接口返回的数据中重新生成文件。但是生成的文件用excel打开总是报错。尝试在浏览器或Postman中调用接口保存文件都没有问题。 一开始各种">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.duandiwang.com/2018/05/23/2018年5月23日/">
+  <link rel="canonical" href="http://blog.duandiwang.com/2019/04/16/ajax接口接收文件排坑/">
 
 
 
 
 
-  <title>2018-05-23 09:17:58 晴| | 蕭阳的日志</title>
+  <title>ajax接口接收文件排坑 | 蕭阳的日志</title>
   
 
 
@@ -262,7 +262,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.duandiwang.com/2018/05/23/2018年5月23日/">
+    <link itemprop="mainEntityOfPage" href="http://blog.duandiwang.com/2019/04/16/ajax接口接收文件排坑/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Xiao Yang">
@@ -279,7 +279,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">2018-05-23 09:17:58 晴|</h1>
+          <h1 class="post-title" itemprop="name headline">ajax接口接收文件排坑</h1>
         
 
         <div class="post-meta">
@@ -291,8 +291,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-23T17:17:58+08:00">
-                2018-05-23
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-16T11:14:45+08:00">
+                2019-04-16
               </time>
             
 
@@ -314,8 +314,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/学习日志/" itemprop="url" rel="index">
-                    <span itemprop="name">学习日志</span>
+                  <a href="/categories/技术日志/" itemprop="url" rel="index">
+                    <span itemprop="name">技术日志</span>
                   </a>
                 </span>
 
@@ -332,8 +332,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/05/23/2018年5月23日/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/05/23/2018年5月23日/" itemprop="commentCount"></span>
+                <a href="/2019/04/16/ajax接口接收文件排坑/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/04/16/ajax接口接收文件排坑/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -361,20 +361,13 @@
       
 
       
-        <h3 id="算法学习"><a href="#算法学习" class="headerlink" title="算法学习"></a>算法学习</h3><p><a href="http://www.codeceo.com/article/10-sort-algorithm-interview.html#0-tsina-1-10490-397232819ff9a47a7b7e80a40613cfe1" target="_blank" rel="noopener">面试中的 10 大排序算法总结</a></p>
-<p>1.冒泡排序</p>
-<p>2.选择排序</p>
-<blockquote>
-<p>冒泡排序优化</p>
-</blockquote>
-<p>3.插入排序</p>
-<blockquote>
-<p>类似扑克整理，又似反向的选择排序</p>
-</blockquote>
-<p>4.快速排序</p>
-<blockquote>
-<p>取序列第一个数为基准数x，从后向前寻找比x小的数找到后(设为r)填充至x位（x位+1），再从前向后寻找比x大的数找到后填充至r位（r位-1）。重复这个动作直到x位和r位相等。把x填充到这个相等位当中。此时x左边的数全部小于x，右边的数全部大于x。<br>再对左右的数列重复上面的操作直至全部排序完毕。</p>
-</blockquote>
+        <h3 id="先说结论"><a href="#先说结论" class="headerlink" title="先说结论"></a>先说结论</h3><p>如果你在用ajax接口接收文件时遇到文件保存后打开报错的情况，请尝试在请求header头中加入<code>responseType: arraybuffer</code></p>
+<h3 id="排坑过程"><a href="#排坑过程" class="headerlink" title="排坑过程"></a>排坑过程</h3><p>最近在对接前后端文件传输接口时遇到的问题，后端返回xlsx文件，前端使用<code>new blob()</code>方法从接口返回的数据中重新生成文件。但是<br>生成的文件用excel打开总是报错。尝试在浏览器或Postman中调用接口保存文件都没有问题。</p>
+<p>一开始各种尝试改变<code>new blob</code>方法的type参数没有效果。查看<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Blob" target="_blank" rel="noopener">blob方法文档</a>，<br>最坑的就是这里<code>Blob(blobParts[, options])</code>blobParts what fuck is blobParts? 文档中给出的示例有<br><code>new Blob([JSON.stringify(debug, null, 2),{type : &#39;application/json&#39;});</code>so 一个包含字符串的数组？还有一段从blob中读取数据<br><code>reader.readAsArrayBuffer(blob);</code>可以看出这里读出的数据应该是arraybuffer。</p>
+<p>再看一下<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest/responseType" target="_blank" rel="noopener">XMLHttp​Request​.response​Type的官方文档</a><br>arraybuffer的解释 <em>是一个包含二进制数据的 JavaScript ArrayBuffer 。</em>另外我在另一篇<a href="https://stackoverflow.com/questions/16245767/creating-a-blob-from-a-base64-string-in-javascript" target="_blank" rel="noopener">Creating a Blob from a base64 string in JavaScript</a><br>的提问中当中看到有高手给出的答案中指出了，想要得到blob你先要得到<em>ArrayBuffer, text, and JSON</em></p>
+<h3 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h3><p>到这里我们基本已经得到答案了，生成blob对象进而生成文件我们需要ArrayBuffer, text, or JSON这种三种数据类型的某一种。</p>
+<h3 id="测试验证"><a href="#测试验证" class="headerlink" title="测试验证"></a>测试验证</h3><p>后端Java，代码当中使用的是 <code>BufferedOutputStream</code> 类来返回数据。前端分别测试了”json””text”””arraybutter””blob”四种responseType<br>arraybutter和blob都可以正确的生成文件。</p>
+<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest/responseType" target="_blank" rel="noopener">MDN解释</a><br><a href="http://www.cnblogs.com/skywang12345/p/io_12.html" target="_blank" rel="noopener">java io系列12之 BufferedInputStream(缓冲输入流)的认知、源码和示例</a><br><a href="https://blog.csdn.net/wkyseo/article/details/78232485" target="_blank" rel="noopener">深入理解xhr的responseType中blob和arrayBuffer</a></p>
 
       
     </div>
@@ -392,7 +385,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/学习日志/" rel="tag"># 学习日志</a>
+            <a href="/tags/技术日志/" rel="tag"># 技术日志</a>
+          
+            <a href="/tags/ajax/" rel="tag"># ajax</a>
+          
+            <a href="/tags/responseType/" rel="tag"># responseType</a>
           
         </div>
       
@@ -405,8 +402,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/05/2018年5月5日/" rel="next" title="2018-05-5 10:11:16 晴|">
-                <i class="fa fa-chevron-left"></i> 2018-05-5 10:11:16 晴|
+              <a href="/2019/03/26/Superset学习之连接MongoDB/" rel="next" title="Superset学习之连接MongoDB">
+                <i class="fa fa-chevron-left"></i> Superset学习之连接MongoDB
               </a>
             
           </div>
@@ -414,10 +411,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/07/05/2018年7月5日/" rel="prev" title="2018-07-05 02:56:28 雨">
-                2018-07-05 02:56:28 雨 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -558,7 +551,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#算法学习"><span class="nav-number">1.</span> <span class="nav-text">算法学习</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#先说结论"><span class="nav-number">1.</span> <span class="nav-text">先说结论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#排坑过程"><span class="nav-number">2.</span> <span class="nav-text">排坑过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结论"><span class="nav-number">3.</span> <span class="nav-text">结论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试验证"><span class="nav-number">4.</span> <span class="nav-text">测试验证</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考文章"><span class="nav-number">5.</span> <span class="nav-text">参考文章</span></a></li></ol></div>
             
 
           </div>
@@ -713,9 +706,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://blog.duandiwang.com/2018/05/23/2018年5月23日/';
-          this.page.identifier = '2018/05/23/2018年5月23日/';
-          this.page.title = '2018-05-23 09:17:58 晴|';
+          this.page.url = 'http://blog.duandiwang.com/2019/04/16/ajax接口接收文件排坑/';
+          this.page.identifier = '2019/04/16/ajax接口接收文件排坑/';
+          this.page.title = 'ajax接口接收文件排坑';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://blog-frrsfxm8vv.disqus.com/embed.js';
