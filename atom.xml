@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>随便韶韶</title>
+  
+  <subtitle>随便韶韶</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://blog.duandiwang.com/"/>
+  <updated>2019-04-25T08:08:45.596Z</updated>
+  <id>http://blog.duandiwang.com/</id>
+  
+  <author>
+    <name>Xiao Yang</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>谁能真正make American greate again？</title>
+    <link href="http://blog.duandiwang.com/2019/04/24/shui-neng-zhen-zheng-make-american-greate-again/"/>
+    <id>http://blog.duandiwang.com/2019/04/24/shui-neng-zhen-zheng-make-american-greate-again/</id>
+    <published>2019-04-24T03:14:45.000Z</published>
+    <updated>2019-04-25T08:08:45.596Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;今天第一次知道杨安泽(Andrew Yang)，美籍华裔祖籍台湾正在准备参加2020年美国总统大选。政治主张中主要的一条是要给&lt;strong&gt;每个满18周岁的美国人每月发1000美元&lt;/strong&gt;。&lt;/p&gt;
+&lt;h3 id=&quot;为什么，以及如何做到&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="妄人妄语" scheme="http://blog.duandiwang.com/categories/%E5%A6%84%E4%BA%BA%E5%A6%84%E8%AF%AD/"/>
+    
+    
+      <category term="政治" scheme="http://blog.duandiwang.com/tags/%E6%94%BF%E6%B2%BB/"/>
+    
+      <category term="美国" scheme="http://blog.duandiwang.com/tags/%E7%BE%8E%E5%9B%BD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ajax接口接收文件排坑</title>
+    <link href="http://blog.duandiwang.com/2019/04/16/ajax-jie-kou-jie-shou-wen-jian-pai-keng/"/>
+    <id>http://blog.duandiwang.com/2019/04/16/ajax-jie-kou-jie-shou-wen-jian-pai-keng/</id>
+    <published>2019-04-16T03:14:45.000Z</published>
+    <updated>2019-04-19T06:37:30.786Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;先说结论&quot;&gt;&lt;a href=&quot;#先说结论&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="技术日志" scheme="http://blog.duandiwang.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+    
+      <category term="技术日志" scheme="http://blog.duandiwang.com/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+      <category term="ajax" scheme="http://blog.duandiwang.com/tags/ajax/"/>
+    
+      <category term="responseType" scheme="http://blog.duandiwang.com/tags/responseType/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Superset学习之连接MongoDB</title>
+    <link href="http://blog.duandiwang.com/2019/03/26/superset-xue-xi-zhi-lian-jie-mongodb/"/>
+    <id>http://blog.duandiwang.com/2019/03/26/superset-xue-xi-zhi-lian-jie-mongodb/</id>
+    <published>2019-03-26T03:35:53.000Z</published>
+    <updated>2019-03-26T03:51:28.509Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;集成-MongoDB&quot;&gt;&lt;a href=&quot;#集成-MongoDB&quot; class=&quot;headerlink&quot; title=&quot;集成 MongoDB&quot;&gt;&lt;/a&gt;集成 MongoDB&lt;/h1&gt;&lt;h5 id=&quot;方法一：mongodb-BI，已验证&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Superset学习体验</title>
+    <link href="http://blog.duandiwang.com/2019/03/04/superset-xue-xi-ti-yan/"/>
+    <id>http://blog.duandiwang.com/2019/03/04/superset-xue-xi-ti-yan/</id>
+    <published>2019-03-04T02:50:18.000Z</published>
+    <updated>2019-03-04T02:54:54.464Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;superset代码评测&quot;&gt;&lt;a href=&quot;#superset代码评测&quot; class=&quot;headerlink&quot; title=&quot;superset代码评测:&quot;&gt;&lt;/a&gt;superset代码评测:&lt;/h1&gt;&lt;p&gt;版本还未稳定，release版本长时间脱离
+        
+      
+    
+    </summary>
+    
+      <category term="技术日志" scheme="http://blog.duandiwang.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+    
+      <category term="技术日志" scheme="http://blog.duandiwang.com/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VirtualBox 虚拟机 Ubuntu 踩坑</title>
+    <link href="http://blog.duandiwang.com/2019/02/26/virtualbox-xu-ni-ji-ubuntu-cai-keng/"/>
+    <id>http://blog.duandiwang.com/2019/02/26/virtualbox-xu-ni-ji-ubuntu-cai-keng/</id>
+    <published>2019-02-26T09:28:08.000Z</published>
+    <updated>2019-02-26T09:30:09.921Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;虚拟机-网络设置&quot;&gt;&lt;a href=&quot;#虚拟机-网络设置&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术日志" scheme="http://blog.duandiwang.com/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Docker 学习记录</title>
+    <link href="http://blog.duandiwang.com/2019/02/25/docker-xue-xi-ji-lu/"/>
+    <id>http://blog.duandiwang.com/2019/02/25/docker-xue-xi-ji-lu/</id>
+    <published>2019-02-25T08:35:56.000Z</published>
+    <updated>2019-04-16T03:17:40.229Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;架构解析&quot;&gt;&lt;a href=&quot;#架构解析&quot; class=&quot;headerlink&quot; title=&quot;架构解析&quot;&gt;&lt;/a&gt;架构解析&lt;/h3&gt;&lt;p&gt;context build image build container run by
+        
+      
+    
+    </summary>
+    
+      <category term="技术日志" scheme="http://blog.duandiwang.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+    
+      <category term="技术日志" scheme="http://blog.duandiwang.com/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>React hooks 学习体会</title>
+    <link href="http://blog.duandiwang.com/2018/12/25/react-hooks/"/>
+    <id>http://blog.duandiwang.com/2018/12/25/react-hooks/</id>
+    <published>2018-12-25T09:40:50.000Z</published>
+    <updated>2018-12-25T10:06:44.223Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;上接&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="技术日志" scheme="http://blog.duandiwang.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+    
+      <category term="技术日志" scheme="http://blog.duandiwang.com/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>朋友该卖房了</title>
+    <link href="http://blog.duandiwang.com/2018/11/23/peng-you-gai-mai-fang-liao/"/>
+    <id>http://blog.duandiwang.com/2018/11/23/peng-you-gai-mai-fang-liao/</id>
+    <published>2018-11-23T08:26:00.000Z</published>
+    <updated>2019-04-25T08:08:43.185Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;为何会有此文&quot;&gt;&lt;a href=&quot;#为何会有此文&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="妄人妄语" scheme="http://blog.duandiwang.com/categories/%E5%A6%84%E4%BA%BA%E5%A6%84%E8%AF%AD/"/>
+    
+    
+      <category term="经济" scheme="http://blog.duandiwang.com/tags/%E7%BB%8F%E6%B5%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>React、Vue比较</title>
+    <link href="http://blog.duandiwang.com/2018/09/30/react-vue-bi-jiao/"/>
+    <id>http://blog.duandiwang.com/2018/09/30/react-vue-bi-jiao/</id>
+    <published>2018-09-30T08:49:00.000Z</published>
+    <updated>2018-09-30T09:29:21.961Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;React-Vue-框架比较&quot;&gt;&lt;a href=&quot;#React-Vue-框架比较&quot; class=&quot;headerlink&quot; title=&quot;React Vue 框架比较&quot;&gt;&lt;/a&gt;React Vue
+        
+      
+    
+    </summary>
+    
+      <category term="技术日志" scheme="http://blog.duandiwang.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+    
+      <category term="技术日志" scheme="http://blog.duandiwang.com/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2018-09-30 晴</title>
+    <link href="http://blog.duandiwang.com/2018/09/30/2018-nian-9-yue-30-ri/"/>
+    <id>http://blog.duandiwang.com/2018/09/30/2018-nian-9-yue-30-ri/</id>
+    <published>2018-09-30T08:42:34.000Z</published>
+    <updated>2018-09-30T08:48:29.799Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;7月初入职爱云，非常不错的公司。&lt;/p&gt;
+&lt;p&gt;开始React的学习，框架搭建。&lt;/p&gt;
+&lt;p&gt;9月初基础框架基本完善开始AConn项目使用React架构的开发工作。&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+      <category term="日记" scheme="http://blog.duandiwang.com/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+      <category term="日记" scheme="http://blog.duandiwang.com/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>EmacsIDEAs</title>
+    <link href="http://blog.duandiwang.com/2018/07/05/emacsideas/"/>
+    <id>http://blog.duandiwang.com/2018/07/05/emacsideas/</id>
+    <published>2018-07-05T03:53:56.000Z</published>
+    <updated>2018-11-23T08:35:33.517Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;EmacsIDEAs ideas 插件，非常方便的 edit
+        
+      
+    
+    </summary>
+    
+      <category term="工具" scheme="http://blog.duandiwang.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="工具" scheme="http://blog.duandiwang.com/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2018-07-05 02:56:28 雨</title>
+    <link href="http://blog.duandiwang.com/2018/07/05/2018-nian-7-yue-5-ri/"/>
+    <id>http://blog.duandiwang.com/2018/07/05/2018-nian-7-yue-5-ri/</id>
+    <published>2018-07-05T02:56:28.000Z</published>
+    <updated>2018-11-23T08:35:33.512Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Don’t repeat yourself 称为 DRY 原则。&lt;/p&gt;
+&lt;p&gt;违反DRY原则的解决方案通常被称为WET，其有多种全称，包括“Write everything twice”（在每个地方写两次）、“We enjoy
+        
+      
+    
+    </summary>
+    
+      <category term="金句名言" scheme="http://blog.duandiwang.com/categories/%E9%87%91%E5%8F%A5%E5%90%8D%E8%A8%80/"/>
+    
+    
+      <category term="金句名言" scheme="http://blog.duandiwang.com/tags/%E9%87%91%E5%8F%A5%E5%90%8D%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2018-05-23 09:17:58 晴|</title>
+    <link href="http://blog.duandiwang.com/2018/05/23/2018-nian-5-yue-23-ri/"/>
+    <id>http://blog.duandiwang.com/2018/05/23/2018-nian-5-yue-23-ri/</id>
+    <published>2018-05-23T09:17:58.000Z</published>
+    <updated>2018-09-30T08:20:27.022Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;算法学习&quot;&gt;&lt;a href=&quot;#算法学习&quot; class=&quot;headerlink&quot; title=&quot;算法学习&quot;&gt;&lt;/a&gt;算法学习&lt;/h3&gt;&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="学习日志" scheme="http://blog.duandiwang.com/categories/%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97/"/>
+    
+    
+      <category term="学习日志" scheme="http://blog.duandiwang.com/tags/%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2018-05-5 10:11:16 晴|</title>
+    <link href="http://blog.duandiwang.com/2018/05/05/2018-nian-5-yue-5-ri/"/>
+    <id>http://blog.duandiwang.com/2018/05/05/2018-nian-5-yue-5-ri/</id>
+    <published>2018-05-05T10:11:16.000Z</published>
+    <updated>2018-09-30T08:20:27.022Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/Cxgdpqni_HMnREzP0iICPQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;图说 ES Modules&lt;/a&gt;&lt;br&gt;理解 CJS 和 ESM
+        
+      
+    
+    </summary>
+    
+      <category term="技术日志" scheme="http://blog.duandiwang.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+    
+      <category term="技术日志" scheme="http://blog.duandiwang.com/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2018-04-04 多云|62</title>
+    <link href="http://blog.duandiwang.com/2018/04/04/2018-nian-4-yue-4-ri/"/>
+    <id>http://blog.duandiwang.com/2018/04/04/2018-nian-4-yue-4-ri/</id>
+    <published>2018-04-04T09:35:54.000Z</published>
+    <updated>2018-09-30T08:20:27.021Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;4月2日入职新公司，蓝舰科技，拒绝了其他两份目测差不多的offer，心痛。主要原因是近。&lt;br&gt;目测加班很多，不知能坚持多久。&lt;br&gt;Java学习进行中。计划今年一定要完成全栈的知识积累。&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+      <category term="日记" scheme="http://blog.duandiwang.com/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+      <category term="日记" scheme="http://blog.duandiwang.com/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>雪|47</title>
+    <link href="http://blog.duandiwang.com/2018/01/25/2018-nian-1-yue-25-ri/"/>
+    <id>http://blog.duandiwang.com/2018/01/25/2018-nian-1-yue-25-ri/</id>
+    <published>2018-01-25T09:16:10.000Z</published>
+    <updated>2018-09-30T08:20:27.017Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;详细学习了token 和 cookies 的区别以及相互的优缺点，&lt;a href=&quot;https://www.jianshu.com/p/c33f5777c2eb&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="日记" scheme="http://blog.duandiwang.com/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+      <category term="日记" scheme="http://blog.duandiwang.com/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>晴|93</title>
+    <link href="http://blog.duandiwang.com/2018/01/11/2018-nian-1-yue-11-ri/"/>
+    <id>http://blog.duandiwang.com/2018/01/11/2018-nian-1-yue-11-ri/</id>
+    <published>2018-01-11T09:38:16.000Z</published>
+    <updated>2018-09-30T08:20:27.017Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre&gt;&lt;code&gt;mongodb 学习刚刚找到门道 collection 和 field 的关系基本了解。
+
+刚刚理清官方文档的结构，学习了官方网站的两个初始课程。M001 和
+        
+      
+    
+    </summary>
+    
+      <category term="日记" scheme="http://blog.duandiwang.com/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+      <category term="日记" scheme="http://blog.duandiwang.com/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>晴:70</title>
+    <link href="http://blog.duandiwang.com/2018/01/10/2018-nian-1-yue-10-ri/"/>
+    <id>http://blog.duandiwang.com/2018/01/10/2018-nian-1-yue-10-ri/</id>
+    <published>2018-01-10T09:48:42.000Z</published>
+    <updated>2018-09-30T08:20:27.016Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;学习了ES6 class 和 symbol 的内容，重点有ES5 和 ES6 原型链的区别。&lt;/p&gt;
+&lt;p&gt;准备开始学习 mongodb
+        
+      
+    
+    </summary>
+    
+      <category term="日记" scheme="http://blog.duandiwang.com/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+      <category term="日记" scheme="http://blog.duandiwang.com/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>雪:29</title>
+    <link href="http://blog.duandiwang.com/2018/01/04/2018-nian-1-yue-4-ri/"/>
+    <id>http://blog.duandiwang.com/2018/01/04/2018-nian-1-yue-4-ri/</id>
+    <published>2018-01-04T09:48:42.000Z</published>
+    <updated>2018-09-30T08:20:27.018Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;checkout node-elm
+        
+      
+    
+    </summary>
+    
+      <category term="日记" scheme="http://blog.duandiwang.com/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+      <category term="日记" scheme="http://blog.duandiwang.com/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>雨:33</title>
+    <link href="http://blog.duandiwang.com/2018/01/03/2018-nian-1-yue-3-ri/"/>
+    <id>http://blog.duandiwang.com/2018/01/03/2018-nian-1-yue-3-ri/</id>
+    <published>2018-01-03T09:48:42.000Z</published>
+    <updated>2018-09-30T08:20:27.018Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;尝试使用keystone新建了trade数据模型。&lt;/p&gt;
+&lt;p&gt;正在寻找keystone生成api
+        
+      
+    
+    </summary>
+    
+      <category term="日记" scheme="http://blog.duandiwang.com/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+      <category term="日记" scheme="http://blog.duandiwang.com/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
+  
+</feed>
