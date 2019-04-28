@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.duandiwang.com/"/>
-  <updated>2019-04-25T08:08:45.596Z</updated>
+  <updated>2019-04-28T02:13:31.802Z</updated>
   <id>http://blog.duandiwang.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ajax接口接收文件排坑（二）</title>
+    <link href="http://blog.duandiwang.com/2019/04/26/ajax-jie-kou-jie-shou-wen-jian-pai-keng-er/"/>
+    <id>http://blog.duandiwang.com/2019/04/26/ajax-jie-kou-jie-shou-wen-jian-pai-keng-er/</id>
+    <published>2019-04-26T09:46:49.000Z</published>
+    <updated>2019-04-28T02:13:31.802Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;错误处理问题&quot;&gt;&lt;a href=&quot;#错误处理问题&quot; class=&quot;headerlink&quot; title=&quot;错误处理问题&quot;&gt;&lt;/a&gt;错误处理问题&lt;/h3&gt;&lt;p&gt;假设后端传回了一段包含错误message字段的JSON文件，如果将responseType 设置为
+        
+      
+    
+    </summary>
+    
+      <category term="技术日志" scheme="http://blog.duandiwang.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+    
+      <category term="技术日志" scheme="http://blog.duandiwang.com/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+  </entry>
   
   <entry>
     <title>谁能真正make American greate again？</title>
@@ -46,11 +72,11 @@
   </entry>
   
   <entry>
-    <title>ajax接口接收文件排坑</title>
+    <title>ajax接口接收文件排坑(一)</title>
     <link href="http://blog.duandiwang.com/2019/04/16/ajax-jie-kou-jie-shou-wen-jian-pai-keng/"/>
     <id>http://blog.duandiwang.com/2019/04/16/ajax-jie-kou-jie-shou-wen-jian-pai-keng/</id>
     <published>2019-04-16T03:14:45.000Z</published>
-    <updated>2019-04-19T06:37:30.786Z</updated>
+    <updated>2019-04-26T09:45:38.586Z</updated>
     
     <summary type="html">
     
@@ -507,33 +533,6 @@
         
         
           &lt;p&gt;checkout node-elm
-        
-      
-    
-    </summary>
-    
-      <category term="日记" scheme="http://blog.duandiwang.com/categories/%E6%97%A5%E8%AE%B0/"/>
-    
-    
-      <category term="日记" scheme="http://blog.duandiwang.com/tags/%E6%97%A5%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>雨:33</title>
-    <link href="http://blog.duandiwang.com/2018/01/03/2018-nian-1-yue-3-ri/"/>
-    <id>http://blog.duandiwang.com/2018/01/03/2018-nian-1-yue-3-ri/</id>
-    <published>2018-01-03T09:48:42.000Z</published>
-    <updated>2018-09-30T08:20:27.018Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;尝试使用keystone新建了trade数据模型。&lt;/p&gt;
-&lt;p&gt;正在寻找keystone生成api
         
       
     

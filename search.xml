@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>ajax接口接收文件排坑（二）</title>
+      <link href="/2019/04/26/ajax-jie-kou-jie-shou-wen-jian-pai-keng-er/"/>
+      <url>/2019/04/26/ajax-jie-kou-jie-shou-wen-jian-pai-keng-er/</url>
+      
+        <content type="html"><![CDATA[<h3 id="错误处理问题"><a href="#错误处理问题" class="headerlink" title="错误处理问题"></a>错误处理问题</h3><p>假设后端传回了一段包含错误message字段的JSON文件，如果将responseType 设置为 blob 将会导致无法解析后端传回的错误数据。</p><p>解决方案是将responseType 设置为 arraybuffer，根据http状态码来判断接口是否报错。假设接口返回400则将返回数据由arraybuffer<br>重新解析为String 或 Object 等我们需要的数据类型。</p><p>解析代码如下</p><pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">errorCallback</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token keyword">var</span> encodedString <span class="token operator">=</span> String<span class="token punctuation">.</span>fromCharCode<span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Uint8Array</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span>data<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token keyword">var</span> decodedString <span class="token operator">=</span> <span class="token function">decodeURIComponent</span><span class="token punctuation">(</span><span class="token function">escape</span><span class="token punctuation">(</span>encodedString<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token keyword">var</span> obj <span class="token operator">=</span> JSON<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>decodedString<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span></code></pre><p>其中 <code>var decodedString = decodeURIComponent(escape(encodedString));</code>这段代码的作用是解析utf8字符。</p><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p><a href="https://stackoverflow.com/questions/17191945/conversion-between-utf-8-arraybuffer-and-string" target="_blank" rel="noopener">Conversion between UTF-8 ArrayBuffer and String</a></p><p><a href="https://stackoverflow.com/questions/30052567/how-to-read-json-error-response-from-http-if-responsetype-is-arraybuffer" target="_blank" rel="noopener">How to read JSON error response from $http if responseType is arraybuffer</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术日志 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术日志 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>谁能真正make American greate again？</title>
       <link href="/2019/04/24/shui-neng-zhen-zheng-make-american-greate-again/"/>
       <url>/2019/04/24/shui-neng-zhen-zheng-make-american-greate-again/</url>
@@ -31,7 +56,7 @@
     
     
     <entry>
-      <title>ajax接口接收文件排坑</title>
+      <title>ajax接口接收文件排坑(一)</title>
       <link href="/2019/04/16/ajax-jie-kou-jie-shou-wen-jian-pai-keng/"/>
       <url>/2019/04/16/ajax-jie-kou-jie-shou-wen-jian-pai-keng/</url>
       
