@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.duandiwang.com/"/>
-  <updated>2019-04-28T02:13:31.802Z</updated>
+  <updated>2019-04-30T10:06:56.495Z</updated>
   <id>http://blog.duandiwang.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>买不起airPods怎么办？</title>
+    <link href="http://blog.duandiwang.com/2019/04/30/mai-bu-qi-airpods-zen-me-ban/"/>
+    <id>http://blog.duandiwang.com/2019/04/30/mai-bu-qi-airpods-zen-me-ban/</id>
+    <published>2019-04-30T09:21:55.000Z</published>
+    <updated>2019-04-30T10:06:56.495Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;redmi-airdots-你值得拥有&quot;&gt;&lt;a href=&quot;#redmi-airdots-你值得拥有&quot; class=&quot;headerlink&quot; title=&quot;redmi airdots 你值得拥有&quot;&gt;&lt;/a&gt;redmi airdots
+        
+      
+    
+    </summary>
+    
+      <category term="随便韶韶" scheme="http://blog.duandiwang.com/categories/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
+    
+    
+      <category term="随便韶韶" scheme="http://blog.duandiwang.com/tags/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
+    
+      <category term="测评" scheme="http://blog.duandiwang.com/tags/%E6%B5%8B%E8%AF%84/"/>
+    
+  </entry>
   
   <entry>
     <title>ajax接口接收文件排坑（二）</title>
@@ -507,32 +535,6 @@
         
           &lt;p&gt;学习了ES6 class 和 symbol 的内容，重点有ES5 和 ES6 原型链的区别。&lt;/p&gt;
 &lt;p&gt;准备开始学习 mongodb
-        
-      
-    
-    </summary>
-    
-      <category term="日记" scheme="http://blog.duandiwang.com/categories/%E6%97%A5%E8%AE%B0/"/>
-    
-    
-      <category term="日记" scheme="http://blog.duandiwang.com/tags/%E6%97%A5%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>雪:29</title>
-    <link href="http://blog.duandiwang.com/2018/01/04/2018-nian-1-yue-4-ri/"/>
-    <id>http://blog.duandiwang.com/2018/01/04/2018-nian-1-yue-4-ri/</id>
-    <published>2018-01-04T09:48:42.000Z</published>
-    <updated>2018-09-30T08:20:27.018Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;checkout node-elm
         
       
     
