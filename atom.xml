@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.duandiwang.com/"/>
-  <updated>2019-06-14T09:26:41.037Z</updated>
+  <updated>2019-06-14T09:58:57.618Z</updated>
   <id>http://blog.duandiwang.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Grafana调研和Superset对比</title>
+    <link href="http://blog.duandiwang.com/2019/06/14/grafana-diao-yan-he-superset-dui-bi/"/>
+    <id>http://blog.duandiwang.com/2019/06/14/grafana-diao-yan-he-superset-dui-bi/</id>
+    <published>2019-06-14T09:52:37.000Z</published>
+    <updated>2019-06-14T09:58:57.618Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Grafana调研&quot;&gt;&lt;a href=&quot;#Grafana调研&quot; class=&quot;headerlink&quot; title=&quot;Grafana调研&quot;&gt;&lt;/a&gt;Grafana调研&lt;/h1&gt;&lt;h3 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="技术日志" scheme="http://blog.duandiwang.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+    
+      <category term="技术日志" scheme="http://blog.duandiwang.com/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+  </entry>
   
   <entry>
     <title>csv文件通过node.js转存postresql数据库</title>
@@ -507,34 +533,6 @@
         
         
           &lt;p&gt;详细学习了token 和 cookies 的区别以及相互的优缺点，&lt;a href=&quot;https://www.jianshu.com/p/c33f5777c2eb&quot; target=&quot;_blank&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="日记" scheme="http://blog.duandiwang.com/categories/%E6%97%A5%E8%AE%B0/"/>
-    
-    
-      <category term="日记" scheme="http://blog.duandiwang.com/tags/%E6%97%A5%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>晴|93</title>
-    <link href="http://blog.duandiwang.com/2018/01/11/2018-nian-1-yue-11-ri/"/>
-    <id>http://blog.duandiwang.com/2018/01/11/2018-nian-1-yue-11-ri/</id>
-    <published>2018-01-11T09:38:16.000Z</published>
-    <updated>2018-09-30T08:20:27.017Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;pre&gt;&lt;code&gt;mongodb 学习刚刚找到门道 collection 和 field 的关系基本了解。
-
-刚刚理清官方文档的结构，学习了官方网站的两个初始课程。M001 和
         
       
     

@@ -4,12 +4,14 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="csv文件通过node.js转存postresql数据库, 随便韶韶">
-    <meta name="description" content="排坑分享一下代码
-const config = require(&#39;../config&#39;)
-const pglink = config.pg
-const csv = require(&#39;csvtojson&#39;)
-const fs = requir">
+    <meta name="keywords" content="Grafana调研和Superset对比, 随便韶韶">
+    <meta name="description" content="Grafana调研安装使用Docker安装
+注意事项：
+
+启动时需要设置数据库，否则Grafana会使用嵌入式数据库sqlite3。
+
+支持图表官方文档，只有四种类型分别为Graph,Singlestat,Table,Heatmap
+项目引">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +21,7 @@ const fs = requir">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google-site-verification" content="JRfFe7Jq3nCIAu2fA0WAB8RRHEmZTFJU2782IWawm1s">
     <meta name="baidu-site-verification" content="8p8iBF5mKQ">
-    <title>csv文件通过node.js转存postresql数据库 | 随便韶韶</title>
+    <title>Grafana调研和Superset对比 | 随便韶韶</title>
     <link rel="icon" type="image/png" href="/medias/game-of-thrones.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -259,13 +261,13 @@ const fs = requir">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        csv文件通过node.js转存postresql数据库
+                        Grafana调研和Superset对比
                     </div>
                 </div>
             </div>
@@ -400,7 +402,7 @@ const fs = requir">
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-05-15
+                    2019-06-14
                 </div>
 
                 
@@ -416,51 +418,42 @@ const fs = requir">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="排坑"><a href="#排坑" class="headerlink" title="排坑"></a>排坑</h3><p>分享一下代码</p>
-<pre class=" language-js"><code class="language-js"><span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../config'</span><span class="token punctuation">)</span>
-<span class="token keyword">const</span> pglink <span class="token operator">=</span> config<span class="token punctuation">.</span>pg
-<span class="token keyword">const</span> csv <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'csvtojson'</span><span class="token punctuation">)</span>
-<span class="token keyword">const</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span>
-<span class="token keyword">const</span> <span class="token punctuation">{</span>Client<span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'pg'</span><span class="token punctuation">)</span>
-<span class="token keyword">const</span> copyFrom <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'pg-copy-streams'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token keyword">from</span>
-
-module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">(</span>targetTable<span class="token punctuation">,</span> inputFile<span class="token punctuation">,</span> columnStr<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'开始导入'</span><span class="token punctuation">)</span>
-  <span class="token comment" spellcheck="true">// Connecting to Database</span>
-  <span class="token keyword">const</span> client <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Client</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-    connectionString<span class="token punctuation">:</span> pglink<span class="token punctuation">,</span>
-  <span class="token punctuation">}</span><span class="token punctuation">)</span>
-  client<span class="token punctuation">.</span><span class="token function">connect</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-
-  <span class="token keyword">var</span> stream <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token function">query</span><span class="token punctuation">(</span><span class="token function">copyFrom</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`COPY </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>targetTable<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> (</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>columnStr<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">) FROM STDIN CSV`</span></span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-  <span class="token keyword">var</span> fileStream <span class="token operator">=</span> fs<span class="token punctuation">.</span><span class="token function">createReadStream</span><span class="token punctuation">(</span>inputFile<span class="token punctuation">)</span>
-
-  fileStream<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'error'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span><span class="token punctuation">{</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`Error in creating read stream </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>error<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">)</span>
-  <span class="token punctuation">}</span><span class="token punctuation">)</span>
-  stream<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'error'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`Error in creating stream </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>error<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">)</span>
-  <span class="token punctuation">}</span><span class="token punctuation">)</span>
-  stream<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'end'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`Completed loading data into </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>targetTable<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">)</span>
-    client<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-  <span class="token punctuation">}</span><span class="token punctuation">)</span>
-  fileStream<span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>stream<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre>
-<p>调用代码示例</p>
-<pre class=" language-js"><code class="language-js"><span class="token keyword">const</span> copyToPg <span class="token operator">=</span>  <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'/* 上面的代码 */'</span><span class="token punctuation">)</span>
-<span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span>
-
-<span class="token keyword">const</span> inputFile <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'/csv/country.csv'</span><span class="token punctuation">)</span>
-
-<span class="token function">copyToPg</span><span class="token punctuation">(</span><span class="token string">'Country'</span><span class="token punctuation">,</span> path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'/csv/country.csv'</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token string">'country, code, continent'</span><span class="token punctuation">)</span>
-</code></pre>
-<p>这里有两个坑需要特别说明<code>targetTable</code>这里是区分大小写的，而且只支持小写。。。</p>
-<p>CSV需要使用utf8格式，不然会有中文乱码问题。但是你使用Excel是改不了utf8的，我的操作流程是使用记事本打开csv文件再改变编码转存。<br>之后再使用Excel编辑。</p>
-<h3 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h3><p><a href="https://www.postgresql.org/docs/9.3/sql-copy.html" target="_blank" rel="noopener">官方说明档：sql-copy</a></p>
-<p><a href="https://medium.com/@sairamkrish/how-to-do-postgresql-bulk-insert-with-node-pg-copy-streams-f4301ec29388" target="_blank" rel="noopener">How to do postgresql bulk insert with node-pg-copy-streams</a></p>
+                <h1 id="Grafana调研"><a href="#Grafana调研" class="headerlink" title="Grafana调研"></a>Grafana调研</h1><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>使用Docker安装</p>
+<p><strong>注意事项：</strong></p>
+<ol>
+<li>启动时需要设置数据库，否则Grafana会使用嵌入式数据库sqlite3。</li>
+</ol>
+<h3 id="支持图表"><a href="#支持图表" class="headerlink" title="支持图表"></a>支持图表</h3><p><a href="https://grafana.com/docs/features/panels/graph/" target="_blank" rel="noopener">官方文档</a>，只有四种类型分别为Graph,Singlestat,Table,Heatmap</p>
+<h3 id="项目引入"><a href="#项目引入" class="headerlink" title="项目引入"></a>项目引入</h3><p>方式一：Dashboard snapshot</p>
+<p> 分享整个Dashboard，不需要额外的权限设置。</p>
+<p>方式二：Share Panel-Embed Panel</p>
+<p> 设置<code>AUTH_ANONYMOUS_ENABLED</code>为<code>true</code>允许<code>anonymous</code>访问。即可单独分享每一个<code>graph panel</code>。</p>
+<h3 id="Dashboard市场"><a href="#Dashboard市场" class="headerlink" title="Dashboard市场"></a>Dashboard市场</h3><p>Grafana有把Dashboard配置通过JSON文件导入/导出功能，同时官方建立了一个在线的市场，方便大家交流。但是因为数据源的差异性，实际用途不大。</p>
+<p>目前市场是下载比较的多的配置，是一些基于通用数据源的配置。例如<a href="https://prometheus.io/" target="_blank" rel="noopener">prometheus</a>，实际上Prometheus也把Grafana当作自己的图形解决方案。</p>
+<h3 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h3><p> Grafana提供了通过插件扩展控能，例如安装饼图插件支持饼图设置，安装数据源插件增加支持的数据源。</p>
+<h3 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h3><p>进行中</p>
+<h3 id="MongoDB连接"><a href="#MongoDB连接" class="headerlink" title="MongoDB连接"></a>MongoDB连接</h3><p>待测试，MongoDB connect BI插件理论上可行</p>
+<h3 id="对比分析"><a href="#对比分析" class="headerlink" title="对比分析"></a>对比分析</h3><p>Grafana star 29.2k+ 有企业版（收费）<a href="https://play.grafana.org/d/000000012/grafana-play-home?orgId=1" target="_blank" rel="noopener">Live Demo</a></p>
+<p>Superset star 24.7k+</p>
+<p><strong>开源许可证都为apache-2.0</strong></p>
+<p>Superset</p>
+<blockquote>
+<p><strong>优点：</strong><br>采用D3图表库初始支持的图表类型就十分丰富</p>
+</blockquote>
+<p>Grafana</p>
+<blockquote>
+<p><strong>优点：</strong>  </p>
+<pre><code>1. 支持插件方便社区为其提供扩展能力  
+2. 项目引入简单，不需要二次开发
+</code></pre></blockquote>
+<h3 id="总结-amp-建议"><a href="#总结-amp-建议" class="headerlink" title="总结&amp;建议"></a>总结&amp;建议</h3><p>经过初步的了解，我的建议是使用Grafana。原因有以下几点：</p>
+<ol>
+<li>目前的流行程度Grafana略微占优，正在使用的企业数量似乎更多（superset没有找到相关数据）。</li>
+<li>Grafana有独立的公司在开发维护，并且同时就在提供商业服务。商业成熟度上远远领先Superset。</li>
+<li>Grafana的插件设计模式更加优秀，方便社区提供能量。</li>
+</ol>
+<p>Grafana的潜在缺点：</p>
+<p>没有选择类似D3的库作为图形上的支持，我觉得有长期的运营打算在其中，也许是在为今后的按图表插件来收费的模式做准备。这样的模式没什么不好，但是长期来看通过自研要做出和D3同样水平的图表库需要很长的时间，最终能否达到同样的水平很难说。</p>
 
             </div>
             <hr>
@@ -608,7 +601,7 @@ module<span class="token punctuation">.</span>exports <span class="token operato
                     </span>
                     <a href="http://blog.duandiwang.com" class="b-link-green">随便韶韶</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/05/15/csv-wen-jian-tong-guo-node-js-zhuan-cun-postresql-shu-ju-ku/" class="b-link-green">csv文件通过node.js转存postresql数据库</a>
+                    <a href="/2019/06/14/grafana-diao-yan-he-superset-dui-bi/" class="b-link-green">Grafana调研和Superset对比</a>
                 </p>
             </div>
         </div>
@@ -629,9 +622,9 @@ module<span class="token punctuation">.</span>exports <span class="token operato
 
 <script type="text/javascript">
     disqus_config = function () {
-        this.page.url = 'http://blog.duandiwang.com/2019/05/15/csv-wen-jian-tong-guo-node-js-zhuan-cun-postresql-shu-ju-ku/';
-        this.page.identifier = '/2019/05/15/csv-wen-jian-tong-guo-node-js-zhuan-cun-postresql-shu-ju-ku/';
-        this.page.title = 'csv文件通过node.js转存postresql数据库';
+        this.page.url = 'http://blog.duandiwang.com/2019/06/14/grafana-diao-yan-he-superset-dui-bi/';
+        this.page.identifier = '/2019/06/14/grafana-diao-yan-he-superset-dui-bi/';
+        this.page.title = 'Grafana调研和Superset对比';
     };
     let disqus_shortname = 'blog-frrsfxm8vv';
 
@@ -656,7 +649,8 @@ module<span class="token punctuation">.</span>exports <span class="token operato
         
         <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2019/06/14/grafana-diao-yan-he-superset-dui-bi/">
                     <div class="card-image">
@@ -676,9 +670,9 @@ module<span class="token punctuation">.</span>exports <span class="token operato
 支持图表官方文档，只有四种类型分别为Graph,Singlestat,Table,Heatmap
 项目引</div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-06-14
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-06-14
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -691,6 +685,7 @@ module<span class="token punctuation">.</span>exports <span class="token operato
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -709,28 +704,31 @@ module<span class="token punctuation">.</span>exports <span class="token operato
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/04/30/mai-bu-qi-airpods-zen-me-ban/">
+                <a href="/2019/05/15/csv-wen-jian-tong-guo-node-js-zhuan-cun-postresql-shu-ju-ku/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="买不起airPods怎么办？">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="csv文件通过node.js转存postresql数据库">
                         
-                        <span class="card-title">买不起airPods怎么办？</span>
+                        <span class="card-title">csv文件通过node.js转存postresql数据库</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary block-with-text">redmi airdots 你值得拥有先看下特性参数蓝牙5.0，单耳机重量4.1g，7.2mm动圈，分体式。基本上蓝牙5.0分体式其他品牌找不到200块以下，估计300块以下都很难。100￥基本屌全场。
-在100-1200这个价位区间里面，</div>
+                    <div class="summary block-with-text">排坑分享一下代码
+const config = require('../config')
+const pglink = config.pg
+const csv = require('csvtojson')
+const fs = requir</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-30
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-15
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/随便韶韶/" class="post-category" target="_blank">
-                                    随便韶韶
+                            <a href="/categories/技术日志/" class="post-category" target="_blank">
+                                    技术日志
                                 </a>
                             
                             
@@ -740,12 +738,8 @@ module<span class="token punctuation">.</span>exports <span class="token operato
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/随便韶韶/" target="_blank">
-                        <span class="chip bg-color">随便韶韶</span>
-                    </a>
-                    
-                    <a href="/tags/测评/" target="_blank">
-                        <span class="chip bg-color">测评</span>
+                    <a href="/tags/技术日志/" target="_blank">
+                        <span class="chip bg-color">技术日志</span>
                     </a>
                     
                 </div>

@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Grafana调研和Superset对比</title>
+      <link href="/2019/06/14/grafana-diao-yan-he-superset-dui-bi/"/>
+      <url>/2019/06/14/grafana-diao-yan-he-superset-dui-bi/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Grafana调研"><a href="#Grafana调研" class="headerlink" title="Grafana调研"></a>Grafana调研</h1><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>使用Docker安装</p><p><strong>注意事项：</strong></p><ol><li>启动时需要设置数据库，否则Grafana会使用嵌入式数据库sqlite3。</li></ol><h3 id="支持图表"><a href="#支持图表" class="headerlink" title="支持图表"></a>支持图表</h3><p><a href="https://grafana.com/docs/features/panels/graph/" target="_blank" rel="noopener">官方文档</a>，只有四种类型分别为Graph,Singlestat,Table,Heatmap</p><h3 id="项目引入"><a href="#项目引入" class="headerlink" title="项目引入"></a>项目引入</h3><p>方式一：Dashboard snapshot</p><p> 分享整个Dashboard，不需要额外的权限设置。</p><p>方式二：Share Panel-Embed Panel</p><p> 设置<code>AUTH_ANONYMOUS_ENABLED</code>为<code>true</code>允许<code>anonymous</code>访问。即可单独分享每一个<code>graph panel</code>。</p><h3 id="Dashboard市场"><a href="#Dashboard市场" class="headerlink" title="Dashboard市场"></a>Dashboard市场</h3><p>Grafana有把Dashboard配置通过JSON文件导入/导出功能，同时官方建立了一个在线的市场，方便大家交流。但是因为数据源的差异性，实际用途不大。</p><p>目前市场是下载比较的多的配置，是一些基于通用数据源的配置。例如<a href="https://prometheus.io/" target="_blank" rel="noopener">prometheus</a>，实际上Prometheus也把Grafana当作自己的图形解决方案。</p><h3 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h3><p> Grafana提供了通过插件扩展控能，例如安装饼图插件支持饼图设置，安装数据源插件增加支持的数据源。</p><h3 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h3><p>进行中</p><h3 id="MongoDB连接"><a href="#MongoDB连接" class="headerlink" title="MongoDB连接"></a>MongoDB连接</h3><p>待测试，MongoDB connect BI插件理论上可行</p><h3 id="对比分析"><a href="#对比分析" class="headerlink" title="对比分析"></a>对比分析</h3><p>Grafana star 29.2k+ 有企业版（收费）<a href="https://play.grafana.org/d/000000012/grafana-play-home?orgId=1" target="_blank" rel="noopener">Live Demo</a></p><p>Superset star 24.7k+</p><p><strong>开源许可证都为apache-2.0</strong></p><p>Superset</p><blockquote><p><strong>优点：</strong><br>采用D3图表库初始支持的图表类型就十分丰富</p></blockquote><p>Grafana</p><blockquote><p><strong>优点：</strong>  </p><pre><code>1. 支持插件方便社区为其提供扩展能力  2. 项目引入简单，不需要二次开发</code></pre></blockquote><h3 id="总结-amp-建议"><a href="#总结-amp-建议" class="headerlink" title="总结&amp;建议"></a>总结&amp;建议</h3><p>经过初步的了解，我的建议是使用Grafana。原因有以下几点：</p><ol><li>目前的流行程度Grafana略微占优，正在使用的企业数量似乎更多（superset没有找到相关数据）。</li><li>Grafana有独立的公司在开发维护，并且同时就在提供商业服务。商业成熟度上远远领先Superset。</li><li>Grafana的插件设计模式更加优秀，方便社区提供能量。</li></ol><p>Grafana的潜在缺点：</p><p>没有选择类似D3的库作为图形上的支持，我觉得有长期的运营打算在其中，也许是在为今后的按图表插件来收费的模式做准备。这样的模式没什么不好，但是长期来看通过自研要做出和D3同样水平的图表库需要很长的时间，最终能否达到同样的水平很难说。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术日志 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术日志 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>csv文件通过node.js转存postresql数据库</title>
       <link href="/2019/05/15/csv-wen-jian-tong-guo-node-js-zhuan-cun-postresql-shu-ju-ku/"/>
       <url>/2019/05/15/csv-wen-jian-tong-guo-node-js-zhuan-cun-postresql-shu-ju-ku/</url>
