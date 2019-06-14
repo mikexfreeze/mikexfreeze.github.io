@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.duandiwang.com/"/>
-  <updated>2019-05-08T03:56:40.426Z</updated>
+  <updated>2019-05-15T08:38:18.093Z</updated>
   <id>http://blog.duandiwang.com/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>csv文件通过node.js转存postresql数据库</title>
+    <link href="http://blog.duandiwang.com/2019/05/15/csv-wen-jian-tong-guo-node-js-zhuan-cun-postresql-shu-ju-ku/"/>
+    <id>http://blog.duandiwang.com/2019/05/15/csv-wen-jian-tong-guo-node-js-zhuan-cun-postresql-shu-ju-ku/</id>
+    <published>2019-05-15T08:29:24.000Z</published>
+    <updated>2019-05-15T08:38:18.093Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a href=&quot;https://www.postgresql.org/docs/9.3/sql-copy.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;官方说明档：sql-copy&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="技术日志" scheme="http://blog.duandiwang.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+    
+      <category term="技术日志" scheme="http://blog.duandiwang.com/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+  </entry>
+  
+  <entry>
     <title>买不起airPods怎么办？</title>
     <link href="http://blog.duandiwang.com/2019/04/30/mai-bu-qi-airpods-zen-me-ban/"/>
     <id>http://blog.duandiwang.com/2019/04/30/mai-bu-qi-airpods-zen-me-ban/</id>
     <published>2019-04-30T09:21:55.000Z</published>
-    <updated>2019-05-08T03:56:40.426Z</updated>
+    <updated>2019-06-14T09:01:32.552Z</updated>
     
     <summary type="html">
     
@@ -508,33 +535,6 @@
           &lt;pre&gt;&lt;code&gt;mongodb 学习刚刚找到门道 collection 和 field 的关系基本了解。
 
 刚刚理清官方文档的结构，学习了官方网站的两个初始课程。M001 和
-        
-      
-    
-    </summary>
-    
-      <category term="日记" scheme="http://blog.duandiwang.com/categories/%E6%97%A5%E8%AE%B0/"/>
-    
-    
-      <category term="日记" scheme="http://blog.duandiwang.com/tags/%E6%97%A5%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>晴:70</title>
-    <link href="http://blog.duandiwang.com/2018/01/10/2018-nian-1-yue-10-ri/"/>
-    <id>http://blog.duandiwang.com/2018/01/10/2018-nian-1-yue-10-ri/</id>
-    <published>2018-01-10T09:48:42.000Z</published>
-    <updated>2018-09-30T08:20:27.016Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;学习了ES6 class 和 symbol 的内容，重点有ES5 和 ES6 原型链的区别。&lt;/p&gt;
-&lt;p&gt;准备开始学习 mongodb
         
       
     

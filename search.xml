@@ -4,11 +4,36 @@
   
     
     <entry>
+      <title>csv文件通过node.js转存postresql数据库</title>
+      <link href="/2019/05/15/csv-wen-jian-tong-guo-node-js-zhuan-cun-postresql-shu-ju-ku/"/>
+      <url>/2019/05/15/csv-wen-jian-tong-guo-node-js-zhuan-cun-postresql-shu-ju-ku/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://www.postgresql.org/docs/9.3/sql-copy.html" target="_blank" rel="noopener">官方说明档：sql-copy</a></p><p><a href="https://medium.com/@sairamkrish/how-to-do-postgresql-bulk-insert-with-node-pg-copy-streams-f4301ec29388" target="_blank" rel="noopener">How to do postgresql bulk insert with node-pg-copy-streams</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术日志 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术日志 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>买不起airPods怎么办？</title>
       <link href="/2019/04/30/mai-bu-qi-airpods-zen-me-ban/"/>
       <url>/2019/04/30/mai-bu-qi-airpods-zen-me-ban/</url>
       
-        <content type="html"><![CDATA[<h3 id="redmi-airdots-你值得拥有"><a href="#redmi-airdots-你值得拥有" class="headerlink" title="redmi airdots 你值得拥有"></a>redmi airdots 你值得拥有</h3><p>先看下特性参数蓝牙5.0，单耳机重量4.1g，7.2mm动圈，分体式。基本上蓝牙5.0分体式其他品牌找不到200块以下，估计300块以下都很难。<br>100￥基本屌全场。</p><p>在100-1200这个价位区间里面，我基本找不到能在性价比上挑战airdots的产品。总之如果你想要买一副轻巧的入耳式蓝牙耳机，又觉得<br>airPods太贵的话，目前redmi airdots可说是不二选择。</p><p>— 下面开始讲故事，长文预警 —</p><p>从去年7月我换了小米8开始，蓝牙耳机成了一个硬性需求。type-c转3.5mm方案实在太二，本身一条线就已经够麻烦，中间再接一条简直崩溃。<br>而且从我粗浅的耳机知识上来理解，type-c转3.5mm中间多经历了一次数字转模拟的过程肯定会降低音质（不知道这个理解对不对欢迎大神<br>拍砖）。</p><p>当时我就对蓝牙耳机市场进行了一次调研。得出的结论是目前不适合购入高档的蓝牙耳机，airPods除外，如果airPods算高档的话。PS：在我的<br>心目中是不算的。没有音质谈什么高档。</p><p>原因主要在于目前蓝牙技术的不成熟当时市面上还是4.0的天下，虽然现在到了5.0离达到人能分辨的完美音质仍有一定差距。5.0由4.0的1Mbps<br>提升到2Mbps，也就是200kps的瞬时速率。下载过mp3的同学应该知道320kps只能算是比较高而已。（这里也完全是我的个人认为，实际上我<br>不确定kps是否等同于kbs）</p>]]></content>
+        <content type="html"><![CDATA[<h3 id="redmi-airdots-你值得拥有"><a href="#redmi-airdots-你值得拥有" class="headerlink" title="redmi airdots 你值得拥有"></a>redmi airdots 你值得拥有</h3><p>先看下特性参数蓝牙5.0，单耳机重量4.1g，7.2mm动圈，分体式。基本上蓝牙5.0分体式其他品牌找不到200块以下，估计300块以下都很难。<br>100￥基本屌全场。</p><p>在100-1200这个价位区间里面，我基本找不到能在性价比上挑战airdots的产品。总之如果你想要买一副轻巧的入耳式蓝牙耳机，又觉得<br>airPods太贵的话，目前redmi airdots可说是不二选择。</p><p>— 下面开始讲故事，长文预警 —</p><p>从去年7月我换了小米8开始，蓝牙耳机成了一个硬性需求。type-c转3.5mm方案实在太二，本身一条线就已经够麻烦，中间再接一条简直崩溃。<br>而且从我粗浅的耳机知识上来理解，type-c转3.5mm中间多经历了一次数字转模拟的过程肯定会降低音质（不知道这个理解对不对欢迎大神<br>拍砖）。</p><p>当时我就对蓝牙耳机市场进行了一次调研。得出的结论是目前不适合购入高档的蓝牙耳机，airPods除外，如果airPods算高档的话。PS：在我的<br>心目中是不算的。没有音质谈什么高档。</p><p>原因主要在于目前蓝牙技术的不成熟当时市面上还是4.0的天下，虽然现在到了5.0离达到人能分辨的完美音质仍有一定差距。5.0由4.0的1Mbps<br>提升到2Mbps，也就是200kps的瞬时速率。下载过mp3的同学应该知道320kps只能算是比较高而已。（这里也完全是我的个人认为，实际上我<br>不确定kps是否等同于kbs）总之蓝牙要想达到媲美模拟信号的音质目前还差的很远。在目前的蓝牙设备上谈音质无异于耍流氓。</p><p>既然两千块的蓝牙耳机也就是听个响，我更倾向于价格便宜音质不太差的解决方案。目前几百块的耳机市场可说是群雄逐鹿一片混乱，其中<br>又充斥各种同质化严重的贴牌产品，基本同一个模具换个logo就能有N种不同的蓝牙耳机诞生。有兴趣的朋友可以看看TESTV的测评视频<br><a href="https://www.bilibili.com/video/av41982410/" target="_blank" rel="noopener">平价真无线耳机们到底好用不好用【值不值得买第307期】</a>，基本说的就是这个情况。</p><p>所以去年我购入了漫步者W200BT的网易特供版W280X<br><img src="/2019/04/30/mai-bu-qi-airpods-zen-me-ban/w280x.jpg" title="W280X"></p><p>由于不是分体式耳机听诊器效应不可避免。可以同时连接两个设备，这是个非常鸡肋的功能和airpods的丝般顺滑相比完全是另一个极端。<br>同时连接两个设备之后信号稳定度大大下降，音质也收到了影响。红米airdots一次只能连接一台设备的估计就是因为这个原因。通话效果<br>十分之差，对方经常听不清你在说啥。电池续航还行连续听歌可以支持6小时左右。充电方式十分丑陋，你需要抠开一个胶垫保护的充电接口<br>再插上充电线。充电线和耳机线必成一个直角，放哪都碍事，智障设计。</p><p>音质，肯定是不存在音质的。可以感觉到调教上特地强调了低音，但是不知是动圈不够大，还是驱动不行，给人一种嗓子哑了吼不上去沉不下来<br>的感觉，总之就是灾难。</p><p>在使用w280x的期间也试用过airpods，感觉就是一分钱一分货。在苹果系的产品间切换丝般顺滑，充电，取耳机，配对整个使用流程都充满了<br>高级感。在苹果手机上的动画都是如此炫酷。你只能惊讶于三年了，市场上仍然没有一款能与其全方位竞争的产品。就连苹果自己唯一能做<br>的升级也就是提升下连接速度增加siri的语音唤醒。虽然这个技术上屌到不行的语音唤醒黑科技你几乎不会用。</p><img src="/2019/04/30/mai-bu-qi-airpods-zen-me-ban/airpods.jpg" title="airpods"><p>总之你有钱就买苹果，买不了吃亏买不了上当。使用过程中我发现一个场景是绝对只有airpods能做到的。就是你带着耳机躺床上还能侧头靠<br>在枕头上。换市面上任何一种其他耳机都是绝对不可能的，不把你杠死才怪。</p><p>最后来说说红米airdots</p><img src="/2019/04/30/mai-bu-qi-airpods-zen-me-ban/airdots.jpg" title="airdots"><p>缺点：设备间切换很不方便，必须先断连再连接新设备。从手机切电脑，你得先在手机上操作断连，再在电脑上操作连接。傻X设计，应了<br>雷总的话，没有设计就是没有设计（误）。</p><p>音质，跟airpods一样白开水，没有针对低音的增强。两者音质差不多同一级别。airdots因为有胶套的关系隔音效果更好，适合上下班的通勤<br>使用。</p><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>一百块你买不了吃亏买不了上当。缺蓝牙耳机且缺钱的朋友可以毫不犹豫的购入。能不能买的到就是另外一个问题了。</p><p>至于发售一两个月还在缺货这个问题只能归结为在耍猴绝对没有别的解释。手机你可以说是高通不给力，或是你跟索尼关系不够好。耳机这种<br>完全没有核心科技的东西还特么缺货，在工业第一大国还要跟我说产能不足完全就是扯淡。</p><p>所以最近我对小米的观感是越来越差，快要差到锤子那个级别了。但，是人就逃不过真相定律。购买渠道一、淘宝加价20，二、官网京东抢，<br>抢的到算我输。三、如果你所在城市有小米之家可以去门店交钱预定，我运气好头一天交钱第二天到货。</p><p>以上，感谢您的阅读。</p>]]></content>
       
       
       <categories>
