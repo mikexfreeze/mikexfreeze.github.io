@@ -5,9 +5,11 @@
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
     <meta name="keywords" content="csv文件通过node.js转存postresql数据库, 随便韶韶">
-    <meta name="description" content="官方说明档：sql-copy
-How to do postgresql bulk insert with node-pg-copy-streams
-">
+    <meta name="description" content="排坑分享一下代码
+const config = require(&#39;../config&#39;)
+const pglink = config.pg
+const csv = require(&#39;csvtojson&#39;)
+const fs = requir">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -414,7 +416,50 @@ How to do postgresql bulk insert with node-pg-copy-streams
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><a href="https://www.postgresql.org/docs/9.3/sql-copy.html" target="_blank" rel="noopener">官方说明档：sql-copy</a></p>
+                <h3 id="排坑"><a href="#排坑" class="headerlink" title="排坑"></a>排坑</h3><p>分享一下代码</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../config'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> pglink <span class="token operator">=</span> config<span class="token punctuation">.</span>pg
+<span class="token keyword">const</span> csv <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'csvtojson'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span>Client<span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'pg'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> copyFrom <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'pg-copy-streams'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token keyword">from</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">(</span>targetTable<span class="token punctuation">,</span> inputFile<span class="token punctuation">,</span> columnStr<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'开始导入'</span><span class="token punctuation">)</span>
+  <span class="token comment" spellcheck="true">// Connecting to Database</span>
+  <span class="token keyword">const</span> client <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Client</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    connectionString<span class="token punctuation">:</span> pglink<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  client<span class="token punctuation">.</span><span class="token function">connect</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+  <span class="token keyword">var</span> stream <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token function">query</span><span class="token punctuation">(</span><span class="token function">copyFrom</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`COPY </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>targetTable<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> (</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>columnStr<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">) FROM STDIN CSV`</span></span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">var</span> fileStream <span class="token operator">=</span> fs<span class="token punctuation">.</span><span class="token function">createReadStream</span><span class="token punctuation">(</span>inputFile<span class="token punctuation">)</span>
+
+  fileStream<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'error'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`Error in creating read stream </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>error<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  stream<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'error'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`Error in creating stream </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>error<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  stream<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'end'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`Completed loading data into </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>targetTable<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">)</span>
+    client<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  fileStream<span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>stream<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>调用代码示例</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">const</span> copyToPg <span class="token operator">=</span>  <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'/* 上面的代码 */'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> inputFile <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'/csv/country.csv'</span><span class="token punctuation">)</span>
+
+<span class="token function">copyToPg</span><span class="token punctuation">(</span><span class="token string">'Country'</span><span class="token punctuation">,</span> path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'/csv/country.csv'</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token string">'country, code, continent'</span><span class="token punctuation">)</span>
+</code></pre>
+<p>这里有两个坑需要特别说明<code>targetTable</code>这里是区分大小写的，而且只支持小写。。。</p>
+<p>CSV需要使用utf8格式，不然会有中文乱码问题。但是你使用Excel是改不了utf8的，我的操作流程是使用记事本打开csv文件再改变编码转存。<br>之后再使用Excel编辑。</p>
+<p><a href="https://www.postgresql.org/docs/9.3/sql-copy.html" target="_blank" rel="noopener">官方说明档：sql-copy</a></p>
 <p><a href="https://medium.com/@sairamkrish/how-to-do-postgresql-bulk-insert-with-node-pg-copy-streams-f4301ec29388" target="_blank" rel="noopener">How to do postgresql bulk insert with node-pg-copy-streams</a></p>
 
             </div>
@@ -624,9 +669,11 @@ How to do postgresql bulk insert with node-pg-copy-streams
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary block-with-text">官方说明档：sql-copy
-How to do postgresql bulk insert with node-pg-copy-streams
-</div>
+                    <div class="summary block-with-text">排坑分享一下代码
+const config = require('../config')
+const pglink = config.pg
+const csv = require('csvtojson')
+const fs = requir</div>
                     <div class="publish-info">
                             <span class="publish-date">
                                 <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-15
