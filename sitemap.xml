@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>http://blog.duandiwang.com/2019/08/21/offic-guan-fang-xia-zai-di-zhi/</loc>
+        
+        <lastmod>2019-08-21T10:15:47.480Z</lastmod>
+        
+    </url>
+    
+    <url>
         <loc>http://blog.duandiwang.com/2019/06/14/grafana-diao-yan-he-superset-dui-bi/</loc>
         
         <lastmod>2019-06-14T09:58:57.618Z</lastmod>
@@ -30,23 +37,9 @@
     </url>
     
     <url>
-        <loc>http://blog.duandiwang.com/2017/08/04/yin-yong-tu-pian-shi-li/</loc>
-        
-        <lastmod>2019-04-28T02:28:30.597Z</lastmod>
-        
-    </url>
-    
-    <url>
         <loc>http://blog.duandiwang.com/2017/11/07/tu-wen-kai-fa-ji-hua/</loc>
         
         <lastmod>2019-04-28T02:28:30.592Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>http://blog.duandiwang.com/2017/08/04/shi-li-tu-pian-wen-zhang-01/</loc>
-        
-        <lastmod>2019-04-28T02:28:30.586Z</lastmod>
         
     </url>
     
@@ -226,14 +219,14 @@
     </url>
     
     <url>
-        <loc>http://blog.duandiwang.com/2018/01/10/2018-nian-1-yue-10-ri/</loc>
+        <loc>http://blog.duandiwang.com/2017/12/26/2017-nian-12-yue-26-ri/</loc>
         
         <lastmod>2018-09-30T08:20:27.016Z</lastmod>
         
     </url>
     
     <url>
-        <loc>http://blog.duandiwang.com/2017/12/26/2017-nian-12-yue-26-ri/</loc>
+        <loc>http://blog.duandiwang.com/2018/01/10/2018-nian-1-yue-10-ri/</loc>
         
         <lastmod>2018-09-30T08:20:27.016Z</lastmod>
         
