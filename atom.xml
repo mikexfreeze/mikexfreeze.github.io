@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.duandiwang.com/"/>
-  <updated>2019-09-04T02:52:17.589Z</updated>
+  <updated>2019-09-27T06:28:06.846Z</updated>
   <id>http://blog.duandiwang.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>联通G2-40盒子刷机教程</title>
+    <link href="http://blog.duandiwang.com/2019/09/27/lian-tong-g2-40-he-zi-shua-ji-jiao-cheng/"/>
+    <id>http://blog.duandiwang.com/2019/09/27/lian-tong-g2-40-he-zi-shua-ji-jiao-cheng/</id>
+    <published>2019-09-27T02:58:15.000Z</published>
+    <updated>2019-09-27T06:28:06.846Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;第一步-下载刷机包&quot;&gt;&lt;a href=&quot;#第一步-下载刷机包&quot; class=&quot;headerlink&quot; title=&quot;第一步 下载刷机包&quot;&gt;&lt;/a&gt;第一步 下载刷机包&lt;/h2&gt;&lt;p&gt;链接: &lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="随便韶韶" scheme="http://blog.duandiwang.com/categories/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
+    
+    
+      <category term="技术日志" scheme="http://blog.duandiwang.com/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+      <category term="随便韶韶" scheme="http://blog.duandiwang.com/tags/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>新西伯利亚市《开拓月球和火星》</title>
@@ -518,32 +546,6 @@
     
     
       <category term="学习日志" scheme="http://blog.duandiwang.com/tags/%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2018-05-5 10:11:16 晴|</title>
-    <link href="http://blog.duandiwang.com/2018/05/05/2018-nian-5-yue-5-ri/"/>
-    <id>http://blog.duandiwang.com/2018/05/05/2018-nian-5-yue-5-ri/</id>
-    <published>2018-05-05T10:11:16.000Z</published>
-    <updated>2018-09-30T08:20:27.022Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/Cxgdpqni_HMnREzP0iICPQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;图说 ES Modules&lt;/a&gt;&lt;br&gt;理解 CJS 和 ESM
-        
-      
-    
-    </summary>
-    
-      <category term="技术日志" scheme="http://blog.duandiwang.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
-    
-    
-      <category term="技术日志" scheme="http://blog.duandiwang.com/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
     
   </entry>
   

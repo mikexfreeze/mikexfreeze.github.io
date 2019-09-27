@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>联通G2-40盒子刷机教程</title>
+      <link href="/2019/09/27/lian-tong-g2-40-he-zi-shua-ji-jiao-cheng/"/>
+      <url>/2019/09/27/lian-tong-g2-40-he-zi-shua-ji-jiao-cheng/</url>
+      
+        <content type="html"><![CDATA[<h2 id="第一步-下载刷机包"><a href="#第一步-下载刷机包" class="headerlink" title="第一步 下载刷机包"></a>第一步 下载刷机包</h2><p>链接: <a href="https://pan.baidu.com/s/1SsFGpNPtKsXQvbpBZLiDRw" target="_blank" rel="noopener">百度云</a> 提取码: um8d</p><h2 id="第二步-准备刷机U盘"><a href="#第二步-准备刷机U盘" class="headerlink" title="第二步 准备刷机U盘"></a>第二步 准备刷机U盘</h2><ol><li>U盘格式化为FAT32格式</li><li>解压下载的刷机包，将解压内容复制到U盘根目录</li></ol><img src="/2019/09/27/lian-tong-g2-40-he-zi-shua-ji-jiao-cheng/U盘文件.jpg" title="U盘包含文件"><h2 id="第三部-拆机"><a href="#第三部-拆机" class="headerlink" title="第三部 拆机"></a>第三部 拆机</h2><ol><li>卸下底部的4颗螺丝，卸下顶部面板</li><li><p>短接J38跳线</p><blockquote><p>我使用的是一根回形针，见下图，任何导电的物体皆可。</p></blockquote></li><li><p>插入U盘</p></li></ol><img src="/2019/09/27/lian-tong-g2-40-he-zi-shua-ji-jiao-cheng/跳线.jpg" title="跳线位置如图所示"><h2 id="第四部-通电开始刷机"><a href="#第四部-通电开始刷机" class="headerlink" title="第四部 通电开始刷机"></a>第四部 通电开始刷机</h2><ol><li>连接HDMI线，电源线开始刷机</li><li>电视出现如下画面说明刷机开始，此时可以拔出跳线，如果到进度条走完还不拔，机器重启之后又会开始刷机。</li></ol><img src="/2019/09/27/lian-tong-g2-40-he-zi-shua-ji-jiao-cheng/刷机画面.jpg" title="刷机画面"><ol start="3"><li>等待进度条走完并重启自动进入新系统，至此刷机完成。</li></ol><h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>整个过程还是比较简单的，刷机之后的新系统使用起来感觉也很不错。个人感觉要强于小米。<br>真是废物利用的好rom，感谢作者。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随便韶韶 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术日志 </tag>
+            
+            <tag> 随便韶韶 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>新西伯利亚市《开拓月球和火星》</title>
       <link href="/2019/08/27/xin-xi-bo-li-ya-shi-kai-tuo-yue-qiu-he-huo-xing/"/>
       <url>/2019/08/27/xin-xi-bo-li-ya-shi-kai-tuo-yue-qiu-he-huo-xing/</url>
