@@ -4,9 +4,9 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="office官方下载地址, 随便韶韶">
-    <meta name="description" content="故事开始于想装个visio，官网找了一圈没有任何下载地址。实际情况是官网其实是有下载地址的，不过凭自己找是决计找不到的。也许是微软想省些服务器资源吧，想想看人家在你这下完了回头一招破解，自己钱没赚着还免费提供下载确实挺亏的。
-在这里共享一下">
+    <meta name="keywords" content="自制ant.design表格组件教程, 随便韶韶">
+    <meta name="description" content="前言在实际项目中我们时常有可能需要Ip地址输入框，键值对输入框这样的复杂输入组件。但是ant design官方并没有给出这样的组件，文档中也没有提到应该如何写出这样的组件。
+我在研究了一番实现了该功能，在这里与大家分享一下，希望可以方便到后">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +16,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google-site-verification" content="JRfFe7Jq3nCIAu2fA0WAB8RRHEmZTFJU2782IWawm1s">
     <meta name="baidu-site-verification" content="8p8iBF5mKQ">
-    <title>office官方下载地址 | 随便韶韶</title>
+    <title>自制ant.design表格组件教程 | 随便韶韶</title>
     <link rel="icon" type="image/png" href="/medias/game-of-thrones.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -262,7 +262,7 @@
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        office官方下载地址
+                        自制ant.design表格组件教程
                     </div>
                 </div>
             </div>
@@ -373,8 +373,20 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/随便韶韶/" target="_blank">
-                                <span class="chip bg-color">随便韶韶</span>
+                            <a href="/tags/技术日志/" target="_blank">
+                                <span class="chip bg-color">技术日志</span>
+                            </a>
+                        
+                            <a href="/tags/ant-design/" target="_blank">
+                                <span class="chip bg-color">ant design</span>
+                            </a>
+                        
+                            <a href="/tags/antd/" target="_blank">
+                                <span class="chip bg-color">antd</span>
+                            </a>
+                        
+                            <a href="/tags/自定义组件/" target="_blank">
+                                <span class="chip bg-color">自定义组件</span>
                             </a>
                         
                     </div>
@@ -385,8 +397,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/随便韶韶/" class="post-category" target="_blank">
-                                随便韶韶
+                            <a href="/categories/技术日志/" class="post-category" target="_blank">
+                                技术日志
                             </a>
                         
                     </div>
@@ -397,7 +409,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-08-21
+                    2019-10-11
                 </div>
 
                 
@@ -413,12 +425,121 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>故事开始于想装个visio，官网找了一圈没有任何下载地址。实际情况是官网其实是有下载地址的，不过凭自己找是决计找不到的。<br>也许是微软想省些服务器资源吧，想想看人家在你这下完了回头一招破解，自己钱没赚着还免费提供下载确实挺亏的。</p>
-<p>在这里共享一下方便后来人。</p>
-<p><a href="https://officecdn.microsoft.com/db/492350F6-3A01-4F97-B9C0-C7C6DDF67D60/media/zh-cn/ProPlus2019Retail.img" target="_blank" rel="noopener">office2019 专业增强版 离线安装包 中文版 下载地址</a></p>
-<p><a href="https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/zh-CN/VisioPro2019Retail.img" target="_blank" rel="noopener">visio2019 离线安装包 中文版 下载地址</a></p>
-<p><a href="http://t.cn/RD3ubaY" target="_blank" rel="noopener">office2016 家庭学生版 中文版 下载地址</a></p>
-<p>如果链接了可以邮箱私信我，我来贡献磁力。</p>
+                <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在实际项目中我们时常有可能需要Ip地址输入框，键值对输入框这样的复杂输入组件。但是<code>ant design</code><br>官方并没有给出这样的组件，文档中也没有提到应该如何写出这样的组件。</p>
+<p>我在研究了一番实现了该功能，在这里与大家分享一下，希望可以方便到后来人。</p>
+<h3 id="源码分享"><a href="#源码分享" class="headerlink" title="源码分享"></a>源码分享</h3><p>对于不需要教程的同学可以直接查看源码：</p>
+<h3 id="教程-编写一个IP输入组件"><a href="#教程-编写一个IP输入组件" class="headerlink" title="教程-编写一个IP输入组件"></a>教程-编写一个IP输入组件</h3><h4 id="第一步：完全受控组件与ant-design表格组件联动"><a href="#第一步：完全受控组件与ant-design表格组件联动" class="headerlink" title="第一步：完全受控组件与ant design表格组件联动"></a>第一步：完全受控组件与ant design表格组件联动</h4><p>首先我们需要建立一个完全受控的输入组件，并且该组件可以嵌套进ant design的表格组件当中并正常<br>运行。<br><code>`</code>jsx harmony<br>{getFieldDecorator(‘ip’)(<br>  <ipinput><br>)}</ipinput></p>
+<pre><code>IpInput组件代码：
+```jsx harmony
+import React, {Component} from &#39;react&#39;;
+import {Input} from &quot;antd&quot;;
+
+export default class IpInput extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      ip: &#39;&#39;,
+    }
+  }
+
+
+  hdlInputChange = (e) =&gt; {
+    this.setState({ip: e.target.value})
+    this.props.onChange({target: {value: e.target.value}})
+  }
+
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;Input value={this.state.ip} onChange={this.hdlInputChange} /&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+</code></pre><p><a href="https://codesandbox.io/s/step1-ztch4?fontsize=14" target="_blank" rel="noopener">在CodeSandbox中浏览</a></p>
+<h4 id="第二步：在IpInput组件中建立多个Input，并联动"><a href="#第二步：在IpInput组件中建立多个Input，并联动" class="headerlink" title="第二步：在IpInput组件中建立多个Input，并联动"></a>第二步：在IpInput组件中建立多个Input，并联动</h4><p>重点是输出值的拆分与聚合</p>
+<pre class=" language-javascript"><code class="language-javascript">hdlInputChange <span class="token operator">=</span> <span class="token punctuation">(</span>e<span class="token punctuation">,</span> block<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> ipAdressArr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>ablock<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>bblock<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>cblock<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>dblock<span class="token punctuation">]</span>
+    <span class="token keyword">let</span> value <span class="token operator">=</span> e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">[</span><span class="token template-string"><span class="token string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>block<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">block`</span></span><span class="token punctuation">]</span><span class="token punctuation">:</span> value<span class="token punctuation">}</span><span class="token punctuation">)</span>
+    ipAdressArr<span class="token punctuation">[</span>blockDict<span class="token punctuation">[</span>block<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">=</span> value
+    <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span><span class="token function">onChange</span><span class="token punctuation">(</span><span class="token punctuation">{</span>target<span class="token punctuation">:</span> <span class="token punctuation">{</span>value<span class="token punctuation">:</span> ipAdressArr<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+</code></pre>
+<p>详细代码请看：<a href="https://codesandbox.io/s/step2-b4huv?fontsize=14" target="_blank" rel="noopener">CodeSandbox</a></p>
+<p>到这一步一个基本的<code>ip Input</code>输入组件已经成型，但是难点部分还未开始。</p>
+<h4 id="第三步：校验规则处理"><a href="#第三步：校验规则处理" class="headerlink" title="第三步：校验规则处理"></a>第三步：校验规则处理</h4><p>如果现在我们就开始正常使用该组件，4个输入框的报错样式必定是同时出现的。一个是红框的话，其他<br>三个也必定是红框状态。这是<code>ant design</code>的程序设计，<code>FormItem</code>的报错样式由外层容器通过CSS控制。</p>
+<p>上面这段话不容易理解的话自己试一下就明白了。</p>
+<p>也就是说我们需要单独控制4个Input框的校验状态，已经有数字的应为正确状态，没有数字的校验时显示为<br>红色。且这个校验行为要能够被<code>ant design</code>的<code>Form</code>组件触发。</p>
+<p>首先我们建立一个类似<code>ant design</code>原生的<code>Form.Item</code>组件用来包裹每个<code>Input</code>并负责校验逻辑。<br><code>`</code>jsx harmony<br>class FromItemValidatorWarpper extends Component {<br>  constructor(props) {<br>    super(props)</p>
+<pre><code>this.state = {
+  validateStatus: &#39;&#39;
+}
+</code></pre><p>  }</p>
+<p>  componentDidMount () {}</p>
+<p>  componentDidUpdate (prevProps, prevState) {<br>    if(this.props.valiating &amp;&amp; prevProps.validating !== this.props.valiating){<br>      // form 触发的 validating</p>
+<pre><code>  let validateStatus = &#39;&#39;
+  if(!this.getChildProp(&quot;value&quot;)){
+    validateStatus = &#39;error&#39;
+  }
+  if(this.state.validateStatus !== validateStatus){
+    this.setState({validateStatus})
+  }
+
+}
+</code></pre><p>  }</p>
+<p>  getChildProp(prop) {<br>    const child = this.props.children<br>    return child &amp;&amp; child.props &amp;&amp; child.props[prop];<br>  }</p>
+<p>  render() {<br>    return (<br>      &lt;Form.Item<br>        validateStatus={this.state.validateStatus}<br>      &gt;<br>        {this.props.children}<br>      &lt;/Form.Item&gt;<br>    )<br>  }<br>}</p>
+<pre><code>
+然后用改组件包裹`IpInput`组件
+
+```jsx harmony
+&lt;FromItemValidatorWarpper valiating={this.state.valiating}&gt;
+  &lt;Input value={this.state.dblock} onChange={(e)=&gt;{this.hdlInputChange(e, &#39;d&#39;)}} /&gt;
+&lt;/FromItemValidatorWarpper&gt;
+</code></pre><p>在<code>IpInput</code>组件中建立<code>valiating</code>属性，并使其和外层<code>ant design Form</code>组件的<code>validator</code>联动。</p>
+<p><code>`</code>jsx harmony<br>  componentDidUpdate(prevProps) {<br>    let dataField = this.props[“data-__field”]</p>
+<pre><code>if(dataField.errors &amp;&amp; !prevProps[&quot;data-__field&quot;].errors){
+  // valitor 函数触发报错
+  this.setState({valiating: true})
+}
+if(!dataField.errors &amp;&amp; prevProps[&quot;data-__field&quot;].errors){
+  // valitor 函数触发清除报错
+  this.setState({valiating: false})
+}
+</code></pre><p>  }</p>
+<pre><code>
+最后在使用`IpInput`的组件位置添加一个正则校验。
+
+```jsx harmony
+  {getFieldDecorator(&#39;ip&#39;, {
+    rules: [
+      {required: true, message: &#39;Please input your ip!&#39;},
+      {
+        pattern: /((?:(?:25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d)))\.){3}(?:25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d))))/,
+        message: &#39;Please finish your ip!&#39;
+      }
+    ],
+  })(
+    &lt;IpInput/&gt;
+  )}
+</code></pre><p><a href="https://codesandbox.io/s/step3-us20k?fontsize=14" target="_blank" rel="noopener">请在CodeSandbox中查看效果</a></p>
+<p>OK，我们现在只差最后一步了，即在外层使用组件时使用<code>setFieldsValue</code>初始化组件值的功能。</p>
+<h4 id="第四步：setFieldsValue方法支持"><a href="#第四步：setFieldsValue方法支持" class="headerlink" title="第四步：setFieldsValue方法支持"></a>第四步：<code>setFieldsValue</code>方法支持</h4><p><code>componentDidUpdate</code>方法中加入一段代码判断组件上级value是否和内部value相同，不同且没有进行<br>初始化时进行初始化。</p>
+<figcaption>harmony</figcaption><pre class=" language-jsx"><code class="language-jsx"><span class="token keyword">if</span><span class="token punctuation">(</span>dataField<span class="token punctuation">.</span>value <span class="token operator">!==</span> <span class="token punctuation">[</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>ablock<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>bblock<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>cblock<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>dblock<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>initialized<span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>initialized <span class="token operator">=</span> <span class="token boolean">true</span>
+  <span class="token keyword">let</span> ipAdressArr <span class="token operator">=</span> dataField<span class="token punctuation">.</span>value<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    ablock<span class="token punctuation">:</span> ipAdressArr<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    bblock<span class="token punctuation">:</span> ipAdressArr<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    cblock<span class="token punctuation">:</span> ipAdressArr<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    dblock<span class="token punctuation">:</span> ipAdressArr<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre>
+<p><a href="https://codesandbox.io/s/step4-l5jht?fontsize=14" target="_blank" rel="noopener">请在CodeSandbox中查看效果</a></p>
+<h3 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h3><p>以上，一个IP输入组件基本完成了。细节包括样式还有很多可以优化的地方，我在这里就不继续了。maybe<br>以后再来更新。</p>
+<p>我把最后的完整代码放在<a href="https://github.com/mikexfreeze/custom-antd-form" target="_blank" rel="noopener">github</a>上,有任何建议可<br>以给我提交issue或下面评论回复，谢谢。</p>
 
             </div>
             <hr>
@@ -566,7 +687,7 @@
                     </span>
                     <a href="http://blog.duandiwang.com" class="b-link-green">随便韶韶</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/08/21/offic-guan-fang-xia-zai-di-zhi/" class="b-link-green">office官方下载地址</a>
+                    <a href="/2019/10/11/zi-zhi-ant-design-biao-ge-zu-jian-jiao-cheng/" class="b-link-green">自制ant.design表格组件教程</a>
                 </p>
             </div>
         </div>
@@ -587,9 +708,9 @@
 
 <script type="text/javascript">
     disqus_config = function () {
-        this.page.url = 'http://blog.duandiwang.com/2019/08/21/offic-guan-fang-xia-zai-di-zhi/';
-        this.page.identifier = '/2019/08/21/offic-guan-fang-xia-zai-di-zhi/';
-        this.page.title = 'office官方下载地址';
+        this.page.url = 'http://blog.duandiwang.com/2019/10/11/zi-zhi-ant-design-biao-ge-zu-jian-jiao-cheng/';
+        this.page.identifier = '/2019/10/11/zi-zhi-ant-design-biao-ge-zu-jian-jiao-cheng/';
+        this.page.title = '自制ant.design表格组件教程';
     };
     let disqus_shortname = 'blog-frrsfxm8vv';
 
@@ -614,24 +735,92 @@
         
         <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/08/27/xin-xi-bo-li-ya-shi-kai-tuo-yue-qiu-he-huo-xing/">
+                <a href="/2019/10/11/zi-zhi-ant-design-biao-ge-zu-jian-jiao-cheng/">
                     <div class="card-image">
                         
-                        <img src="/images/20171112163017682.jpeg" class="responsive-img" alt="新西伯利亚市《开拓月球和火星》">
                         
-                        <span class="card-title">新西伯利亚市《开拓月球和火星》</span>
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="自制ant.design表格组件教程">
+                        
+                        <span class="card-title">自制ant.design表格组件教程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary block-with-text">偶然之间看到这条新闻，50年前的苏联朋友们对50年后的畅想。
-
-新西伯利亚市《开拓月球和火星》亲爱的后代，今天是苏联建国100周年（苏联的国庆日是“十月革命”纪念日当天）的特别的日子。热烈祝贺这伟大而光荣的纪念日。我们的时代是很有趣的，想必</div>
+                    <div class="summary block-with-text">前言在实际项目中我们时常有可能需要Ip地址输入框，键值对输入框这样的复杂输入组件。但是ant design官方并没有给出这样的组件，文档中也没有提到应该如何写出这样的组件。
+我在研究了一番实现了该功能，在这里与大家分享一下，希望可以方便到后</div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-27
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-11
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/技术日志/" class="post-category" target="_blank">
+                                    技术日志
+                                </a>
+                            
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/技术日志/" target="_blank">
+                        <span class="chip bg-color">技术日志</span>
+                    </a>
+                    
+                    <a href="/tags/ant-design/" target="_blank">
+                        <span class="chip bg-color">ant design</span>
+                    </a>
+                    
+                    <a href="/tags/antd/" target="_blank">
+                        <span class="chip bg-color">antd</span>
+                    </a>
+                    
+                    <a href="/tags/自定义组件/" target="_blank">
+                        <span class="chip bg-color">自定义组件</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2019/09/27/lian-tong-g2-40-he-zi-shua-ji-jiao-cheng/">
+                    <div class="card-image">
+                        
+                        <img src="/images/联通G2-40盒子刷机教程-刷机画面.jpg" class="responsive-img" alt="联通G2-40盒子刷机教程">
+                        
+                        <span class="card-title">联通G2-40盒子刷机教程</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">第一步 下载刷机包链接: 百度云 提取码: um8d
+第二步 准备刷机U盘
+U盘格式化为FAT32格式
+解压下载的刷机包，将解压内容复制到U盘根目录
+
+
+第三部 拆机
+卸下底部的4颗螺丝，卸下顶部面板
+短接J38跳线
+
+我使用的是一根回形针</div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-27
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -647,59 +836,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/随便韶韶/" target="_blank">
-                        <span class="chip bg-color">随便韶韶</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/06/14/grafana-diao-yan-he-superset-dui-bi/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Grafana调研和Superset对比">
-                        
-                        <span class="card-title">Grafana调研和Superset对比</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">Grafana调研安装使用Docker安装
-注意事项：
-
-启动时需要设置数据库，否则Grafana会使用嵌入式数据库sqlite3。
-
-支持图表官方文档，只有四种类型分别为Graph,Singlestat,Table,Heatmap
-项目引</div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-06-14
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/技术日志/" class="post-category" target="_blank">
-                                    技术日志
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
                     <a href="/tags/技术日志/" target="_blank">
                         <span class="chip bg-color">技术日志</span>
+                    </a>
+                    
+                    <a href="/tags/随便韶韶/" target="_blank">
+                        <span class="chip bg-color">随便韶韶</span>
                     </a>
                     
                 </div>
