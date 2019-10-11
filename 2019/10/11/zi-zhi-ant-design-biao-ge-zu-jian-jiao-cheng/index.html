@@ -428,36 +428,40 @@
                 <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在实际项目中我们时常有可能需要Ip地址输入框，键值对输入框这样的复杂输入组件。但是<code>ant design</code><br>官方并没有给出这样的组件，文档中也没有提到应该如何写出这样的组件。</p>
 <p>我在研究了一番实现了该功能，在这里与大家分享一下，希望可以方便到后来人。</p>
 <h3 id="源码分享"><a href="#源码分享" class="headerlink" title="源码分享"></a>源码分享</h3><p>对于不需要教程的同学可以直接查看源码：</p>
-<h3 id="教程-编写一个IP输入组件"><a href="#教程-编写一个IP输入组件" class="headerlink" title="教程-编写一个IP输入组件"></a>教程-编写一个IP输入组件</h3><h4 id="第一步：完全受控组件与ant-design表格组件联动"><a href="#第一步：完全受控组件与ant-design表格组件联动" class="headerlink" title="第一步：完全受控组件与ant design表格组件联动"></a>第一步：完全受控组件与ant design表格组件联动</h4><p>首先我们需要建立一个完全受控的输入组件，并且该组件可以嵌套进ant design的表格组件当中并正常<br>运行。<br><code>`</code>jsx harmony<br>{getFieldDecorator(‘ip’)(<br>  <ipinput><br>)}</ipinput></p>
-<pre><code>IpInput组件代码：
-```jsx harmony
-import React, {Component} from &#39;react&#39;;
-import {Input} from &quot;antd&quot;;
+<h3 id="教程-编写一个IP输入组件"><a href="#教程-编写一个IP输入组件" class="headerlink" title="教程-编写一个IP输入组件"></a>教程-编写一个IP输入组件</h3><h4 id="第一步：完全受控组件与ant-design表格组件联动"><a href="#第一步：完全受控组件与ant-design表格组件联动" class="headerlink" title="第一步：完全受控组件与ant design表格组件联动"></a>第一步：完全受控组件与ant design表格组件联动</h4><p>首先我们需要建立一个完全受控的输入组件，并且该组件可以嵌套进ant design的表格组件当中并正常<br>运行。</p>
+<pre class=" language-jsx"><code class="language-jsx"><span class="token punctuation">{</span><span class="token function">getFieldDecorator</span><span class="token punctuation">(</span><span class="token string">'ip'</span><span class="token punctuation">)</span><span class="token punctuation">(</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>IpInput</span> <span class="token punctuation">/></span></span>
+<span class="token punctuation">)</span><span class="token punctuation">}</span>
+</code></pre>
+<p>IpInput组件代码：</p>
+<pre class=" language-jsx"><code class="language-jsx"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span>Component<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>Input<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"antd"</span><span class="token punctuation">;</span>
 
-export default class IpInput extends Component {
-  constructor(props) {
-    super(props);
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">IpInput</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    this.state = {
-      ip: &#39;&#39;,
-    }
-  }
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span>
+      ip<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
 
 
-  hdlInputChange = (e) =&gt; {
-    this.setState({ip: e.target.value})
-    this.props.onChange({target: {value: e.target.value}})
-  }
+  hdlInputChange <span class="token operator">=</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>ip<span class="token punctuation">:</span> e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value<span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span><span class="token function">onChange</span><span class="token punctuation">(</span><span class="token punctuation">{</span>target<span class="token punctuation">:</span> <span class="token punctuation">{</span>value<span class="token punctuation">:</span> e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value<span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
 
-  render() {
-    return (
-      &lt;div&gt;
-        &lt;Input value={this.state.ip} onChange={this.hdlInputChange} /&gt;
-      &lt;/div&gt;
-    );
-  }
-}
-</code></pre><p><a href="https://codesandbox.io/s/step1-ztch4?fontsize=14" target="_blank" rel="noopener">在CodeSandbox中浏览</a></p>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Input</span> <span class="token attr-name">value</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>ip<span class="token punctuation">}</span></span> <span class="token attr-name">onChange</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>hdlInputChange<span class="token punctuation">}</span></span> <span class="token punctuation">/></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><a href="https://codesandbox.io/s/step1-ztch4?fontsize=14" target="_blank" rel="noopener">在CodeSandbox中浏览</a></p>
 <h4 id="第二步：在IpInput组件中建立多个Input，并联动"><a href="#第二步：在IpInput组件中建立多个Input，并联动" class="headerlink" title="第二步：在IpInput组件中建立多个Input，并联动"></a>第二步：在IpInput组件中建立多个Input，并联动</h4><p>重点是输出值的拆分与聚合</p>
 <pre class=" language-javascript"><code class="language-javascript">hdlInputChange <span class="token operator">=</span> <span class="token punctuation">(</span>e<span class="token punctuation">,</span> block<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
     <span class="token keyword">let</span> ipAdressArr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>ablock<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>bblock<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>cblock<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>dblock<span class="token punctuation">]</span>
@@ -472,62 +476,85 @@ export default class IpInput extends Component {
 <h4 id="第三步：校验规则处理"><a href="#第三步：校验规则处理" class="headerlink" title="第三步：校验规则处理"></a>第三步：校验规则处理</h4><p>如果现在我们就开始正常使用该组件，4个输入框的报错样式必定是同时出现的。一个是红框的话，其他<br>三个也必定是红框状态。这是<code>ant design</code>的程序设计，<code>FormItem</code>的报错样式由外层容器通过CSS控制。</p>
 <p>上面这段话不容易理解的话自己试一下就明白了。</p>
 <p>也就是说我们需要单独控制4个Input框的校验状态，已经有数字的应为正确状态，没有数字的校验时显示为<br>红色。且这个校验行为要能够被<code>ant design</code>的<code>Form</code>组件触发。</p>
-<p>首先我们建立一个类似<code>ant design</code>原生的<code>Form.Item</code>组件用来包裹每个<code>Input</code>并负责校验逻辑。<br><code>`</code>jsx harmony<br>class FromItemValidatorWarpper extends Component {<br>  constructor(props) {<br>    super(props)</p>
-<pre><code>this.state = {
-  validateStatus: &#39;&#39;
-}
-</code></pre><p>  }</p>
-<p>  componentDidMount () {}</p>
-<p>  componentDidUpdate (prevProps, prevState) {<br>    if(this.props.valiating &amp;&amp; prevProps.validating !== this.props.valiating){<br>      // form 触发的 validating</p>
-<pre><code>  let validateStatus = &#39;&#39;
-  if(!this.getChildProp(&quot;value&quot;)){
-    validateStatus = &#39;error&#39;
-  }
-  if(this.state.validateStatus !== validateStatus){
-    this.setState({validateStatus})
-  }
+<p>首先我们建立一个类似<code>ant design</code>原生的<code>Form.Item</code>组件用来包裹每个<code>Input</code>并负责校验逻辑。</p>
+<pre class=" language-jsx"><code class="language-jsx"><span class="token keyword">class</span> <span class="token class-name">FromItemValidatorWarpper</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span>
 
-}
-</code></pre><p>  }</p>
-<p>  getChildProp(prop) {<br>    const child = this.props.children<br>    return child &amp;&amp; child.props &amp;&amp; child.props[prop];<br>  }</p>
-<p>  render() {<br>    return (<br>      &lt;Form.Item<br>        validateStatus={this.state.validateStatus}<br>      &gt;<br>        {this.props.children}<br>      &lt;/Form.Item&gt;<br>    )<br>  }<br>}</p>
-<pre><code>
-然后用改组件包裹`IpInput`组件
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span>
+      validateStatus<span class="token punctuation">:</span> <span class="token string">''</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
 
-```jsx harmony
-&lt;FromItemValidatorWarpper valiating={this.state.valiating}&gt;
-  &lt;Input value={this.state.dblock} onChange={(e)=&gt;{this.hdlInputChange(e, &#39;d&#39;)}} /&gt;
-&lt;/FromItemValidatorWarpper&gt;
-</code></pre><p>在<code>IpInput</code>组件中建立<code>valiating</code>属性，并使其和外层<code>ant design Form</code>组件的<code>validator</code>联动。</p>
-<p><code>`</code>jsx harmony<br>  componentDidUpdate(prevProps) {<br>    let dataField = this.props[“data-__field”]</p>
-<pre><code>if(dataField.errors &amp;&amp; !prevProps[&quot;data-__field&quot;].errors){
-  // valitor 函数触发报错
-  this.setState({valiating: true})
-}
-if(!dataField.errors &amp;&amp; prevProps[&quot;data-__field&quot;].errors){
-  // valitor 函数触发清除报错
-  this.setState({valiating: false})
-}
-</code></pre><p>  }</p>
-<pre><code>
-最后在使用`IpInput`的组件位置添加一个正则校验。
+  componentDidMount <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
 
-```jsx harmony
-  {getFieldDecorator(&#39;ip&#39;, {
-    rules: [
-      {required: true, message: &#39;Please input your ip!&#39;},
-      {
-        pattern: /((?:(?:25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d)))\.){3}(?:25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d))))/,
-        message: &#39;Please finish your ip!&#39;
-      }
-    ],
-  })(
-    &lt;IpInput/&gt;
-  )}
-</code></pre><p><a href="https://codesandbox.io/s/step3-us20k?fontsize=14" target="_blank" rel="noopener">请在CodeSandbox中查看效果</a></p>
+  componentDidUpdate <span class="token punctuation">(</span>prevProps<span class="token punctuation">,</span> prevState<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>valiating <span class="token operator">&amp;&amp;</span> prevProps<span class="token punctuation">.</span>validating <span class="token operator">!==</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>valiating<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token comment" spellcheck="true">// form 触发的 validating</span>
+
+      <span class="token keyword">let</span> validateStatus <span class="token operator">=</span> <span class="token string">''</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getChildProp</span><span class="token punctuation">(</span><span class="token string">"value"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        validateStatus <span class="token operator">=</span> <span class="token string">'error'</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>validateStatus <span class="token operator">!==</span> validateStatus<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>validateStatus<span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">getChildProp</span><span class="token punctuation">(</span>prop<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> child <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>children
+    <span class="token keyword">return</span> child <span class="token operator">&amp;&amp;</span> child<span class="token punctuation">.</span>props <span class="token operator">&amp;&amp;</span> child<span class="token punctuation">.</span>props<span class="token punctuation">[</span>prop<span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Form.Item</span>
+        <span class="token attr-name">validateStatus</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>validateStatus<span class="token punctuation">}</span></span>
+      <span class="token punctuation">></span></span>
+        <span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>children<span class="token punctuation">}</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Form.Item</span><span class="token punctuation">></span></span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>然后用改组件包裹<code>IpInput</code>组件</p>
+<pre class=" language-jsx"><code class="language-jsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>FromItemValidatorWarpper</span> <span class="token attr-name">valiating</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>valiating<span class="token punctuation">}</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Input</span> <span class="token attr-name">value</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>dblock<span class="token punctuation">}</span></span> <span class="token attr-name">onChange</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token operator">=</span><span class="token operator">></span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">hdlInputChange</span><span class="token punctuation">(</span>e<span class="token punctuation">,</span> <span class="token string">'d'</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">}</span></span> <span class="token punctuation">/></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>FromItemValidatorWarpper</span><span class="token punctuation">></span></span>
+</code></pre>
+<p>在<code>IpInput</code>组件中建立<code>valiating</code>属性，并使其和外层<code>ant design Form</code>组件的<code>validator</code>联动。</p>
+<pre class=" language-jsx"><code class="language-jsx">  <span class="token function">componentDidUpdate</span><span class="token punctuation">(</span>prevProps<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> dataField <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">[</span><span class="token string">"data-__field"</span><span class="token punctuation">]</span>
+
+    <span class="token keyword">if</span><span class="token punctuation">(</span>dataField<span class="token punctuation">.</span>errors <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>prevProps<span class="token punctuation">[</span><span class="token string">"data-__field"</span><span class="token punctuation">]</span><span class="token punctuation">.</span>errors<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token comment" spellcheck="true">// valitor 函数触发报错</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>valiating<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>dataField<span class="token punctuation">.</span>errors <span class="token operator">&amp;&amp;</span> prevProps<span class="token punctuation">[</span><span class="token string">"data-__field"</span><span class="token punctuation">]</span><span class="token punctuation">.</span>errors<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token comment" spellcheck="true">// valitor 函数触发清除报错</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>valiating<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre>
+<p>最后在使用<code>IpInput</code>的组件位置添加一个正则校验。</p>
+<pre class=" language-jsx"><code class="language-jsx">  <span class="token punctuation">{</span><span class="token function">getFieldDecorator</span><span class="token punctuation">(</span><span class="token string">'ip'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    rules<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>required<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> message<span class="token punctuation">:</span> <span class="token string">'Please input your ip!'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        pattern<span class="token punctuation">:</span> <span class="token regex">/((?:(?:25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d)))\.){3}(?:25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d))))/</span><span class="token punctuation">,</span>
+        message<span class="token punctuation">:</span> <span class="token string">'Please finish your ip!'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>IpInput</span><span class="token punctuation">/></span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">}</span>
+</code></pre>
+<p><a href="https://codesandbox.io/s/step3-us20k?fontsize=14" target="_blank" rel="noopener">请在CodeSandbox中查看效果</a></p>
 <p>OK，我们现在只差最后一步了，即在外层使用组件时使用<code>setFieldsValue</code>初始化组件值的功能。</p>
 <h4 id="第四步：setFieldsValue方法支持"><a href="#第四步：setFieldsValue方法支持" class="headerlink" title="第四步：setFieldsValue方法支持"></a>第四步：<code>setFieldsValue</code>方法支持</h4><p><code>componentDidUpdate</code>方法中加入一段代码判断组件上级value是否和内部value相同，不同且没有进行<br>初始化时进行初始化。</p>
-<figcaption>harmony</figcaption><pre class=" language-jsx"><code class="language-jsx"><span class="token keyword">if</span><span class="token punctuation">(</span>dataField<span class="token punctuation">.</span>value <span class="token operator">!==</span> <span class="token punctuation">[</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>ablock<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>bblock<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>cblock<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>dblock<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>initialized<span class="token punctuation">)</span><span class="token punctuation">{</span>
+<pre class=" language-jsx"><code class="language-jsx"><span class="token keyword">if</span><span class="token punctuation">(</span>dataField<span class="token punctuation">.</span>value <span class="token operator">!==</span> <span class="token punctuation">[</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>ablock<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>bblock<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>cblock<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>dblock<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>initialized<span class="token punctuation">)</span><span class="token punctuation">{</span>
   <span class="token keyword">this</span><span class="token punctuation">.</span>initialized <span class="token operator">=</span> <span class="token boolean">true</span>
   <span class="token keyword">let</span> ipAdressArr <span class="token operator">=</span> dataField<span class="token punctuation">.</span>value<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span>
   <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
@@ -536,7 +563,8 @@ if(!dataField.errors &amp;&amp; prevProps[&quot;data-__field&quot;].errors){
     cblock<span class="token punctuation">:</span> ipAdressArr<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
     dblock<span class="token punctuation">:</span> ipAdressArr<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
   <span class="token punctuation">}</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span></code></pre>
+<span class="token punctuation">}</span>
+</code></pre>
 <p><a href="https://codesandbox.io/s/step4-l5jht?fontsize=14" target="_blank" rel="noopener">请在CodeSandbox中查看效果</a></p>
 <h3 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h3><p>以上，一个IP输入组件基本完成了。细节包括样式还有很多可以优化的地方，我在这里就不继续了。maybe<br>以后再来更新。</p>
 <p>我把最后的完整代码放在<a href="https://github.com/mikexfreeze/custom-antd-form" target="_blank" rel="noopener">github</a>上,有任何建议可<br>以给我提交issue或下面评论回复，谢谢。</p>
