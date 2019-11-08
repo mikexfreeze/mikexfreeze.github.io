@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.duandiwang.com/"/>
-  <updated>2019-10-11T09:15:22.215Z</updated>
+  <updated>2019-11-08T09:14:45.844Z</updated>
   <id>http://blog.duandiwang.com/</id>
   
   <author>
@@ -17,11 +17,66 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>airpods-pro使用体验</title>
+    <link href="http://blog.duandiwang.com/2019/11/08/airpods-pro-shi-yong-ti-yan/"/>
+    <id>http://blog.duandiwang.com/2019/11/08/airpods-pro-shi-yong-ti-yan/</id>
+    <published>2019-11-08T08:41:25.000Z</published>
+    <updated>2019-11-08T09:14:45.844Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;优点&quot;&gt;&lt;a href=&quot;#优点&quot; class=&quot;headerlink&quot; title=&quot;优点&quot;&gt;&lt;/a&gt;优点&lt;/h3&gt;&lt;p&gt;不说了，相信各位已经听够了。&lt;/p&gt;
+&lt;h3 id=&quot;缺点&quot;&gt;&lt;a href=&quot;#缺点&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="随便韶韶" scheme="http://blog.duandiwang.com/categories/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
+    
+    
+      <category term="随便韶韶" scheme="http://blog.duandiwang.com/tags/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>原生面经从初级到高级</title>
+    <link href="http://blog.duandiwang.com/2019/10/25/yuan-sheng-mian-jing-cong-chu-ji-dao-gao-ji/"/>
+    <id>http://blog.duandiwang.com/2019/10/25/yuan-sheng-mian-jing-cong-chu-ji-dao-gao-ji/</id>
+    <published>2019-10-25T09:58:56.000Z</published>
+    <updated>2019-11-08T08:43:01.406Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000020759924&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;函数&lt;br&gt;1.1函数的3种定义方法&lt;br&gt;1.1.1
+        
+      
+    
+    </summary>
+    
+      <category term="技术日志" scheme="http://blog.duandiwang.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+    
+      <category term="技术日志" scheme="http://blog.duandiwang.com/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+  </entry>
+  
+  <entry>
     <title>自制ant.design表格组件教程</title>
     <link href="http://blog.duandiwang.com/2019/10/11/zi-zhi-ant-design-biao-ge-zu-jian-jiao-cheng/"/>
     <id>http://blog.duandiwang.com/2019/10/11/zi-zhi-ant-design-biao-ge-zu-jian-jiao-cheng/</id>
     <published>2019-10-11T02:25:23.000Z</published>
-    <updated>2019-10-11T09:15:22.215Z</updated>
+    <updated>2019-10-17T02:03:13.422Z</updated>
     
     <summary type="html">
     
@@ -499,59 +554,6 @@
     
     
       <category term="日记" scheme="http://blog.duandiwang.com/tags/%E6%97%A5%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>EmacsIDEAs</title>
-    <link href="http://blog.duandiwang.com/2018/07/05/emacsideas/"/>
-    <id>http://blog.duandiwang.com/2018/07/05/emacsideas/</id>
-    <published>2018-07-05T03:53:56.000Z</published>
-    <updated>2018-11-23T08:35:33.517Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;EmacsIDEAs ideas 插件，非常方便的 edit
-        
-      
-    
-    </summary>
-    
-      <category term="工具" scheme="http://blog.duandiwang.com/categories/%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="工具" scheme="http://blog.duandiwang.com/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2018-07-05 02:56:28 雨</title>
-    <link href="http://blog.duandiwang.com/2018/07/05/2018-nian-7-yue-5-ri/"/>
-    <id>http://blog.duandiwang.com/2018/07/05/2018-nian-7-yue-5-ri/</id>
-    <published>2018-07-05T02:56:28.000Z</published>
-    <updated>2018-11-23T08:35:33.512Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Don’t repeat yourself 称为 DRY 原则。&lt;/p&gt;
-&lt;p&gt;违反DRY原则的解决方案通常被称为WET，其有多种全称，包括“Write everything twice”（在每个地方写两次）、“We enjoy
-        
-      
-    
-    </summary>
-    
-      <category term="金句名言" scheme="http://blog.duandiwang.com/categories/%E9%87%91%E5%8F%A5%E5%90%8D%E8%A8%80/"/>
-    
-    
-      <category term="金句名言" scheme="http://blog.duandiwang.com/tags/%E9%87%91%E5%8F%A5%E5%90%8D%E8%A8%80/"/>
     
   </entry>
   
