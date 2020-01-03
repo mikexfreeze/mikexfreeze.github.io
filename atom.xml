@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.duandiwang.com/"/>
-  <updated>2019-12-17T01:31:31.902Z</updated>
+  <updated>2020-01-03T09:02:46.435Z</updated>
   <id>http://blog.duandiwang.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://blog.duandiwang.com/2019/12/17/luo-lao-shi-yu-lu/"/>
     <id>http://blog.duandiwang.com/2019/12/17/luo-lao-shi-yu-lu/</id>
     <published>2019-12-17T01:30:20.000Z</published>
-    <updated>2019-12-17T01:31:31.902Z</updated>
+    <updated>2020-01-03T09:02:46.435Z</updated>
     
     <summary type="html">
     
@@ -35,6 +35,10 @@
     
     </summary>
     
+      <category term="随便韶韶" scheme="http://blog.duandiwang.com/categories/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
+    
+    
+      <category term="随便韶韶" scheme="http://blog.duandiwang.com/tags/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
     
   </entry>
   
@@ -43,7 +47,7 @@
     <link href="http://blog.duandiwang.com/2019/11/25/rwby-cai-shi-zhen-zheng-de-nu-quan-zhu-yi-ying-pian/"/>
     <id>http://blog.duandiwang.com/2019/11/25/rwby-cai-shi-zhen-zheng-de-nu-quan-zhu-yi-ying-pian/</id>
     <published>2019-11-25T09:15:25.000Z</published>
-    <updated>2019-11-27T07:41:22.889Z</updated>
+    <updated>2020-01-03T09:04:17.665Z</updated>
     
     <summary type="html">
     
@@ -71,7 +75,7 @@
     <link href="http://blog.duandiwang.com/2019/11/14/2019-fang-jie-fen-xi/"/>
     <id>http://blog.duandiwang.com/2019/11/14/2019-fang-jie-fen-xi/</id>
     <published>2019-11-14T00:55:11.000Z</published>
-    <updated>2020-01-03T08:47:44.947Z</updated>
+    <updated>2020-01-03T09:01:21.574Z</updated>
     
     <summary type="html">
     
@@ -97,7 +101,7 @@
     <link href="http://blog.duandiwang.com/2019/11/08/airpods-pro-shi-yong-ti-yan/"/>
     <id>http://blog.duandiwang.com/2019/11/08/airpods-pro-shi-yong-ti-yan/</id>
     <published>2019-11-08T08:41:25.000Z</published>
-    <updated>2019-11-08T09:14:45.844Z</updated>
+    <updated>2020-01-03T09:05:34.031Z</updated>
     
     <summary type="html">
     
@@ -320,7 +324,7 @@
     <link href="http://blog.duandiwang.com/2019/04/30/mai-bu-qi-airpods-zen-me-ban/"/>
     <id>http://blog.duandiwang.com/2019/04/30/mai-bu-qi-airpods-zen-me-ban/</id>
     <published>2019-04-30T09:21:55.000Z</published>
-    <updated>2019-06-14T09:01:32.552Z</updated>
+    <updated>2020-01-03T09:06:30.967Z</updated>
     
     <summary type="html">
     
