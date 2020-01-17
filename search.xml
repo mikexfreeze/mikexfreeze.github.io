@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>N1小钢炮固件使用docker-ui安装openwrt</title>
+      <link href="/2020/01/17/n1-xiao-gang-pao-gu-jian-shi-yong-docker-ui-an-zhuang-openwrt/"/>
+      <url>/2020/01/17/n1-xiao-gang-pao-gu-jian-shi-yong-docker-ui-an-zhuang-openwrt/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Docker-ui-安装及设置"><a href="#Docker-ui-安装及设置" class="headerlink" title="Docker-ui 安装及设置"></a>Docker-ui 安装及设置</h2><p>进入N1小钢炮管理后台，点击 System 选项，之后再点击 Startup，在右侧往下拖，找到 Docker 的对应进程选项 /etc/init.d/S60dockerd，把 NO 点为 YES 启用 Docker，再点击左边的 start，之后点击下面的 SAVE 保存</p><p>点击Apps-Other-Docker Setting-install Docker UI （没安装时默认为黄色，下图为已经安装完成后的显示）</p><img src="/2020/01/17/n1-xiao-gang-pao-gu-jian-shi-yong-docker-ui-an-zhuang-openwrt/docker-install.webp"><font size="5"><strong>特别注意：这步操作没有在没有科学上网的情况下可能无法顺利完成</strong></font><p>之后重启 N1</p><h2 id="Openwrt-镜像容器安装步骤"><a href="#Openwrt-镜像容器安装步骤" class="headerlink" title="Openwrt 镜像容器安装步骤"></a>Openwrt 镜像容器安装步骤</h2><ol><li>通过 ssh 连接 N1</li><li>输入命令拉取OpenWrt镜像 <code>docker pull kanshudj/n1-openwrtgateway:r9</code> 此步同样建议使用科学上网环境</li><li>运行：<code>ip link set eth0 promisc on</code></li><li>运行：<code>docker network create -d macvlan --subnet=192.168.1.0/24 --gateway=192.168.1.1 -o parent=eth0 macnet</code><br>（将第三个单独的1改为你主路由的网关地址，即你登录你主路由后台的IP地址第三位数字）<blockquote><p>这步是在 docker 环境中创建一个名为 macnet 的网卡</p></blockquote></li><li>运行：<code>docker run --restart always -d --network macnet --privileged kanshudj/n1-openwrtgateway:r9 /sbin/init</code></li><li>进入 Docker 管理界面，点击 Local，再点击 Containers</li></ol><img src="/2020/01/17/n1-xiao-gang-pao-gu-jian-shi-yong-docker-ui-an-zhuang-openwrt/docker-init-step-1.webp"><ol start="7"><li>找到自己刚拉取完成的 OpenWrt 镜像，选择第四个命令行工具</li></ol><img src="/2020/01/17/n1-xiao-gang-pao-gu-jian-shi-yong-docker-ui-an-zhuang-openwrt/docker-init-step-2.webp"><ol start="8"><li>点击Connect</li></ol><img src="/2020/01/17/n1-xiao-gang-pao-gu-jian-shi-yong-docker-ui-an-zhuang-openwrt/docker-init-step-3.webp"><ol start="9"><li>输入 <code>vi /etc/config/network</code></li></ol><img src="/2020/01/17/n1-xiao-gang-pao-gu-jian-shi-yong-docker-ui-an-zhuang-openwrt/docker-init-step-4.webp"><ol start="10"><li><p>找到3处包含192.168.X.X的地方，输入i进入编辑，同样将第三个数字的位置改为你主路由的网段，在此处我的主路由为123，所以我将三处都改为123。当编辑完成后，按一次键盘左上角Esc键，之后输入：wq并且回车。（英文冒号+wq）</p></li><li><p>设置 OpenWrt 的初始密码命令为 <code>passwd</code> 还有可能为 <code>password</code> 或 <code>mount_root</code>。输入正确之后会提示你输入正确明码。 </p></li><li><p>重启N1</p></li></ol><p>之后就可以通过你设置的 Openwrt 地址进入管理界面了（管理地址为上如3红框中的第一个），到这里我们旁路由OpenWrt就算全部设置完成了</p><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p><a href="https://www.iyyxz.com/%E6%96%90%E8%AE%AFn1%E5%B0%8F%E9%92%A2%E7%82%AEdocker%E5%AE%89%E8%A3%85openwrt-lede%E5%81%9A%E6%97%81%E8%B7%AF%E7%94%B1%E7%A8%B3%E5%AE%9A%E5%8E%BB%E5%B9%BF%E5%91%8A%E7%A7%91%E5%AD%A6%E5%8A%9F/" target="_blank" rel="noopener">斐讯N1小钢炮Docker安装OpenWrt/LEDE做旁路由稳定去广告+科学功能</a></p><h3 id="PS"><a href="#PS" class="headerlink" title="PS"></a>PS</h3><p>我自己进行相关操作时遇到了两个坑，故把前人的操作步骤再完善一下，希望能让后来者少走弯路。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术日志 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术日志 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>罗老师语录</title>
       <link href="/2019/12/17/luo-lao-shi-yu-lu/"/>
       <url>/2019/12/17/luo-lao-shi-yu-lu/</url>
