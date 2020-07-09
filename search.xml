@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>面试题分享</title>
+      <link href="/2020/07/09/mian-shi-ti-fen-xiang/"/>
+      <url>/2020/07/09/mian-shi-ti-fen-xiang/</url>
+      
+        <content type="html"><![CDATA[<p>今天做了几道面试题，分享一下</p><h3 id="题目一"><a href="#题目一" class="headerlink" title="题目一"></a>题目一</h3><p>解释：</p><pre><code>var a = { name: &quot;hello&quot; }, b = { name: &quot;hi&quot; }function exchange(a, b) {  var c = b; b = a; a = c;  a.name = a.name + &quot;1&quot;;  b.name = b.name + &quot;2&quot;;  console.info(a.name, b.name);}exchange(a, b);console.info(a.name, b.name);</code></pre><p>答：</p><pre><code>var a = {  name: &quot;hello&quot;}, b = { name: &quot;hi&quot; }function exchange(a1, b1) {  /**   * 传参进函数内部，JS 会创建参数的副本，这里用 a1, b1 指代副本，   * 但若参数是对象，拷贝的只是指针。   */  var c = b1;   b1 = a1; // b1 等于 a  a1 = c; // a1 等于 b  a1.name = a1.name + &quot;1&quot;; // b.name 等于 hi1  b1.name = b1.name + &quot;2&quot;; // a.name 等于 hello2  /**   * a1.name 被赋值的同时， b.name 也被赋值，因为此时 a1 和 b 指向的是同一个对象。   * 下面执行 console.log(a1 === b) 可以确定   */  console.log(a1 === b)  // a1.name 等于 b.name 等于 hi1  // b1.name 等于 a.name 等于 hello2   console.info(a1.name, b1.name);}exchange(a, b); // hi1 hello2console.info(a.name, b.name); // hello2 hi1</code></pre><h3 id="题目二"><a href="#题目二" class="headerlink" title="题目二"></a>题目二</h3><p>时间比较题:输入一组时间字符串，求出这组时间中的间隔最小的时间差（分），如输入 “23:59”,”00:00”，返回1 ; 假设输入数组的长度大于2且小于2000; (本题可以写伪代码)</p><pre><code>/** * @param {string[]} timePoints * @return {number} */var findMinDifference = function (timePoints) {  const timeTicks = new Array(1440).fill(0);  for (let point of timePoints) {    const [hour, min] = point.split(&#39;:&#39;);    const minutes = parseInt(hour) * 60 + parseInt(min);    if (timeTicks[minutes] === 1) {      return 0;     }    timeTicks[minutes] += 1  }  let first;  let prev;  let min = Infinity;  for (let i = 0; i &lt; timeTicks.length; i++) {    if (timeTicks[i] === 1) {      if (first === undefined) {        first = i;      }      if (prev !== undefined) {        // 比较两组存在的时间之间的差值        min = Math.min(i - prev, min);      }      prev = i;    }  }  // 比较头尾的差值  return Math.min(min, 1440 - prev + first);};var result = findMinDifference([&#39;00:00&#39;, &#39;00:01&#39;, &#39;12:59&#39;, &#39;23:58&#39;,])console.log(result) // 1</code></pre><h3 id="题目三"><a href="#题目三" class="headerlink" title="题目三"></a>题目三</h3><p>假如有一个接口getUersById(userId),返回用户信息的json; 要求getUersById能缓存用户信息，即同样的userId请求仅向服务器发送一次,其余从内存中获取,以提高效率。 高阶要求: 假设有getUersById，getShoolInfoById, getDeviceInfoById … 都需要缓存结果，提供一个通用的 辅助 函数。</p><pre><code>function memoize(func) {  var memoized = function() {    var args = arguments,        key = args[0] || &#39;cache&#39;,        cache = memoized.cache;    if (Object.keys(cache).indexOf(key.toString()) &gt; -1) {      return cache[key];    }    var result = func.apply(this, args);    memoized.cache[key] = result || cache;    return result;  };  memoized.cache = new Object();  return memoized;}// test codevar userId = 1function getUserId() {  userId ++  return userId};var meGetuserId = memoize(getUserId)console.log(meGetuserId()) // 2console.log(meGetuserId()) // 2console.log(meGetuserId()) // 2</code></pre><h3 id="题目四"><a href="#题目四" class="headerlink" title="题目四"></a>题目四</h3><ol start="4"><li>输入一个数字, 交换两位数字, 最多交换一次, 输出可以得到的最大的数字; 如输入: 1234 交换 1,4后, 得到4231;</li></ol><pre><code>var maximumSwap = function (num) {  var numStr = num.toString();  for (var i = 0; i &lt; numStr.length; i++) {    var nbr = numStr[i];    var index = i;    for (var x = numStr.length - 1; x &gt; i; x--) {      if (numStr[x] &gt; nbr) {        nbr = numStr[x];        index = x;        console.log(&#39;待交换 nbr&#39;, nbr)      }    }    if (nbr != numStr[i]) {      var arr = numStr.split(&#39;&#39;);      var tmp = arr[i];      arr[i] = arr[index];      arr[index] = tmp;      console.log(&#39;交换后数&#39;, parseInt(arr.join(&#39;&#39;)))      return parseInt(arr.join(&#39;&#39;));    }  }  return num;};// test codeconsole.log(maximumSwap(5987)) // 9587</code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>欢迎认购肖氏理财</title>
       <link href="/2020/07/01/huan-ying-ren-gou-xiao-shi-li-cai/"/>
       <url>/2020/07/01/huan-ying-ren-gou-xiao-shi-li-cai/</url>
@@ -29,11 +42,61 @@
     
     
     <entry>
+      <title>2020年中房价分析，预测</title>
+      <link href="/2020/06/24/2020-nian-zhong-fang-jie-fen-xi-yu-ce/"/>
+      <url>/2020/06/24/2020-nian-zhong-fang-jie-fen-xi-yu-ce/</url>
+      
+        <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>19年底写过一篇房价分析的文章，如今这非比寻常的半年过去了，是时候写一篇新的文章再分析一波了。</p><h3 id="大纲"><a href="#大纲" class="headerlink" title="大纲"></a>大纲</h3><ol><li><p>外部风险</p><p>1.1 全球性金融危机<br>1.2 金融危机给国内经济带来的影响</p></li><li><p>国内经济的韧性</p></li><li><p>政策预测</p><p>3.1 房产税时间点<br>3.2 其他金融工具</p></li><li><p>总结</p></li></ol><h4 id="全球性金融危机"><a href="#全球性金融危机" class="headerlink" title="全球性金融危机"></a>全球性金融危机</h4><p>这个章节有两个问题</p><blockquote><ol><li>是否会发生全球性金融危机</li><li>危机会到什么程度，会对我们的经济造成多大影响</li></ol></blockquote><p>个人认为第一个问题可以略过，危机不是是否会发生，而是已经发生，正在发生。之所以大家现在还无感，美股又重新涨回去,这完全是一种回光返照的现象。美国开启无限量 QE 这个行为是绝对会有严重后果的。</p><p>现在的情况是，08 年之后，全球经济开启量化宽松把当时的损害降到最小，但造成的后果是全球经济长期处于滞胀状态。问题最严重的当属日本，长期大力印钞但是物价和经济就是上不去。原因是金融离不开基础，没有实体的支撑民众信心不足，消费不足，怎么刺激都没用。欧洲其次，和日本一样老龄化问题严重，不同于日本引入了一些移民，且资本更加老牌一些，面对中国崛起被蚕食得部分更少一些，两方面加起来总体面子上好看一些。但实际内里都很虚，欧盟内部问题积累严重，希腊那次还远没有真正爆发出来。08年金融危机是美国引发的，结果是通过印钞让全世界为其买单，欧洲、日本现在的虚，很大一部分原因也都是这一波造成的贻害。并且美国自己也虚，08年之后产业反而更加空心化，国内贫富分化等社会问题愈加严重。</p><p>总之就是08年危机之后，人类并未爆发新的产业革命、技术革命，经济成长除了中国以外基本都是帐面上的虚数。实际是危机造成的影响根本没有去化，甚至更加严重，只是靠新兴国家的发展通过剪羊毛的方式获得了不少输血，仅维持表面的繁荣。</p><h4 id="金融危机给国内经济带来的影响"><a href="#金融危机给国内经济带来的影响" class="headerlink" title="金融危机给国内经济带来的影响"></a>金融危机给国内经济带来的影响</h4><p>第二个问题，危机会到什么程度？这个问题无法定量分析，且听在下高谈阔论吹一波。首先此次的经济危机会和历史上以往的经济危机大不一样。以往的经济危机基本两种形式。工业时代之前只有通货膨胀形式的金融危机。工业时代之后基本上是产能过剩之后迫使政府超发货币进而通货膨胀，两样并发。</p><p>而这次的危机是由全球疫情引发，迫使美国超发货币引起通货膨胀之后导致经济危机。</p><p>而这次的危机会造成怎样的影响，主要要看我国 ZF 的应对方式，要不要跟着美国一起放水。如果跟着一起放，因为我们对美国是贸易顺差，那么本国国民就要相对美国国民成倍的承受通胀压力。如果不跟着放人民币将面对巨大的升值压力。虽然从理论上讲，因为金融的不开放外资很难自由兑换。总之升值的压力肯定会有，升值之后又会降低自己出口产品的竞争力，短时间内会对经济造成重创。</p><p>左右为难，我目前的观察,我国 ZF 是跟着放一点，但是幅度很小很谨慎。我觉得是央妈觉得形势远没有到最困难的时候，最后的武器要留着最后用。</p><p>按照现在情况推演下去，美国会因为疫情和国内其他矛盾集体爆发导致社会运转出现重大危机，进而导致美元信用大幅振动，全球贸易可能因为一般等价物的波动受到巨大影响。届时人民币必将面对巨大的升值压力，而此时正是央妈开闸大放水的最好时期。虽然对外贸易会受到巨大影响，但是跟夺取一般等价物这个蓝星至宝相比，简直不值一提。哪怕只是夺取了部分。舰到用时方恨少，多两条 003 形势简直不是小好，是大好。可惜，可惜。</p><p>上面是往好了想，往坏了想，全球其他国家会认为美元都不靠谱的情况下我没有理由认为人民币更靠谱。全球重回金本位，金价暴涨，这种暴涨可能是十倍百倍级别的。迫使各国银行合作建立起以金本位为准的外汇结算机制（毅种循环）。全球经济进入长期滞胀的大萧条时代。除了黄金和食物任何东西都不会涨价。粮食不能自给的国家必将爆发饥荒战争不可避免，人类文明摇摇欲坠。</p><p>至于这两种情况下房价会怎样，我想已无须多言。</p><h3 id="国内经济的韧性"><a href="#国内经济的韧性" class="headerlink" title="国内经济的韧性"></a>国内经济的韧性</h3><p>OK，让我们先蒙上双眼，假装全球性的经济危机不会发生。假装新冠的影响从下半年开始会慢慢减弱，假装美国新印的钞票不会产生多大影响，假装世界各国的经济都会渐渐恢复，全球贸易也会渐渐恢复。只保留一个条件即因为新冠的影响世界贸易不可能回到新冠前的水准。</p><p>首先看下出口贸易占我国经济的比重。<a href="http://www.mofcom.gov.cn/article/ae/sjjd/202001/20200102930414.shtml" target="_blank" rel="noopener">商务部的数据是 19.6%</a>,<a href="https://data.worldbank.org.cn/indicator/NE.EXP.GNFS.ZS?locations=CN" target="_blank" rel="noopener">世界银行的数据是 18.4%</a>。假设由新冠影响今年的出口贸易会减少 20% （根据前几个月数据预估）。</p><p>商务部的数据是外贸带动了 1.9 亿人就业，做个简单的数学题，少 20% 意味着 3800w 人失业。连带着第三产业的消费娱乐方面的减少，我们的失业人数是个绝对不能统计的量级。</p><p>这么多人失业房价必跌啊！其实吧，说真的，咋说呢，没啥影响。为啥，资本主义里面有消费者，有劳动力，对于房子来说这部分失业的人原来是劳动力，不是消费者，现在都不是了。仅此而已 over。顶多也就是对三四五线城市的房市有些影响。我举个不恰当的例子，一个餐馆倒闭了，总共一个老板15个员工，你觉得这个城市少了几个购房者？老板通过贷款又买了两套，喜+1,有没有。</p><p>现在的情况是因为处于特殊时期，正常的经济增长对应房价增长的逻辑已经不存在了。世界大放水的前提下，只要不发生经济危机，房价没有跌的理由。</p><p>所以本节讨论的问题点是，外贸下降 20%，以及国内自身经济受到新冠冲击的情况下，会不会发生经济危机。</p><p>个人认为完全不会。只要不发生上一节提到的最坏情况，其他问题在我国基本都不是问题。ZF 还有太多的手段没用上。到目前为止也就金融系统向实体让利 1.5 万亿罢了。既没有 08 年的 4w 亿，也没有 15 16 年的放松限购限贷降低利率。就目前的情况正如中央所说稳中向好。事实如此。</p><h3 id="政策预测"><a href="#政策预测" class="headerlink" title="政策预测"></a>政策预测</h3><p>如果经济不崩的情况下，国内的房价基本就取决于政策。我想这个观点应该没有几个人会反对。</p><p>那么预测房价这个命题大部分时候也就是在预测政策。我在<a href="https://blog.duandiwang.com/2019/11/14/2019-fang-jie-fen-xi/">2019房价分析，未来房价预测</a>一文中通篇没提政策，但是实际上是已经默认了 ZF 是希望抑制房价的。个人认为在 19 年及之前贸易战的环境下，房价的横盘或阴跌是最有利于整个国民经济的选项。所以我在 19 年底做出了那样的预测。</p><p>那么现在环境下，房价怎样的走势是最利于整个国民经济的呢？</p><p>当然还是横盘或阴跌。横盘或阴跌，减轻居民负担，为增加消费提供空间。尤其是在外贸不振的情况下，内需更显重要。降低年轻人的负担，提高生育率其实也是当务之急。唯一的问题就是地方财政。这个问题，我似乎已经看到了解决方法，就是加大土地供应，地价卖不高就多卖几块。正好加紧时间出清，出完了正好推房产税。届时地方财政怎么从卖地转移到房产税收将是一个重大的历史关头。这个话题留待以后再聊。</p><p>现在我们已经有了两个基本条件一是将来大概率需要放水，二是要严防房地产暴涨。暴涨不仅会在短期内吹大泡沫造成完全不可收拾的局面，更会吸走放出来的水，严重滞后经济恢复的时间。</p><p>其实这个目标中央已经在新闻里面说的非常清楚了，六保六稳，总结下来就一条稳房价。房价稳通通稳，房价保全部保。</p><h4 id="房产税时间点"><a href="#房产税时间点" class="headerlink" title="房产税时间点"></a>房产税时间点</h4><p>个人认为大致时间应当是可以推断出来的。即二三四线城市的地方财政无法再以卖地维持之时。</p><img src="/2020/06/24/2020-nian-zhong-fang-jie-fen-xi-yu-ce/china-land-sell.png"><p>上表是我国历年卖地总收入，须知土地是有限资源，总有卖完的一天，面对现在天量的卖地收入，将来应该拿什么来填呢？很明显答案只有一个。</p><p>这里以我比较了解的南京来举个例子说明。目前南京长住人口 850w+ 流动人口 400w+，我斗胆估计一下南京未来 50 年的总人口峰值会在 1600w+ 左右。也就是说距离峰值还有 350w 的增长空间。目前南京每年大约成交 7w 套新房。按三口之家算可以满足 21w 新增人口。排除其他所有因素，南京的住房最多还有 15 年时间就将达到完全饱和。</p><p>拿发达国家的经验来看，有 1/3 的家庭是租房的，因为房产税和租售同权的原因。我们未来肯定是要走相同的路的。这种情况下还会挤出相当一部分的空置住房，再加上人口的自然死亡消减。即使是南京这样的新一线粗略估计最多 10 年也必将饱和。</p><p>继续思考，分税制是全国统一的，假设房产税也是。南京还能撑 10 年，其他的二三四线城市呢？很多城市人口流入都成问题。再次可惜我仍然查不到太多可信的数据。大家凭自身感觉吧。就目前的情况来看，四线及以下的城市别说增长了可能维持都是问题。所以中央有意对农村进行改造，收拢原来分散居住的农民，集中建设住房。常看新闻联播的人应该听过相关新闻。这其中不乏为四线以下城市提供新增人口的想法。</p><p>我在之前的文章中就提到 5 年之内必收房产税，就是基于以上的思考。卖地收入无法负担地方财政之时，房产税必须上马，这是不以人的意志为转移的。</p><h4 id="其他金融工具"><a href="#其他金融工具" class="headerlink" title="其他金融工具"></a>其他金融工具</h4><p>中国股市长久以来无法崛起发挥其应有的金融工具作用，最主要的原因不是国家的监管不利，或是房地产的吸水。而是一个更加简单的原因，在坐的都是垃圾。</p><p>美国公司要想拉升股价都是靠分红，投资者获得收益才看好你，投钱给你（买你的股票）。中国各种骚操作就是没这一项，真是奇葩。</p><p>为何如此，就是因为入场要求卡的太严，那些个变态的入场要求，完全都是在扯淡。在中国要是有家公司真的能达到三年稳定业绩利润增长，它还用得着上市去筹钱！？估计天使和风投早就把门槛都踏烂了。</p><p>注册制能不能改变这个现状我不知道，但至少这是中央在往这个方向努力的表现。如果将来股市或债市或其他金融工具能够真正起到金融工具的作用，那么房子也将真正褪去它的金融属性变成纯粹的房子，纯粹的消费品。</p><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>在 19 年底的时候我认为房价的拐点已经到来，在疫情发生的时候我确定房价的拐点已经到来。直到美国开启了无限量 QE 。未来五年在大水漫灌的前提下，只要不发生重大经济崩溃，房价已不可能再下跌。</p><p>而五年之后土地财政走到尽头，房产税时代开启之后。房价的泡沫必将被挤出。最后再分析一下一套房子的合理价值应该是多少。</p><p>从南京某小区采样举例 165w 的房子租金 3000，租售比 46。按照国际上合理的租售比 30 来计算，合理的价格应在 108w。5 年后假设房产税出台价值回归合理区间如果租金按照每年 5% 的比率上涨，该房的价值应在 137w。这是租售比为 46 的房子的情况，损失为 17%。而租售比为 60 的房子房产税出台后的损失在 38% 左右。</p><p>以上，在下之所以，长时间关注房地产，主要是因为自己有改善的需求。写相关文章也是为自己买房理清思路。这里与大家分享交流，谢谢各位的点赞转发，但若按我的思路投资失败，在下概不负责，谢谢！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随便韶韶 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 随便韶韶 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>共产主义革命的浪潮必将再次席卷世界</title>
       <link href="/2020/05/29/gong-chan-zhu-yi-ge-ming-de-lang-chao-bi-jiang-zai-ci-xi-juan-shi-jie/"/>
       <url>/2020/05/29/gong-chan-zhu-yi-ge-ming-de-lang-chao-bi-jiang-zai-ci-xi-juan-shi-jie/</url>
       
         <content type="html"><![CDATA[<blockquote><p>共产党人不屑于隐瞒自己的观点和意图。他们公开宣布：他们的目的只有用暴力推翻全部现存的社会制度才能达到。让统治阶级在共产主义革命面前发抖吧。无产者在这个革命中失去的只是锁链。他们获得的将是整个世界。全世界无产者，联合起来！<br> </p><p style="text-align: right">—— 共产党宣言</p><p></p></blockquote><p>当今世界有的国家剥夺了人民各种自由，集会自由，言论自由，婚姻自由，甚至玩个游戏的自由都不放过。</p><p>当今世界有的国家给予人民各种自由，自由的病死，自由的枪战，自由的被警察杀害。</p><p>是制度的不同，主义的不同造成了这样的差别吗？不，恰恰是相同的制度，相同的主义造成了相同的灾难。</p><p>资本主义的原生缺陷：</p><ol><li>人与人的关系被金钱（资本主导的生产关系）定义。</li><li>产能过剩必然造成周期性的金融危机。</li><li>向帝国主义不可逆的进发，导致的贫富分化阶级矛盾。</li></ol><p>上述的问题都可以在这些原生缺陷中找到答案，问题的表象不同只是来自于，社会发展的阶段不同以及少量具体国情的差别。</p><p>两国精英忽悠无产阶级的口吻都出奇的一致，国家太大无法施行北欧模式。</p><p>我有个更靠谱的理由，人的劣根性。我就是想住在几千万的豪宅里面，请一票菲佣，饭来张口衣来伸手，并且我的子孙后代都要这样。</p><p>错了吗？到底谁错了？</p><p>我不知道，我可以预见的是。太阳底下没有新鲜事，历史必将重演。</p><p>当巨龙肆虐蹂躏世界，屠龙的勇士必将出现。共产主义革命的浪潮必将再次席卷世界！</p><p>之后勇士变作巨龙，继续今天的故事。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随便韶韶 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 随便韶韶 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>肖氏毒奶</title>
+      <link href="/2020/03/02/xiao-shi-du-nai/"/>
+      <url>/2020/03/02/xiao-shi-du-nai/</url>
+      
+        <content type="html"><![CDATA[<p>在这里把过往和今后的预言整理下，也算存档留证。</p><h3 id="14年预言"><a href="#14年预言" class="headerlink" title="14年预言"></a>14年预言</h3><p>农民土地允许上市交易（验证部分）</p><h3 id="15年预言"><a href="#15年预言" class="headerlink" title="15年预言"></a>15年预言</h3><p>16年房市大涨（验证）</p><h3 id="18年预言"><a href="#18年预言" class="headerlink" title="18年预言"></a>18年预言</h3><p>19年房市横盘或下跌（自行体会）</p><h3 id="19年预言"><a href="#19年预言" class="headerlink" title="19年预言"></a>19年预言</h3><p>20年房市横盘或下跌（待验证）</p><h3 id="2020年3月2日"><a href="#2020年3月2日" class="headerlink" title="2020年3月2日"></a>2020年3月2日</h3><p>美股小规模反弹之后持续下跌，2020年引发美国乃至世界金融危机。</p><p>第三次。。（这条我先吃了）</p><p>房产税五年内出台</p><p>中国房市拐点已到，具体要看房产税落实时间点。</p>]]></content>
       
       
       <categories>
@@ -251,9 +314,9 @@
       
         <tags>
             
-            <tag> 技术日志 </tag>
-            
             <tag> 随便韶韶 </tag>
+            
+            <tag> 技术日志 </tag>
             
         </tags>
       
