@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>http://blog.duandiwang.com/2019/04/16/ajax-jie-kou-jie-shou-wen-jian-pai-keng/</loc>
+        
+        <lastmod>2020-08-27T03:22:44.650Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>http://blog.duandiwang.com/2019/03/26/superset-xue-xi-zhi-lian-jie-mongodb/</loc>
+        
+        <lastmod>2020-08-27T03:22:44.645Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>http://blog.duandiwang.com/2020/08/27/flutter-ying-yong-kai-fa-demo-zhan-shi/</loc>
+        
+        <lastmod>2020-08-27T03:22:08.356Z</lastmod>
+        
+    </url>
+    
+    <url>
         <loc>http://blog.duandiwang.com/2020/07/09/mian-shi-ti-fen-xiang/</loc>
         
         <lastmod>2020-07-09T09:58:49.756Z</lastmod>
@@ -19,13 +40,6 @@
         <loc>http://blog.duandiwang.com/2020/06/24/2020-nian-zhong-fang-jie-fen-xi-yu-ce/</loc>
         
         <lastmod>2020-07-08T01:45:53.503Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>http://blog.duandiwang.com/2020/07/01/huan-ying-ren-gou-xiao-shi-li-cai/</loc>
-        
-        <lastmod>2020-07-02T01:48:06.619Z</lastmod>
         
     </url>
     
@@ -142,13 +156,6 @@
     </url>
     
     <url>
-        <loc>http://blog.duandiwang.com/2019/04/16/ajax-jie-kou-jie-shou-wen-jian-pai-keng/</loc>
-        
-        <lastmod>2019-04-26T09:45:38.586Z</lastmod>
-        
-    </url>
-    
-    <url>
         <loc>http://blog.duandiwang.com/2018/11/23/peng-you-gai-mai-fang-liao/</loc>
         
         <lastmod>2019-04-25T08:08:43.185Z</lastmod>
@@ -187,13 +194,6 @@
         <loc>http://blog.duandiwang.com/2019/02/25/docker-xue-xi-ji-lu/</loc>
         
         <lastmod>2019-04-16T03:17:40.229Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>http://blog.duandiwang.com/2019/03/26/superset-xue-xi-zhi-lian-jie-mongodb/</loc>
-        
-        <lastmod>2019-03-26T03:51:28.509Z</lastmod>
         
     </url>
     
@@ -261,14 +261,14 @@
     </url>
     
     <url>
-        <loc>http://blog.duandiwang.com/2018/05/05/2018-nian-5-yue-5-ri/</loc>
+        <loc>http://blog.duandiwang.com/2018/05/23/2018-nian-5-yue-23-ri/</loc>
         
         <lastmod>2018-09-30T08:20:27.022Z</lastmod>
         
     </url>
     
     <url>
-        <loc>http://blog.duandiwang.com/2018/05/23/2018-nian-5-yue-23-ri/</loc>
+        <loc>http://blog.duandiwang.com/2018/05/05/2018-nian-5-yue-5-ri/</loc>
         
         <lastmod>2018-09-30T08:20:27.022Z</lastmod>
         

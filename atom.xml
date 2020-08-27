@@ -6,15 +6,41 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.duandiwang.com/"/>
-  <updated>2020-07-09T09:58:49.756Z</updated>
+  <updated>2020-08-27T03:22:08.356Z</updated>
   <id>http://blog.duandiwang.com/</id>
   
   <author>
-    <name>Xiao Yang</name>
+    <name>Micheal</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>flutter应用开发demo展示</title>
+    <link href="http://blog.duandiwang.com/2020/08/27/flutter-ying-yong-kai-fa-demo-zhan-shi/"/>
+    <id>http://blog.duandiwang.com/2020/08/27/flutter-ying-yong-kai-fa-demo-zhan-shi/</id>
+    <published>2020-08-27T03:17:05.000Z</published>
+    <updated>2020-08-27T03:22:08.356Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;img
+        
+      
+    
+    </summary>
+    
+      <category term="技术日志" scheme="http://blog.duandiwang.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+    
+      <category term="技术日志" scheme="http://blog.duandiwang.com/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+  </entry>
   
   <entry>
     <title>面试题分享</title>
@@ -37,32 +63,6 @@
     
     </summary>
     
-    
-  </entry>
-  
-  <entry>
-    <title>欢迎认购肖氏理财</title>
-    <link href="http://blog.duandiwang.com/2020/07/01/huan-ying-ren-gou-xiao-shi-li-cai/"/>
-    <id>http://blog.duandiwang.com/2020/07/01/huan-ying-ren-gou-xiao-shi-li-cai/</id>
-    <published>2020-07-01T01:48:35.000Z</published>
-    <updated>2020-07-02T01:48:06.619Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;肖氏保本型高收益结构性存款理财产品（20200730）&quot;&gt;&lt;a href=&quot;#肖氏保本型高收益结构性存款理财产品（20200730）&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="随便韶韶" scheme="http://blog.duandiwang.com/categories/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
-    
-    
-      <category term="随便韶韶" scheme="http://blog.duandiwang.com/tags/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
     
   </entry>
   
@@ -538,7 +538,7 @@
     <link href="http://blog.duandiwang.com/2019/04/16/ajax-jie-kou-jie-shou-wen-jian-pai-keng/"/>
     <id>http://blog.duandiwang.com/2019/04/16/ajax-jie-kou-jie-shou-wen-jian-pai-keng/</id>
     <published>2019-04-16T03:14:45.000Z</published>
-    <updated>2019-04-26T09:45:38.586Z</updated>
+    <updated>2020-08-27T03:22:44.650Z</updated>
     
     <summary type="html">
     

@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>flutter应用开发demo展示</title>
+      <link href="/2020/08/27/flutter-ying-yong-kai-fa-demo-zhan-shi/"/>
+      <url>/2020/08/27/flutter-ying-yong-kai-fa-demo-zhan-shi/</url>
+      
+        <content type="html"><![CDATA[<img src="/2020/08/27/flutter-ying-yong-kai-fa-demo-zhan-shi/pet_plante_demo.gif">]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术日志 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术日志 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>面试题分享</title>
       <link href="/2020/07/09/mian-shi-ti-fen-xiang/"/>
       <url>/2020/07/09/mian-shi-ti-fen-xiang/</url>
@@ -11,31 +36,6 @@
         <content type="html"><![CDATA[<p>今天做了几道面试题，分享一下</p><h3 id="题目一"><a href="#题目一" class="headerlink" title="题目一"></a>题目一</h3><p>解释：</p><pre><code>var a = { name: &quot;hello&quot; }, b = { name: &quot;hi&quot; }function exchange(a, b) {  var c = b; b = a; a = c;  a.name = a.name + &quot;1&quot;;  b.name = b.name + &quot;2&quot;;  console.info(a.name, b.name);}exchange(a, b);console.info(a.name, b.name);</code></pre><p>答：</p><pre><code>var a = {  name: &quot;hello&quot;}, b = { name: &quot;hi&quot; }function exchange(a1, b1) {  /**   * 传参进函数内部，JS 会创建参数的副本，这里用 a1, b1 指代副本，   * 但若参数是对象，拷贝的只是指针。   */  var c = b1;   b1 = a1; // b1 等于 a  a1 = c; // a1 等于 b  a1.name = a1.name + &quot;1&quot;; // b.name 等于 hi1  b1.name = b1.name + &quot;2&quot;; // a.name 等于 hello2  /**   * a1.name 被赋值的同时， b.name 也被赋值，因为此时 a1 和 b 指向的是同一个对象。   * 下面执行 console.log(a1 === b) 可以确定   */  console.log(a1 === b)  // a1.name 等于 b.name 等于 hi1  // b1.name 等于 a.name 等于 hello2   console.info(a1.name, b1.name);}exchange(a, b); // hi1 hello2console.info(a.name, b.name); // hello2 hi1</code></pre><h3 id="题目二"><a href="#题目二" class="headerlink" title="题目二"></a>题目二</h3><p>时间比较题:输入一组时间字符串，求出这组时间中的间隔最小的时间差（分），如输入 “23:59”,”00:00”，返回1 ; 假设输入数组的长度大于2且小于2000; (本题可以写伪代码)</p><pre><code>/** * @param {string[]} timePoints * @return {number} */var findMinDifference = function (timePoints) {  const timeTicks = new Array(1440).fill(0);  for (let point of timePoints) {    const [hour, min] = point.split(&#39;:&#39;);    const minutes = parseInt(hour) * 60 + parseInt(min);    if (timeTicks[minutes] === 1) {      return 0;     }    timeTicks[minutes] += 1  }  let first;  let prev;  let min = Infinity;  for (let i = 0; i &lt; timeTicks.length; i++) {    if (timeTicks[i] === 1) {      if (first === undefined) {        first = i;      }      if (prev !== undefined) {        // 比较两组存在的时间之间的差值        min = Math.min(i - prev, min);      }      prev = i;    }  }  // 比较头尾的差值  return Math.min(min, 1440 - prev + first);};var result = findMinDifference([&#39;00:00&#39;, &#39;00:01&#39;, &#39;12:59&#39;, &#39;23:58&#39;,])console.log(result) // 1</code></pre><h3 id="题目三"><a href="#题目三" class="headerlink" title="题目三"></a>题目三</h3><p>假如有一个接口getUersById(userId),返回用户信息的json; 要求getUersById能缓存用户信息，即同样的userId请求仅向服务器发送一次,其余从内存中获取,以提高效率。 高阶要求: 假设有getUersById，getShoolInfoById, getDeviceInfoById … 都需要缓存结果，提供一个通用的 辅助 函数。</p><pre><code>function memoize(func) {  var memoized = function() {    var args = arguments,        key = args[0] || &#39;cache&#39;,        cache = memoized.cache;    if (Object.keys(cache).indexOf(key.toString()) &gt; -1) {      return cache[key];    }    var result = func.apply(this, args);    memoized.cache[key] = result || cache;    return result;  };  memoized.cache = new Object();  return memoized;}// test codevar userId = 1function getUserId() {  userId ++  return userId};var meGetuserId = memoize(getUserId)console.log(meGetuserId()) // 2console.log(meGetuserId()) // 2console.log(meGetuserId()) // 2</code></pre><h3 id="题目四"><a href="#题目四" class="headerlink" title="题目四"></a>题目四</h3><ol start="4"><li>输入一个数字, 交换两位数字, 最多交换一次, 输出可以得到的最大的数字; 如输入: 1234 交换 1,4后, 得到4231;</li></ol><pre><code>var maximumSwap = function (num) {  var numStr = num.toString();  for (var i = 0; i &lt; numStr.length; i++) {    var nbr = numStr[i];    var index = i;    for (var x = numStr.length - 1; x &gt; i; x--) {      if (numStr[x] &gt; nbr) {        nbr = numStr[x];        index = x;        console.log(&#39;待交换 nbr&#39;, nbr)      }    }    if (nbr != numStr[i]) {      var arr = numStr.split(&#39;&#39;);      var tmp = arr[i];      arr[i] = arr[index];      arr[index] = tmp;      console.log(&#39;交换后数&#39;, parseInt(arr.join(&#39;&#39;)))      return parseInt(arr.join(&#39;&#39;));    }  }  return num;};// test codeconsole.log(maximumSwap(5987)) // 9587</code></pre>]]></content>
       
       
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>欢迎认购肖氏理财</title>
-      <link href="/2020/07/01/huan-ying-ren-gou-xiao-shi-li-cai/"/>
-      <url>/2020/07/01/huan-ying-ren-gou-xiao-shi-li-cai/</url>
-      
-        <content type="html"><![CDATA[<h3 id="肖氏保本型高收益结构性存款理财产品（20200730）"><a href="#肖氏保本型高收益结构性存款理财产品（20200730）" class="headerlink" title="肖氏保本型高收益结构性存款理财产品（20200730）"></a>肖氏保本型高收益结构性存款理财产品（20200730）</h3><p><strong>类型：</strong> 保本型</p><p><strong>风险：</strong> 无风险</p><p><strong>收益率：</strong> 4.5%（年）</p><p><strong>认购日期：</strong> 即日起</p><p><strong>到期日：</strong> 2023年4月30日</p><p>两倍于3年期定期存款的收益率，市面上同档次收益率的产品都存在较高风险，如此高收益又保本并且保收益的产品仅此一家，错过此生再无。你还犹豫什么，赶紧微信联系我订购吧！</p><h3 id="详细介绍"><a href="#详细介绍" class="headerlink" title="详细介绍"></a>详细介绍</h3><p>在下正准备购房总价预计 270w 首付 135 公积金贷 100，商业 需要贷 <strong>35w</strong>。这 35w 的银行利率一般在 5% 以上。我与其问银行借钱还不如直接问朋友借，借我的还能当买个理财。这样你有收益我省钱，大家好。</p><p>熟悉我的朋友应该都知道我在来安县有套碧桂园城市花园的房子，目前市场价应在 60w 左右，2023年4月之前我会把这个房卖掉，还钱。完全无风险。我会写好借条给各位，借条上注明 4.5% 利息。并且可以把这个房子作为抵押物写上去。</p><p>另外考虑到每年的正常收入，期间肯定会提前还一部分，大概每年 <strong>10w</strong> 左右。有急用的朋友可以提前还款，利息正常结算。</p><p>因为商业贷需要 35w，所以总共借款上限是 35w。有兴趣的朋友请联系我。起购不限，一万块都是帮我省钱了，十分需要，谢谢！若能凑齐 35w 不用跟银行借款大家就是帮了我大忙了，先行谢过！</p><p>最后我想说明一下 4.5% 的利率意味着什么，您甚至可以用银行借款不花一分钱来套利！！！</p><img src="/2020/07/01/huan-ying-ren-gou-xiao-shi-li-cai/bank-Credit-rate.jpg"><p><strong>PS:所有亲戚朋友一律 4.5%，我绝对不因为关系近就要求降低利率。</strong></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 随便韶韶 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 随便韶韶 </tag>
-            
-        </tags>
       
     </entry>
     
