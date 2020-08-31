@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>http://blog.duandiwang.com/2020/08/27/flutter-ying-yong-kai-fa-demo-zhan-shi/</loc>
+        
+        <lastmod>2020-08-31T02:11:05.027Z</lastmod>
+        
+    </url>
+    
+    <url>
         <loc>http://blog.duandiwang.com/2019/04/16/ajax-jie-kou-jie-shou-wen-jian-pai-keng/</loc>
         
         <lastmod>2020-08-27T03:22:44.650Z</lastmod>
@@ -12,13 +19,6 @@
         <loc>http://blog.duandiwang.com/2019/03/26/superset-xue-xi-zhi-lian-jie-mongodb/</loc>
         
         <lastmod>2020-08-27T03:22:44.645Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>http://blog.duandiwang.com/2020/08/27/flutter-ying-yong-kai-fa-demo-zhan-shi/</loc>
-        
-        <lastmod>2020-08-27T03:22:08.356Z</lastmod>
         
     </url>
     
