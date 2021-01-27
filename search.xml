@@ -29,6 +29,31 @@
     
     
     <entry>
+      <title>JS 装饰器，一篇就够</title>
+      <link href="/js-zhuang-shi-qi-yi-pian-jiu-gou/"/>
+      <url>/js-zhuang-shi-qi-yi-pian-jiu-gou/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://segmentfault.com/a/1190000014495089" target="_blank" rel="noopener">原文地址</a></p><h3 id="相关历史"><a href="#相关历史" class="headerlink" title="相关历史"></a>相关历史</h3><p>三年多以前，Yehuda Katz 首先提出了装饰器的概念。TypeScript 在 1.5 版本（2015）中发布了对装饰器的支持以及许多 ES6 的相关特性。 一些主流框架，如 Angular 和 MobX 等开始使用它们来增加开发者体验：这使得装饰器非常受欢迎，并给社区带来了一种已经稳定的错觉。</p><p>Babel 第一次实现装饰器是在 v5 版本中，但由于该提案仍在不断变化，则在 Babel v6 中移除了它们。Logan Smyth 创建了一个非官方的插件(babel-plugin-transform-decorators-legacy)，它延用了 Babel 5 中装饰器的行为；在 Babel 7 的 alpha 版本发布期间该库被移至 Babel 官方的仓库中。当时该插件仍使用旧的装饰器语法，因为新提案尚未明确。</p><p>自那时起，Daniel Ehrenberg、Brian Terlson 以及 Yehuda Katz 就一起成为了该提案的共同作者，该提案几乎已被完全重写。当然并非一切事情都已确定，因为至今尚未出现符合规范的实现方式。</p><p>Babel 7.0.0 为 @babel/plugin-proposal-decorators 插件引入了新的标识：legacy 选项，其唯一有效值为 true。这种突破性变更是必要的，它为提案从第一阶段到当前阶段平稳过渡作铺垫。</p><p>在 Babel 7.1.0 中，我们引入了对这个新提案的支持，并且当 @babel/plugin-proposal-decorators 插件被使用时，默认启用。而在 Babel 7.0.0 中如果我们不设置 legacy: true 选项，默认情况下就不能使用该语义（相当于 legacy: false）。</p><p>新提案同时支持使用装饰器实现私有字段（private fields）和私有方法（private methods）。我们尚未在 Babel 中实现此功能（在每个 class 中使用装饰器或私有元素），但我们会很快去出现它。</p><h3 id="装饰器函数相关参数"><a href="#装饰器函数相关参数" class="headerlink" title="装饰器函数相关参数"></a>装饰器函数相关参数</h3><p>新提案提出的第三个重要变化与传递给装饰器函数参数相关。</p><p>在提案的第一个版本中，类元素装饰器接收的参数分别为目标类（或对象），key 以及属性描述符 - 与传递给 Object.defineProperty 的形式类似。类装饰器将目标构造函数（constructor）作为唯一参数。</p><p>新的装饰器提案更加强大：元素装饰器会接收一个对象，该对象除更改属性描述符外，还允许更改 key 值，可以赋值（static，prototype 或者 own），以及元素的类型（field 或 method）。它们还可以创建其他属性并在装饰类上定义运行函数（完成器）。</p><p>类装饰器接收一个包含类描述符的对象，使得类在创建之前修改它们成为可能。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 转帖 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 转帖 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>超越“双十一” | ebay支付核心账务系统架构演进之路</title>
       <link href="/chao-yue-shuang-shi-yi-ebay-zhi-fu-he-xin-zhang-wu-xi-tong-jia-gou-yan-jin-zhi-lu/"/>
       <url>/chao-yue-shuang-shi-yi-ebay-zhi-fu-he-xin-zhang-wu-xi-tong-jia-gou-yan-jin-zhi-lu/</url>
