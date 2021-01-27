@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.duandiwang.com/"/>
-  <updated>2020-08-31T02:11:05.027Z</updated>
+  <updated>2021-01-27T02:39:36.965Z</updated>
   <id>http://blog.duandiwang.com/</id>
   
   <author>
@@ -17,11 +17,117 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>前端面试提纲</title>
+    <link href="http://blog.duandiwang.com/qian-duan-mian-shi-ti-gang/"/>
+    <id>http://blog.duandiwang.com/qian-duan-mian-shi-ti-gang/</id>
+    <published>2021-01-27T01:52:18.000Z</published>
+    <updated>2021-01-27T02:39:36.965Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;样式CSS&quot;&gt;&lt;a href=&quot;#样式CSS&quot; class=&quot;headerlink&quot; title=&quot;样式CSS&quot;&gt;&lt;/a&gt;样式CSS&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;实现垂直居中&lt;/li&gt;
+&lt;li&gt;自适应布局 flex
+        
+      
+    
+    </summary>
+    
+      <category term="技术日志" scheme="http://blog.duandiwang.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+    
+      <category term="技术日志" scheme="http://blog.duandiwang.com/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>超越“双十一” | ebay支付核心账务系统架构演进之路</title>
+    <link href="http://blog.duandiwang.com/chao-yue-shuang-shi-yi-ebay-zhi-fu-he-xin-zhang-wu-xi-tong-jia-gou-yan-jin-zhi-lu/"/>
+    <id>http://blog.duandiwang.com/chao-yue-shuang-shi-yi-ebay-zhi-fu-he-xin-zhang-wu-xi-tong-jia-gou-yan-jin-zhi-lu/</id>
+    <published>2020-11-11T09:18:12.000Z</published>
+    <updated>2020-11-27T03:02:55.681Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="转帖" scheme="http://blog.duandiwang.com/categories/%E8%BD%AC%E5%B8%96/"/>
+    
+    
+      <category term="转帖" scheme="http://blog.duandiwang.com/tags/%E8%BD%AC%E5%B8%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Raft算法</title>
+    <link href="http://blog.duandiwang.com/raft-suan-fa/"/>
+    <id>http://blog.duandiwang.com/raft-suan-fa/</id>
+    <published>2020-11-11T08:36:10.000Z</published>
+    <updated>2020-11-27T03:02:55.676Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/8e4bbe7e276c&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="转帖" scheme="http://blog.duandiwang.com/categories/%E8%BD%AC%E5%B8%96/"/>
+    
+    
+      <category term="转帖" scheme="http://blog.duandiwang.com/tags/%E8%BD%AC%E5%B8%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如果 Safari 做不到对，快有何用？</title>
+    <link href="http://blog.duandiwang.com/ru-guo-safari-zuo-bu-dao-dui-kuai-you-he-yong/"/>
+    <id>http://blog.duandiwang.com/ru-guo-safari-zuo-bu-dao-dui-kuai-you-he-yong/</id>
+    <published>2020-10-29T08:22:44.000Z</published>
+    <updated>2020-11-09T08:56:30.330Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;一个困扰了一周的-bug&quot;&gt;&lt;a href=&quot;#一个困扰了一周的-bug&quot; class=&quot;headerlink&quot; title=&quot;一个困扰了一周的 bug&quot;&gt;&lt;/a&gt;一个困扰了一周的 bug&lt;/h3&gt;&lt;p&gt;2016 年的一天，当我们发现 iPhone
+        
+      
+    
+    </summary>
+    
+      <category term="转帖" scheme="http://blog.duandiwang.com/categories/%E8%BD%AC%E5%B8%96/"/>
+    
+    
+      <category term="转帖" scheme="http://blog.duandiwang.com/tags/%E8%BD%AC%E5%B8%96/"/>
+    
+  </entry>
+  
+  <entry>
     <title>flutter应用开发demo展示</title>
-    <link href="http://blog.duandiwang.com/2020/08/27/flutter-ying-yong-kai-fa-demo-zhan-shi/"/>
-    <id>http://blog.duandiwang.com/2020/08/27/flutter-ying-yong-kai-fa-demo-zhan-shi/</id>
+    <link href="http://blog.duandiwang.com/flutter-ying-yong-kai-fa-demo-zhan-shi/"/>
+    <id>http://blog.duandiwang.com/flutter-ying-yong-kai-fa-demo-zhan-shi/</id>
     <published>2020-08-27T03:17:05.000Z</published>
-    <updated>2020-08-31T02:11:05.027Z</updated>
+    <updated>2020-11-09T08:56:30.394Z</updated>
     
     <summary type="html">
     
@@ -44,8 +150,8 @@
   
   <entry>
     <title>面试题分享</title>
-    <link href="http://blog.duandiwang.com/2020/07/09/mian-shi-ti-fen-xiang/"/>
-    <id>http://blog.duandiwang.com/2020/07/09/mian-shi-ti-fen-xiang/</id>
+    <link href="http://blog.duandiwang.com/mian-shi-ti-fen-xiang/"/>
+    <id>http://blog.duandiwang.com/mian-shi-ti-fen-xiang/</id>
     <published>2020-07-09T09:56:31.000Z</published>
     <updated>2020-07-09T09:58:49.756Z</updated>
     
@@ -68,8 +174,8 @@
   
   <entry>
     <title>2020年中房价分析，预测</title>
-    <link href="http://blog.duandiwang.com/2020/06/24/2020-nian-zhong-fang-jie-fen-xi-yu-ce/"/>
-    <id>http://blog.duandiwang.com/2020/06/24/2020-nian-zhong-fang-jie-fen-xi-yu-ce/</id>
+    <link href="http://blog.duandiwang.com/2020-nian-zhong-fang-jie-fen-xi-yu-ce/"/>
+    <id>http://blog.duandiwang.com/2020-nian-zhong-fang-jie-fen-xi-yu-ce/</id>
     <published>2020-06-24T10:10:23.000Z</published>
     <updated>2020-07-08T01:45:53.503Z</updated>
     
@@ -95,8 +201,8 @@
   
   <entry>
     <title>共产主义革命的浪潮必将再次席卷世界</title>
-    <link href="http://blog.duandiwang.com/2020/05/29/gong-chan-zhu-yi-ge-ming-de-lang-chao-bi-jiang-zai-ci-xi-juan-shi-jie/"/>
-    <id>http://blog.duandiwang.com/2020/05/29/gong-chan-zhu-yi-ge-ming-de-lang-chao-bi-jiang-zai-ci-xi-juan-shi-jie/</id>
+    <link href="http://blog.duandiwang.com/gong-chan-zhu-yi-ge-ming-de-lang-chao-bi-jiang-zai-ci-xi-juan-shi-jie/"/>
+    <id>http://blog.duandiwang.com/gong-chan-zhu-yi-ge-ming-de-lang-chao-bi-jiang-zai-ci-xi-juan-shi-jie/</id>
     <published>2020-05-29T02:14:44.000Z</published>
     <updated>2020-05-29T02:47:32.760Z</updated>
     
@@ -122,8 +228,8 @@
   
   <entry>
     <title>肖氏毒奶</title>
-    <link href="http://blog.duandiwang.com/2020/03/02/xiao-shi-du-nai/"/>
-    <id>http://blog.duandiwang.com/2020/03/02/xiao-shi-du-nai/</id>
+    <link href="http://blog.duandiwang.com/xiao-shi-du-nai/"/>
+    <id>http://blog.duandiwang.com/xiao-shi-du-nai/</id>
     <published>2020-03-02T03:25:22.000Z</published>
     <updated>2020-07-08T01:45:53.504Z</updated>
     
@@ -150,8 +256,8 @@
   
   <entry>
     <title>N1小钢炮固件使用docker-ui安装openwrt</title>
-    <link href="http://blog.duandiwang.com/2020/01/17/n1-xiao-gang-pao-gu-jian-shi-yong-docker-ui-an-zhuang-openwrt/"/>
-    <id>http://blog.duandiwang.com/2020/01/17/n1-xiao-gang-pao-gu-jian-shi-yong-docker-ui-an-zhuang-openwrt/</id>
+    <link href="http://blog.duandiwang.com/n1-xiao-gang-pao-gu-jian-shi-yong-docker-ui-an-zhuang-openwrt/"/>
+    <id>http://blog.duandiwang.com/n1-xiao-gang-pao-gu-jian-shi-yong-docker-ui-an-zhuang-openwrt/</id>
     <published>2020-01-17T12:00:14.000Z</published>
     <updated>2020-01-17T09:31:17.503Z</updated>
     
@@ -176,8 +282,8 @@
   
   <entry>
     <title>罗老师语录</title>
-    <link href="http://blog.duandiwang.com/2019/12/17/luo-lao-shi-yu-lu/"/>
-    <id>http://blog.duandiwang.com/2019/12/17/luo-lao-shi-yu-lu/</id>
+    <link href="http://blog.duandiwang.com/luo-lao-shi-yu-lu/"/>
+    <id>http://blog.duandiwang.com/luo-lao-shi-yu-lu/</id>
     <published>2019-12-17T01:30:20.000Z</published>
     <updated>2020-01-03T09:02:46.435Z</updated>
     
@@ -202,8 +308,8 @@
   
   <entry>
     <title>RWBY才是真正的女权主义影片</title>
-    <link href="http://blog.duandiwang.com/2019/11/25/rwby-cai-shi-zhen-zheng-de-nu-quan-zhu-yi-ying-pian/"/>
-    <id>http://blog.duandiwang.com/2019/11/25/rwby-cai-shi-zhen-zheng-de-nu-quan-zhu-yi-ying-pian/</id>
+    <link href="http://blog.duandiwang.com/rwby-cai-shi-zhen-zheng-de-nu-quan-zhu-yi-ying-pian/"/>
+    <id>http://blog.duandiwang.com/rwby-cai-shi-zhen-zheng-de-nu-quan-zhu-yi-ying-pian/</id>
     <published>2019-11-25T09:15:25.000Z</published>
     <updated>2020-01-03T09:04:17.665Z</updated>
     
@@ -230,8 +336,8 @@
   
   <entry>
     <title>2019房价分析，未来房价预测</title>
-    <link href="http://blog.duandiwang.com/2019/11/14/2019-fang-jie-fen-xi/"/>
-    <id>http://blog.duandiwang.com/2019/11/14/2019-fang-jie-fen-xi/</id>
+    <link href="http://blog.duandiwang.com/2019-fang-jie-fen-xi/"/>
+    <id>http://blog.duandiwang.com/2019-fang-jie-fen-xi/</id>
     <published>2019-11-14T00:55:11.000Z</published>
     <updated>2020-01-03T09:01:21.574Z</updated>
     
@@ -256,8 +362,8 @@
   
   <entry>
     <title>airpods-pro使用体验</title>
-    <link href="http://blog.duandiwang.com/2019/11/08/airpods-pro-shi-yong-ti-yan/"/>
-    <id>http://blog.duandiwang.com/2019/11/08/airpods-pro-shi-yong-ti-yan/</id>
+    <link href="http://blog.duandiwang.com/airpods-pro-shi-yong-ti-yan/"/>
+    <id>http://blog.duandiwang.com/airpods-pro-shi-yong-ti-yan/</id>
     <published>2019-11-08T08:41:25.000Z</published>
     <updated>2020-01-03T09:05:34.031Z</updated>
     
@@ -283,8 +389,8 @@
   
   <entry>
     <title>原生面经从初级到高级</title>
-    <link href="http://blog.duandiwang.com/2019/10/25/yuan-sheng-mian-jing-cong-chu-ji-dao-gao-ji/"/>
-    <id>http://blog.duandiwang.com/2019/10/25/yuan-sheng-mian-jing-cong-chu-ji-dao-gao-ji/</id>
+    <link href="http://blog.duandiwang.com/yuan-sheng-mian-jing-cong-chu-ji-dao-gao-ji/"/>
+    <id>http://blog.duandiwang.com/yuan-sheng-mian-jing-cong-chu-ji-dao-gao-ji/</id>
     <published>2019-10-25T09:58:56.000Z</published>
     <updated>2019-11-08T08:43:01.406Z</updated>
     
@@ -311,8 +417,8 @@
   
   <entry>
     <title>自制ant.design表格组件教程</title>
-    <link href="http://blog.duandiwang.com/2019/10/11/zi-zhi-ant-design-biao-ge-zu-jian-jiao-cheng/"/>
-    <id>http://blog.duandiwang.com/2019/10/11/zi-zhi-ant-design-biao-ge-zu-jian-jiao-cheng/</id>
+    <link href="http://blog.duandiwang.com/zi-zhi-ant-design-biao-ge-zu-jian-jiao-cheng/"/>
+    <id>http://blog.duandiwang.com/zi-zhi-ant-design-biao-ge-zu-jian-jiao-cheng/</id>
     <published>2019-10-11T02:25:23.000Z</published>
     <updated>2019-10-17T02:03:13.422Z</updated>
     
@@ -343,8 +449,8 @@
   
   <entry>
     <title>联通G2-40盒子刷机教程</title>
-    <link href="http://blog.duandiwang.com/2019/09/27/lian-tong-g2-40-he-zi-shua-ji-jiao-cheng/"/>
-    <id>http://blog.duandiwang.com/2019/09/27/lian-tong-g2-40-he-zi-shua-ji-jiao-cheng/</id>
+    <link href="http://blog.duandiwang.com/lian-tong-g2-40-he-zi-shua-ji-jiao-cheng/"/>
+    <id>http://blog.duandiwang.com/lian-tong-g2-40-he-zi-shua-ji-jiao-cheng/</id>
     <published>2019-09-27T02:58:15.000Z</published>
     <updated>2019-10-10T09:00:46.525Z</updated>
     
@@ -371,8 +477,8 @@
   
   <entry>
     <title>新西伯利亚市《开拓月球和火星》</title>
-    <link href="http://blog.duandiwang.com/2019/08/27/xin-xi-bo-li-ya-shi-kai-tuo-yue-qiu-he-huo-xing/"/>
-    <id>http://blog.duandiwang.com/2019/08/27/xin-xi-bo-li-ya-shi-kai-tuo-yue-qiu-he-huo-xing/</id>
+    <link href="http://blog.duandiwang.com/xin-xi-bo-li-ya-shi-kai-tuo-yue-qiu-he-huo-xing/"/>
+    <id>http://blog.duandiwang.com/xin-xi-bo-li-ya-shi-kai-tuo-yue-qiu-he-huo-xing/</id>
     <published>2019-08-27T01:38:55.000Z</published>
     <updated>2019-10-10T09:01:54.262Z</updated>
     
@@ -399,8 +505,8 @@
   
   <entry>
     <title>Grafana调研和Superset对比</title>
-    <link href="http://blog.duandiwang.com/2019/06/14/grafana-diao-yan-he-superset-dui-bi/"/>
-    <id>http://blog.duandiwang.com/2019/06/14/grafana-diao-yan-he-superset-dui-bi/</id>
+    <link href="http://blog.duandiwang.com/grafana-diao-yan-he-superset-dui-bi/"/>
+    <id>http://blog.duandiwang.com/grafana-diao-yan-he-superset-dui-bi/</id>
     <published>2019-06-14T09:52:37.000Z</published>
     <updated>2019-06-14T09:58:57.618Z</updated>
     
@@ -425,8 +531,8 @@
   
   <entry>
     <title>csv文件通过node.js转存postresql数据库</title>
-    <link href="http://blog.duandiwang.com/2019/05/15/csv-wen-jian-tong-guo-node-js-zhuan-cun-postresql-shu-ju-ku/"/>
-    <id>http://blog.duandiwang.com/2019/05/15/csv-wen-jian-tong-guo-node-js-zhuan-cun-postresql-shu-ju-ku/</id>
+    <link href="http://blog.duandiwang.com/csv-wen-jian-tong-guo-node-js-zhuan-cun-postresql-shu-ju-ku/"/>
+    <id>http://blog.duandiwang.com/csv-wen-jian-tong-guo-node-js-zhuan-cun-postresql-shu-ju-ku/</id>
     <published>2019-05-15T08:29:24.000Z</published>
     <updated>2019-06-14T09:26:41.037Z</updated>
     
@@ -447,119 +553,6 @@
     
     
       <category term="技术日志" scheme="http://blog.duandiwang.com/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>买不起airPods怎么办？</title>
-    <link href="http://blog.duandiwang.com/2019/04/30/mai-bu-qi-airpods-zen-me-ban/"/>
-    <id>http://blog.duandiwang.com/2019/04/30/mai-bu-qi-airpods-zen-me-ban/</id>
-    <published>2019-04-30T09:21:55.000Z</published>
-    <updated>2020-01-03T09:06:30.967Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;redmi-airdots-你值得拥有&quot;&gt;&lt;a href=&quot;#redmi-airdots-你值得拥有&quot; class=&quot;headerlink&quot; title=&quot;redmi airdots 你值得拥有&quot;&gt;&lt;/a&gt;redmi airdots
-        
-      
-    
-    </summary>
-    
-      <category term="随便韶韶" scheme="http://blog.duandiwang.com/categories/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
-    
-    
-      <category term="随便韶韶" scheme="http://blog.duandiwang.com/tags/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
-    
-      <category term="测评" scheme="http://blog.duandiwang.com/tags/%E6%B5%8B%E8%AF%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ajax接口接收文件排坑（二）</title>
-    <link href="http://blog.duandiwang.com/2019/04/26/ajax-jie-kou-jie-shou-wen-jian-pai-keng-er/"/>
-    <id>http://blog.duandiwang.com/2019/04/26/ajax-jie-kou-jie-shou-wen-jian-pai-keng-er/</id>
-    <published>2019-04-26T09:46:49.000Z</published>
-    <updated>2019-04-28T02:13:31.802Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;错误处理问题&quot;&gt;&lt;a href=&quot;#错误处理问题&quot; class=&quot;headerlink&quot; title=&quot;错误处理问题&quot;&gt;&lt;/a&gt;错误处理问题&lt;/h3&gt;&lt;p&gt;假设后端传回了一段包含错误message字段的JSON文件，如果将responseType 设置为
-        
-      
-    
-    </summary>
-    
-      <category term="技术日志" scheme="http://blog.duandiwang.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
-    
-    
-      <category term="技术日志" scheme="http://blog.duandiwang.com/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>谁能真正make American greate again？</title>
-    <link href="http://blog.duandiwang.com/2019/04/24/shui-neng-zhen-zheng-make-american-greate-again/"/>
-    <id>http://blog.duandiwang.com/2019/04/24/shui-neng-zhen-zheng-make-american-greate-again/</id>
-    <published>2019-04-24T03:14:45.000Z</published>
-    <updated>2019-04-28T02:39:35.952Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;img src=&quot;/images/Andrew-Yang.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;今天第一次知道杨安泽(Andrew
-        
-      
-    
-    </summary>
-    
-      <category term="妄人妄语" scheme="http://blog.duandiwang.com/categories/%E5%A6%84%E4%BA%BA%E5%A6%84%E8%AF%AD/"/>
-    
-    
-      <category term="政治" scheme="http://blog.duandiwang.com/tags/%E6%94%BF%E6%B2%BB/"/>
-    
-      <category term="美国" scheme="http://blog.duandiwang.com/tags/%E7%BE%8E%E5%9B%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ajax接口接收文件排坑(一)</title>
-    <link href="http://blog.duandiwang.com/2019/04/16/ajax-jie-kou-jie-shou-wen-jian-pai-keng/"/>
-    <id>http://blog.duandiwang.com/2019/04/16/ajax-jie-kou-jie-shou-wen-jian-pai-keng/</id>
-    <published>2019-04-16T03:14:45.000Z</published>
-    <updated>2020-08-27T03:22:44.650Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;先说结论&quot;&gt;&lt;a href=&quot;#先说结论&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="技术日志" scheme="http://blog.duandiwang.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
-    
-    
-      <category term="技术日志" scheme="http://blog.duandiwang.com/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
-    
-      <category term="ajax" scheme="http://blog.duandiwang.com/tags/ajax/"/>
-    
-      <category term="responseType" scheme="http://blog.duandiwang.com/tags/responseType/"/>
     
   </entry>
   
