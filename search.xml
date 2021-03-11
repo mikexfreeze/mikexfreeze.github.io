@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>前端笔试选择题</title>
+      <link href="/qian-duan-bi-shi-xuan-ze-ti/"/>
+      <url>/qian-duan-bi-shi-xuan-ze-ti/</url>
+      
+        <content type="html"><![CDATA[<h3 id="单选题"><a href="#单选题" class="headerlink" title="单选题"></a>单选题</h3><h5 id="1、控制台输出的结果是？"><a href="#1、控制台输出的结果是？" class="headerlink" title="1、控制台输出的结果是？"></a>1、控制台输出的结果是？</h5><pre><code>var arraynew = new Array(5)arraynew[1]=1arraynew[5]=2console.log(arraynew.length)</code></pre><p>A、0<br>B、1<br>C、5<br>D、6</p><h5 id="2、在-css-选择器当中，优先级排序正确的是（）"><a href="#2、在-css-选择器当中，优先级排序正确的是（）" class="headerlink" title="2、在 css 选择器当中，优先级排序正确的是（）"></a>2、在 css 选择器当中，优先级排序正确的是（）</h5><p>A、id选择器&gt;标签选择器&gt;类选择器<br>B、标签选择器&gt;类选择器&gt;id选择器<br>C、类选择器&gt;标签选择器&gt;id选择器<br>D、id选择器&gt;类选择器&gt;标签选择器</p><h5 id="3、CSS-样式，下面哪一个元素能够达到最大宽度，且前后各有一个换行？（-）"><a href="#3、CSS-样式，下面哪一个元素能够达到最大宽度，且前后各有一个换行？（-）" class="headerlink" title="3、CSS 样式，下面哪一个元素能够达到最大宽度，且前后各有一个换行？（ ）"></a>3、CSS 样式，下面哪一个元素能够达到最大宽度，且前后各有一个换行？（ ）</h5><p>A、Block Element<br>B、Square Element<br>C、Side Element<br>D、Box Elemen</p><h5 id="4、JavaScript中window对象的子对象不包含以下哪个对象？（-）"><a href="#4、JavaScript中window对象的子对象不包含以下哪个对象？（-）" class="headerlink" title="4、JavaScript中window对象的子对象不包含以下哪个对象？（ ）"></a>4、JavaScript中window对象的子对象不包含以下哪个对象？（ ）</h5><p>A. document   B. self   C. history   D. message</p><h5 id="5、下边代码输出的结果是（-）"><a href="#5、下边代码输出的结果是（-）" class="headerlink" title="5、下边代码输出的结果是（ ）"></a>5、下边代码输出的结果是（ ）</h5><pre><code>var val = &#39;smtg&#39;;console.log(&#39;Value is &#39; + (val === &#39;smtg&#39;) ? &#39;Something&#39; : &#39;Nothing&#39;);</code></pre><p>A: Value is Something<br>B: Value is Nothing<br>C: NaN<br>D: other</p><h5 id="6、下边代码输出的结果是（-）"><a href="#6、下边代码输出的结果是（-）" class="headerlink" title="6、下边代码输出的结果是（ ）"></a>6、下边代码输出的结果是（ ）</h5><pre><code>var name = &#39;World!&#39;;(function () {    if (typeof name === &#39;undefined&#39;) {        var name = &#39;Jack&#39;;        console.log(&#39;Goodbye &#39; + name);    } else {        console.log(&#39;Hello &#39; + name);    }})(); </code></pre><p>A: Goodbye Jack<br>B: Hello Jack<br>C: Hello undefined<br>D: Hello World</p><h5 id="7、下列事件哪个不是由鼠标触发的事件（）"><a href="#7、下列事件哪个不是由鼠标触发的事件（）" class="headerlink" title="7、下列事件哪个不是由鼠标触发的事件（）"></a>7、下列事件哪个不是由鼠标触发的事件（）</h5><p>A、click<br>B、contextmenu<br>C、mouseout<br>D、keydown</p><h5 id="8、下列不属于javascript内置对象的是（-）"><a href="#8、下列不属于javascript内置对象的是（-）" class="headerlink" title="8、下列不属于javascript内置对象的是（ ）"></a>8、下列不属于javascript内置对象的是（ ）</h5><p>A、Math<br>B、Date<br>C、RegExp<br>D、Window<br>E、Error</p><h5 id="9、以下运行结果（-）"><a href="#9、以下运行结果（-）" class="headerlink" title="9、以下运行结果（ ）"></a>9、以下运行结果（ ）</h5><pre><code>for(var i = 0; i &lt; 10; i++) {    setTimeout(function() {        console.log(i);    }, 1000);}</code></pre><p>A、0–9<br>B、10个10<br>C、10个9<br>D、无限循环</p><h3 id="多选题"><a href="#多选题" class="headerlink" title="多选题"></a>多选题</h3><h5 id="10、input元素的type属性的取值可以是"><a href="#10、input元素的type属性的取值可以是" class="headerlink" title="10、input元素的type属性的取值可以是( )"></a>10、input元素的type属性的取值可以是( )</h5><p>A、image<br>B、checkbox<br>C、button<br>D、select</p><h5 id="11、下列关于web页面级优化描述最正确的是（-）"><a href="#11、下列关于web页面级优化描述最正确的是（-）" class="headerlink" title="11、下列关于web页面级优化描述最正确的是（ ）"></a>11、下列关于web页面级优化描述最正确的是（ ）</h5><p>A、减少HTTP请求的次数<br>B、进行资源合拼和压缩<br>C、Inline images<br>D、将外部脚本置于低端<br>E、减少不必要的HTTP跳转<br>F、以上描述都对</p><h5 id="12、函数的调用方式有哪些：（-）"><a href="#12、函数的调用方式有哪些：（-）" class="headerlink" title="12、函数的调用方式有哪些：（ ）"></a>12、函数的调用方式有哪些：（ ）</h5><p>A、直接调用<br>B、作为对象方法调用<br>C、作为构造函数调用<br>D、通过call和apply方法调用</p><h3 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h3><p><a href="https://juejin.cn/post/6844904040342487048" target="_blank" rel="noopener">80道前端面试选择题</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术日志 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术日志 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>前端面试提纲</title>
       <link href="/qian-duan-mian-shi-ti-gang/"/>
       <url>/qian-duan-mian-shi-ti-gang/</url>

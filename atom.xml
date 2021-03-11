@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.duandiwang.com/"/>
-  <updated>2021-01-27T02:39:36.965Z</updated>
+  <updated>2021-03-11T02:57:49.784Z</updated>
   <id>http://blog.duandiwang.com/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>前端笔试选择题</title>
+    <link href="http://blog.duandiwang.com/qian-duan-bi-shi-xuan-ze-ti/"/>
+    <id>http://blog.duandiwang.com/qian-duan-bi-shi-xuan-ze-ti/</id>
+    <published>2021-03-11T02:54:32.000Z</published>
+    <updated>2021-03-11T02:57:49.784Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;单选题&quot;&gt;&lt;a href=&quot;#单选题&quot; class=&quot;headerlink&quot; title=&quot;单选题&quot;&gt;&lt;/a&gt;单选题&lt;/h3&gt;&lt;h5 id=&quot;1、控制台输出的结果是？&quot;&gt;&lt;a href=&quot;#1、控制台输出的结果是？&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="技术日志" scheme="http://blog.duandiwang.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+    
+      <category term="技术日志" scheme="http://blog.duandiwang.com/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+  </entry>
+  
+  <entry>
     <title>前端面试提纲</title>
     <link href="http://blog.duandiwang.com/qian-duan-mian-shi-ti-gang/"/>
     <id>http://blog.duandiwang.com/qian-duan-mian-shi-ti-gang/</id>
     <published>2021-01-27T01:52:18.000Z</published>
-    <updated>2021-01-27T02:39:36.965Z</updated>
+    <updated>2021-01-27T06:24:31.202Z</updated>
     
     <summary type="html">
     
@@ -527,32 +553,6 @@
     
     
       <category term="随便韶韶" scheme="http://blog.duandiwang.com/tags/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Grafana调研和Superset对比</title>
-    <link href="http://blog.duandiwang.com/grafana-diao-yan-he-superset-dui-bi/"/>
-    <id>http://blog.duandiwang.com/grafana-diao-yan-he-superset-dui-bi/</id>
-    <published>2019-06-14T09:52:37.000Z</published>
-    <updated>2019-06-14T09:58:57.618Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Grafana调研&quot;&gt;&lt;a href=&quot;#Grafana调研&quot; class=&quot;headerlink&quot; title=&quot;Grafana调研&quot;&gt;&lt;/a&gt;Grafana调研&lt;/h1&gt;&lt;h3 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="技术日志" scheme="http://blog.duandiwang.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
-    
-    
-      <category term="技术日志" scheme="http://blog.duandiwang.com/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
     
   </entry>
   
