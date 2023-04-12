@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>随便韶韶</title>
+  
+  <subtitle>随便韶韶</subtitle>
+  <link href="http://blog.duandiwang.com/atom.xml" rel="self"/>
+  
+  <link href="http://blog.duandiwang.com/"/>
+  <updated>2023-04-12T08:31:54.203Z</updated>
+  <id>http://blog.duandiwang.com/</id>
+  
+  <author>
+    <name>Micheal</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>cosmic估算方法学习笔记</title>
+    <link href="http://blog.duandiwang.com/cosmic-gu-suan-fang-fa-xue-xi-bi-ji/"/>
+    <id>http://blog.duandiwang.com/cosmic-gu-suan-fang-fa-xue-xi-bi-ji/</id>
+    <published>2023-04-12T07:32:45.000Z</published>
+    <updated>2023-04-12T08:31:54.203Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;Cosmic-估算方法简介&quot;&gt;&lt;a href=&quot;#Cosmic-估算方法简介&quot; class=&quot;headerlink&quot; title=&quot;Cosmic 估算方法简介&quot;&gt;&lt;/a&gt;Cosmic 估算方法简介&lt;/h3&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="技术日志" scheme="http://blog.duandiwang.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+    
+    <category term="技术日志" scheme="http://blog.duandiwang.com/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>钱够用</title>
+    <link href="http://blog.duandiwang.com/qian-gou-yong/"/>
+    <id>http://blog.duandiwang.com/qian-gou-yong/</id>
+    <published>2021-12-23T03:11:10.000Z</published>
+    <updated>2023-04-12T07:08:14.575Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;经济学里面有一些常见的理论：适当的通胀可以刺激经济的发展。货币供应量需要符合市场流通的商品总量，如果货币量不足会影响市场的交易正常进行。这些理论导向一个结果——国家需要印钞，不断的加大货币供应量。&lt;/p&gt;
+&lt;p&gt;真的是如此吗？西太平洋上有个小岛，岛上的居民用一块大石头当作货</summary>
+        
+      
+    
+    
+    
+    <category term="随便韶韶" scheme="http://blog.duandiwang.com/categories/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
+    
+    
+    <category term="随便韶韶" scheme="http://blog.duandiwang.com/tags/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>人性的等级</title>
+    <link href="http://blog.duandiwang.com/ren-xing-de-deng-ji/"/>
+    <id>http://blog.duandiwang.com/ren-xing-de-deng-ji/</id>
+    <published>2021-10-17T03:38:12.000Z</published>
+    <updated>2023-04-12T07:08:14.574Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;道德评判标准&quot;&gt;&lt;a href=&quot;#道德评判标准&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="随便韶韶" scheme="http://blog.duandiwang.com/categories/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
+    
+    
+    <category term="随便韶韶" scheme="http://blog.duandiwang.com/tags/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>前端笔试选择题</title>
+    <link href="http://blog.duandiwang.com/qian-duan-bi-shi-xuan-ze-ti/"/>
+    <id>http://blog.duandiwang.com/qian-duan-bi-shi-xuan-ze-ti/</id>
+    <published>2021-03-11T02:54:32.000Z</published>
+    <updated>2023-04-12T07:08:14.574Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;单选题&quot;&gt;&lt;a href=&quot;#单选题&quot; class=&quot;headerlink&quot; title=&quot;单选题&quot;&gt;&lt;/a&gt;单选题&lt;/h3&gt;&lt;h5 id=&quot;1、控制台输出的结果是？&quot;&gt;&lt;a href=&quot;#1、控制台输出的结果是？&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术日志" scheme="http://blog.duandiwang.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+    
+    <category term="技术日志" scheme="http://blog.duandiwang.com/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>前端面试提纲</title>
+    <link href="http://blog.duandiwang.com/qian-duan-mian-shi-ti-gang/"/>
+    <id>http://blog.duandiwang.com/qian-duan-mian-shi-ti-gang/</id>
+    <published>2021-01-27T01:52:18.000Z</published>
+    <updated>2023-04-12T07:08:14.574Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;样式CSS&quot;&gt;&lt;a href=&quot;#样式CSS&quot; class=&quot;headerlink&quot; title=&quot;样式CSS&quot;&gt;&lt;/a&gt;样式CSS&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;实现垂直居中&lt;/li&gt;
+&lt;li&gt;自适应布局 flex</summary>
+        
+      
+    
+    
+    
+    <category term="技术日志" scheme="http://blog.duandiwang.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+    
+    <category term="技术日志" scheme="http://blog.duandiwang.com/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JS 装饰器，一篇就够</title>
+    <link href="http://blog.duandiwang.com/js-zhuang-shi-qi-yi-pian-jiu-gou/"/>
+    <id>http://blog.duandiwang.com/js-zhuang-shi-qi-yi-pian-jiu-gou/</id>
+    <published>2021-01-12T08:32:13.000Z</published>
+    <updated>2023-04-12T07:08:14.573Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000014495089&quot;&gt;原文地址&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;相关历史&quot;&gt;&lt;a href=&quot;#相关历史&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="转帖" scheme="http://blog.duandiwang.com/categories/%E8%BD%AC%E5%B8%96/"/>
+    
+    
+    <category term="转帖" scheme="http://blog.duandiwang.com/tags/%E8%BD%AC%E5%B8%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>超越“双十一” | ebay支付核心账务系统架构演进之路</title>
+    <link href="http://blog.duandiwang.com/chao-yue-shuang-shi-yi-ebay-zhi-fu-he-xin-zhang-wu-xi-tong-jia-gou-yan-jin-zhi-lu/"/>
+    <id>http://blog.duandiwang.com/chao-yue-shuang-shi-yi-ebay-zhi-fu-he-xin-zhang-wu-xi-tong-jia-gou-yan-jin-zhi-lu/</id>
+    <published>2020-11-11T09:18:12.000Z</published>
+    <updated>2023-04-12T07:08:14.572Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="转帖" scheme="http://blog.duandiwang.com/categories/%E8%BD%AC%E5%B8%96/"/>
+    
+    
+    <category term="转帖" scheme="http://blog.duandiwang.com/tags/%E8%BD%AC%E5%B8%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Raft算法</title>
+    <link href="http://blog.duandiwang.com/raft-suan-fa/"/>
+    <id>http://blog.duandiwang.com/raft-suan-fa/</id>
+    <published>2020-11-11T08:36:10.000Z</published>
+    <updated>2023-04-12T07:08:14.557Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="转帖" scheme="http://blog.duandiwang.com/categories/%E8%BD%AC%E5%B8%96/"/>
+    
+    
+    <category term="转帖" scheme="http://blog.duandiwang.com/tags/%E8%BD%AC%E5%B8%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如果 Safari 做不到对，快有何用？</title>
+    <link href="http://blog.duandiwang.com/ru-guo-safari-zuo-bu-dao-dui-kuai-you-he-yong/"/>
+    <id>http://blog.duandiwang.com/ru-guo-safari-zuo-bu-dao-dui-kuai-you-he-yong/</id>
+    <published>2020-10-29T08:22:44.000Z</published>
+    <updated>2023-04-12T07:08:14.572Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一个困扰了一周的-bug&quot;&gt;&lt;a href=&quot;#一个困扰了一周的-bug&quot; class=&quot;headerlink&quot; title=&quot;一个困扰了一周的 bug&quot;&gt;&lt;/a&gt;一个困扰了一周的 bug&lt;/h3&gt;&lt;p&gt;2016 年的一天，当我们发现 iPhone</summary>
+        
+      
+    
+    
+    
+    <category term="转帖" scheme="http://blog.duandiwang.com/categories/%E8%BD%AC%E5%B8%96/"/>
+    
+    
+    <category term="转帖" scheme="http://blog.duandiwang.com/tags/%E8%BD%AC%E5%B8%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>flutter应用开发demo展示</title>
+    <link href="http://blog.duandiwang.com/flutter-ying-yong-kai-fa-demo-zhan-shi/"/>
+    <id>http://blog.duandiwang.com/flutter-ying-yong-kai-fa-demo-zhan-shi/</id>
+    <published>2020-08-27T03:17:05.000Z</published>
+    <updated>2023-04-12T07:08:14.558Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;真实后台环境下录制&lt;br&gt;&lt;img src=&quot;/flutter-ying-yong-kai-fa-demo-zhan-shi/pet_plante_demo.gif&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术日志" scheme="http://blog.duandiwang.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+    
+    <category term="技术日志" scheme="http://blog.duandiwang.com/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>面试题分享</title>
+    <link href="http://blog.duandiwang.com/mian-shi-ti-fen-xiang/"/>
+    <id>http://blog.duandiwang.com/mian-shi-ti-fen-xiang/</id>
+    <published>2020-07-09T09:56:31.000Z</published>
+    <updated>2023-04-12T07:08:14.573Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;今天做了几道面试题，分享一下&lt;/p&gt;
+&lt;h3 id=&quot;题目一&quot;&gt;&lt;a href=&quot;#题目一&quot; class=&quot;headerlink&quot; title=&quot;题目一&quot;&gt;&lt;/a&gt;题目一&lt;/h3&gt;&lt;p&gt;解释：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var a = &amp;#123; name:</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2020年中房价分析，预测</title>
+    <link href="http://blog.duandiwang.com/2020-nian-zhong-fang-jie-fen-xi-yu-ce/"/>
+    <id>http://blog.duandiwang.com/2020-nian-zhong-fang-jie-fen-xi-yu-ce/</id>
+    <published>2020-06-24T10:10:23.000Z</published>
+    <updated>2023-04-12T07:08:14.554Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;19年底写过一篇房价分析的文章，如今这非比寻常的半年过去了，是时候写一篇新的文章再分析一波了。&lt;/p&gt;
+&lt;h3 id=&quot;大纲&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="随便韶韶" scheme="http://blog.duandiwang.com/categories/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
+    
+    
+    <category term="随便韶韶" scheme="http://blog.duandiwang.com/tags/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>共产主义革命的浪潮必将再次席卷世界</title>
+    <link href="http://blog.duandiwang.com/gong-chan-zhu-yi-ge-ming-de-lang-chao-bi-jiang-zai-ci-xi-juan-shi-jie/"/>
+    <id>http://blog.duandiwang.com/gong-chan-zhu-yi-ge-ming-de-lang-chao-bi-jiang-zai-ci-xi-juan-shi-jie/</id>
+    <published>2020-05-29T02:14:44.000Z</published>
+    <updated>2023-04-12T07:08:14.571Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;共产党人不屑于隐瞒自己的观点和意图。他们公开宣布：他们的目的只有用暴力推翻全部现存的社会制度才能达到。让统治阶级在共产主义革命面前发抖吧。无产者在这个革命中失去的只是锁链。他们获得的将是整个世界。全世界无产者，联合起来！&lt;br&gt; &lt;p</summary>
+        
+      
+    
+    
+    
+    <category term="随便韶韶" scheme="http://blog.duandiwang.com/categories/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
+    
+    
+    <category term="随便韶韶" scheme="http://blog.duandiwang.com/tags/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>肖氏毒奶</title>
+    <link href="http://blog.duandiwang.com/xiao-shi-du-nai/"/>
+    <id>http://blog.duandiwang.com/xiao-shi-du-nai/</id>
+    <published>2020-03-02T03:25:22.000Z</published>
+    <updated>2023-04-12T07:08:14.572Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在这里把过往和今后的预言整理下，也算存档留证。&lt;/p&gt;
+&lt;h3 id=&quot;14年预言&quot;&gt;&lt;a href=&quot;#14年预言&quot; class=&quot;headerlink&quot; title=&quot;14年预言&quot;&gt;&lt;/a&gt;14年预言&lt;/h3&gt;&lt;p&gt;农民土地允许上市交易（验证部分）&lt;/p&gt;
+&lt;h3</summary>
+        
+      
+    
+    
+    
+    <category term="随便韶韶" scheme="http://blog.duandiwang.com/categories/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
+    
+    
+    <category term="随便韶韶" scheme="http://blog.duandiwang.com/tags/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>N1小钢炮固件使用docker-ui安装openwrt</title>
+    <link href="http://blog.duandiwang.com/n1-xiao-gang-pao-gu-jian-shi-yong-docker-ui-an-zhuang-openwrt/"/>
+    <id>http://blog.duandiwang.com/n1-xiao-gang-pao-gu-jian-shi-yong-docker-ui-an-zhuang-openwrt/</id>
+    <published>2020-01-17T12:00:14.000Z</published>
+    <updated>2023-04-12T07:08:14.554Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Docker-ui-安装及设置&quot;&gt;&lt;a href=&quot;#Docker-ui-安装及设置&quot; class=&quot;headerlink&quot; title=&quot;Docker-ui 安装及设置&quot;&gt;&lt;/a&gt;Docker-ui 安装及设置&lt;/h2&gt;&lt;p&gt;进入N1小钢炮管理后台，点击</summary>
+        
+      
+    
+    
+    
+    <category term="技术日志" scheme="http://blog.duandiwang.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+    
+    <category term="技术日志" scheme="http://blog.duandiwang.com/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>罗老师语录</title>
+    <link href="http://blog.duandiwang.com/luo-lao-shi-yu-lu/"/>
+    <id>http://blog.duandiwang.com/luo-lao-shi-yu-lu/</id>
+    <published>2019-12-17T01:30:20.000Z</published>
+    <updated>2023-04-12T07:08:14.550Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;1.“这几天又买了十几台安卓手机试玩儿，包括三星摩托罗拉索尼HTC小米魅族的热门机型（大都是我们前期的安卓定制版将要支持的机型）……怎么说呢？只能说“越看越放心”吧。还是那句话，这个行业只有一个聪明人，可他已经死了，剩下的是一群选错了行业、即将再次被虐杀的倒霉蛋……”——罗</summary>
+        
+      
+    
+    
+    
+    <category term="随便韶韶" scheme="http://blog.duandiwang.com/categories/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
+    
+    
+    <category term="随便韶韶" scheme="http://blog.duandiwang.com/tags/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>RWBY才是真正的女权主义影片</title>
+    <link href="http://blog.duandiwang.com/rwby-cai-shi-zhen-zheng-de-nu-quan-zhu-yi-ying-pian/"/>
+    <id>http://blog.duandiwang.com/rwby-cai-shi-zhen-zheng-de-nu-quan-zhu-yi-ying-pian/</id>
+    <published>2019-11-25T09:15:25.000Z</published>
+    <updated>2023-04-12T07:08:14.538Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;突然想到 RWBY 可以给现在盛行的田园女权们好好上一课，什么才叫他妈的女权！&lt;/p&gt;
+&lt;p&gt;随便上几组人物对比&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Salem vs Ozpin&lt;/strong&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="随便韶韶" scheme="http://blog.duandiwang.com/categories/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
+    
+    
+    <category term="随便韶韶" scheme="http://blog.duandiwang.com/tags/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2019房价分析，未来房价预测</title>
+    <link href="http://blog.duandiwang.com/2019-fang-jie-fen-xi/"/>
+    <id>http://blog.duandiwang.com/2019-fang-jie-fen-xi/</id>
+    <published>2019-11-14T00:55:11.000Z</published>
+    <updated>2023-04-12T07:08:14.525Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;18年底写过一篇&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="随便韶韶" scheme="http://blog.duandiwang.com/categories/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
+    
+    
+    <category term="随便韶韶" scheme="http://blog.duandiwang.com/tags/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>airpods-pro使用体验</title>
+    <link href="http://blog.duandiwang.com/airpods-pro-shi-yong-ti-yan/"/>
+    <id>http://blog.duandiwang.com/airpods-pro-shi-yong-ti-yan/</id>
+    <published>2019-11-08T08:41:25.000Z</published>
+    <updated>2023-04-12T07:08:14.540Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;优点&quot;&gt;&lt;a href=&quot;#优点&quot; class=&quot;headerlink&quot; title=&quot;优点&quot;&gt;&lt;/a&gt;优点&lt;/h3&gt;&lt;p&gt;不说了，相信各位已经听够了。&lt;/p&gt;
+&lt;h3 id=&quot;缺点&quot;&gt;&lt;a href=&quot;#缺点&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="随便韶韶" scheme="http://blog.duandiwang.com/categories/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
+    
+    
+    <category term="随便韶韶" scheme="http://blog.duandiwang.com/tags/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>原生面经从初级到高级</title>
+    <link href="http://blog.duandiwang.com/yuan-sheng-mian-jing-cong-chu-ji-dao-gao-ji/"/>
+    <id>http://blog.duandiwang.com/yuan-sheng-mian-jing-cong-chu-ji-dao-gao-ji/</id>
+    <published>2019-10-25T09:58:56.000Z</published>
+    <updated>2023-04-12T07:08:14.545Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000020759924&quot;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;函数&lt;br&gt;1.1函数的3种定义方法&lt;br&gt;1.1.1 函数声明&lt;pre&gt;&lt;code&gt;//ES5
+function</summary>
+        
+      
+    
+    
+    
+    <category term="技术日志" scheme="http://blog.duandiwang.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+    
+    <category term="技术日志" scheme="http://blog.duandiwang.com/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
+    
+  </entry>
+  
+</feed>
