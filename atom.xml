@@ -6,7 +6,7 @@
   <link href="http://blog.duandiwang.com/atom.xml" rel="self"/>
   
   <link href="http://blog.duandiwang.com/"/>
-  <updated>2023-04-12T08:31:54.203Z</updated>
+  <updated>2023-07-03T08:01:21.660Z</updated>
   <id>http://blog.duandiwang.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>三体动画观后感</title>
+    <link href="http://blog.duandiwang.com/san-ti-dong-hua-guan-hou-gan/"/>
+    <id>http://blog.duandiwang.com/san-ti-dong-hua-guan-hou-gan/</id>
+    <published>2023-07-03T08:00:07.000Z</published>
+    <updated>2023-07-03T08:01:21.660Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;像标题一样随便韶韶&lt;/p&gt;
+&lt;p&gt;1-4可以，5-9烂，10之后超越经典。泰勒的补完，罗辑和庄颜的爱情故事比原版强。给岁月以文明（野蛮）不如给岁月以爱。&lt;/p&gt;
+&lt;p&gt;在我眼中是部好剧，我希望看到下一部的。所以在这多说两句尽一点自己的力量。&lt;/p&gt;
+&lt;p&gt;我反对因为是国产就</summary>
+        
+      
+    
+    
+    
+    <category term="随便韶韶" scheme="http://blog.duandiwang.com/categories/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
+    
+    
+    <category term="随便韶韶" scheme="http://blog.duandiwang.com/tags/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>cosmic估算方法学习笔记</title>
@@ -497,34 +525,6 @@
     
     
     <category term="随便韶韶" scheme="http://blog.duandiwang.com/tags/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>原生面经从初级到高级</title>
-    <link href="http://blog.duandiwang.com/yuan-sheng-mian-jing-cong-chu-ji-dao-gao-ji/"/>
-    <id>http://blog.duandiwang.com/yuan-sheng-mian-jing-cong-chu-ji-dao-gao-ji/</id>
-    <published>2019-10-25T09:58:56.000Z</published>
-    <updated>2023-04-12T07:08:14.545Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000020759924&quot;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;函数&lt;br&gt;1.1函数的3种定义方法&lt;br&gt;1.1.1 函数声明&lt;pre&gt;&lt;code&gt;//ES5
-function</summary>
-        
-      
-    
-    
-    
-    <category term="技术日志" scheme="http://blog.duandiwang.com/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
-    
-    
-    <category term="技术日志" scheme="http://blog.duandiwang.com/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"/>
     
   </entry>
   
