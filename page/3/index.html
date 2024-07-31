@@ -1,1368 +1,265 @@
-<!DOCTYPE HTML>
-<html lang="zh-CN,en,zh-tw,default">
-
-
-<head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="随便韶韶">
-    <meta name="description" content="决定未来的不是你的对错与否，而是你的意志有多强">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="referrer" content="no-referrer-when-downgrade">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-
-
-    <title>随便韶韶</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
-    
-
-
-    <!-- bg-cover style     -->
-
-
-
-<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
-<link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-<link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-<link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-<link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-<link rel="stylesheet" type="text/css" href="/css/matery.css">
-<link rel="stylesheet" type="text/css" href="/css/my.css">
-<link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
-
-
-
-
-    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
-    <link rel="stylesheet" href="/css/post.css">
-
-
-
-
-
-
-    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
-
-<meta name="generator" content="Hexo 7.0.0-rc1"><link rel="alternate" href="/atom.xml" title="随便韶韶" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
-
-
-<body>
-    <header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="nav-wrapper container">
-            <div class="brand-logo">
-                <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
-                    
-                    <span class="logo-span">随便韶韶</span>
-                </a>
-            </div>
-            
-
-<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
-<ul class="right nav-menu">
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/" class="waves-effect waves-light">
-      
-      <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
-      <span>首页</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/tags" class="waves-effect waves-light">
-      
-      <i class="fas fa-tags" style="zoom: 0.6;"></i>
-      
-      <span>标签</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/categories" class="waves-effect waves-light">
-      
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
-      
-      <span>分类</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/archives" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>归档</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/about" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>关于</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>留言板</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>友情链接</span>
-    </a>
-    
-  </li>
-  
-  <li>
-    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-  <li>
-    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
-      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-</ul>
-
-
-<div id="mobile-nav" class="side-nav sidenav">
-
-    <div class="mobile-head bg-color">
-        
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
-        
-        <div class="logo-name">随便韶韶</div>
-        <div class="logo-desc">
-            
-            决定未来的不是你的对错与否，而是你的意志有多强
-            
-        </div>
-    </div>
-
-    <ul class="menu-list mobile-menu-list">
-        
-        <li class="m-nav-item">
-	  
-		<a href="/" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-home"></i>
-			
-			首页
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/tags" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-tags"></i>
-			
-			标签
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/categories" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			分类
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			归档
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/about" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-user-circle"></i>
-			
-			关于
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			留言板
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			友情链接
-		</a>
-          
-        </li>
-        
-        
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
-                <i class="fab fa-github-square fa-fw"></i>Fork Me
-            </a>
-        </li>
-        
-    </ul>
-</div>
-
-
-        </div>
-
-        
-            <style>
-    .nav-transparent .github-corner {
-        display: none !important;
-    }
-
-    .github-corner {
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        right: 0;
-        border: 0;
-        transform: scale(1.1);
-    }
-
-    .github-corner svg {
-        color: #0f9d58;
-        fill: #fff;
-        height: 64px;
-        width: 64px;
-    }
-
-    .github-corner:hover .octo-arm {
-        animation: a 0.56s ease-in-out;
-    }
-
-    .github-corner .octo-arm {
-        animation: none;
-    }
-
-    @keyframes a {
-        0%,
-        to {
-            transform: rotate(0);
-        }
-        20%,
-        60% {
-            transform: rotate(-25deg);
-        }
-        40%,
-        80% {
-            transform: rotate(10deg);
-        }
-    }
-</style>
-
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
-   data-tooltip="Fork Me" data-position="left" data-delay="50">
-    <svg viewBox="0 0 250 250" aria-hidden="true">
-        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-              fill="currentColor" class="octo-body"></path>
-    </svg>
-</a>
-        
-    </nav>
-
-</header>
-
-    
-    <div class="bg-cover pd-header about-cover">
-    <div class="container">
-    <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                随便韶韶
-                
-            </div>
-
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="/libs/typed/typed.js"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: [ 
-                            
-                                "从来没有真正的绝境, 只有心灵的迷途",
-                            
-                                "Never really desperate, only the lost of the soul",
-                            
-                        ],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
-</script>
-
-
-    </div>
-</div>
-
-
-<main class="content">
-
-    
-
-    
-
-    <!-- 所有文章卡片 -->
-    <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/grafana-diao-yan-he-superset-dui-bi/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Grafana调研和Superset对比">
-                            
-                            <span class="card-title">Grafana调研和Superset对比</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Grafana调研安装使用Docker安装
-注意事项：
-
-启动时需要设置数据库，否则Grafana会使用嵌入式数据库sqlite3。
-
-支持图表官方文档，只有四种类型分别为Graph,Singlestat,Table,Heatmap
-项目引
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-06-14
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/" class="post-category">
-                                    技术日志
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/">
-                            <span class="chip bg-color">技术日志</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/csv-wen-jian-tong-guo-node-js-zhuan-cun-postresql-shu-ju-ku/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="csv文件通过node.js转存postresql数据库">
-                            
-                            <span class="card-title">csv文件通过node.js转存postresql数据库</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                排坑分享一下代码
-const config = require('../config')
-const pglink = config.pg
-const csv = require('csvtojson')
-const fs = requir
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-05-15
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/" class="post-category">
-                                    技术日志
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/">
-                            <span class="chip bg-color">技术日志</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/mai-bu-qi-airpods-zen-me-ban/">
-                        <div class="card-image">
-                            
-                            <img src="/images/airdots.jpg" class="responsive-img" alt="买不起airPods怎么办？">
-                            
-                            <span class="card-title">买不起airPods怎么办？</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                redmi airdots 你值得拥有先看下特性参数蓝牙5.0，单耳机重量4.1g，7.2mm动圈，分体式。基本上蓝牙5.0分体式其他品牌找不到200块以下，估计300块以下都很难。100￥基本屌全场。
-在100-1200这个价位区间里面，
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-04-30
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/" class="post-category">
-                                    随便韶韶
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/">
-                            <span class="chip bg-color">随便韶韶</span>
-                        </a>
-                        
-                        <a href="/tags/%E6%B5%8B%E8%AF%84/">
-                            <span class="chip bg-color">测评</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/ajax-jie-kou-jie-shou-wen-jian-pai-keng-er/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="ajax接口接收文件排坑（二）">
-                            
-                            <span class="card-title">ajax接口接收文件排坑（二）</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                错误处理问题假设后端传回了一段包含错误message字段的JSON文件，如果将responseType 设置为 blob 将会导致无法解析后端传回的错误数据。
-解决方案是将responseType 设置为 arraybuffer，根据htt
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-04-26
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/" class="post-category">
-                                    技术日志
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/">
-                            <span class="chip bg-color">技术日志</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/shui-neng-zhen-zheng-make-american-greate-again/">
-                        <div class="card-image">
-                            
-                            <img src="/images/Andrew-Yang.png" class="responsive-img" alt="谁能真正make American greate again？">
-                            
-                            <span class="card-title">谁能真正make American greate again？</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                
-今天第一次知道杨安泽(Andrew Yang)，美籍华裔祖籍台湾正在准备参加2020年美国总统大选。政治主张中主要的一条是要给每个满18周岁的美国人每月发1000美元。
-为什么，以及如何做到基础职工的失业不可避免现在的工业自动化是如此，未
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-04-24
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%A6%84%E4%BA%BA%E5%A6%84%E8%AF%AD/" class="post-category">
-                                    妄人妄语
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%94%BF%E6%B2%BB/">
-                            <span class="chip bg-color">政治</span>
-                        </a>
-                        
-                        <a href="/tags/%E7%BE%8E%E5%9B%BD/">
-                            <span class="chip bg-color">美国</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/ajax-jie-kou-jie-shou-wen-jian-pai-keng/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="ajax接口接收文件排坑(一)">
-                            
-                            <span class="card-title">ajax接口接收文件排坑(一)</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                先说结论如果你在用ajax接口接收文件时遇到文件保存后打开报错的情况，请尝试在请求header头中加入responseType: arraybuffer
-排坑过程最近在对接前后端文件传输接口时遇到的问题，后端返回xlsx文件，前端使用new
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-04-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/" class="post-category">
-                                    技术日志
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/">
-                            <span class="chip bg-color">技术日志</span>
-                        </a>
-                        
-                        <a href="/tags/ajax/">
-                            <span class="chip bg-color">ajax</span>
-                        </a>
-                        
-                        <a href="/tags/responseType/">
-                            <span class="chip bg-color">responseType</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/superset-xue-xi-zhi-lian-jie-mongodb/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Superset学习之连接MongoDB">
-                            
-                            <span class="card-title">Superset学习之连接MongoDB</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                集成 MongoDB方法一：mongodb-BI，已验证MongoDB需要安装mongdoDB BI-connector 插件，该插件的功能是使mongoDB支持Sql查询语句，从而应对各种BI工具的连接，官方文档中列举了其支持的各种BI工
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-03-26
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Micheal
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/superset-xue-xi-ti-yan/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Superset学习体验">
-                            
-                            <span class="card-title">Superset学习体验</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                superset代码评测:版本还未稳定，release版本长时间脱离 master版本，且本身并不稳定。项目庞大涉及领域繁多加上人员混杂可能是导致目前代码略显凌乱bug较多的原因。尝试了几个不同的版本才获得一个可以在Ubuntu及Mac平台
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-03-04
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/" class="post-category">
-                                    技术日志
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/">
-                            <span class="chip bg-color">技术日志</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/virtualbox-xu-ni-ji-ubuntu-cai-keng/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="VirtualBox 虚拟机 Ubuntu 踩坑">
-                            
-                            <span class="card-title">VirtualBox 虚拟机 Ubuntu 踩坑</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                虚拟机-网络设置
-使用网络桥接模式保证host和虚拟机可以互访，虚拟机可连接Internet。
-host系统下网卡设置共享
-subnet 地址计算器
-
-
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-02-26
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Micheal
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/">
-                            <span class="chip bg-color">技术日志</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/docker-xue-xi-ji-lu/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Docker 学习记录">
-                            
-                            <span class="card-title">Docker 学习记录</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                架构解析context build image build container run by daemon
-docker-compose 为单独安装的软件，mac/windows 安装包自带，Linux自行安装
-docker-machine
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-02-25
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/" class="post-category">
-                                    技术日志
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/">
-                            <span class="chip bg-color">技术日志</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/react-hooks/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="React hooks 学习体会">
-                            
-                            <span class="card-title">React hooks 学习体会</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                上接React、Vue比较
-又经过一段时间的学习和开发对React有了更加深刻的理解，领悟了相较于Vue更多的优势。应为语法更接近原生的关系，class在使用extends时很方便，可以把很多相近的页面组件的共通部分写成一个class专门用
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2018-12-25
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/" class="post-category">
-                                    技术日志
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/">
-                            <span class="chip bg-color">技术日志</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/peng-you-gai-mai-fang-liao/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="朋友该卖房了">
-                            
-                            <span class="card-title">朋友该卖房了</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                为何会有此文2016年中曾经劝过身边的好朋友买房，2017年底发现漏通知了一位，之后说起十分尴尬，“我去，你怎么没跟我说！”此文既是为了防止这种情况的再次发生。
-先说结论敝人预计19年房价还会继续下跌，可能性大于80%。下跌区域全国性，一线
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2018-11-23
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%A6%84%E4%BA%BA%E5%A6%84%E8%AF%AD/" class="post-category">
-                                    妄人妄语
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E7%BB%8F%E6%B5%8E/">
-                            <span class="chip bg-color">经济</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-        </div>
-    </article>
-
-</main>
-
-
-<div class="container paging">
-    <div class="row">
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/2/"
-               class="left btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-left"></i>
-            </a>
-            
-        </div>
-        <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">3 / 4</div>
-        </div>
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/4/"
-               class="right btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-right"></i>
-            </a>
-            
-        </div>
-    </div>
-</div>
-
-
-
-
-    <footer class="page-footer bg-color">
-    
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        display: none;
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
-
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
-        
-        font-size: 15px;
-        color: #42b983;
-    }
-
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
-
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
-
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="503838841"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
-</div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="/libs/aplayer/Meting.min.js"></script>
-
-    
-
-    <div class="container row center-align"
-         style="margin-bottom: 0px !important;">
-        <div class="col s12 m8 l8 copy-right">
-            Copyright&nbsp;&copy;
-            
-                <span id="year">2019-2024</span>
-            
-            <a href="/about" target="_blank">Micheal</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
-            
-            <br>
-            
-            
-            
-                
-            
-            
-                <span id="busuanzi_container_site_pv">
-                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
-                    <span id="busuanzi_value_site_pv" class="white-color"></span>
-            </span>
-            
-            
-                <span id="busuanzi_container_site_uv">
-                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
-                    <span id="busuanzi_value_site_uv" class="white-color"></span>
-            </span>
-            
-            <br>
-
-            <!-- 运行天数提醒. -->
-            
-            <br>
-            
-        </div>
-        <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
-
-</div>
-    </div>
-</footer>
-
-<div class="progress-bar"></div>
-
-
-    <!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
-            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
-                   class="search-input">
-        </div>
-        <div id="searchResult"></div>
-    </div>
-</div>
-
-<script type="text/javascript">
-$(function () {
-    var searchFunc = function (path, search_id, content_id) {
-        'use strict';
-        $.ajax({
-            url: path,
-            dataType: "xml",
-            success: function (xmlResponse) {
-                // get the contents from search data
-                var datas = $("entry", xmlResponse).map(function () {
-                    return {
-                        title: $("title", this).text(),
-                        content: $("content", this).text(),
-                        url: $("url", this).text()
-                    };
-                }).get();
-                var $input = document.getElementById(search_id);
-                var $resultContent = document.getElementById(content_id);
-                $input.addEventListener('input', function () {
-                    var str = '<ul class=\"search-result-list\">';
-                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                    $resultContent.innerHTML = "";
-                    if (this.value.trim().length <= 0) {
-                        return;
-                    }
-                    // perform local searching
-                    datas.forEach(function (data) {
-                        var isMatch = true;
-                        var data_title = data.title.trim().toLowerCase();
-                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                        var data_url = data.url;
-                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
-                        var index_title = -1;
-                        var index_content = -1;
-                        var first_occur = -1;
-                        // only match artiles with not empty titles and contents
-                        if (data_title !== '' && data_content !== '') {
-                            keywords.forEach(function (keyword, i) {
-                                index_title = data_title.indexOf(keyword);
-                                index_content = data_content.indexOf(keyword);
-                                if (index_title < 0 && index_content < 0) {
-                                    isMatch = false;
-                                } else {
-                                    if (index_content < 0) {
-                                        index_content = 0;
-                                    }
-                                    if (i === 0) {
-                                        first_occur = index_content;
-                                    }
-                                }
-                            });
-                        }
-                        // show search results
-                        if (isMatch) {
-                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
-                            var content = data.content.trim().replace(/<[^>]+>/g, "");
-                            if (first_occur >= 0) {
-                                // cut out 100 characters
-                                var start = first_occur - 20;
-                                var end = first_occur + 80;
-                                if (start < 0) {
-                                    start = 0;
-                                }
-                                if (start === 0) {
-                                    end = 100;
-                                }
-                                if (end > content.length) {
-                                    end = content.length;
-                                }
-                                var match_content = content.substr(start, end);
-                                // highlight all keywords
-                                keywords.forEach(function (keyword) {
-                                    var regS = new RegExp(keyword, "gi");
-                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
-                                });
-
-                                str += "<p class=\"search-result\">" + match_content + "...</p>"
-                            }
-                            str += "</li>";
-                        }
-                    });
-                    str += "</ul>";
-                    $resultContent.innerHTML = str;
-                });
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>随便韶韶</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="随便韶韶"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="随便韶韶"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="决定未来的不是你的对错与否，而是你的意志有多强"><meta property="og:type" content="blog"><meta property="og:title" content="随便韶韶"><meta property="og:url" content="http://blog.mikefreeze.com/"><meta property="og:site_name" content="随便韶韶"><meta property="og:description" content="决定未来的不是你的对错与否，而是你的意志有多强"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="http://blog.mikefreeze.com/img/og_image.png"><meta property="article:author" content="Micheal"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="http://blog.mikefreeze.com/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.mikefreeze.com"},"headline":"随便韶韶","image":["http://blog.mikefreeze.com/img/og_image.png"],"author":{"@type":"Person","name":"Micheal"},"publisher":{"@type":"Organization","name":"随便韶韶","logo":{"@type":"ImageObject","url":"http://blog.mikefreeze.com/img/logo.svg"}},"description":"决定未来的不是你的对错与否，而是你的意志有多强"}</script><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link data-pjax rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="随便韶韶" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="随便韶韶" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-14T09:52:37.000Z" title="2019/6/14 17:52:37">2019-06-14</time>发表</span><span class="level-item"><time dateTime="2023-04-12T07:08:14.538Z" title="2023/4/12 15:08:14">2023-04-12</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/">技术日志</a></span><span class="level-item">4 分钟读完 (大约661个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/grafana-diao-yan-he-superset-dui-bi/">Grafana调研和Superset对比</a></p><div class="content"><h1 id="Grafana调研"><a href="#Grafana调研" class="headerlink" title="Grafana调研"></a>Grafana调研</h1><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>使用Docker安装</p>
+<p><strong>注意事项：</strong></p>
+<ol>
+<li>启动时需要设置数据库，否则Grafana会使用嵌入式数据库sqlite3。</li>
+</ol>
+<h3 id="支持图表"><a href="#支持图表" class="headerlink" title="支持图表"></a>支持图表</h3><p><a target="_blank" rel="noopener" href="https://grafana.com/docs/features/panels/graph/">官方文档</a>，只有四种类型分别为Graph,Singlestat,Table,Heatmap</p>
+<h3 id="项目引入"><a href="#项目引入" class="headerlink" title="项目引入"></a>项目引入</h3><p>方式一：Dashboard snapshot</p>
+<p> 分享整个Dashboard，不需要额外的权限设置。</p>
+<p>方式二：Share Panel-Embed Panel</p>
+<p> 设置<code>AUTH_ANONYMOUS_ENABLED</code>为<code>true</code>允许<code>anonymous</code>访问。即可单独分享每一个<code>graph panel</code>。</p>
+<h3 id="Dashboard市场"><a href="#Dashboard市场" class="headerlink" title="Dashboard市场"></a>Dashboard市场</h3><p>Grafana有把Dashboard配置通过JSON文件导入/导出功能，同时官方建立了一个在线的市场，方便大家交流。但是因为数据源的差异性，实际用途不大。</p>
+<p>目前市场是下载比较的多的配置，是一些基于通用数据源的配置。例如<a target="_blank" rel="noopener" href="https://prometheus.io/">prometheus</a>，实际上Prometheus也把Grafana当作自己的图形解决方案。</p>
+<h3 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h3><p> Grafana提供了通过插件扩展控能，例如安装饼图插件支持饼图设置，安装数据源插件增加支持的数据源。</p>
+<h3 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h3><p>进行中</p>
+<h3 id="MongoDB连接"><a href="#MongoDB连接" class="headerlink" title="MongoDB连接"></a>MongoDB连接</h3><p>待测试，MongoDB connect BI插件理论上可行</p>
+<h3 id="对比分析"><a href="#对比分析" class="headerlink" title="对比分析"></a>对比分析</h3><p>Grafana star 29.2k+ 有企业版（收费）<a target="_blank" rel="noopener" href="https://play.grafana.org/d/000000012/grafana-play-home?orgId=1">Live Demo</a></p>
+<p>Superset star 24.7k+</p>
+<p><strong>开源许可证都为apache-2.0</strong></p>
+<p>Superset</p>
+<blockquote>
+<p><strong>优点：</strong><br>采用D3图表库初始支持的图表类型就十分丰富</p>
+</blockquote>
+<p>Grafana</p>
+<blockquote>
+<p><strong>优点：</strong>  </p>
+<pre><code>1. 支持插件方便社区为其提供扩展能力  
+2. 项目引入简单，不需要二次开发
+</code></pre></blockquote>
+<h3 id="总结-amp-建议"><a href="#总结-amp-建议" class="headerlink" title="总结&amp;建议"></a>总结&amp;建议</h3><p>经过初步的了解，我的建议是使用Grafana。原因有以下几点：</p>
+<ol>
+<li>目前的流行程度Grafana略微占优，正在使用的企业数量似乎更多（superset没有找到相关数据）。</li>
+<li>Grafana有独立的公司在开发维护，并且同时就在提供商业服务。商业成熟度上远远领先Superset。</li>
+<li>Grafana的插件设计模式更加优秀，方便社区提供能量。</li>
+</ol>
+<p>Grafana的潜在缺点：</p>
+<p>没有选择类似D3的库作为图形上的支持，我觉得有长期的运营打算在其中，也许是在为今后的按图表插件来收费的模式做准备。这样的模式没什么不好，但是长期来看通过自研要做出和D3同样水平的图表库需要很长的时间，最终能否达到同样的水平很难说。</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-05-15T08:29:24.000Z" title="2019/5/15 16:29:24">2019-05-15</time>发表</span><span class="level-item"><time dateTime="2023-04-12T07:08:14.540Z" title="2023/4/12 15:08:14">2023-04-12</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/">技术日志</a></span><span class="level-item">2 分钟读完 (大约298个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/csv-wen-jian-tong-guo-node-js-zhuan-cun-postresql-shu-ju-ku/">csv文件通过node.js转存postresql数据库</a></p><div class="content"><h3 id="排坑"><a href="#排坑" class="headerlink" title="排坑"></a>排坑</h3><p>分享一下代码</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../config'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> pglink <span class="token operator">=</span> config<span class="token punctuation">.</span>pg
+<span class="token keyword">const</span> csv <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'csvtojson'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>Client<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'pg'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> copyFrom <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'pg-copy-streams'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token keyword">from</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">(</span>targetTable<span class="token punctuation">,</span> inputFile<span class="token punctuation">,</span> columnStr<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'开始导入'</span><span class="token punctuation">)</span>
+  <span class="token comment" spellcheck="true">// Connecting to Database</span>
+  <span class="token keyword">const</span> client <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Client</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    connectionString<span class="token punctuation">:</span> pglink<span class="token punctuation">,</span>
+  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span>
+  client<span class="token punctuation">.</span><span class="token function">connect</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+  <span class="token keyword">var</span> stream <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token function">query</span><span class="token punctuation">(</span><span class="token function">copyFrom</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`COPY $&amp;#123;targetTable&amp;#125; ($&amp;#123;columnStr&amp;#125;) FROM STDIN CSV`</span></span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">var</span> fileStream <span class="token operator">=</span> fs<span class="token punctuation">.</span><span class="token function">createReadStream</span><span class="token punctuation">(</span>inputFile<span class="token punctuation">)</span>
+
+  fileStream<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'error'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`Error in creating read stream $&amp;#123;error&amp;#125;`</span></span><span class="token punctuation">)</span>
+  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span>
+  stream<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'error'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`Error in creating stream $&amp;#123;error&amp;#125;`</span></span><span class="token punctuation">)</span>
+  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span>
+  stream<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'end'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`Completed loading data into $&amp;#123;targetTable&amp;#125;`</span></span><span class="token punctuation">)</span>
+    client<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span>
+  fileStream<span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>stream<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
+<p>调用代码示例</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">const</span> copyToPg <span class="token operator">=</span>  <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'/* 上面的代码 */'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> inputFile <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'/csv/country.csv'</span><span class="token punctuation">)</span>
+
+<span class="token function">copyToPg</span><span class="token punctuation">(</span><span class="token string">'Country'</span><span class="token punctuation">,</span> path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'/csv/country.csv'</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token string">'country, code, continent'</span><span class="token punctuation">)</span>
+</code></pre>
+<p>这里有两个坑需要特别说明<code>targetTable</code>这里是区分大小写的，而且只支持小写。。。</p>
+<p>CSV需要使用utf8格式，不然会有中文乱码问题。但是你使用Excel是改不了utf8的，我的操作流程是使用记事本打开csv文件再改变编码转存。<br>之后再使用Excel编辑。</p>
+<h3 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h3><p><a target="_blank" rel="noopener" href="https://www.postgresql.org/docs/9.3/sql-copy.html">官方说明档：sql-copy</a></p>
+<p><a target="_blank" rel="noopener" href="https://medium.com/@sairamkrish/how-to-do-postgresql-bulk-insert-with-node-pg-copy-streams-f4301ec29388">How to do postgresql bulk insert with node-pg-copy-streams</a></p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-04-30T09:21:55.000Z" title="2019/4/30 17:21:55">2019-04-30</time>发表</span><span class="level-item"><time dateTime="2023-04-12T07:08:14.540Z" title="2023/4/12 15:08:14">2023-04-12</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/">随便韶韶</a></span><span class="level-item">11 分钟读完 (大约1675个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/mai-bu-qi-airpods-zen-me-ban/">买不起airPods怎么办？</a></p><div class="content"><h3 id="redmi-airdots-你值得拥有"><a href="#redmi-airdots-你值得拥有" class="headerlink" title="redmi airdots 你值得拥有"></a>redmi airdots 你值得拥有</h3><p>先看下特性参数蓝牙5.0，单耳机重量4.1g，7.2mm动圈，分体式。基本上蓝牙5.0分体式其他品牌找不到200块以下，估计300块以下都很难。<br>100￥基本屌全场。</p>
+<p>在100-1200这个价位区间里面，我基本找不到能在性价比上挑战airdots的产品。总之如果你想要买一副轻巧的入耳式蓝牙耳机，又觉得<br>airPods太贵的话，目前redmi airdots可说是不二选择。</p>
+<p>— 下面开始讲故事，长文预警 —</p>
+<p>从去年7月我换了小米8开始，蓝牙耳机成了一个硬性需求。type-c转3.5mm方案实在太二，本身一条线就已经够麻烦，中间再接一条简直崩溃。<br>而且从我粗浅的耳机知识上来理解，type-c转3.5mm中间多经历了一次数字转模拟的过程肯定会降低音质（不知道这个理解对不对欢迎大神<br>拍砖）。</p>
+<p>当时我就对蓝牙耳机市场进行了一次调研。得出的结论是目前不适合购入高档的蓝牙耳机，airPods除外，如果airPods算高档的话。PS：在我的<br>心目中是不算的。没有音质谈什么高档。</p>
+<p>原因主要在于目前蓝牙技术的不成熟当时市面上还是4.0的天下，虽然现在到了5.0离达到人能分辨的完美音质仍有一定差距。5.0由4.0的1Mbps<br>提升到2Mbps，也就是200kps的瞬时速率。下载过mp3的同学应该知道320kps只能算是比较高而已。（这里也完全是我的个人认为，实际上我<br>不确定kps是否等同于kbs）总之蓝牙要想达到媲美模拟信号的音质目前还差的很远。在目前的蓝牙设备上谈音质无异于耍流氓。</p>
+<p>既然两千块的蓝牙耳机也就是听个响，我更倾向于价格便宜音质不太差的解决方案。目前几百块的耳机市场可说是群雄逐鹿一片混乱，其中<br>又充斥各种同质化严重的贴牌产品，基本同一个模具换个logo就能有N种不同的蓝牙耳机诞生。有兴趣的朋友可以看看TESTV的测评视频<br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av41982410/">平价真无线耳机们到底好用不好用【值不值得买第307期】</a>，基本说的就是这个情况。</p>
+<p>所以去年我购入了漫步者W200BT的网易特供版W280X<br><img src="/mai-bu-qi-airpods-zen-me-ban/w280x.jpg" class="" title="W280X"></p>
+<p>由于不是分体式耳机听诊器效应不可避免。可以同时连接两个设备，这是个非常鸡肋的功能和airpods的丝般顺滑相比完全是另一个极端。<br>同时连接两个设备之后信号稳定度大大下降，音质也收到了影响。红米airdots一次只能连接一台设备的估计就是因为这个原因。通话效果<br>十分之差，对方经常听不清你在说啥。电池续航还行连续听歌可以支持6小时左右。充电方式十分丑陋，你需要抠开一个胶垫保护的充电接口<br>再插上充电线。充电线和耳机线必成一个直角，放哪都碍事，智障设计。</p>
+<p>音质，肯定是不存在音质的。可以感觉到调教上特地强调了低音，但是不知是动圈不够大，还是驱动不行，给人一种嗓子哑了吼不上去沉不下来<br>的感觉，总之就是灾难。</p>
+<p>在使用w280x的期间也试用过airpods，感觉就是一分钱一分货。在苹果系的产品间切换丝般顺滑，充电，取耳机，配对整个使用流程都充满了<br>高级感。在苹果手机上的动画都是如此炫酷。你只能惊讶于三年了，市场上仍然没有一款能与其全方位竞争的产品。就连苹果自己唯一能做<br>的升级也就是提升下连接速度增加siri的语音唤醒。虽然这个技术上屌到不行的语音唤醒黑科技你几乎不会用。</p>
+<img src="/mai-bu-qi-airpods-zen-me-ban/airpods.jpg" class="" title="airpods">
+<p>总之你有钱就买苹果，买不了吃亏买不了上当。使用过程中我发现一个场景是绝对只有airpods能做到的。就是你带着耳机躺床上还能侧头靠<br>在枕头上。换市面上任何一种其他耳机都是绝对不可能的，不把你杠死才怪。</p>
+<p>最后来说说红米airdots</p>
+<img src="/mai-bu-qi-airpods-zen-me-ban/airdots.jpg" class="" title="airdots">
+<p>缺点：设备间切换很不方便，必须先断连再连接新设备。从手机切电脑，你得先在手机上操作断连，再在电脑上操作连接。傻X设计，应了<br>雷总的话，没有设计就是没有设计（误）。</p>
+<p>音质，跟airpods一样白开水，没有针对低音的增强。两者音质差不多同一级别。airdots因为有胶套的关系隔音效果更好，适合上下班的通勤<br>使用。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>一百块你买不了吃亏买不了上当。缺蓝牙耳机且缺钱的朋友可以毫不犹豫的购入。能不能买的到就是另外一个问题了。</p>
+<p>至于发售一两个月还在缺货这个问题只能归结为在耍猴绝对没有别的解释。手机你可以说是高通不给力，或是你跟索尼关系不够好。耳机这种<br>完全没有核心科技的东西还特么缺货，在工业第一大国还要跟我说产能不足完全就是扯淡。</p>
+<p>所以最近我对小米的观感是越来越差，快要差到锤子那个级别了。但，是人就逃不过真相定律。购买渠道一、淘宝加价20，二、官网京东抢，<br>抢的到算我输。三、如果你所在城市有小米之家可以去门店交钱预定，我运气好头一天交钱第二天到货。</p>
+<p>以上，感谢您的阅读。</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-04-26T09:46:49.000Z" title="2019/4/26 17:46:49">2019-04-26</time>发表</span><span class="level-item"><time dateTime="2023-04-12T07:08:14.540Z" title="2023/4/12 15:08:14">2023-04-12</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/">技术日志</a></span><span class="level-item">1 分钟读完 (大约214个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/ajax-jie-kou-jie-shou-wen-jian-pai-keng-er/">ajax接口接收文件排坑（二）</a></p><div class="content"><h3 id="错误处理问题"><a href="#错误处理问题" class="headerlink" title="错误处理问题"></a>错误处理问题</h3><p>假设后端传回了一段包含错误message字段的JSON文件，如果将responseType 设置为 blob 将会导致无法解析后端传回的错误数据。</p>
+<p>解决方案是将responseType 设置为 arraybuffer，根据http状态码来判断接口是否报错。假设接口返回400则将返回数据由arraybuffer<br>重新解析为String 或 Object 等我们需要的数据类型。</p>
+<p>解析代码如下</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">errorCallback</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> encodedString <span class="token operator">=</span> String<span class="token punctuation">.</span>fromCharCode<span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Uint8Array</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span>data<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> decodedString <span class="token operator">=</span> <span class="token function">decodeURIComponent</span><span class="token punctuation">(</span><span class="token function">escape</span><span class="token punctuation">(</span>encodedString<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> obj <span class="token operator">=</span> JSON<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>decodedString<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
+<p>其中 <code>var decodedString = decodeURIComponent(escape(encodedString));</code>这段代码的作用是解析utf8字符。</p>
+<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/17191945/conversion-between-utf-8-arraybuffer-and-string">Conversion between UTF-8 ArrayBuffer and String</a></p>
+<p><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/30052567/how-to-read-json-error-response-from-http-if-responsetype-is-arraybuffer">How to read JSON error response from $http if responseType is arraybuffer</a></p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-04-24T03:14:45.000Z" title="2019/4/24 11:14:45">2019-04-24</time>发表</span><span class="level-item"><time dateTime="2023-04-12T07:08:14.553Z" title="2023/4/12 15:08:14">2023-04-12</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E5%A6%84%E4%BA%BA%E5%A6%84%E8%AF%AD/">妄人妄语</a></span><span class="level-item">4 分钟读完 (大约570个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/shui-neng-zhen-zheng-make-american-greate-again/">谁能真正make American greate again？</a></p><div class="content"><p><img src="/images/Andrew-Yang.png" alt=""></p>
+<p>今天第一次知道杨安泽(Andrew Yang)，美籍华裔祖籍台湾正在准备参加2020年美国总统大选。政治主张中主要的一条是要给<strong>每个满18周岁的美国人每月发1000美元</strong>。</p>
+<h3 id="为什么，以及如何做到"><a href="#为什么，以及如何做到" class="headerlink" title="为什么，以及如何做到"></a>为什么，以及如何做到</h3><p>基础职工的失业不可避免现在的工业自动化是如此，未来的人工智能更是如此。川普试图从中国等其他国家夺回工作岗位思路本身就是错误的，真正夺走美国人工作的是技术革新。</p>
+<p>那么谁在这场技术革新中获利了呢，是Amazon（他好像只举了这一个例子，耐人寻味）之类的高科技大企业。实施办法就是向这些企业征收高额税收，把这些钱分给所有美国人。劫富济贫（🙄socialism）？</p>
+<p>公民收入增加之后，反过来可以增加消费促进经济发展，企业挣更多的钱，交更多的税，形成正向循环。</p>
+<p>这位老兄的这方面的政治主张和我所想的完全一致。我甚至认为，未来人类在发明出强人工智能之后这是让人类社会可以延续下去的唯一政策。communism or die 二选一的命题。在强人工智能时代99%的人口对于社会生产力来说都会成为非必要人口，为了维持社会稳定共产主义可说是唯一的选项。</p>
+<p>总之看到这位老哥及他的政治主张之后感慨颇多，感叹优秀的人都去了美国，感叹美国的制度给了很多人发声和表现得舞台。但作为一个生活在大洋彼岸得中国人，希不希望他成功当选真的不好说。感情上十分复杂。</p>
+<p>但如果 Democracy 真得管用得话， American folks show me！</p>
+<p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=CvHyoQebbKU">FOX采访</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=l9RNdvtuAfA">CNN采访</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/63516977">知乎：这位华裔总统候选人 要给每人每月发1000美元</a></p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-04-16T03:14:45.000Z" title="2019/4/16 11:14:45">2019-04-16</time>发表</span><span class="level-item"><time dateTime="2023-04-12T07:08:14.558Z" title="2023/4/12 15:08:14">2023-04-12</time>更新</span><span class="level-item"> Micheal </span><span class="level-item"><a class="link-muted" href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/">技术日志</a></span><span class="level-item">4 分钟读完 (大约530个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/ajax-jie-kou-jie-shou-wen-jian-pai-keng/">ajax接口接收文件排坑(一)</a></p><div class="content"><h3 id="先说结论"><a href="#先说结论" class="headerlink" title="先说结论"></a>先说结论</h3><p>如果你在用ajax接口接收文件时遇到文件保存后打开报错的情况，请尝试在请求header头中加入<code>responseType: arraybuffer</code></p>
+<h3 id="排坑过程"><a href="#排坑过程" class="headerlink" title="排坑过程"></a>排坑过程</h3><p>最近在对接前后端文件传输接口时遇到的问题，后端返回xlsx文件，前端使用<code>new blob()</code>方法从接口返回的数据中重新生成文件。但是<br>生成的文件用excel打开总是报错。尝试在浏览器或Postman中调用接口保存文件都没有问题。</p>
+<p>一开始各种尝试改变<code>new blob</code>方法的type参数没有效果。查看<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/Blob">blob方法文档</a>，<br>最坑的就是这里<code>Blob(blobParts[, options])</code>blobParts what fuck is blobParts? 文档中给出的示例有<br><code>new Blob([JSON.stringify(debug, null, 2),&#123;type : &#39;application/json&#39;&#125;);</code>so 一个包含字符串的数组？还有一段从blob中读取数据<br><code>reader.readAsArrayBuffer(blob);</code>可以看出这里读出的数据应该是arraybuffer。</p>
+<p>再看一下<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest/responseType">XMLHttp​Request​.response​Type的官方文档</a><br>arraybuffer的解释 <em>是一个包含二进制数据的 JavaScript ArrayBuffer 。</em>另外我在另一篇<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/16245767/creating-a-blob-from-a-base64-string-in-javascript">Creating a Blob from a base64 string in JavaScript</a><br>的提问中当中看到有高手给出的答案中指出了，想要得到blob你先要得到<em>ArrayBuffer, text, and JSON</em></p>
+<h3 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h3><p>到这里我们基本已经得到答案了，生成blob对象进而生成文件我们需要ArrayBuffer, text, or JSON这种三种数据类型的某一种。</p>
+<h3 id="测试验证"><a href="#测试验证" class="headerlink" title="测试验证"></a>测试验证</h3><p>后端Java，代码当中使用的是 <code>BufferedOutputStream</code> 类来返回数据。前端分别测试了”json””text”””arraybutter””blob”四种responseType<br>arraybutter和blob都可以正确的生成文件。</p>
+<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest/responseType">MDN解释</a><br><a target="_blank" rel="noopener" href="http://www.cnblogs.com/skywang12345/p/io_12.html">java io系列12之 BufferedInputStream(缓冲输入流)的认知、源码和示例</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/wkyseo/article/details/78232485">深入理解xhr的responseType中blob和arrayBuffer</a></p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-03-26T03:35:53.000Z" title="2019/3/26 11:35:53">2019-03-26</time>发表</span><span class="level-item"><time dateTime="2023-04-12T07:08:14.557Z" title="2023/4/12 15:08:14">2023-04-12</time>更新</span><span class="level-item"> Micheal </span><span class="level-item">2 分钟读完 (大约316个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/superset-xue-xi-zhi-lian-jie-mongodb/">Superset学习之连接MongoDB</a></p><div class="content"><h1 id="集成-MongoDB"><a href="#集成-MongoDB" class="headerlink" title="集成 MongoDB"></a>集成 MongoDB</h1><h5 id="方法一：mongodb-BI，已验证"><a href="#方法一：mongodb-BI，已验证" class="headerlink" title="方法一：mongodb-BI，已验证"></a>方法一：<a target="_blank" rel="noopener" href="https://www.mongodb.com/products/bi-connector">mongodb-BI</a>，已验证</h5><p>MongoDB需要安装mongdoDB BI-connector 插件，该插件的功能是使mongoDB支持Sql查询语句，从而应对各种BI工具的连接，<a target="_blank" rel="noopener" href="https://docs.mongodb.com/bi-connector/current/client-applications/">官方文档</a>中列举了其支持的各种BI工具。Superset不在官方支持列表当中，当然官方支持BI工具当中也没有类似Superset这种开源的PAAS类工具。<br>为了连通Superset，Superset侧也需要一个插件<a target="_blank" rel="noopener" href="https://pypi.org/project/sqlalchemy-mongobi/">sqlalchemy-mongobi</a>（PS:该插件是收费的）。</p>
+<h3 id="其他可能的实现方法"><a href="#其他可能的实现方法" class="headerlink" title="其他可能的实现方法"></a>其他可能的实现方法</h3><h5 id="方法二：转mongoDB至关系型数据库，举例mosql"><a href="#方法二：转mongoDB至关系型数据库，举例mosql" class="headerlink" title="方法二：转mongoDB至关系型数据库，举例mosql"></a>方法二：转mongoDB至关系型数据库，举例<a target="_blank" rel="noopener" href="https://github.com/stripe/mosql">mosql</a></h5><h5 id="方法三：使用第三方的数据平台服务，举例dremio"><a href="#方法三：使用第三方的数据平台服务，举例dremio" class="headerlink" title="方法三：使用第三方的数据平台服务，举例dremio"></a>方法三：使用第三方的数据平台服务，举例<a target="_blank" rel="noopener" href="https://www.dremio.com/">dremio</a></h5><p>总结，Superset等其他BI工具基本支持的都是Sql且关系型数据库，在配置数据图表时实际就是在组织Sql语句。所以非关系型数据库整合BI的问题基本归结为如何让其支持Sql语句。</p>
+<h3 id="横向对比其他PAAS类BI"><a href="#横向对比其他PAAS类BI" class="headerlink" title="横向对比其他PAAS类BI"></a>横向对比其他PAAS类BI</h3><p>Grafana  star 27k+ 有企业版（收费）Live Demo</p>
+<p>Superset  star 23k+</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-03-04T02:50:18.000Z" title="2019/3/4 10:50:18">2019-03-04</time>发表</span><span class="level-item"><time dateTime="2023-04-12T07:08:14.539Z" title="2023/4/12 15:08:14">2023-04-12</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/">技术日志</a></span><span class="level-item">2 分钟读完 (大约339个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/superset-xue-xi-ti-yan/">Superset学习体验</a></p><div class="content"><h1 id="superset代码评测"><a href="#superset代码评测" class="headerlink" title="superset代码评测:"></a>superset代码评测:</h1><p>版本还未稳定，release版本长时间脱离 master版本，且本身并不稳定。项目庞大涉及领域繁多加上人员混杂可能是导致目前代码略显凌乱bug较多的原因。尝试了几个不同的版本才获得一个可以在Ubuntu及Mac平台都可使用Docker正常运行的版本（非release版本），且该版本在前端控制台还存在肉眼可见的bug。版本号：(#6934) ea9d22b2eca6cf823380adc96d2040a5c955edd8</p>
+<p>值得一提的问题，部署。项目的打包过程非常复杂，涉及到Linux的环境包，Python包，JavaScript包以及可能存在的其他未知类型的包。打包过程中GFW造成了巨大的阻碍。在有透明代理的路由环境下打包的成功率还是很高的，但在一般环境下成功率十不存一。甚至可能出现已经正常启动过的开发环境，重新启动时因为DNS污染的问题，把原来正确的包给破坏掉的情况。</p>
+<p>可行的解决办法是在发布时进行本地打包Docker image，再上传至服务器启动，需要修改部分代码。</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-02-26T09:28:08.000Z" title="2019/2/26 17:28:08">2019-02-26</time>发表</span><span class="level-item"><time dateTime="2023-04-12T07:08:14.539Z" title="2023/4/12 15:08:14">2023-04-12</time>更新</span><span class="level-item">几秒读完 (大约61个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/virtualbox-xu-ni-ji-ubuntu-cai-keng/">VirtualBox 虚拟机 Ubuntu 踩坑</a></p><div class="content"><h3 id="虚拟机-网络设置"><a href="#虚拟机-网络设置" class="headerlink" title="虚拟机-网络设置"></a>虚拟机-网络设置</h3><ol>
+<li>使用网络桥接模式保证host和虚拟机可以互访，虚拟机可连接Internet。</li>
+<li>host系统下网卡设置共享</li>
+<li>subnet <a target="_blank" rel="noopener" href="http://www.subnet-calculator.com/subnet.php?net_class=B">地址计算器</a></li>
+</ol>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-02-25T08:35:56.000Z" title="2019/2/25 16:35:56">2019-02-25</time>发表</span><span class="level-item"><time dateTime="2023-04-12T07:08:14.538Z" title="2023/4/12 15:08:14">2023-04-12</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/">技术日志</a></span><span class="level-item">1 分钟读完 (大约145个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/docker-xue-xi-ji-lu/">Docker 学习记录</a></p><div class="content"><h3 id="架构解析"><a href="#架构解析" class="headerlink" title="架构解析"></a>架构解析</h3><p>context build image build container run by daemon</p>
+<p>docker-compose 为单独安装的软件，mac/windows 安装包自带，Linux自行安装</p>
+<p>docker-machine 理解不深入，windows10非企业版下是控制虚拟机，win10非专业、企业版缺少Hyber-V支持，无法安装docker 安装包最新版，只能安装legacy版本。</p>
+<h3 id="文件解释"><a href="#文件解释" class="headerlink" title="文件解释"></a>文件解释</h3><ol>
+<li>Dockerfile用于build image</li>
+<li>docker-compose.yml用于组织container，设置network，启动顺序，依赖关系，来源build或pull。</li>
+</ol>
+<h3 id="待补充知识"><a href="#待补充知识" class="headerlink" title="待补充知识"></a>待补充知识</h3><ol>
+<li>container 内部操作及commit为新 image</li>
+</ol>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2018-12-25T09:40:50.000Z" title="2018/12/25 17:40:50">2018-12-25</time>发表</span><span class="level-item"><time dateTime="2023-04-12T07:08:14.524Z" title="2023/4/12 15:08:14">2023-04-12</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/">技术日志</a></span><span class="level-item">3 分钟读完 (大约486个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/react-hooks/">React hooks 学习体会</a></p><div class="content"><p>上接<a href="/2018/09/30/React、Vue比较/">React、Vue比较</a></p>
+<p>又经过一段时间的学习和开发对React有了更加深刻的理解，领悟了相较于Vue更多的优势。应为语法更接近原生的关系，class在使用extends时很方便，可以把很多相近的页面组件的共通部分写成一个class专门用于继承，可以大大缩短开发时间。而这点在Vue上也有对应的实现mixin，但可惜的是官方文档几乎没有说明，也不清楚具体的内在机制。</p>
+<p>还有最近的两个重磅更新懒加载的官方实现React.lazy + suspense 实现。以及react-hooks</p>
+<p>react hooks 的实际效果让我想起了 meteor 中的动态变量，动态变量本身不依赖组件存在，而且始终具备动态属性。可以用专门的订阅器 watch 其变化。</p>
+<p>当然区别还是很大的，hooks的设计初衷不是方便我们在组件之间传递它的。</p>
+<p>我对官方介绍视频hooks的开发者Dan的最后一段话特别有感触。原文大意：React的logo是一个原子，似乎是想表达React对web开发的解构，万物由原子构成，而一个web项目则是由无数个组件构成。组件即是web的原子。就像科学家原先以为原子就是世间的最小单位，之后又发现了电子、中子。hooks即是React的电子，只是之前我们对其的理解不够深，看到是state、life-cycle之类的表象，剥去表象之后才发现其真实的样子，以及其是如何影响原子的特性的。看看react logo上那围绕中子的轨道，也许那就是hooks。</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2018-11-23T08:26:00.000Z" title="2018/11/23 16:26:00">2018-11-23</time>发表</span><span class="level-item"><time dateTime="2023-04-12T07:08:14.550Z" title="2023/4/12 15:08:14">2023-04-12</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E5%A6%84%E4%BA%BA%E5%A6%84%E8%AF%AD/">妄人妄语</a></span><span class="level-item">19 分钟读完 (大约2787个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/peng-you-gai-mai-fang-liao/">朋友该卖房了</a></p><div class="content"><h2 id="为何会有此文"><a href="#为何会有此文" class="headerlink" title="为何会有此文"></a>为何会有此文</h2><p>2016年中曾经劝过身边的好朋友买房，2017年底发现漏通知了一位，之后说起十分尴尬，“我去，你怎么没跟我说！”此文既是为了防止这种情况的再次发生。</p>
+<h2 id="先说结论"><a href="#先说结论" class="headerlink" title="先说结论"></a>先说结论</h2><p>敝人预计19年房价还会继续下跌，可能性大于80%。下跌区域全国性，一线、准一线城市黄金地段不包括。</p>
+<h2 id="论述"><a href="#论述" class="headerlink" title="论述"></a>论述</h2><h3 id="基本盘"><a href="#基本盘" class="headerlink" title="基本盘"></a>基本盘</h3><p>经济基础决定上层建筑，GDP增长率，股市，外贸等硬指标几乎都是可以预见的下降趋势。刺激经济增长的内生动力严重不足，人口红利消减，收入增长减缓，小企业生存困难国进民退，税收增长率远远高于GDP增长率，想像美国一样大规模减税在体制上就不可能发生。</p>
+<p>唯一一个可能产生动力的源头一带一路，但我估计仅凭这一项就想抵消上面的全部颓势因素绝无可能。更别说领导同志大笔一挥债务减免挣来的钱可能就没了。当然这是一个百年大计，过分计较一时得失不可取，在此就不展开了。只讨论明年的可能情况。</p>
+<p>政策上是否还有招可以创造内生动力？08年4万亿，19年20万亿行不行？这么做应当可以力挽狂澜，姑且可算在那剩下的20%可能性当中。永远不可高估中国人的下线，这是我在这个国度生活了30多年得出的最宝贵经验。</p>
+<p>以上我得出的结论是经济增长进一步减缓。</p>
+<h3 id="货币"><a href="#货币" class="headerlink" title="货币"></a>货币</h3><p>长久以来我国的货币发行依赖于（或者说绑定于）贸易的美元顺差，赚多少美元印多少人民币。为了对冲和维持汇率RMB长久以来不得不维持严重超发的状态。按照普通国家的来说产生的结果肯定是钱流向股市和房市，中国股市因其国情特殊性导致其一直以来扮演的角色就是中国智商税税务局。要我说中国股民（或者说中国人民）已经算是非常理智了，否则分分钟给你炒上天际。6000就能打住真是个奇迹，总结就是聪明人太多不好忽悠。</p>
+<p>所以聪明的中国人选择（或者说被迫选择）了房地产，实在是无奈又聪明的举动。无奈是实在没有其他选择了，金融衍生品，民间借贷严格管控，贵金属本省就是抗风险产品。聪明是房产作为一种不动产实在特殊。生活必需品，土地是不可再生资源，特殊国情与城市户口相关进而与医疗，教育等其他生活必须资源相关，可以做杠杆，更重要的是有地方政府的信用做保证！而且不是保证你不变废纸，正常情况下就是保证你不会亏。</p>
+<p>总之房地产在我国一直扮演着最重要也几乎就是唯一的货币蓄水池的作用。而随着贸易战的进行美元盈余必将进一步减少，目前我国的外汇储备官方数字近几月处于下降态势具体原因未知。因为正常来说下降应该在明年而不是今年，可能性很多背后可能有大棋不展开说。美元盈余减少，货币增发按照以往策略也应减缓，故支撑房价的因素又少一项。</p>
+<h3 id="城市化"><a href="#城市化" class="headerlink" title="城市化"></a>城市化</h3><p>这是一个非常复杂的问题，我估计我国的智囊团也没有有把握的答案。敝人斗胆在这瞎猜一番。首先是现今的城市化率，各个机构的数字皆不相同，本来这个数字其实就是很难界定。多大县城可以算作城市，常驻人口算不算已经城市化，是不是一定要有住房才算。第二城市化那一年到多少算作基本完成，中国国情特殊，再加上互联网，物联网技术的增长未来城市可能与现今大不相同，也许未来不在需要城市化也说不定。第三存量住房究竟有多少？</p>
+<p>在中国以上三个问题，我看在中国堪比哲学三大终极问题了。</p>
+<p>因为此文讨论是房价的预期，以上三个问题我用一个回答回答：“我国的存量住房已经能够支持中国未来十年的城市化进程”说白了就是我国的空置房数量现今应该是一个非常恐怖的数字。</p>
+<p>故我的观点是，只要政府愿意在不新建住房的情况下城市化的进程仍可继续。</p>
+<h3 id="政府的目标"><a href="#政府的目标" class="headerlink" title="政府的目标"></a>政府的目标</h3><p>至此我认为影响房价的三个最大因素已经罗列完毕，1.经济大环境，2.超发的货币增量，3.城市化。这里在分析一下政府的需求，首先最重要的地方财政。如果房价不涨或者下跌地方财政必然难以为继，故要么维持房价要么寻找新的收入点（请不要问为什么政府不能勒紧裤腰带来支持民营经济这种问题）。我的答案是房产税。</p>
+<p>次一级的需求是经济增长，本届政府是有大志向的。几个目标，世界级强国（世界第一），世界级强军，一带一路，国家统一。所有这些目标都必须有一个支撑点——钱。</p>
+<p>理想中的中国经济增长模型应该是，城市化-&gt;房地产业-&gt;各行业-&gt;经济增长-&gt;就业收入增加-&gt;城市化。目前这个健康循环中的最大问题点就是高房价。高房价抑制了城市化，从而阻碍了整体的经济增长。但是房价降必然给地产行业带来打击，从而可能引发连锁反应给整体经济带来重创，陷入经济下降的恶性循环。世界上大部分国家都经历过这个痛苦的过程，经济危机。</p>
+<p>所以现在政府或者说中国全体人民需要的是一个既能解决高房价，又能不影响整体经济，从而重新释放内生动力的方案。</p>
+<p>那么真的有两全齐美的方法吗？当然没有！挖坑要填，欠债要还，天塌下来要人顶。</p>
+<h3 id="房价下降的后果"><a href="#房价下降的后果" class="headerlink" title="房价下降的后果"></a>房价下降的后果</h3><p>说是下降，请理解成下降或崩溃。首先是房企，有地烂在手上的肯定倒闭，造成银行烂账。那么问题就是全国房企大规模倒闭造成的烂账银行撑得住吗？我觉得问题不大，几大国资银行天天盆满钵满，500强都是名列前茅，即使高管开的都是天价工资每年的利润率还是很好看。想当年国企改制那种洪水滔天的烂账都能解决，今天几个房企，少吃两顿可能裤腰带都不用勒就过去了。</p>
+<p>接着是房地产相关行业，我觉得这部分问题就更不大了，政府年年喊着去产能，钢筋水泥首当其充。今年土地成交量已经大幅下降，整个行业已经做好了下降预期。打雷下雨，该回家收衣服的已经准备好了。</p>
+<p>最后还有一个最大的问题，房贷断供。08年次贷危机说到底问题爆发点就在这上。经济下行房贷断供，贷款人申请破产，资产拍卖清偿资不抵债，拍卖增多房价下跌，金融衍生品亏损，连锁引爆次贷危机。</p>
+<p>那么中国有可能发生一样的情况吗？首先国内没有基于房贷的金融衍生品。所以断供即是断供不会引发金融系统的系统性风险。（PS:话说我们有金融系统吗？）那么问题就剩下一个了，房价下跌引发的大规模断供会让银行崩溃吗？回答是肯定的，不会。告诉各位一个中国的基本事实，中国的房贷可没有强制平仓这一说。如果说美国的房贷是有限责任，即你还不上银行收回房子贷款清零。那么中国的房贷就是无限责任，100w的房子70w的贷款就算你房子跌到只剩30w，银行收回你的房子拍卖得了30w，剩下的70w贷款你还是得还。</p>
+<p>如果你不知道上述事实，我建议再往下看之前先冷静思考五分钟。用世界上最强大的图像引擎，想象力，去想象一下那天崩地裂的景象。</p>
+<h3 id="结局"><a href="#结局" class="headerlink" title="结局"></a>结局</h3><p>背着一套房的刚需继续还房贷。就算能承受的住征信出问题也绝对受不了上老赖名单。所以该还还得还。炒房客，不跳楼的都是内心强大的，中国人内心还是很强大所以问题不大。地产开发商终于经历了建国以来的一次正向竞争淘汰。去产能事业进步巨大。</p>
+<p>总之房价的崩溃不会是全行业的系统性崩溃，结局会更像是针对中国刚刚生成的一部分中产阶级的一次定向爆破。说真的我真想看看到时候那帮砸售楼处的人，到时候准备去砸哪。</p>
+<p>以上，歌照唱，舞照跳。天下无事，我说无事就无事。不想被代表的同志请早做打算。</p>
+<h3 id="未来"><a href="#未来" class="headerlink" title="未来"></a>未来</h3><p>千古机遇，历史拐点。一手好牌想打错都难。一地鸡毛之后顺势出台房产税平衡地方财政，使地产行业成为真正服务于民生的行业。耕者有其田，居者有其屋，能者居其位，盛世开启。</p>
+<p>广阔天地，大有可为，与君共勉。</p>
+</div></article></div><nav class="pagination" role="navigation" aria-label="pagination"><div class="pagination-previous"><a href="/page/2/">上一页</a></div><div class="pagination-next"><a href="/page/4/">下一页</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link" href="/">1</a></li><li><a class="pagination-link" href="/page/2/">2</a></li><li><a class="pagination-link is-current" href="/page/3/">3</a></li><li><a class="pagination-link" href="/page/4/">4</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.png" alt="Michael Xiao"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Michael Xiao</p><p class="is-size-6 is-block">Front-end Developer</p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">39</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">9</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">17</p></a></div></div></nav><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Github" href="https://github.com/mikexfreeze"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="RSS" href="https://blog.duandiwang.com/atom.xml"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">链接</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://hexo.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Hexo</span></span><span class="level-right"><span class="level-item tag">hexo.io</span></span></a></li></ul></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/%E5%A6%84%E4%BA%BA%E5%A6%84%E8%AF%AD/"><span class="level-start"><span class="level-item">妄人妄语</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97/"><span class="level-start"><span class="level-item">学习日志</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%B7%A5%E5%85%B7/"><span class="level-start"><span class="level-item">工具</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"><span class="level-start"><span class="level-item">技术日志</span></span><span class="level-end"><span class="level-item tag">16</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%97%A5%E8%AE%B0/"><span class="level-start"><span class="level-item">日记</span></span><span class="level-end"><span class="level-item tag">9</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%B5%8B%E8%AF%95/"><span class="level-start"><span class="level-item">测试</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%BD%AC%E5%B8%96/"><span class="level-start"><span class="level-item">转帖</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/categories/%E9%87%91%E5%8F%A5%E5%90%8D%E8%A8%80/"><span class="level-start"><span class="level-item">金句名言</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"><span class="level-start"><span class="level-item">随便韶韶</span></span><span class="level-end"><span class="level-item tag">17</span></span></a></li></ul></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">订阅更新</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="订阅"></div></div></form></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">follow.it</h3><form action="" method="post" target="_blank"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="订阅"></div></div></form></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-07-03T08:00:07.000Z">2023-07-03</time></p><p class="title"><a href="/san-ti-dong-hua-guan-hou-gan/">三体动画观后感</a></p><p class="categories"><a href="/categories/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/">随便韶韶</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-04-12T07:32:45.000Z">2023-04-12</time></p><p class="title"><a href="/cosmic-gu-suan-fang-fa-xue-xi-bi-ji/">cosmic估算方法学习笔记</a></p><p class="categories"><a href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/">技术日志</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-12-23T03:11:10.000Z">2021-12-23</time></p><p class="title"><a href="/qian-gou-yong/">钱够用</a></p><p class="categories"><a href="/categories/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/">随便韶韶</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-10-17T03:38:12.000Z">2021-10-17</time></p><p class="title"><a href="/ren-xing-de-deng-ji/">人性的等级</a></p><p class="categories"><a href="/categories/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/">随便韶韶</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-03-11T02:54:32.000Z">2021-03-11</time></p><p class="title"><a href="/qian-duan-bi-shi-xuan-ze-ti/">前端笔试选择题</a></p><p class="categories"><a href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/">技术日志</a></p></div></article></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/ajax/"><span class="tag">ajax</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ant-design/"><span class="tag">ant design</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/antd/"><span class="tag">antd</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/responseType/"><span class="tag">responseType</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97/"><span class="tag">学习日志</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%B7%A5%E5%85%B7/"><span class="tag">工具</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"><span class="tag">技术日志</span><span class="tag">18</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%94%BF%E6%B2%BB/"><span class="tag">政治</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%97%A5%E8%AE%B0/"><span class="tag">日记</span><span class="tag">9</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%B5%8B%E8%AF%84/"><span class="tag">测评</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%B5%8B%E8%AF%95/"><span class="tag">测试</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%BB%8F%E6%B5%8E/"><span class="tag">经济</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%BE%8E%E5%9B%BD/"><span class="tag">美国</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E4%BB%B6/"><span class="tag">自定义组件</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%BD%AC%E5%B8%96/"><span class="tag">转帖</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E9%87%91%E5%8F%A5%E5%90%8D%E8%A8%80/"><span class="tag">金句名言</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"><span class="tag">随便韶韶</span><span class="tag">17</span></a></div></div></div></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2023/07/"><span class="level-start"><span class="level-item">七月 2023</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2023/04/"><span class="level-start"><span class="level-item">四月 2023</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/12/"><span class="level-start"><span class="level-item">十二月 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/10/"><span class="level-start"><span class="level-item">十月 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/03/"><span class="level-start"><span class="level-item">三月 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/01/"><span class="level-start"><span class="level-item">一月 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/11/"><span class="level-start"><span class="level-item">十一月 2020</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/10/"><span class="level-start"><span class="level-item">十月 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/08/"><span class="level-start"><span class="level-item">八月 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/07/"><span class="level-start"><span class="level-item">七月 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/06/"><span class="level-start"><span class="level-item">六月 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/05/"><span class="level-start"><span class="level-item">五月 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/03/"><span class="level-start"><span class="level-item">三月 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/01/"><span class="level-start"><span class="level-item">一月 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/12/"><span class="level-start"><span class="level-item">十二月 2019</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/11/"><span class="level-start"><span class="level-item">十一月 2019</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/10/"><span class="level-start"><span class="level-item">十月 2019</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/09/"><span class="level-start"><span class="level-item">九月 2019</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/08/"><span class="level-start"><span class="level-item">八月 2019</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/06/"><span class="level-start"><span class="level-item">六月 2019</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/05/"><span class="level-start"><span class="level-item">五月 2019</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/04/"><span class="level-start"><span class="level-item">四月 2019</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/03/"><span class="level-start"><span class="level-item">三月 2019</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/02/"><span class="level-start"><span class="level-item">二月 2019</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/12/"><span class="level-start"><span class="level-item">十二月 2018</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/11/"><span class="level-start"><span class="level-item">十一月 2018</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/09/"><span class="level-start"><span class="level-item">九月 2018</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/07/"><span class="level-start"><span class="level-item">七月 2018</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2017/11/"><span class="level-start"><span class="level-item">十一月 2017</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="随便韶韶" height="28"></a><p class="is-size-7"><span>&copy; 2024 Micheal</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p><p class="is-size-7">© 2019</p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
             }
-        });
-    };
-
-    searchFunc('/search.xml', 'searchInput', 'searchResult');
-});
-</script>
-
-    <!-- 白天和黑夜主题 -->
-<div class="stars-con">
-    <div id="stars"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>  
-</div>
-
-<script>
-    function switchNightMode() {
-        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
-        setTimeout(function () {
-            $('body').hasClass('DarkMode') 
-            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
-            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
-            
-            setTimeout(function () {
-            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
-                $(this).remove()
-            })
-            }, 2e3)
-        })
-    }
-</script>
-
-    <!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
-    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-</div>
-
-
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
-
-    
-
-    
-    
-    
-
-    <!-- 雪花特效 -->
-    
-
-    <!-- 鼠标星星特效 -->
-    
-
-     
-        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
-        <script src="/libs/others/TencentCaptcha.js"></script>
-        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
-    
-
-    <!-- Baidu Analytics -->
-
-    <!-- Baidu Push -->
-
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
-
-    
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
-    
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
-    
-
-    
-
-    
-
-    <!--腾讯兔小巢-->
-    
-    
-
-    
-
-    
-
-    
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
-    
-
-</body>
-
-</html>
+        };</script><script data-pjax src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script data-pjax src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script src="/js/pjax.js"></script><!--!--><!--!--><!--!--><script data-pjax src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

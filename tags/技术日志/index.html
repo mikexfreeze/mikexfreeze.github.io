@@ -1,1305 +1,1070 @@
-<!DOCTYPE HTML>
-<html lang="zh-CN,en,zh-tw,default">
-
-
-<head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="标签: 技术日志, 随便韶韶">
-    <meta name="description" content="决定未来的不是你的对错与否，而是你的意志有多强">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="referrer" content="no-referrer-when-downgrade">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-
-
-    <title>标签: 技术日志 | 随便韶韶</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
-    
-
-
-    <!-- bg-cover style     -->
-
-
-
-<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
-<link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-<link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-<link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-<link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-<link rel="stylesheet" type="text/css" href="/css/matery.css">
-<link rel="stylesheet" type="text/css" href="/css/my.css">
-<link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
-
-
-
-
-    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
-    <link rel="stylesheet" href="/css/post.css">
-
-
-
-
-    
-        <link rel="stylesheet" type="text/css" href="/css/reward.css">
-    
-
-
-
-    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
-
-<meta name="generator" content="Hexo 7.0.0-rc1"><link rel="alternate" href="/atom.xml" title="随便韶韶" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
-
-
-<body>
-    <header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="nav-wrapper container">
-            <div class="brand-logo">
-                <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
-                    
-                    <span class="logo-span">随便韶韶</span>
-                </a>
-            </div>
-            
-
-<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
-<ul class="right nav-menu">
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/" class="waves-effect waves-light">
-      
-      <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
-      <span>首页</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/tags" class="waves-effect waves-light">
-      
-      <i class="fas fa-tags" style="zoom: 0.6;"></i>
-      
-      <span>标签</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/categories" class="waves-effect waves-light">
-      
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
-      
-      <span>分类</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/archives" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>归档</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/about" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>关于</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>留言板</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>友情链接</span>
-    </a>
-    
-  </li>
-  
-  <li>
-    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-  <li>
-    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
-      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-</ul>
-
-
-<div id="mobile-nav" class="side-nav sidenav">
-
-    <div class="mobile-head bg-color">
-        
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
-        
-        <div class="logo-name">随便韶韶</div>
-        <div class="logo-desc">
-            
-            决定未来的不是你的对错与否，而是你的意志有多强
-            
-        </div>
-    </div>
-
-    <ul class="menu-list mobile-menu-list">
-        
-        <li class="m-nav-item">
-	  
-		<a href="/" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-home"></i>
-			
-			首页
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/tags" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-tags"></i>
-			
-			标签
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/categories" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			分类
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			归档
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/about" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-user-circle"></i>
-			
-			关于
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			留言板
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			友情链接
-		</a>
-          
-        </li>
-        
-        
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
-                <i class="fab fa-github-square fa-fw"></i>Fork Me
-            </a>
-        </li>
-        
-    </ul>
-</div>
-
-
-        </div>
-
-        
-            <style>
-    .nav-transparent .github-corner {
-        display: none !important;
-    }
-
-    .github-corner {
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        right: 0;
-        border: 0;
-        transform: scale(1.1);
-    }
-
-    .github-corner svg {
-        color: #0f9d58;
-        fill: #fff;
-        height: 64px;
-        width: 64px;
-    }
-
-    .github-corner:hover .octo-arm {
-        animation: a 0.56s ease-in-out;
-    }
-
-    .github-corner .octo-arm {
-        animation: none;
-    }
-
-    @keyframes a {
-        0%,
-        to {
-            transform: rotate(0);
-        }
-        20%,
-        60% {
-            transform: rotate(-25deg);
-        }
-        40%,
-        80% {
-            transform: rotate(10deg);
-        }
-    }
-</style>
-
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
-   data-tooltip="Fork Me" data-position="left" data-delay="50">
-    <svg viewBox="0 0 250 250" aria-hidden="true">
-        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-              fill="currentColor" class="octo-body"></path>
-    </svg>
-</a>
-        
-    </nav>
-
-</header>
-
-    <div class="bg-cover pd-header about-cover">
-    <div class="container">
-    <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                随便韶韶
-                
-            </div>
-
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="/libs/typed/typed.js"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: [ 
-                            
-                                "从来没有真正的绝境, 只有心灵的迷途",
-                            
-                                "Never really desperate, only the lost of the soul",
-                            
-                        ],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
-</script>
-
-
-    </div>
-</div>
-
-<main class="content">
-
-    
-
-<div id="tags" class="container chip-container">
-    <div class="card">
-        <div class="card-content">
-            <div class="tag-title center-align">
-                <i class="fas fa-tags"></i>&nbsp;&nbsp;文章标签
-            </div>
-            <div class="tag-chips">
-                
-                
-                <a href="/tags/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/" title="随便韶韶: 17">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="随便韶韶" style="background-color: #F9EBEA;">随便韶韶
-                        <span class="tag-length">17</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E6%97%A5%E8%AE%B0/" title="日记: 9">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="日记" style="background-color: #F5EEF8;">日记
-                        <span class="tag-length">9</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97/" title="学习日志: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="学习日志" style="background-color: #D5F5E3;">学习日志
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/" title="技术日志: 18">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-active "
-                            data-tagname="技术日志" style="background-color: #E8F8F5;">技术日志
-                        <span class="tag-length">18</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E9%87%91%E5%8F%A5%E5%90%8D%E8%A8%80/" title="金句名言: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="金句名言" style="background-color: #FEF9E7;">金句名言
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E5%B7%A5%E5%85%B7/" title="工具: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="工具" style="background-color: #F8F9F9;">工具
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E6%B5%8B%E8%AF%84/" title="测评: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="测评" style="background-color: #82E0AA;">测评
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E6%B5%8B%E8%AF%95/" title="测试: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="测试" style="background-color: #D7BDE2;">测试
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E7%BB%8F%E6%B5%8E/" title="经济: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="经济" style="background-color: #A3E4D7;">经济
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/ant-design/" title="ant design: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="ant design" style="background-color: #85C1E9;">ant design
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/antd/" title="antd: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="antd" style="background-color: #F8C471;">antd
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E4%BB%B6/" title="自定义组件: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="自定义组件" style="background-color: #F9E79F;">自定义组件
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E6%94%BF%E6%B2%BB/" title="政治: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="政治" style="background-color: #F9EBEA;">政治
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E7%BE%8E%E5%9B%BD/" title="美国: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="美国" style="background-color: #E8F8F5;">美国
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E8%BD%AC%E5%B8%96/" title="转帖: 4">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="转帖" style="background-color: #FEF9E7;">转帖
-                        <span class="tag-length">4</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/ajax/" title="ajax: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="ajax" style="background-color: #F5EEF8;">ajax
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/responseType/" title="responseType: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="responseType" style="background-color: #F8F9F9;">responseType
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-    
-
-    <article id="articles" class="container articles">
-        <div class="row tags-posts">
-            
-            
-            <div class="article tag-post col s12 m6 l4" data-tags="技术日志" data-aos="fade-up">
-                <div class="card">
-                    <a href="/cosmic-gu-suan-fang-fa-xue-xi-bi-ji/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="cosmic估算方法学习笔记">
-                            
-                            <span class="card-title">cosmic估算方法学习笔记</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-12
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/" class="post-category">
-                                技术日志
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div class="article tag-post col s12 m6 l4" data-tags="技术日志" data-aos="fade-up">
-                <div class="card">
-                    <a href="/qian-duan-bi-shi-xuan-ze-ti/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="前端笔试选择题">
-                            
-                            <span class="card-title">前端笔试选择题</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-11
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/" class="post-category">
-                                技术日志
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div class="article tag-post col s12 m6 l4" data-tags="技术日志" data-aos="fade-up">
-                <div class="card">
-                    <a href="/qian-duan-mian-shi-ti-gang/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="前端面试提纲">
-                            
-                            <span class="card-title">前端面试提纲</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-27
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/" class="post-category">
-                                技术日志
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div class="article tag-post col s12 m6 l4" data-tags="技术日志" data-aos="fade-up">
-                <div class="card">
-                    <a href="/flutter-ying-yong-kai-fa-demo-zhan-shi/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="flutter应用开发demo展示">
-                            
-                            <span class="card-title">flutter应用开发demo展示</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-27
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/" class="post-category">
-                                技术日志
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div class="article tag-post col s12 m6 l4" data-tags="技术日志" data-aos="fade-up">
-                <div class="card">
-                    <a href="/n1-xiao-gang-pao-gu-jian-shi-yong-docker-ui-an-zhuang-openwrt/">
-                        <div class="card-image tag-image">
-                            
-                            <img src="/images/docker-install.webp" class="responsive-img" alt="N1小钢炮固件使用docker-ui安装openwrt">
-                            
-                            <span class="card-title">N1小钢炮固件使用docker-ui安装openwrt</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-17
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/" class="post-category">
-                                技术日志
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div class="article tag-post col s12 m6 l4" data-tags="技术日志" data-aos="fade-up">
-                <div class="card">
-                    <a href="/yuan-sheng-mian-jing-cong-chu-ji-dao-gao-ji/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="原生面经从初级到高级">
-                            
-                            <span class="card-title">原生面经从初级到高级</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-25
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/" class="post-category">
-                                技术日志
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div class="article tag-post col s12 m6 l4" data-tags="技术日志, ant design, antd, 自定义组件" data-aos="fade-up">
-                <div class="card">
-                    <a href="/zi-zhi-ant-design-biao-ge-zu-jian-jiao-cheng/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="自制ant.design表格组件教程">
-                            
-                            <span class="card-title">自制ant.design表格组件教程</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-11
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/" class="post-category">
-                                技术日志
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div class="article tag-post col s12 m6 l4" data-tags="随便韶韶, 技术日志" data-aos="fade-up">
-                <div class="card">
-                    <a href="/lian-tong-g2-40-he-zi-shua-ji-jiao-cheng/">
-                        <div class="card-image tag-image">
-                            
-                            <img src="/images/%E8%81%94%E9%80%9AG2-40%E7%9B%92%E5%AD%90%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B-%E5%88%B7%E6%9C%BA%E7%94%BB%E9%9D%A2.jpg" class="responsive-img" alt="联通G2-40盒子刷机教程">
-                            
-                            <span class="card-title">联通G2-40盒子刷机教程</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-09-27
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/" class="post-category">
-                                随便韶韶
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div class="article tag-post col s12 m6 l4" data-tags="技术日志" data-aos="fade-up">
-                <div class="card">
-                    <a href="/grafana-diao-yan-he-superset-dui-bi/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Grafana调研和Superset对比">
-                            
-                            <span class="card-title">Grafana调研和Superset对比</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-06-14
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/" class="post-category">
-                                技术日志
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div class="article tag-post col s12 m6 l4" data-tags="技术日志" data-aos="fade-up">
-                <div class="card">
-                    <a href="/csv-wen-jian-tong-guo-node-js-zhuan-cun-postresql-shu-ju-ku/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="csv文件通过node.js转存postresql数据库">
-                            
-                            <span class="card-title">csv文件通过node.js转存postresql数据库</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-05-15
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/" class="post-category">
-                                技术日志
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div class="article tag-post col s12 m6 l4" data-tags="技术日志" data-aos="fade-up">
-                <div class="card">
-                    <a href="/ajax-jie-kou-jie-shou-wen-jian-pai-keng-er/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="ajax接口接收文件排坑（二）">
-                            
-                            <span class="card-title">ajax接口接收文件排坑（二）</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-04-26
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/" class="post-category">
-                                技术日志
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div class="article tag-post col s12 m6 l4" data-tags="技术日志, ajax, responseType" data-aos="fade-up">
-                <div class="card">
-                    <a href="/ajax-jie-kou-jie-shou-wen-jian-pai-keng/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="ajax接口接收文件排坑(一)">
-                            
-                            <span class="card-title">ajax接口接收文件排坑(一)</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-04-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/" class="post-category">
-                                技术日志
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </article>
-</main>
-
-
-<div class="container paging">
-    <div class="row">
-        <div class="col s6 m4 l4">
-            
-            <a class="left btn-floating btn-large disabled">
-                <i class="fas fa-angle-left"></i>
-            </a>
-            
-        </div>
-        <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">1 / 2</div>
-        </div>
-        <div class="col s6 m4 l4">
-            
-            <a href="/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/page/2/"
-               class="right btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-right"></i>
-            </a>
-            
-        </div>
-    </div>
-</div>
-
-
-
-
-    <footer class="page-footer bg-color">
-    
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        display: none;
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
-
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
-        
-        font-size: 15px;
-        color: #42b983;
-    }
-
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
-
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
-
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="503838841"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
-</div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="/libs/aplayer/Meting.min.js"></script>
-
-    
-
-    <div class="container row center-align"
-         style="margin-bottom: 0px !important;">
-        <div class="col s12 m8 l8 copy-right">
-            Copyright&nbsp;&copy;
-            
-                <span id="year">2019-2024</span>
-            
-            <a href="/about" target="_blank">Micheal</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
-            
-            <br>
-            
-            
-            
-                
-            
-            
-                <span id="busuanzi_container_site_pv">
-                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
-                    <span id="busuanzi_value_site_pv" class="white-color"></span>
-            </span>
-            
-            
-                <span id="busuanzi_container_site_uv">
-                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
-                    <span id="busuanzi_value_site_uv" class="white-color"></span>
-            </span>
-            
-            <br>
-
-            <!-- 运行天数提醒. -->
-            
-            <br>
-            
-        </div>
-        <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
-
-</div>
-    </div>
-</footer>
-
-<div class="progress-bar"></div>
-
-
-    <!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
-            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
-                   class="search-input">
-        </div>
-        <div id="searchResult"></div>
-    </div>
-</div>
-
-<script type="text/javascript">
-$(function () {
-    var searchFunc = function (path, search_id, content_id) {
-        'use strict';
-        $.ajax({
-            url: path,
-            dataType: "xml",
-            success: function (xmlResponse) {
-                // get the contents from search data
-                var datas = $("entry", xmlResponse).map(function () {
-                    return {
-                        title: $("title", this).text(),
-                        content: $("content", this).text(),
-                        url: $("url", this).text()
-                    };
-                }).get();
-                var $input = document.getElementById(search_id);
-                var $resultContent = document.getElementById(content_id);
-                $input.addEventListener('input', function () {
-                    var str = '<ul class=\"search-result-list\">';
-                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                    $resultContent.innerHTML = "";
-                    if (this.value.trim().length <= 0) {
-                        return;
-                    }
-                    // perform local searching
-                    datas.forEach(function (data) {
-                        var isMatch = true;
-                        var data_title = data.title.trim().toLowerCase();
-                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                        var data_url = data.url;
-                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
-                        var index_title = -1;
-                        var index_content = -1;
-                        var first_occur = -1;
-                        // only match artiles with not empty titles and contents
-                        if (data_title !== '' && data_content !== '') {
-                            keywords.forEach(function (keyword, i) {
-                                index_title = data_title.indexOf(keyword);
-                                index_content = data_content.indexOf(keyword);
-                                if (index_title < 0 && index_content < 0) {
-                                    isMatch = false;
-                                } else {
-                                    if (index_content < 0) {
-                                        index_content = 0;
-                                    }
-                                    if (i === 0) {
-                                        first_occur = index_content;
-                                    }
-                                }
-                            });
-                        }
-                        // show search results
-                        if (isMatch) {
-                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
-                            var content = data.content.trim().replace(/<[^>]+>/g, "");
-                            if (first_occur >= 0) {
-                                // cut out 100 characters
-                                var start = first_occur - 20;
-                                var end = first_occur + 80;
-                                if (start < 0) {
-                                    start = 0;
-                                }
-                                if (start === 0) {
-                                    end = 100;
-                                }
-                                if (end > content.length) {
-                                    end = content.length;
-                                }
-                                var match_content = content.substr(start, end);
-                                // highlight all keywords
-                                keywords.forEach(function (keyword) {
-                                    var regS = new RegExp(keyword, "gi");
-                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
-                                });
-
-                                str += "<p class=\"search-result\">" + match_content + "...</p>"
-                            }
-                            str += "</li>";
-                        }
-                    });
-                    str += "</ul>";
-                    $resultContent.innerHTML = str;
-                });
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="robots" content="noindex"><meta><title>标签: 技术日志 - 随便韶韶</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="随便韶韶"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="随便韶韶"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="决定未来的不是你的对错与否，而是你的意志有多强"><meta property="og:type" content="blog"><meta property="og:title" content="随便韶韶"><meta property="og:url" content="http://blog.mikefreeze.com/"><meta property="og:site_name" content="随便韶韶"><meta property="og:description" content="决定未来的不是你的对错与否，而是你的意志有多强"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="http://blog.mikefreeze.com/img/og_image.png"><meta property="article:author" content="Micheal"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="http://blog.mikefreeze.com/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.mikefreeze.com"},"headline":"随便韶韶","image":["http://blog.mikefreeze.com/img/og_image.png"],"author":{"@type":"Person","name":"Micheal"},"publisher":{"@type":"Organization","name":"随便韶韶","logo":{"@type":"ImageObject","url":"http://blog.mikefreeze.com/img/logo.svg"}},"description":"决定未来的不是你的对错与否，而是你的意志有多强"}</script><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link data-pjax rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="随便韶韶" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="随便韶韶" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags">标签</a></li><li class="is-active"><a href="#" aria-current="page">技术日志</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2023-04-12T07:32:45.000Z" title="2023/4/12 15:32:45">2023-04-12</time>发表</span><span class="level-item"><time dateTime="2023-04-12T08:31:54.203Z" title="2023/4/12 16:31:54">2023-04-12</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/">技术日志</a></span><span class="level-item">6 分钟读完 (大约847个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/cosmic-gu-suan-fang-fa-xue-xi-bi-ji/">cosmic估算方法学习笔记</a></p><div class="content"><h3 id="Cosmic-估算方法简介"><a href="#Cosmic-估算方法简介" class="headerlink" title="Cosmic 估算方法简介"></a>Cosmic 估算方法简介</h3><p><a target="_blank" rel="noopener" href="http://www.measures.net.cn/UploadedFiles/15548924688853944COSMIC%20Method%20v4.0.1%20Introduction%20to%20COSMIC%20v1.1-CH.pdf">COSMIC 软件度量方法简介</a></p>
+<p>简单来说该方法是以数功能点的方式来预估项目工作量。把一个最小颗粒度的 story 拆分成 EXRW（输入、输出、读取、写入）4种功能点，最后再汇总统计来计算总工程量。</p>
+<img src="/cosmic-gu-suan-fang-fa-xue-xi-bi-ji/EXRW-example.png" class="" title="[举例]">
+
+<h3 id="关于优缺点的思考"><a href="#关于优缺点的思考" class="headerlink" title="关于优缺点的思考"></a>关于优缺点的思考</h3><h4 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h4><p>快速，简便，通用</p>
+<p>门槛低不需要专业人员参与，有助于和客户沟通确认实际需求，解释工作量。</p>
+<h4 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h4><p>改造、升级类项目的评估没有明显优势，可能难以适用。</p>
+<p>内部逻辑复杂的项目恐怕难以适用，比如一个项目某个重点技术难点就要占据整个项目很大一部分时间的情况。</p>
+<h3 id="关于工程量估算的思考"><a href="#关于工程量估算的思考" class="headerlink" title="关于工程量估算的思考"></a>关于工程量估算的思考</h3><p>敝人本专业是建筑环境与设备工程，我一直都在思考一个问题，为什么软件行业至今没有发展出像建筑工程行业一样成熟的项目估算，进度控制方法。</p>
+<p>同时这个问题也可以转化成为什么建筑行业的成熟方法没有被套用在软件行业上。“人机料法环”六字真言多么顺耳。</p>
+<p>大胆猜测之一，行业壁垒可能让两个行业缺乏顶层交流，软件行业可能从来不知道有这些方法可以借用。</p>
+<p>但我认为这种可能性非常小，行业先贤在拓荒阶段肯定考虑过借鉴学习。大概率还是因为行业情况不同。建筑行业对质量的要求跟 IT 行业大部分情况下根本不是一个级别的。你不可能把一栋楼盖完住户入住之后再每个月升级打补丁。</p>
+<p>还有就是 IT 行业的产品往往要求快速的研发发布抢占市场。</p>
+<p>但我个人觉得以上的两种差别情况实际正在减少。IT 行业的渗透率越来越高，蓝海市场越来越少。红海市场的厮杀应该是质量、成本取胜而非速度。随着 IT 行业继续深入传统行业比如互联网+概念，汽车，飞机这些场景都需要堪比建筑行业的质量要求。理论上将来我们可能真有可能见到把建筑行业的工程管理方法引入到 IT 行业的一天。</p>
+<p>回到 IT 行业的估算工作上来，就过往的经验来说估算不准确的情况 50% 因为需求不明确 40% 你估你的Boss就要下月交 9% 估算人员太过乐观 1% 估算人员过于悲观。就 90% 的情况来说你用什么方法根本不重要。就Cosmic 方法来说，能够增加和用户沟通便捷性，方便挖掘用户需求这方面来说，确实有其价值。也就是说对于交付甲方性质的项目有用，对于自研项目个人认为没有特别优势或劣势。</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-03-11T02:54:32.000Z" title="2021/3/11 10:54:32">2021-03-11</time>发表</span><span class="level-item"><time dateTime="2023-04-12T07:08:14.574Z" title="2023/4/12 15:08:14">2023-04-12</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/">技术日志</a></span><span class="level-item">4 分钟读完 (大约537个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/qian-duan-bi-shi-xuan-ze-ti/">前端笔试选择题</a></p><div class="content"><h3 id="单选题"><a href="#单选题" class="headerlink" title="单选题"></a>单选题</h3><h5 id="1、控制台输出的结果是？"><a href="#1、控制台输出的结果是？" class="headerlink" title="1、控制台输出的结果是？"></a>1、控制台输出的结果是？</h5><pre><code>var arraynew = new Array(5)
+arraynew[1]=1
+arraynew[5]=2
+console.log(arraynew.length)
+</code></pre><p>A、0<br>B、1<br>C、5<br>D、6  </p>
+<h5 id="2、在-css-选择器当中，优先级排序正确的是（）"><a href="#2、在-css-选择器当中，优先级排序正确的是（）" class="headerlink" title="2、在 css 选择器当中，优先级排序正确的是（）"></a>2、在 css 选择器当中，优先级排序正确的是（）</h5><p>A、id选择器&gt;标签选择器&gt;类选择器<br>B、标签选择器&gt;类选择器&gt;id选择器<br>C、类选择器&gt;标签选择器&gt;id选择器<br>D、id选择器&gt;类选择器&gt;标签选择器</p>
+<h5 id="3、CSS-样式，下面哪一个元素能够达到最大宽度，且前后各有一个换行？（-）"><a href="#3、CSS-样式，下面哪一个元素能够达到最大宽度，且前后各有一个换行？（-）" class="headerlink" title="3、CSS 样式，下面哪一个元素能够达到最大宽度，且前后各有一个换行？（ ）"></a>3、CSS 样式，下面哪一个元素能够达到最大宽度，且前后各有一个换行？（ ）</h5><p>A、Block Element<br>B、Square Element<br>C、Side Element<br>D、Box Elemen</p>
+<h5 id="4、JavaScript中window对象的子对象不包含以下哪个对象？（-）"><a href="#4、JavaScript中window对象的子对象不包含以下哪个对象？（-）" class="headerlink" title="4、JavaScript中window对象的子对象不包含以下哪个对象？（ ）"></a>4、JavaScript中window对象的子对象不包含以下哪个对象？（ ）</h5><p>A. document   B. self   C. history   D. message</p>
+<h5 id="5、下边代码输出的结果是（-）"><a href="#5、下边代码输出的结果是（-）" class="headerlink" title="5、下边代码输出的结果是（ ）"></a>5、下边代码输出的结果是（ ）</h5><pre><code>var val = &#39;smtg&#39;;
+console.log(&#39;Value is &#39; + (val === &#39;smtg&#39;) ? &#39;Something&#39; : &#39;Nothing&#39;);
+</code></pre><p>A: Value is Something<br>B: Value is Nothing<br>C: NaN<br>D: other</p>
+<h5 id="6、下边代码输出的结果是（-）"><a href="#6、下边代码输出的结果是（-）" class="headerlink" title="6、下边代码输出的结果是（ ）"></a>6、下边代码输出的结果是（ ）</h5><pre><code>var name = &#39;World!&#39;;
+(function () &#123;
+    if (typeof name === &#39;undefined&#39;) &#123;
+        var name = &#39;Jack&#39;;
+        console.log(&#39;Goodbye &#39; + name);
+    &#125; else &#123;
+        console.log(&#39;Hello &#39; + name);
+    &#125;
+&#125;)(); 
+</code></pre><p>A: Goodbye Jack<br>B: Hello Jack<br>C: Hello undefined<br>D: Hello World</p>
+<h5 id="7、下列事件哪个不是由鼠标触发的事件（）"><a href="#7、下列事件哪个不是由鼠标触发的事件（）" class="headerlink" title="7、下列事件哪个不是由鼠标触发的事件（）"></a>7、下列事件哪个不是由鼠标触发的事件（）</h5><p>A、click<br>B、contextmenu<br>C、mouseout<br>D、keydown</p>
+<h5 id="8、下列不属于javascript内置对象的是（-）"><a href="#8、下列不属于javascript内置对象的是（-）" class="headerlink" title="8、下列不属于javascript内置对象的是（ ）"></a>8、下列不属于javascript内置对象的是（ ）</h5><p>A、Math<br>B、Date<br>C、RegExp<br>D、Window<br>E、Error</p>
+<h5 id="9、以下运行结果（-）"><a href="#9、以下运行结果（-）" class="headerlink" title="9、以下运行结果（ ）"></a>9、以下运行结果（ ）</h5><pre><code>for(var i = 0; i &lt; 10; i++) &#123;
+    setTimeout(function() &#123;
+        console.log(i);
+    &#125;, 1000);
+&#125;
+</code></pre><p>A、0–9<br>B、10个10<br>C、10个9<br>D、无限循环</p>
+<h3 id="多选题"><a href="#多选题" class="headerlink" title="多选题"></a>多选题</h3><h5 id="10、input元素的type属性的取值可以是"><a href="#10、input元素的type属性的取值可以是" class="headerlink" title="10、input元素的type属性的取值可以是( )"></a>10、input元素的type属性的取值可以是( )</h5><p>A、image<br>B、checkbox<br>C、button<br>D、select</p>
+<h5 id="11、下列关于web页面级优化描述最正确的是（-）"><a href="#11、下列关于web页面级优化描述最正确的是（-）" class="headerlink" title="11、下列关于web页面级优化描述最正确的是（ ）"></a>11、下列关于web页面级优化描述最正确的是（ ）</h5><p>A、减少HTTP请求的次数<br>B、进行资源合拼和压缩<br>C、Inline images<br>D、将外部脚本置于低端<br>E、减少不必要的HTTP跳转<br>F、以上描述都对</p>
+<h5 id="12、函数的调用方式有哪些：（-）"><a href="#12、函数的调用方式有哪些：（-）" class="headerlink" title="12、函数的调用方式有哪些：（ ）"></a>12、函数的调用方式有哪些：（ ）</h5><p>A、直接调用<br>B、作为对象方法调用<br>C、作为构造函数调用<br>D、通过call和apply方法调用</p>
+<h3 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h3><p><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844904040342487048">80道前端面试选择题</a></p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-01-27T01:52:18.000Z" title="2021/1/27 09:52:18">2021-01-27</time>发表</span><span class="level-item"><time dateTime="2023-04-12T07:08:14.574Z" title="2023/4/12 15:08:14">2023-04-12</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/">技术日志</a></span><span class="level-item">1 分钟读完 (大约168个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/qian-duan-mian-shi-ti-gang/">前端面试提纲</a></p><div class="content"><h3 id="样式CSS"><a href="#样式CSS" class="headerlink" title="样式CSS"></a>样式CSS</h3><ol>
+<li>实现垂直居中</li>
+<li>自适应布局 flex Grid</li>
+<li>动画</li>
+<li>canvas</li>
+</ol>
+<h3 id="语言"><a href="#语言" class="headerlink" title="语言"></a>语言</h3><ol>
+<li>原型链，作用域，闭包</li>
+<li>ES6，Pormise，async</li>
+<li>设计模式，工厂、适配器、桥接</li>
+<li>动态数据绑定的实现原理</li>
+<li>全局状态管理 redux vuex</li>
+<li>TypeScript</li>
+<li>js 事件机制</li>
+</ol>
+<h3 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h3><ol>
+<li>组件化理解</li>
+<li>Virtual Dom</li>
+<li>shadow dom</li>
+</ol>
+<h3 id="工程化"><a href="#工程化" class="headerlink" title="工程化"></a>工程化</h3><ol>
+<li>工程化的理解</li>
+<li>webpack loader</li>
+<li>异步加载的实现原理</li>
+<li>CSS-module less sass</li>
+<li>代码质量保障</li>
+</ol>
+<h3 id="性能优化"><a href="#性能优化" class="headerlink" title="性能优化"></a>性能优化</h3><ol>
+<li>服务端渲染</li>
+</ol>
+<h3 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h3><h3 id="自动化测试"><a href="#自动化测试" class="headerlink" title="自动化测试"></a>自动化测试</h3><h3 id="兼容性问题"><a href="#兼容性问题" class="headerlink" title="兼容性问题"></a>兼容性问题</h3><h3 id="编程思想"><a href="#编程思想" class="headerlink" title="编程思想"></a>编程思想</h3><h3 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h3><h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><ol>
+<li>加班接受情况</li>
+<li>职业规划</li>
+<li>前端现状及未来走向</li>
+<li>学习能力</li>
+</ol>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2020-08-27T03:17:05.000Z" title="2020/8/27 11:17:05">2020-08-27</time>发表</span><span class="level-item"><time dateTime="2023-04-12T07:08:14.558Z" title="2023/4/12 15:08:14">2023-04-12</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/">技术日志</a></span><span class="level-item">几秒读完 (大约15个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/flutter-ying-yong-kai-fa-demo-zhan-shi/">flutter应用开发demo展示</a></p><div class="content"><p>真实后台环境下录制<br><img src="/flutter-ying-yong-kai-fa-demo-zhan-shi/pet_plante_demo.gif" class=""></p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2020-01-17T12:00:14.000Z" title="2020/1/17 20:00:14">2020-01-17</time>发表</span><span class="level-item"><time dateTime="2023-04-12T07:08:14.554Z" title="2023/4/12 15:08:14">2023-04-12</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/">技术日志</a></span><span class="level-item">5 分钟读完 (大约688个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/n1-xiao-gang-pao-gu-jian-shi-yong-docker-ui-an-zhuang-openwrt/">N1小钢炮固件使用docker-ui安装openwrt</a></p><div class="content"><h2 id="Docker-ui-安装及设置"><a href="#Docker-ui-安装及设置" class="headerlink" title="Docker-ui 安装及设置"></a>Docker-ui 安装及设置</h2><p>进入N1小钢炮管理后台，点击 System 选项，之后再点击 Startup，在右侧往下拖，找到 Docker 的对应进程选项 /etc/init.d/S60dockerd，把 NO 点为 YES 启用 Docker，再点击左边的 start，之后点击下面的 SAVE 保存</p>
+<p>点击Apps-Other-Docker Setting-install Docker UI （没安装时默认为黄色，下图为已经安装完成后的显示）</p>
+<img src="/n1-xiao-gang-pao-gu-jian-shi-yong-docker-ui-an-zhuang-openwrt/docker-install.webp" class="">
+<font size=5><strong>特别注意：这步操作没有在没有科学上网的情况下可能无法顺利完成</strong></font>
+
+<p>之后重启 N1</p>
+<h2 id="Openwrt-镜像容器安装步骤"><a href="#Openwrt-镜像容器安装步骤" class="headerlink" title="Openwrt 镜像容器安装步骤"></a>Openwrt 镜像容器安装步骤</h2><ol>
+<li>通过 ssh 连接 N1</li>
+<li>输入命令拉取OpenWrt镜像 <code>docker pull kanshudj/n1-openwrtgateway:r9</code> 此步同样建议使用科学上网环境</li>
+<li>运行：<code>ip link set eth0 promisc on</code></li>
+<li>运行：<code>docker network create -d macvlan --subnet=192.168.1.0/24 --gateway=192.168.1.1 -o parent=eth0 macnet</code><br>（将第三个单独的1改为你主路由的网关地址，即你登录你主路由后台的IP地址第三位数字）<blockquote>
+<p>这步是在 docker 环境中创建一个名为 macnet 的网卡</p>
+</blockquote>
+</li>
+<li>运行：<code>docker run --restart always -d --network macnet --privileged kanshudj/n1-openwrtgateway:r9 /sbin/init</code></li>
+<li>进入 Docker 管理界面，点击 Local，再点击 Containers</li>
+</ol>
+<img src="/n1-xiao-gang-pao-gu-jian-shi-yong-docker-ui-an-zhuang-openwrt/docker-init-step-1.webp" class="">
+<ol start="7">
+<li>找到自己刚拉取完成的 OpenWrt 镜像，选择第四个命令行工具</li>
+</ol>
+<img src="/n1-xiao-gang-pao-gu-jian-shi-yong-docker-ui-an-zhuang-openwrt/docker-init-step-2.webp" class="">
+<ol start="8">
+<li>点击Connect</li>
+</ol>
+<img src="/n1-xiao-gang-pao-gu-jian-shi-yong-docker-ui-an-zhuang-openwrt/docker-init-step-3.webp" class="">
+<ol start="9">
+<li>输入 <code>vi /etc/config/network</code></li>
+</ol>
+<img src="/n1-xiao-gang-pao-gu-jian-shi-yong-docker-ui-an-zhuang-openwrt/docker-init-step-4.webp" class="">
+<ol start="10">
+<li><p>找到3处包含192.168.X.X的地方，输入i进入编辑，同样将第三个数字的位置改为你主路由的网段，在此处我的主路由为123，所以我将三处都改为123。当编辑完成后，按一次键盘左上角Esc键，之后输入：wq并且回车。（英文冒号+wq）</p>
+</li>
+<li><p>设置 OpenWrt 的初始密码命令为 <code>passwd</code> 还有可能为 <code>password</code> 或 <code>mount_root</code>。输入正确之后会提示你输入正确明码。 </p>
+</li>
+<li><p>重启N1</p>
+</li>
+</ol>
+<p>之后就可以通过你设置的 Openwrt 地址进入管理界面了（管理地址为上如3红框中的第一个），到这里我们旁路由OpenWrt就算全部设置完成了</p>
+<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p><a target="_blank" rel="noopener" href="https://www.iyyxz.com/%E6%96%90%E8%AE%AFn1%E5%B0%8F%E9%92%A2%E7%82%AEdocker%E5%AE%89%E8%A3%85openwrt-lede%E5%81%9A%E6%97%81%E8%B7%AF%E7%94%B1%E7%A8%B3%E5%AE%9A%E5%8E%BB%E5%B9%BF%E5%91%8A%E7%A7%91%E5%AD%A6%E5%8A%9F/">斐讯N1小钢炮Docker安装OpenWrt/LEDE做旁路由稳定去广告+科学功能</a></p>
+<h3 id="PS"><a href="#PS" class="headerlink" title="PS"></a>PS</h3><p>我自己进行相关操作时遇到了两个坑，故把前人的操作步骤再完善一下，希望能让后来者少走弯路。</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-10-25T09:58:56.000Z" title="2019/10/25 17:58:56">2019-10-25</time>发表</span><span class="level-item"><time dateTime="2023-04-12T07:08:14.545Z" title="2023/4/12 15:08:14">2023-04-12</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/">技术日志</a></span><span class="level-item">1 小时读完 (大约10129个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/yuan-sheng-mian-jing-cong-chu-ji-dao-gao-ji/">原生面经从初级到高级</a></p><div class="content"><p><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000020759924">原文链接</a></p>
+<ol>
+<li>函数<br>1.1函数的3种定义方法<br>1.1.1 函数声明<pre><code>//ES5
+function getSum()&#123;&#125;
+function ()&#123;&#125;//匿名函数
+//ES6
+()=&gt;&#123;&#125;//如果&#123;&#125;内容只有一行&#123;&#125;和return关键字可省,
+1.1.2 函数表达式(函数字面量)
+//ES5
+var sum=function()&#123;&#125;
+//ES6
+let sum=()=&gt;&#123;&#125;//如果&#123;&#125;内容只有一行&#123;&#125;和return关键字可省,
+</code></pre>1.1.3 构造函数<pre><code>const sum = new Function(&#39;a&#39;, &#39;b&#39; , &#39;return a + b&#39;)
+</code></pre>1.1.4 三种方法的对比<br>1.函数声明有预解析,而且函数声明的优先级高于变量;<br>2.使用Function构造函数定义函数的方式是一个函数表达式,这种方式会导致解析两次代码，影响性能。第一次解析常规的JavaScript代码，第二次解析传入构造函数的字符串</li>
+</ol>
+<p>1.2.ES5中函数的4种调用<br>在ES5中函数内容的this指向和调用方法有关</p>
+<p>1.2.1 函数调用模式<br>包括函数名()和匿名函数调用,this指向window</p>
+<pre><code> function getSum() &#123;
+    console.log(this) //window
+ &#125;
+ getSum()
+
+ (function() &#123;
+    console.log(this) //window
+ &#125;)()
+
+ var getSum=function() &#123;
+    console.log(this) //window
+ &#125;
+ getSum()
+</code></pre><p>1.2.2 方法调用<br>对象.方法名(),this指向对象</p>
+<pre><code>var objList = &#123;
+   name: &#39;methods&#39;,
+   getSum: function() &#123;
+     console.log(this) //objList对象
+   &#125;
+&#125;
+objList.getSum()
+</code></pre><p>1.2.3 构造器调用<br>new 构造函数名(),this指向构造函数</p>
+<pre><code>function Person() &#123;
+  console.log(this); //指向实例
+&#125;
+var personOne = new Person();
+</code></pre><p>1.2.4 间接调用<br>利用call和apply来实现,this就是call和apply对应的第一个参数,如果不传值或者第一个值为null,undefined时this指向window</p>
+<pre><code>function foo() &#123;
+   console.log(this);
+&#125;
+foo.apply(&#39;我是apply改变的this值&#39;);//我是apply改变的this值
+foo.call(&#39;我是call改变的this值&#39;);//我是call改变的this值
+</code></pre><p>1.3 ES6中函数的调用<br>箭头函数不可以当作构造函数使用，也就是不能用new命令实例化一个对象，否则会抛出一个错误<br>箭头函数的this是和定义时有关和调用无关<br>调用就是函数调用模式</p>
+<pre><code>(() =&gt; &#123;
+   console.log(this)//window
+&#125;)()
+
+let arrowFun = () =&gt; &#123;
+  console.log(this)//window
+&#125;
+arrowFun()
+
+let arrowObj = &#123;
+  arrFun: function() &#123;
+   (() =&gt; &#123;
+     console.log(this)//指向函数arrFun
+   &#125;)()
+   &#125;
+ &#125;
+ arrowObj.arrFun();
+</code></pre><p>1.4.call,apply和bind<br>1.IE5之前不支持call和apply,bind是ES5出来的;<br>2.call和apply可以调用函数,改变this,实现继承和借用别的对象的方法;</p>
+<p>1.4.1 call和apply定义<br>调用方法,用一个对象替换掉另一个对象(this)<br>对象.call(新this对象,实参1,实参2,实参3…..)<br>对象.apply(新this对象,[实参1,实参2,实参3…..])</p>
+<p>1.4.2 call和apply用法<br>1.间接调用函数,改变作用域的this值<br>2.劫持其他对象的方法</p>
+<pre><code>var foo = &#123;
+  name:&quot;张三&quot;,
+  logName:function()&#123;
+    console.log(this.name);
+  &#125;
+&#125;
+var bar=&#123;
+  name:&quot;李四&quot;
+&#125;;
+foo.logName.call(bar);//李四
+</code></pre><p>实质是call改变了foo的this指向为bar,并调用该函数<br>3.两个函数实现继承</p>
+<p>function Animal(name){<br>  this.name = name;<br>  this.showName = function(){<br>    console.log(this.name);<br>  }<br>}<br>function Cat(name){<br>  Animal.call(this, name);<br>}<br>var cat = new Cat(“Black Cat”);<br>cat.showName(); //Black Cat<br>4.为类数组(arguments和nodeList)添加数组方法push,pop</p>
+<p>(function(){<br>  Array.prototype.push.call(arguments,’王五’);<br>  console.log(arguments);//[‘张三’,’李四’,’王五’]<br>})(‘张三’,’李四’)<br>5.合并数组</p>
+<p>let arr1=[1,2,3];<br>let arr2=[4,5,6];<br>Array.prototype.push.apply(arr1,arr2); //将arr2合并到了arr1中<br>6.求数组最大值</p>
+<p>Math.max.apply(null,arr)<br>7.判断字符类型</p>
+<p>Object.prototype.toString.call({})<br>1.4.3 bind<br>bind是function的一个函数扩展方法，bind以后代码重新绑定了func内部的this指向,不会调用方法,不兼容IE8</p>
+<p>var name = ‘李四’<br> var foo = {<br>   name: “张三”,<br>   logName: function(age) {<br>   console.log(this.name, age);<br>   }<br> }<br> var fooNew = foo.logName;<br> var fooNewBind = foo.logName.bind(foo);<br> fooNew(10)//李四,10<br> fooNewBind(11)//张三,11  因为bind改变了fooNewBind里面的this指向<br>1.4.4 call,apply和bind原生实现<br>call实现:</p>
+<p>Function.prototype.newCall = function(context, …parameter) {<br>if(context.instanceof Object) context={}<br>  context.fn = this;<br>  context.fn(…parameter);<br>  delete context.fn;<br>}<br>let person = {<br>  name: ‘Abiel’<br>}<br>function sayHi(age,sex) {<br>  console.log(this.name, age, sex);<br>}<br>sayHi.newCall (person, 25, ‘男’); // Abiel 25 男<br>apply实现:</p>
+<p>Function.prototype.newApply = function(context, parameter) {<br>  if (typeof context === ‘object’) {<br>    context = context || window<br>  } else {<br>    context = Object.create(null)<br>  }<br>  let fn = Symbol()<br>  context[fn] = this<br>  context<a href="parameter">fn</a>;<br>  delete context[fn]<br>}<br>bind实现:</p>
+<p>Function.prototype.bind = function (context,…innerArgs) {<br>  var me = this<br>  return function (…finnalyArgs) {<br>    return me.call(context,…innerArgs,…finnalyArgs)<br>  }<br>}<br>let person = {<br>  name: ‘Abiel’<br>}<br>function sayHi(age,sex) {<br>  console.log(this.name, age, sex);<br>}<br>let personSayHi = sayHi.bind(person, 25)<br>personSayHi(‘男’)<br>1.4.5 三者异同<br>同:都是改变this指向,都可接收参数<br>异:bind和call是接收单个参数,apply是接收数组</p>
+<p>1.5.函数的节流和防抖<br>类型    概念    应用<br>节流    某个时间段内,只执行一次    scroll,resize事件一段时间触发一次<br>防抖    处理函数截止后一段时间依次执行    scroll,resize事件触发完后一段时间触发<br>节流:</p>
+<p>1.5.1 节流<br>let throttle = function(func, delay) {<br>    let timer = null;<br>    return function() {<br>      if (!timer) {<br>        timer = setTimeout(()=&gt; {<br>          func.apply(this, arguments);<br>          timer = null;<br>        }, delay);<br>      }<br>    };<br>  };<br>  function handle() {<br>    console.log(Math.random());<br>  }<br>  window.addEventListener(“scroll”, throttle(handle, 1000)); //事件处理函数<br>1.5.2 防抖<br>function debounce(fn, wait) {<br>    let timeout = null;<br>    return function() {<br>      if (timeout !== null) clearTimeout(timeout);//如果多次触发将上次记录延迟清除掉<br>      timeout = setTimeout(()=&gt; {<br>          fn.apply(this, arguments);<br>          timeout = null;<br>        }, wait);<br>    };<br>  }<br>  // 处理函数<br>  function handle() {<br>    console.log(Math.random());<br>  }<br>  // 滚动事件<br>  window.addEventListener(“scroll”, debounce(handle, 1000));<br>1.6.原型链<br>1.6.1 定义<br>对象继承属性的一个链条</p>
+<p>1.6.2构造函数,实例与原型对象的关系<br>图片描述</p>
+<p>var Person = function (name) { this.name = name; }//person是构造函数<br>var o3personTwo = new Person(‘personTwo’)//personTwo是实例<br>图片描述</p>
+<p>原型对象都有一个默认的constructor属性指向构造函数</p>
+<p>1.6.3 创建实例的方法<br>1.字面量</p>
+<p>let obj={‘name’:’张三’}<br>2.Object构造函数创建</p>
+<p>let Obj=new Object()<br>Obj.name=’张三’<br>3.使用工厂模式创建对象</p>
+<p>function createPerson(name){<br> var o = new Object();<br> o.name = name;<br> };<br> return o;<br>}<br>var person1 = createPerson(‘张三’);<br>4.使用构造函数创建对象</p>
+<p>function Person(name){<br> this.name = name;<br>}<br>var person1 = new Person(‘张三’);<br>1.6.4 new运算符<br>1.创了一个新对象;<br>2.this指向构造函数;<br>3.构造函数有返回,会替换new出来的对象,如果没有就是new出来的对象<br>4.手动封装一个new运算符</p>
+<p>var new2 = function (func) {<br>    var o = Object.create(func.prototype); 　　 //创建对象<br>    var k = func.call(o);　　　　　　　　　　　　　//改变this指向，把结果付给k<br>    if (typeof k === ‘object’) {　　　　　　　　　//判断k的类型是不是对象<br>        return k;　　　　　　　　　　　　　　　　　 //是，返回k<br>    } else {<br>        return o;　　　　　　　　　　　　　　　　　 //不是返回返回构造函数的执行结果<br>    }<br>}<br>1.6.5 对象的原型链<br>图片描述</p>
+<p>1.7 继承的方式<br>JS是一门弱类型动态语言,封装和继承是他的两大特性</p>
+<p>1.7.1 原型链继承<br>将父类的实例作为子类的原型<br>1.代码实现<br>定义父类:</p>
+<p>// 定义一个动物类<br>function Animal (name) {<br>  // 属性<br>  this.name = name || ‘Animal’;<br>  // 实例方法<br>  this.sleep = function(){<br>    console.log(this.name + ‘正在睡觉！’);<br>  }<br>}<br>// 原型方法<br>Animal.prototype.eat = function(food) {<br>  console.log(this.name + ‘正在吃：’ + food);<br>};<br>子类:</p>
+<p>function Cat(){<br>}<br>Cat.prototype = new Animal();<br>Cat.prototype.name = ‘cat’;</p>
+<p>//　Test Code<br>var cat = new Cat();<br>console.log(cat.name);//cat<br>console.log(cat.eat(‘fish’));//cat正在吃：fish  undefined<br>console.log(cat.sleep());//cat正在睡觉！ undefined<br>console.log(cat instanceof Animal); //true<br>console.log(cat instanceof Cat); //true<br>2.优缺点<br>简单易于实现,但是要想为子类新增属性和方法，必须要在new Animal()这样的语句之后执行,无法实现多继承</p>
+<p>1.7.2 构造继承<br>实质是利用call来改变Cat中的this指向<br>1.代码实现<br>子类:</p>
+<p>function Cat(name){<br>  Animal.call(this);<br>  this.name = name || ‘Tom’;<br>}<br>2.优缺点<br>可以实现多继承,不能继承原型属性/方法</p>
+<p>1.7.3 实例继承<br>为父类实例添加新特性，作为子类实例返回<br>1.代码实现<br>子类</p>
+<p>function Cat(name){<br>  var instance = new Animal();<br>  instance.name = name || ‘Tom’;<br>  return instance;<br>}<br>2.优缺点<br>不限制调用方式,但不能实现多继承</p>
+<p>1.7.4 拷贝继承<br>将父类的属性和方法拷贝一份到子类中<br>1.子类:</p>
+<p>function Cat(name){<br>  var animal = new Animal();<br>  for(var p in animal){<br>    Cat.prototype[p] = animal[p];<br>  }<br>  Cat.prototype.name = name || ‘Tom’;<br>}<br>2.优缺点<br>支持多继承,但是效率低占用内存</p>
+<p>1.7.5 组合继承<br>通过调用父类构造，继承父类的属性并保留传参的优点，然后通过将父类实例作为子类原型，实现函数复用<br>1.子类:</p>
+<p>function Cat(name){<br>  Animal.call(this);<br>  this.name = name || ‘Tom’;<br>}<br>Cat.prototype = new Animal();<br>Cat.prototype.constructor = Cat;<br>1.7.6 寄生组合继承<br>function Cat(name){<br>  Animal.call(this);<br>  this.name = name || ‘Tom’;<br>}<br>(function(){<br>  // 创建一个没有实例方法的类<br>  var Super = function(){};<br>  Super.prototype = Animal.prototype;<br>  //将实例作为子类的原型<br>  Cat.prototype = new Super();<br>})();<br>1.7.7 ES6的extends继承<br>ES6 的继承机制是先创造父类的实例对象this（所以必须先调用super方法），然后再用子类的构造函数修改this,链接描述</p>
+<p>//父类<br>class Person {<br>    //constructor是构造方法<br>    constructor(skin, language) {<br>        this.skin = skin;<br>        this.language = language;<br>    }<br>    say() {<br>        console.log(‘我是父类’)<br>    }<br>}</p>
+<p>//子类<br>class Chinese extends Person {<br>    constructor(skin, language, positon) {<br>        //console.log(this);//报错<br>        super(skin, language);<br>        //super();相当于父类的构造函数<br>        //console.log(this);调用super后得到了this，不报错，this指向子类，相当于调用了父类.prototype.constructor.call(this)<br>        this.positon = positon;<br>    }<br>    aboutMe() {<br>        console.log(<code>$&#123;this.skin&#125; $&#123;this.language&#125;  $&#123;this.positon&#125;</code>);<br>    }<br>}</p>
+<p>//调用只能通过new的方法得到实例,再调用里面的方法<br>let obj = new Chinese(‘红色’, ‘中文’, ‘香港’);<br>obj.aboutMe();<br>obj.say();<br>1.8.高阶函数<br>1.8.1定义<br>函数的参数是函数或返回函数</p>
+<p>1.8.2 常见的高阶函数<br>map,reduce,filter,sort</p>
+<p>1.8.3 柯里化<br>1.定义:只传递给函数一部分参数来调用它，让它返回一个函数去处理剩下的参数</p>
+<p>fn(a,b,c,d)=&gt;fn(a)(b)(c)(d)<br>2.代码实现:</p>
+<p>const currying = fn =&gt; {<br>const len = fn.length<br>return function curr (…args1) {<br>    if (args1.length &gt;= len) {<br>         return fn(…args1)<br>    }<br>    return (…args2) =&gt; curr(…args1, …args2)<br>    }<br>}</p>
+<p>1.8.4 反柯里化<br>1.定义:</p>
+<p>obj.func(arg1, arg2)=&gt;func(obj, arg1, arg2)<br>2.代码实现:</p>
+<p>Function.prototype.uncurrying = function() {<br>  var that = this;<br>  return function() {<br>    return Function.prototype.call.apply(that, arguments);<br>  }<br>};</p>
+<p>function sayHi () {<br>  return “Hello “ + this.value +” “+[].slice.call(arguments);<br>}<br>let sayHiuncurrying=sayHi.uncurrying();<br>console.log(sayHiuncurrying({value:’world’},”hahaha”));<br>1.8.5偏函数<br>1.定义:指定部分参数来返回一个新的定制函数的形式<br>2.例子:</p>
+<p>function foo(a, b, c) {<br>  return a + b + c;<br>}<br>function func(a, b) {<br>  return foo(a,b,8);<br>}<br>2.对象<br>2.1.对象的声明方法<br>2.1.1 字面量<br>var test2 = {x:123,y:345};<br>console.log(test2);//{x:123,y:345};<br>console.log(test2.x);//123<br>console.log(test2.<strong>proto</strong>.x);//undefined<br>console.log(test2.<strong>proto</strong>.x === test2.x);//false<br>2.1.2 构造函数<br>var test1 = new Object({x:123,y:345});<br>console.log(test1);//{x:123,y:345}<br>console.log(test1.x);//123<br>console.log(test1.<strong>proto</strong>.x);//undefined<br>console.log(test1.<strong>proto</strong>.x === test1.x);//false<br>new的作用:<br>1.创了一个新对象;<br>2.this指向构造函数;<br>3.构造函数有返回,会替换new出来的对象,如果没有就是new出来的对象</p>
+<p>2.1.3 内置方法<br>Obejct.create(obj,descriptor),obj是对象,describe描述符属性(可选)</p>
+<p>let test = Object.create({x:123,y:345});<br>console.log(test);//{}<br>console.log(test.x);//123<br>console.log(test.<strong>proto</strong>.x);//3<br>console.log(test.<strong>proto</strong>.x === test.x);//true<br>2.1.4 三种方法的优缺点<br>1.功能:都能实现对象的声明,并能够赋值和取值<br>2.继承性:内置方法创建的对象继承到<strong>proto</strong>属性上<br>3.隐藏属性:三种声明方法会默认为内部的每个成员（属性或方法）生成一些隐藏属性，这些隐藏属性是可以读取和可配置的,属性分类见下面<br>4.属性读取:Object.getOwnPropertyDescriptor()或getOwnPropertyDescriptor()<br>5.属性设置:Object.definePropertype或Object.defineProperties</p>
+<p>2.2.对象的属性<br>2.2.1 属性分类<br>1.数据属性4个特性:<br>configurable(可配置),enumerable(可枚举),writable(可修改),value(属性值)</p>
+<p>2.访问器属性2个特性:<br>get(获取),set(设置)</p>
+<p>3.内部属性<br>由JavaScript引擎内部使用的属性;<br>不能直接访问,但是可以通过对象内置方法间接访问,如:[[Prototype]]可以通过 Object.getPrototypeOf()访问;<br>内部属性用[[]]包围表示,是一个抽象操作,没有对应字符串类型的属性名,如[[Prototype]].</p>
+<p>2.2.2 属性描述符<br>1.定义:将一个属性的所有特性编码成一个对象返回<br>2.描述符的属性有:数据属性和访问器属性<br>3.使用范围:<br>作为方法Object.defineProperty, Object.getOwnPropertyDescriptor, Object.create的第二个参数,</p>
+<p>2.2.3 属性描述符的默认值<br>1.访问对象存在的属性</p>
+<p>特性名    默认值<br>value    对应属性值<br>get    对应属性值<br>set    undefined<br>writable    true<br>enumerable    true<br>configurable    true<br>所以通过上面三种声明方法已存在的属性都是有这些默认描述符<br>2.访问对象不存在的属性</p>
+<p>特性名    默认值<br>value    undefined<br>get    undefined<br>set    undefined<br>writable    false<br>enumerable    false<br>configurable    false<br>2.2.3 描述符属性的使用规则<br>get,set与wriable,value是互斥的,如果有交集设置会报错</p>
+<p>2.2.4 属性定义<br>1.定义属性的函数有两个:Object.defineProperty和Object.defineProperties.例如:<br>Object.defineProperty(obj, propName, desc)</p>
+<p>2.在引擎内部,会转换成这样的方法调用:<br>obj.<a href="propName, desc, true">[DefineOwnProperty]</a></p>
+<p>2.2.5 属性赋值<br>1.赋值运算符(=)就是在调用[[Put]].比如:<br>obj.prop = v;</p>
+<p>2.在引擎内部,会转换成这样的方法调用:<br>obj.<a href="&quot;prop&quot;, v, isStrictModeOn">[Put]</a></p>
+<p>2.2.6 判断对象的属性<br>名称    含义    用法<br>in    如果指定的属性在指定的对象或其原型链中，则in 运算符返回true    ‘name’ in test //true<br>hasOwnProperty()    只判断自身属性    test.hasOwnProperty(‘name’) //true<br>.或[]    对象或原型链上不存在该属性，则会返回undefined    test.name //“lei” test[“name”] //“lei”<br>2.3.Symbol<br>2.3.1概念<br>是一种数据类型;<br>不能new,因为Symbol是一个原始类型的值，不是对象。</p>
+<p>2.3.2 定义方法<br>Symbol(),可以传参</p>
+<p>var s1 = Symbol();<br>var s2 = Symbol();<br>s1 === s2 // false</p>
+<p>// 有参数的情况<br>var s1 = Symbol(“foo”);<br>var s2 = Symbol(“foo”);<br>s1 === s2 // false<br>2.3.3 用法<br>1.不能与其他类型的值进行运算;<br>2.作为属性名</p>
+<p>let mySymbol = Symbol();</p>
+<p>// 第一种写法<br>var a = {};<br>a[mySymbol] = ‘Hello!’;</p>
+<p>// 第二种写法<br>var a = {<br>  [mySymbol]: ‘Hello!’<br>};</p>
+<p>// 第三种写法<br>var a = {};<br>Object.defineProperty(a, mySymbol, { value: ‘Hello!’ });</p>
+<p>// 以上写法都得到同样结果<br>a[mySymbol] // “Hello!”<br>3.作为对象属性名时，不能用点运算符,可以用[]</p>
+<p>let a = {};<br>let name = Symbol();<br>a.name = ‘lili’;<br>a[name] = ‘lucy’;<br>console.log(a.name,a[name]);<br>4.遍历不会被for…in、for…of和Object.keys()、Object.getOwnPropertyNames()取到该属性</p>
+<p>2.3.4 Symbol.for<br>1.定义:在全局中搜索有没有以该参数作为名称的Symbol值，如果有，就返回这个Symbol值，否则就新建并返回一个以该字符串为名称的Symbol值<br>2.举例:</p>
+<p>var s1 = Symbol.for(‘foo’);<br>var s2 = Symbol.for(‘foo’);<br>s1 === s2 // true<br>2.3.5 Symbol.keyFor<br>1.定义:返回一个已登记的Symbol类型值的key<br>2.举例:</p>
+<p>var s1 = Symbol.for(“foo”);<br>Symbol.keyFor(s1) // “foo”</p>
+<p>var s2 = Symbol(“foo”);<br>Symbol.keyFor(s2) // undefined<br>2.4.遍历<br>2.4.1 一级对象遍历方法<br>方法    特性<br>for … in    遍历对象自身的和继承的可枚举属性(不含Symbol属性)<br>Object.keys(obj)    返回一个数组,包括对象自身的(不含继承的)所有可枚举属性(不含Symbol属性)<br>Object.getOwnPropertyNames(obj)    返回一个数组,包括对象自身的所有可枚举属性(不含Symbol属性)<br>Object.getOwnPropertySymbols(obj)    返回一个数组,包含对象自身的所有Symbol属性<br>Reflect.ownKeys(obj)    返回一个数组,包含对象自身的所有(不枚举、可枚举和Symbol)属性<br>Reflect.enumerate(obj)    返回一个Iterator对象,遍历对象自身的和继承的所有可枚举属性(不含Symbol属性)<br>总结:1.只有Object.getOwnPropertySymbols(obj)和Reflect.ownKeys(obj)可以拿到Symbol属性<br>2.只有Reflect.ownKeys(obj)可以拿到不可枚举属性</p>
+<p>2.4.2 多级对象遍历<br>数据模型:</p>
+<p>var treeNodes = [<br>    {<br>     id: 1,<br>     name: ‘1’,<br>     children: [<br>       {<br>        id: 11,<br>        name: ‘11’,<br>        children: [<br>         {<br>          id: 111,<br>          name: ‘111’,<br>          children:[]<br>          },<br>          {<br>            id: 112,<br>            name: ‘112’<br>           }<br>          ]<br>         },<br>         {<br>          id: 12,<br>          name: ‘12’,<br>          children: []<br>         }<br>         ],<br>         users: []<br>        },<br>      ];<br>递归:</p>
+<p>var parseTreeJson = function(treeNodes){<br>      if (!treeNodes || !treeNodes.length) return;</p>
+<pre><code>   for (var i = 0, len = treeNodes.length; i &lt; len; i++) &#123;
+
+        var childs = treeNodes[i].children;
+
+        console.log(treeNodes[i].id);
+
+        if(childs &amp;&amp; childs.length &gt; 0)&#123;
+             parseTreeJson(childs);
+        &#125;
+   &#125;
+&#125;;
+
+console.log(&#39;------------- 递归实现 ------------------&#39;);
+parseTreeJson(treeNodes);
+</code></pre><p>2.5.深度拷贝<br>2.5.1 Object.assign<br>1.定义:将源对象（source）的所有可枚举属性，复制到目标对象（target）<br>2.用法:</p>
+<p>合并多个对象<br>var target = { a: 1, b: 1 };<br>var source1 = { b: 2, c: 2 };<br>var source2 = { c: 3 };<br>Object.assign(target, source1, source2);<br>3.注意:<br>这个是伪深度拷贝,只能拷贝第一层</p>
+<p>2.5.2 JSON.stringify<br>1.原理:是将对象转化为字符串,而字符串是简单数据类型</p>
+<p>2.5.3 递归拷贝<br>function deepClone(source){<br>  const targetObj = source.constructor === Array ? [] : {}; // 判断复制的目标是数组还是对象<br>  for(let keys in source){ // 遍历目标<br>    if(source.hasOwnProperty(keys)){<br>      if(source[keys] &amp;&amp; typeof source[keys] === ‘object’){ // 如果值是对象，就递归一下<br>        targetObj[keys] = source[keys].constructor === Array ? [] : {};<br>        targetObj[keys] = deepClone(source[keys]);<br>      }else{ // 如果不是，就直接赋值<br>        targetObj[keys] = source[keys];<br>      }<br>    }<br>  }<br>  return targetObj;<br>}  </p>
+<p>2.6.数据拦截<br>定义:利用对象内置方法,设置属性,进而改变对象的属性值</p>
+<p>2.6.1 Object.defineProterty<br>1.ES5出来的方法;<br>2.三个参数:对象(必填),属性值(必填),描述符(可选);<br>3.defineProterty的描述符属性</p>
+<p>数据属性:value,writable,configurable,enumerable<br>访问器属性:get,set<br>注:不能同时设置value和writable,这两对属性是互斥的<br>4.拦截对象的两种情况:</p>
+<p>let obj = {name:’’,age:’’,sex:’’  },<br>    defaultName = [“这是姓名默认值1”,”这是年龄默认值1”,”这是性别默认值1”];<br>  Object.keys(obj).forEach(key =&gt; {<br>    Object.defineProperty(obj, key, {<br>      get() {<br>        return defaultName;<br>      },<br>      set(value) {<br>        defaultName = value;<br>      }<br>    });<br>  });</p>
+<p>  console.log(obj.name);<br>  console.log(obj.age);<br>  console.log(obj.sex);<br>  obj.name = “这是改变值1”;<br>  console.log(obj.name);<br>  console.log(obj.age);<br>  console.log(obj.sex);</p>
+<p>  let objOne={},defaultNameOne=”这是默认值2”;<br>  Object.defineProperty(obj, ‘name’, {<br>      get() {<br>        return defaultNameOne;<br>      },<br>      set(value) {<br>        defaultNameOne = value;<br>      }<br>  });<br>  console.log(objOne.name);<br>  objOne.name = “这是改变值2”;<br>  console.log(objOne.name);<br>5.拦截数组变化的情况</p>
+<p>let a={};<br>bValue=1;<br>Object.defineProperty(a,”b”,{<br>    set:function(value){<br>        bValue=value;<br>        console.log(“setted”);<br>    },<br>    get:function(){<br>        return bValue;<br>    }<br>});<br>a.b;//1<br>a.b=[];//setted<br>a.b=[1,2,3];//setted<br>a.b[1]=10;//无输出<br>a.b.push(4);//无输出<br>a.b.length=5;//无输出<br>a.b;//[1,10,3,4,undefined];</p>
+<p>结论:defineProperty无法检测数组索引赋值,改变数组长度的变化;<br>    但是通过数组方法来操作可以检测到</p>
+<p>6.存在的问题</p>
+<p>不能监听数组索引赋值和改变长度的变化<br>必须深层遍历嵌套的对象,因为defineProterty只能劫持对象的属性,因此我们需要对每个对象的每个属性进行遍历，如果属性值也是对象那么需要深度遍历,显然能劫持一个完整的对象是更好的选择</p>
+<p>2.6.2 proxy<br>1.ES6出来的方法,实质是对对象做了一个拦截,并提供了13个处理方法<br>13个方法详情请戳,阮一峰的proxy介绍</p>
+<p>2.两个参数:对象和行为函数</p>
+<p>let handler = {<br>    get(target, key, receiver) {<br>      console.log(“get”, key);<br>      return Reflect.get(target, key, receiver);<br>    },<br>    set(target, key, value, receiver) {<br>      console.log(“set”, key, value);<br>      return Reflect.set(target, key, value, receiver);<br>    }<br>  };<br>  let proxy = new Proxy(obj, handler);<br>  proxy.name = “李四”;<br>  proxy.age = 24;<br>3.问题和优点<br>reflect对象没有构造函数<br>可以监听数组索引赋值,改变数组长度的变化,<br>是直接监听对象的变化,不用深层遍历</p>
+<p>2.6.3 defineProterty和proxy的对比<br>1.defineProterty是es5的标准,proxy是es6的标准;</p>
+<p>2.proxy可以监听到数组索引赋值,改变数组长度的变化;</p>
+<p>3.proxy是监听对象,不用深层遍历,defineProterty是监听属性;</p>
+<p>3.利用defineProterty实现双向数据绑定(vue2.x采用的核心)<br>请戳,剖析Vue原理&amp;实现双向绑定MVVM<br>4.利用proxy实现双向数据绑定(vue3.x会采用)</p>
+<p>3.数组<br>数组基本上考察数组方法多一点,所以这里就单纯介绍常见的场景数组的方法,还有很多场景后续补充;<br>本文主要从应用来讲数组api的一些骚操作;<br>如一行代码扁平化n维数组、数组去重、求数组最大值、数组求和、排序、对象和数组的转化等；<br>上面这些应用场景你可以用一行代码实现？</p>
+<p>3.1 扁平化n维数组<br>1.终极篇</p>
+<p>[1,[2,3]].flat(2) //[1,2,3]<br>[1,[2,3,[4,5]].flat(3) //[1,2,3,4,5]<br>[1,[2,3,[4,5]]].toString()  //‘1,2,3,4,5’<br>[1[2,3,[4,5[…]].flat(Infinity) //[1,2,3,4…n]<br>Array.flat(n)是ES10扁平数组的api,n表示维度,n值为Infinity时维度为无限大</p>
+<p>2.开始篇</p>
+<p>function flatten(arr) {<br>    while(arr.some(item=&gt;Array.isArray(item))) {<br>        arr = [].concat(…arr);<br>    }<br>    return arr;<br>}<br>flatten([1,[2,3]]) //[1,2,3]<br>flatten([1,[2,3,[4,5]]) //[1,2,3,4,5]<br>实质是利用递归和数组合并方法concat实现扁平</p>
+<p>3.2 去重<br>1.终极篇</p>
+<p>Array.from(new Set([1,2,3,3,4,4])) //[1,2,3,4]<br>[…new Set([1,2,3,3,4,4])] //[1,2,3,4]<br>set是ES6新出来的一种一种定义不重复数组的数据类型<br>Array.from是将类数组转化为数组<br>…是扩展运算符,将set里面的值转化为字符串<br>2.开始篇</p>
+<p>Array.prototype.distinct = nums =&gt; {<br>const map = {}<br>const result = []<br>for (const n of nums) {<br>    if (!(n in map)) {<br>        map[n] = 1<br>        result.push(n)<br>    }<br>}<br>return result<br>}<br>[1,2,3,3,4,4].distinct(); //[1,2,3,4]<br>取新数组存值,循环两个数组值相比较</p>
+<p>3.3排序<br>1.终极篇</p>
+<p>[1,2,3,4].sort((a, b) =&gt; a - b); // [1, 2,3,4],默认是升序<br>[1,2,3,4].sort((a, b) =&gt; b - a); // [4,3,2,1] 降序<br>sort是js内置的排序方法,参数为一个函数<br>2.开始篇<br>冒泡排序:</p>
+<p>Array.prototype.bubleSort=function () {<br>    let arr=this,<br>        len = arr.length;<br>    for (let outer = len; outer &gt;= 2; outer–) {<br>      for (let inner = 0; inner &lt;= outer - 1; inner++) {<br>        if (arr[inner] &gt; arr[inner + 1]) {<br>          //升序<br>          [arr[inner], arr[inner + 1]] = [arr[inner + 1], arr[inner]];<br>          console.log([arr[inner], arr[inner + 1]]);<br>        }<br>      }<br>    }<br>    return arr;<br>  }<br>[1,2,3,4].bubleSort() //[1,2,3,4]<br>选择排序</p>
+<pre><code>Array.prototype.selectSort=function () &#123;
+    let arr=this,
+        len = arr.length;
+    for (let i = 0, len = arr.length; i &lt; len; i++) &#123;
+for (let j = i, len = arr.length; j &lt; len; j++) &#123;
+  if (arr[i] &gt; arr[j]) &#123;
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  &#125;
+&#125;
+</code></pre><p>  }<br>    return arr;<br>  }<br>  [1,2,3,4].selectSort() //[1,2,3,4]<br>3.4最大值<br>1.终极篇</p>
+<p>Math.max(…[1,2,3,4]) //4<br>Math.max.apply(this,[1,2,3,4]) //4<br>[1,2,3,4].reduce( (prev, cur,curIndex,arr)=&gt; {<br> return Math.max(prev,cur);<br>},0) //4<br>Math.max()是Math对象内置的方法,参数是字符串;<br>reduce是ES5的数组api,参数有函数和默认初始值;<br>函数有四个参数,pre(上一次的返回值),cur(当前值),curIndex(当前值索引),arr(当前数组)</p>
+<p>2.开始篇<br>先排序再取值</p>
+<p>3.5求和<br>1.终极篇</p>
+<p>[1,2,3,4].arr.reduce(function (prev, cur) {<br>   return prev + cur;<br> },0) //10<br>2.开始篇</p>
+<p>function sum(arr) {<br>  var len = arr.length;<br>  if(len == 0){<br>    return 0;<br>  } else if (len == 1){<br>    return arr[0];<br>  } else {<br>    return arr[0] + sum(arr.slice(1));<br>  }<br>}<br>sum([1,2,3,4]) //10<br>利用slice截取改变数组,再利用递归求和</p>
+<p>3.6合并<br>1.终极篇</p>
+<p>[1,2,3,4].concat([5,6]) //[1,2,3,4,5,6]<br>[…[1,2,3,4],…[4,5]] //[1,2,3,4,5,6]<br>let arrA = [1, 2], arrB = [3, 4]<br>Array.prototype.push.apply(arrA, arrB))//arrA值为[1,2,3,4]<br>2.开始篇</p>
+<p>let arr=[1,2,3,4];<br>  [5,6].map(item=&gt;{<br>   arr.push(item)<br> })<br> //arr值为[1,2,3,4,5,6],注意不能直接return出来,return后只会返回[5,6]<br>3.7判断是否包含值<br>1.终极篇</p>
+<p>[1,2,3].includes(4) //false<br>[1,2,3].indexOf(4) //-1 如果存在换回索引<br>[1, 2, 3].find((item)=&gt;item===3)) //3 如果数组中无值返回undefined<br>[1, 2, 3].findIndex((item)=&gt;item===3)) //2 如果数组中无值返回-1<br>includes(),find(),findIndex()是ES6的api</p>
+<p>2.开始篇</p>
+<p>[1,2,3].some(item=&gt;{<br>  return item===3<br>}) //true 如果不包含返回false<br>3.8类数组转化<br>1.终极篇</p>
+<p>Array.prototype.slice.call(arguments) //arguments是类数组(伪数组)<br>Array.prototype.slice.apply(arguments)<br>Array.from(arguments)<br>[…arguments]<br>类数组:表示有length属性,但是不具备数组的方法<br>call,apply:是改变slice里面的this指向arguments,所以arguments也可调用数组的方法<br>Array.from是将类似数组或可迭代对象创建为数组<br>…是将类数组扩展为字符串,再定义为数组</p>
+<p>2.开始篇</p>
+<p>Array.prototype.slice = function(start,end){<br>      var result = new Array();<br>      start = start || 0;<br>      end = end || this.length; //this指向调用的对象，当用了call后，能够改变this的指向，也就是指向传进来的对象，这是关键<br>      for(var i = start; i &lt; end; i++){<br>           result.push(this[i]);<br>      }<br>      return result;<br> }<br>3.9每一项设置值<br>1.终极篇</p>
+<p>[1,2,3].fill(false) //[false,false,false]<br>fill是ES6的方法<br>2.开始篇</p>
+<p>[1,2,3].map(() =&gt; 0)<br>3.10每一项是否满足<br>[1,2,3].every(item=&gt;{return item&gt;2}) //false<br>every是ES5的api,每一项满足返回 true</p>
+<p>3.11有一项满足<br>[1,2,3].some(item=&gt;{return item&gt;2}) //true<br>some是ES5的api,有一项满足返回 true</p>
+<p>3.12.过滤数组<br>[1,2,3].filter(item=&gt;{return item&gt;2}) //[3]<br>filter是ES5的api,返回满足添加的项的数组</p>
+<p>3.13对象和数组转化<br>Object.keys({name:’张三’,age:14}) //[‘name’,’age’]<br>Object.values({name:’张三’,age:14}) //[‘张三’,14]<br>Object.entries({name:’张三’,age:14}) //[[name,’张三’],[age,14]]<br>Object.fromEntries([name,’张三’],[age,14]) //ES10的api,Chrome不支持 , firebox输出{name:’张三’,age:14}<br>3.14 对象数组<br>[{count:1},{count:2},{count:3}].reduce((p, e)=&gt;p+(e.count), 0)<br>4.数据结构篇<br>数据结构是计算机存储、组织数据的方式,算法是系统描述解决问题的策略。了解基本的数据结构和算法可以提高代码的性能和质量。<br>也是程序猿进阶的一个重要技能。<br>手撸代码实现栈,队列,链表,字典,二叉树,动态规划和贪心算法<br>4.1 栈<br>栈的特点：先进后出</p>
+<p>class Stack {<br>    constructor() {<br>      this.items = [];<br>    }</p>
+<pre><code>// 入栈
+push(element) &#123;
+  this.items.push(element);
+&#125;
+
+// 出栈
+pop() &#123;
+  return this.items.pop();
+&#125;
+
+// 末位
+get peek() &#123;
+  return this.items[this.items.length - 1];
+&#125;
+
+// 是否为空栈
+get isEmpty() &#123;
+  return !this.items.length;
+&#125;
+
+// 长度
+get size() &#123;
+  return this.items.length;
+&#125;
+
+// 清空栈
+clear() &#123;
+  this.items = [];
+&#125;
+</code></pre><p>  }</p>
+<p>  // 实例化一个栈<br>  const stack = new Stack();<br>  console.log(stack.isEmpty); // true</p>
+<p>  // 添加元素<br>  stack.push(5);<br>  stack.push(8);</p>
+<p>  // 读取属性再添加<br>  console.log(stack.peek); // 8<br>  stack.push(11);<br>  console.log(stack.size); // 3<br>  console.log(stack.isEmpty); // false<br>4.2 队列<br>队列：先进先出</p>
+<p>  class Queue {<br>    constructor(items) {<br>      this.items = items || [];<br>    }</p>
+<pre><code>enqueue(element) &#123;
+  this.items.push(element);
+&#125;
+
+dequeue() &#123;
+  return this.items.shift();
+&#125;
+
+front() &#123;
+  return this.items[0];
+&#125;
+
+clear() &#123;
+  this.items = [];
+&#125;
+
+get size() &#123;
+  return this.items.length;
+&#125;
+
+get isEmpty() &#123;
+  return !this.items.length;
+&#125;
+
+print() &#123;
+  console.log(this.items.toString());
+&#125;
+</code></pre><p>  }</p>
+<p>  const queue = new Queue();<br>  console.log(queue.isEmpty); // true</p>
+<p>  queue.enqueue(“John”);<br>  queue.enqueue(“Jack”);<br>  queue.enqueue(“Camila”);<br>  console.log(queue.size); // 3<br>  console.log(queue.isEmpty); // false<br>  queue.dequeue();<br>  queue.dequeue();</p>
+<p>4.3 链表<br>链表:存贮有序元素的集合,<br>但是不同于数组,每个元素是一个存贮元素本身的节点和指向下一个元素引用组成<br>要想访问链表中间的元素,需要从起点开始遍历找到所需元素</p>
+<p>class Node {<br>    constructor(element) {<br>      this.element = element;<br>      this.next = null;<br>    }<br>  }</p>
+<p>  // 链表<br>  class LinkedList {<br>    constructor() {<br>      this.head = null;<br>      this.length = 0;<br>    }</p>
+<pre><code>// 追加元素
+append(element) &#123;
+  const node = new Node(element);
+  let current = null;
+  if (this.head === null) &#123;
+    this.head = node;
+  &#125; else &#123;
+    current = this.head;
+    while (current.next) &#123;
+      current = current.next;
+    &#125;
+    current.next = node;
+  &#125;
+  this.length++;
+&#125;
+
+// 任意位置插入元素
+insert(position, element) &#123;
+  if (position &gt;= 0 &amp;&amp; position &lt;= this.length) &#123;
+    const node = new Node(element);
+    let current = this.head;
+    let previous = null;
+    let index = 0;
+    if (position === 0) &#123;
+      this.head = node;
+    &#125; else &#123;
+      while (index++ &lt; position) &#123;
+        previous = current;
+        current = current.next;
+      &#125;
+      node.next = current;
+      previous.next = node;
+    &#125;
+    this.length++;
+    return true;
+  &#125;
+  return false;
+&#125;
+
+// 移除指定位置元素
+removeAt(position) &#123;
+  // 检查越界值
+  if (position &gt; -1 &amp;&amp; position &lt; length) &#123;
+    let current = this.head;
+    let previous = null;
+    let index = 0;
+    if (position === 0) &#123;
+      this.head = current.next;
+    &#125; else &#123;
+      while (index++ &lt; position) &#123;
+        previous = current;
+        current = current.next;
+      &#125;
+      previous.next = current.next;
+    &#125;
+    this.length--;
+    return current.element;
+  &#125;
+  return null;
+&#125;
+
+// 寻找元素下标
+findIndex(element) &#123;
+  let current = this.head;
+  let index = -1;
+  while (current) &#123;
+    if (element === current.element) &#123;
+      return index + 1;
+    &#125;
+    index++;
+    current = current.next;
+  &#125;
+  return -1;
+&#125;
+
+// 删除指定文档
+remove(element) &#123;
+  const index = this.findIndex(element);
+  return this.removeAt(index);
+&#125;
+
+isEmpty() &#123;
+  return !this.length;
+&#125;
+
+size() &#123;
+  return this.length;
+&#125;
+
+// 转为字符串
+toString() &#123;
+  let current = this.head;
+  let string = &quot;&quot;;
+  while (current) &#123;
+    string += ` $&#123;current.element&#125;`;
+    current = current.next;
+  &#125;
+  return string;
+&#125;
+</code></pre><p>  }<br>  const linkedList = new LinkedList();</p>
+<p>  console.log(linkedList);<br>  linkedList.append(2);<br>  linkedList.append(6);<br>  linkedList.append(24);<br>  linkedList.append(152);</p>
+<p>  linkedList.insert(3, 18);<br>  console.log(linkedList);<br>  console.log(linkedList.findIndex(24));  </p>
+<p>4.4 字典<br>字典：类似对象，以key，value存贮值</p>
+<p>class Dictionary {<br>    constructor() {<br>      this.items = {};<br>    }</p>
+<pre><code>set(key, value) &#123;
+  this.items[key] = value;
+&#125;
+
+get(key) &#123;
+  return this.items[key];
+&#125;
+
+remove(key) &#123;
+  delete this.items[key];
+&#125;
+
+get keys() &#123;
+  return Object.keys(this.items);
+&#125;
+
+get values() &#123;
+  /*
+也可以使用ES7中的values方法
+return Object.values(this.items)
+*/
+
+  // 在这里我们通过循环生成一个数组并输出
+  return Object.keys(this.items).reduce((r, c, i) =&gt; &#123;
+    r.push(this.items[c]);
+    return r;
+  &#125;, []);
+&#125;
+</code></pre><p>  }<br>  const dictionary = new Dictionary();<br>  dictionary.set(“Gandalf”, “<a href="mailto:gandalf@email.com">gandalf@email.com</a>“);<br>  dictionary.set(“John”, “<a href="mailto:johnsnow@email.com">johnsnow@email.com</a>“);<br>  dictionary.set(“Tyrion”, “<a href="mailto:tyrion@email.com">tyrion@email.com</a>“);</p>
+<p>  console.log(dictionary);<br>  console.log(dictionary.keys);<br>  console.log(dictionary.values);<br>  console.log(dictionary.items);</p>
+<p>4.5 二叉树<br>特点：每个节点最多有两个子树的树结构</p>
+<p>class NodeTree {<br>    constructor(key) {<br>      this.key = key;<br>      this.left = null;<br>      this.right = null;<br>    }<br>  }</p>
+<p>  class BinarySearchTree {<br>    constructor() {<br>      this.root = null;<br>    }</p>
+<pre><code>insert(key) &#123;
+  const newNode = new NodeTree(key);
+  const insertNode = (node, newNode) =&gt; &#123;
+    if (newNode.key &lt; node.key) &#123;
+      if (node.left === null) &#123;
+        node.left = newNode;
+      &#125; else &#123;
+        insertNode(node.left, newNode);
+      &#125;
+    &#125; else &#123;
+      if (node.right === null) &#123;
+        node.right = newNode;
+      &#125; else &#123;
+        insertNode(node.right, newNode);
+      &#125;
+    &#125;
+  &#125;;
+  if (!this.root) &#123;
+    this.root = newNode;
+  &#125; else &#123;
+    insertNode(this.root, newNode);
+  &#125;
+&#125;
+
+//访问树节点的三种方式:中序,先序,后序
+inOrderTraverse(callback) &#123;
+  const inOrderTraverseNode = (node, callback) =&gt; &#123;
+    if (node !== null) &#123;
+      inOrderTraverseNode(node.left, callback);
+      callback(node.key);
+      inOrderTraverseNode(node.right, callback);
+    &#125;
+  &#125;;
+  inOrderTraverseNode(this.root, callback);
+&#125;
+
+min(node) &#123;
+  const minNode = node =&gt; &#123;
+    return node ? (node.left ? minNode(node.left) : node) : null;
+  &#125;;
+  return minNode(node || this.root);
+&#125;
+
+max(node) &#123;
+  const maxNode = node =&gt; &#123;
+    return node ? (node.right ? maxNode(node.right) : node) : null;
+  &#125;;
+  return maxNode(node || this.root);
+&#125;
+</code></pre><p>  }<br>  const tree = new BinarySearchTree();<br>  tree.insert(11);<br>  tree.insert(7);<br>  tree.insert(5);<br>  tree.insert(3);<br>  tree.insert(9);<br>  tree.insert(8);<br>  tree.insert(10);<br>  tree.insert(13);<br>  tree.insert(12);<br>  tree.insert(14);<br>  tree.inOrderTraverse(value =&gt; {<br>    console.log(value);<br>  });</p>
+<p>  console.log(tree.min());<br>  console.log(tree.max());</p>
+<p>5.算法篇<br>5.1 冒泡算法<br>冒泡排序，选择排序，插入排序，此处不做赘述，请戳 排序</p>
+<p>5.2 斐波那契<br>特点：第三项等于前面两项之和</p>
+<p>function fibonacci(num) {<br>    if (num === 1 || num === 2) {<br>        return 1<br>    }<br>    return fibonacci(num - 1) + fibonacci(num - 2)<br>  }<br>5.3 动态规划<br>特点：通过全局规划,将大问题分割成小问题来取最优解<br>案例：最少硬币找零<br>美国有以下面额(硬币）：d1=1, d2=5, d3=10, d4=25<br>如果要找36美分的零钱，我们可以用1个25美分、1个10美分和1个便士（ 1美分)</p>
+<p>class MinCoinChange {</p>
+<p>constructor(coins) {<br>    this.coins = coins<br>    this.cache = {}<br>}</p>
+<p>makeChange(amount) {<br>    if (!amount) return []<br>    if (this.cache[amount]) return this.cache[amount]<br>    let min = [], newMin, newAmount<br>    this.coins.forEach(coin =&gt; {<br>        newAmount = amount - coin<br>        if (newAmount &gt;= 0) {<br>            newMin = this.makeChange(newAmount)<br>        }<br>        if (newAmount &gt;= 0 &amp;&amp;<br>             (newMin.length &lt; min.length - 1 || !min.length) &amp;&amp;<br>             (newMin.length || !newAmount)) {<br>            min = [coin].concat(newMin)<br>        }<br>    })<br>    return (this.cache[amount] = min)<br>}<br>}</p>
+<p>const rninCoinChange = new MinCoinChange([1, 5, 10, 25])<br>console.log(rninCoinChange.makeChange(36))<br>// [1, 10, 25]<br>const minCoinChange2 = new MinCoinChange([1, 3, 4])<br>console.log(minCoinChange2.makeChange(6))<br>// [3, 3]<br>5.4 贪心算法<br>特点：通过最优解来解决问题<br>用贪心算法来解决2.3中的案例</p>
+<p>class MinCoinChange2 {</p>
+<p>constructor(coins) {<br>    this.coins = coins<br>}</p>
+<p>makeChange(amount) {<br>    const change = []<br>    let total = 0<br>    this.coins.sort((a, b) =&gt; a &lt; b).forEach(coin =&gt; {<br>        if ((total + coin) &lt;= amount) {<br>            change.push(coin)<br>            total += coin<br>        }<br>    })<br>    return change<br>}<br>}<br>const rninCoinChange2 = new MinCoinChange2 ( [ 1, 5, 10, 25])<br>console.log (rninCoinChange2. makeChange (36))<br>6 设计模式<br>设计模式如果应用到项目中，可以实现代码的复用和解耦，提高代码质量。 本文主要介绍14种设计模式<br>写UI组件,封装框架必备<br>6.1 简单工厂模式<br>1.定义：又叫静态工厂方法，就是创建对象，并赋予属性和方法<br>2.应用：抽取类相同的属性和方法封装到对象上<br>3.代码：</p>
+<pre><code>let UserFactory = function (role) &#123;
+</code></pre><p>  function User(opt) {<br>    this.name = opt.name;<br>    this.viewPage = opt.viewPage;<br>  }<br>  switch (role) {<br>    case ‘superAdmin’:<br>      return new User(superAdmin);<br>      break;<br>    case ‘admin’:<br>      return new User(admin);<br>      break;<br>    case ‘user’:<br>      return new User(user);<br>      break;<br>    default:<br>      throw new Error(‘参数错误, 可选参数:superAdmin、admin、user’)<br>  }<br>}</p>
+<p>//调用<br>let superAdmin = UserFactory(‘superAdmin’);<br>let admin = UserFactory(‘admin’)<br>let normalUser = UserFactory(‘user’)<br>//最后得到角色,可以调用<br>6.2工厂方法模式<br>1.定义：对产品类的抽象使其创建业务主要负责用于创建多类产品的实例<br>2.应用:创建实例<br>3.代码:</p>
+<p>var Factory=function(type,content){<br>  if(this instanceof Factory){<br>    var s=new this<a href="content">type</a>;<br>    return s;<br>  }else{<br>    return new Factory(type,content);<br>  }<br>}</p>
+<p>//工厂原型中设置创建类型数据对象的属性<br>Factory.prototype={<br>  Java:function(content){<br>    console.log(‘Java值为’,content);<br>  },<br>  PHP:function(content){<br>    console.log(‘PHP值为’,content);<br>  },<br>  Python:function(content){<br>    console.log(‘Python值为’,content);<br>  },<br>}</p>
+<p>//测试用例<br>Factory(‘Python’,’我是Python’);<br>6.3原型模式<br>1.定义:设置函数的原型属性<br>2.应用:实现继承<br>3.代码:</p>
+<p>function Animal (name) {<br>  // 属性<br>  this.name = name || ‘Animal’;<br>  // 实例方法<br>  this.sleep = function(){<br>    console.log(this.name + ‘正在睡觉！’);<br>  }<br>}<br>// 原型方法<br>Animal.prototype.eat = function(food) {<br>  console.log(this.name + ‘正在吃：’ + food);<br>};</p>
+<p>function Cat(){<br>}<br>Cat.prototype = new Animal();<br>Cat.prototype.name = ‘cat’;</p>
+<p>//　Test Code<br>var cat = new Cat();<br>console.log(cat.name);//cat<br>console.log(cat.eat(‘fish’));//cat正在吃：fish  undefined<br>console.log(cat.sleep());//cat正在睡觉！ undefined<br>console.log(cat instanceof Animal); //true<br>console.log(cat instanceof Cat); //true<br>6.4单例模式<br>1.定义:只允许被实例化依次的类<br>2.应用:提供一个命名空间<br>3.代码:</p>
+<p>let singleCase = function(name){<br>    this.name = name;<br>};<br>singleCase.prototype.getName = function(){<br>    return this.name;<br>}<br>// 获取实例对象<br>let getInstance = (function() {<br>    var instance = null;<br>    return function(name) {<br>        if(!instance) {//相当于一个一次性阀门,只能实例化一次<br>            instance = new singleCase(name);<br>        }<br>        return instance;<br>    }<br>})();<br>// 测试单体模式的实例,所以one===two<br>let one = getInstance(“one”);<br>let two = getInstance(“two”);<br>6.5外观模式<br>1.定义:为子系统中的一组接口提供一个一致的界面<br>2.应用:简化复杂接口<br>3.代码:<br>外观模式</p>
+<p>6.6适配器模式<br>1.定义:将一个接口转换成客户端需要的接口而不需要去修改客户端代码，使得不兼容的代码可以一起工作<br>2.应用:适配函数参数<br>3.代码:<br>适配器模式</p>
+<p>6.7装饰者模式<br>1.定义:不改变原对象的基础上,给对象添加属性或方法<br>2.代码</p>
+<p>let decorator=function(input,fn){<br>  //获取事件源<br>  let input=document.getElementById(input);<br>  //若事件源已经绑定事件<br>  if(typeof input.onclick==’function’){<br>    //缓存事件源原有的回调函数<br>    let oldClickFn=input.onclick;<br>    //为事件源定义新事件<br>    input.onclick=function(){<br>      //事件源原有回调函数<br>      oldClickFn();<br>      //执行事件源新增回调函数<br>      fn();<br>    }<br>  }else{<br>    //未绑定绑定<br>    input.onclick=fn;<br>  }<br>}</p>
+<p>//测试用例<br>decorator(‘textInp’,function(){<br>  console.log(‘文本框执行啦’);<br>})<br>decorator(‘btn’,function(){<br>  console.log(‘按钮执行啦’);<br>})<br>6.8桥接模式<br>1.定义:将抽象部分与它的实现部分分离，使它们都可以独立地变化<br>2.代码<br>桥接模式</p>
+<p>6.9模块方法模式<br>1.定义:定义一个模板,供以后传不同参数调用<br>2.代码:<br>模块方法模式</p>
+<p>6.10.观察者模式<br>1.作用:解决类与对象,对象与对象之间的耦合<br>2.代码:</p>
+<p>let Observer=<br>  (function(){<br>    let _message={};<br>    return {<br>      //注册接口,<br>        //1.作用:将订阅者注册的消息推入到消息队列<br>        //2.参数:所以要传两个参数,消息类型和处理动作,<br>        //3.消息不存在重新创建,存在将消息推入到执行方法</p>
+<pre><code>  regist:function(type,fn)&#123;
+    //如果消息不存在,创建
+    if(typeof _message[type]===&#39;undefined&#39;)&#123;
+      _message[type]=[fn];
+    &#125;else&#123;
+      //将消息推入到消息的执行动作
+      _message[type].push(fn);
+    &#125;
+  &#125;,
+
+  //发布信息接口
+    //1.作用:观察这发布消息将所有订阅的消息一次执行
+    //2.参数:消息类型和动作执行传递参数
+    //3.消息类型参数必须校验
+  fire:function(type,args)&#123;
+    //如果消息没有注册,则返回
+    if(!_message[type]) return;
+      //定义消息信息
+      var events=&#123;
+        type:type, //消息类型
+        args:args||&#123;&#125; //消息携带数据
+      &#125;,
+      i=0,
+      len=_message[type].length;
+      //遍历消息
+      for(;i&lt;len;i++)&#123;
+        //依次执行注册消息
+        _message[type][i].call(this,events);
+      &#125;
+  &#125;,
+
+  //移除信息接口
+    //1.作用:将订阅者注销消息从消息队列清除
+    //2.参数:消息类型和执行的动作
+    //3.消息参数校验
+  remove:function(type,fn)&#123;
+    //如果消息动作队列存在
+    if(_message[type] instanceof Array)&#123;
+      //从最后一个消息动作序遍历
+      var i=_message[type].length-1;
+      for(;i&gt;=0;i--)&#123;
+        //如果存在该动作在消息队列中移除
+        _message[type][i]===fn&amp;&amp;_message[type].splice(i,1);
+      &#125;
+    &#125;
+  &#125;
+&#125;
+</code></pre><p>  })()</p>
+<p>//测试用例<br>  //1.订阅消息<br>  Observer.regist(‘test’,function(e){<br>    console.log(e.type,e.args.msg);<br>  })</p>
+<p>  //2.发布消息<br>  Observer.fire(‘test’,{msg:’传递参数1’});<br>  Observer.fire(‘test’,{msg:’传递参数2’});<br>  Observer.fire(‘test’,{msg:’传递参数3’});<br>6.11状态模式<br>1.定义:一个对象状态改变会导致行为变化<br>2.作用:解决复杂的if判断<br>3.代码<br>状态模式</p>
+<p>6.12策略模式<br>1.定义:定义了一系列家族算法，并对每一种算法单独封装起来，让算法之间可以相互替换，独立于使用算法的客户<br>2.代码<br>策略模式</p>
+<p>6.13.访问模式<br>1.定义:通过继承封装一些该数据类型不具备的属性,<br>2.作用:让对象具备数组的操作方法<br>3.代码:<br>访问者模式</p>
+<p>6.14中介者模式<br>1.定义:设置一个中间层,处理对象之间的交互<br>2.代码:<br>中介者模式</p>
+<ol start="7">
+<li>HTTP<br>1.1 什么是 HTTP<br>HTTP 是一个连接客户端，网关和服务器的一个协议。</li>
+</ol>
+<p>7.2 特点<br>支持客户/服务器模式：可以连接客户端和服务端；<br>简单快速：请求只需传送请求方法，路径和请求主体；<br>灵活：传输数据类型灵活；<br>无连接：请求结束立即断开；<br>无状态：无法记住上一次请求。</p>
+<p>7.3 怎么解决无状态和无连接<br>无状态：HTTP 协议本身无法解决这个状态，只有通过 cookie 和 session 将状态做贮存，常见的场景是登录状态保持；</p>
+<p>无连接：可以通过自身属性 Keep-Alive。</p>
+<p>7.4 请求过程<br>HTTP(S) 请求地址 → DNS 解析 → 三次握手 → 发送请求 → 四次挥手</p>
+<p>三次握手过程（图片来源 CSDN）<br>3 次握手.jpg</p>
+<p>在这里插入图片描述</p>
+<p>四次挥手过程（图片来源 CSDN）<br>image</p>
+<p>在这里插入图片描述</p>
+<p>7.5 HTTP 0.9~3.0 对比<br>7.5.1 HTTP 0.9<br>只允许客户端发送 GET 这一种请求；<br>且不支持请求头，协议只支持纯文本；<br>无状态性，每个访问独立处理，完成断开；<br>无状态码。</p>
+<p>7.5.2 HTTP 1.0<br>有身份认证，三次握手；<br>请求与响应支持头域；<br>请求头内容；</p>
+<p>属性名    含义<br>Accept    可接受的 MIME 类型<br>Accept-Encoding    数据可解码的格式<br>Accept-Language    可接受语言<br>Connection    值 keep-alive 是长连接<br>Host    主机和端口<br>Pragma    是否缓存,指定 no-cache 返回刷新<br>Referer    页面路由<br>If-Modified-Since    值为时间<br>响应头内容；</p>
+<p>属性名    含义<br>Connection    值 keep-alive 是长连接<br>Content-Type    返回文档类型,常见的值有 text/plain,text/html,text/json<br>Date    消息发送的时间<br>Server    服务器名字<br>Last-Modified    值为时间,s 返回的最后修改时间<br>Expires    缓存过期时间,b 和 s 时间做对比<br>注意</p>
+<p>expires 是响应头内容，返回一个固定的时间,缺陷是时间到了服务器要重新设置。<br>请求头中如果有 If-Modified-Since，服务器会将时间与 last-modified 对比，相同返回 304。<br>响应对象以一个响应状态行开始<br>响应对象不只限于超文本<br>支持 GET、HEAD、POST 方法<br>有状态码<br>支持长连接（但默认还是使用短连接）、缓存机制以及身份认证。</p>
+<p>7.5.3 HTTP 1.1<br>请求头增加 Cache-Control</p>
+<p>属性名    含义<br>Cache-Control    在1.1 引入的方法,指定请求和响应遵循的缓存机制,值有:public(b 和 s 都缓存),private(b 缓存),no-cache(不缓存),no-store(不缓存),max-age(缓存时间,s 为单位),min-fresh(最小更新时间),max-age=3600<br>If-None-Match    上次请求响应头返回的 etag 值响应头增加 Cache-Control，表示所有的缓存机制是否可以缓存及哪种类型 etag 返回的哈希值,第二次请求头携带去和服务器值对比<br>注意</p>
+<p>Cache-Control 的 max-age 返回是缓存的相对时间<br>Cache-Control 优先级比 expires 高<br>缺点：不能第一时间拿到最新修改文件</p>
+<p>7.5.4 HTTP 2.0<br>采用二进制格式传输<br>多路复用，其实就是将请求数据分成帧乱序发送到 TCP 中。TCP 只能有一个 steam，所以还是会阻塞<br>报头压缩<br>服务器推送主动向 B 端发送静态资源，避免往返延迟。</p>
+<p>7.5.5 HTTP 3.0<br>1.是基于 QUIC 协议，基于 UDP<br>2.特点:<br>自定义连接机制：TCP 以 IP/端口标识,变化重新连接握手，UDP 是一 64 位 ID 标识，是无连接；<br>自定义重传机制：TCP 使用序号和应答传输，QUIC 是使用递增序号传输； 无阻塞的多路复用：同一条 QUIC 可以创建多个 steam。</p>
+<p>7.5.6 HTTPS<br>1.https 是在 http 协议的基础上加了个 SSL；<br>2.主要包括：握手(凭证交换和验证)和记录协议(数据进行加密)。</p>
+<p>7.5.7 缓存<br>1.按协议分：协议层缓存和非 http 协议缓存：<br>1.1协议层缓存：利用 http 协议头属性值设置；<br>1.2非协议层缓存：利用 meta 标签的 http-equiv 属性值 Expires,set-cookie。</p>
+<p>2.按缓存分：强缓存和协商缓存：<br>2.1强缓存：利用 cache-control 和 expires 设置，直接返回一个过期时间，所以在缓存期间不请求，If-modify-since；<br>2.2协商缓存：响应头返回 etag 或 last-modified 的哈希值，第二次请求头 If-none-match 或 IF-modify-since 携带上次哈希值，一致则返回 304。</p>
+<p>3.协商缓存对比： etag 优先级高于 last-modified；<br>4.etag 精度高，last-modified 精度是 s，1s 内 etag 修改多少次都会被记录； last-modified 性能好，etag 要得到 hash 值。</p>
+<p>5.浏览器读取缓存流程：<br>会先判断强缓存；再判断协商缓存 etag(last-modified)是否存在；<br>存在利用属性 If-None-match(If-Modified-since)携带值；<br>请求服务器,服务器对比 etag(last-modified)，生效返回 304。</p>
+<p>F5 刷新会忽略强缓存不会忽略协商缓存，ctrl+f5 都失效</p>
+<p>7.5.8 状态码<br>序列    详情<br>1XX(通知)<br>2XX(成功)    200(成功)、201(服务器创建)、202(服务器接收未处理)、203(非授权信息)、204(未返回内容)、205(重置内容)、206(部分内容)<br>3XX(重定向)    301(永久移动)、302(临时移动)、303(查看其他位置)、304(未修改)、305(使用代理)、307(临时重定向)<br>4XX(客户端错误)    400(错误请求)、401(未授权)、403(禁止)、404(未找到)、405(方法禁用)、406(不接受)、407（需要代理授权）<br>5XX(服务器错误)    500(服务器异常)、501（尚未实施）、502（错误网关）、503（服务不可用）、504（网关超时）、505（HTTP 版本不受支持）<br>7.5.9 浏览器请求分析<br>在这里插入图片描述</p>
+<p>7.5.10 总结<br>协议</p>
+<p>版本    内容<br>http0.9    只允许客户端发送 GET 这一种请求;且不支持请求头,协议只支持纯文本;无状态性,每个访问独立处理,完成断开;无状态码<br>http1.0 解决 0.9 的缺点,增加 If-modify-since(last-modify)和 expires 缓存属性<br>http1.x    增加 cache-control 和 If-none-match(etag)缓存属性<br>http2.0    采用二进制格式传输;多路复用;报头压缩;服务器推送<br>http3.0    采用 QUIC 协议,自定义连接机制;自定义重传机制;无阻塞的多路复用<br>缓存</p>
+<p>类型    特性<br>强缓存    通过 If-modify-since(last-modify)、expires 和 cache-control 设置，属性值是时间，所以在时间内不用请求<br>协商缓存    通过 If-none-match(etag)设置，etag 属性是哈希值，所以要请求和服务器值对比<br>8.总结<br>这只是 JS 原生梳理,后续会再出 react,node,小程序相关的梳理;<br>原创码字不易,欢迎 star!</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-10-11T02:25:23.000Z" title="2019/10/11 10:25:23">2019-10-11</time>发表</span><span class="level-item"><time dateTime="2023-04-12T07:08:14.553Z" title="2023/4/12 15:08:14">2023-04-12</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/">技术日志</a></span><span class="level-item">7 分钟读完 (大约1058个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/zi-zhi-ant-design-biao-ge-zu-jian-jiao-cheng/">自制ant.design表格组件教程</a></p><div class="content"><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在实际项目中我们时常有可能需要Ip地址输入框，键值对输入框这样的复杂输入组件。但是<code>ant design</code><br>官方并没有给出这样的组件，文档中也没有提到应该如何写出这样的组件。</p>
+<p>我在研究了一番实现了该功能，在这里与大家分享一下，希望可以方便到后来人。</p>
+<h3 id="源码分享"><a href="#源码分享" class="headerlink" title="源码分享"></a>源码分享</h3><p>对于不需要教程的同学可以直接查看源码：</p>
+<h3 id="教程-编写一个IP输入组件"><a href="#教程-编写一个IP输入组件" class="headerlink" title="教程-编写一个IP输入组件"></a>教程-编写一个IP输入组件</h3><h4 id="第一步：完全受控组件与ant-design表格组件联动"><a href="#第一步：完全受控组件与ant-design表格组件联动" class="headerlink" title="第一步：完全受控组件与ant design表格组件联动"></a>第一步：完全受控组件与ant design表格组件联动</h4><p>首先我们需要建立一个完全受控的输入组件，并且该组件可以嵌套进ant design的表格组件当中并正常<br>运行。</p>
+<pre class=" language-jsx"><code class="language-jsx"><span class="token entity" title="&#123;">&amp;#123;</span><span class="token function">getFieldDecorator</span><span class="token punctuation">(</span><span class="token string">'ip'</span><span class="token punctuation">)</span><span class="token punctuation">(</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>IpInput</span> <span class="token punctuation">/></span></span>
+<span class="token punctuation">)</span><span class="token entity" title="&#125;">&amp;#125;</span>
+</code></pre>
+<p>IpInput组件代码：</p>
+<pre class=" language-jsx"><code class="language-jsx"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token entity" title="&#123;">&amp;#123;</span>Component<span class="token entity" title="&#125;">&amp;#125;</span> <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token entity" title="&#123;">&amp;#123;</span>Input<span class="token entity" title="&#125;">&amp;#125;</span> <span class="token keyword">from</span> <span class="token string">"antd"</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">IpInput</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token entity" title="&#123;">&amp;#123;</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token entity" title="&#123;">&amp;#123;</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token entity" title="&#123;">&amp;#123;</span>
+      ip<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+    <span class="token entity" title="&#125;">&amp;#125;</span>
+  <span class="token entity" title="&#125;">&amp;#125;</span>
+
+
+  hdlInputChange <span class="token operator">=</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token entity" title="&#123;">&amp;#123;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token entity" title="&#123;">&amp;#123;</span>ip<span class="token punctuation">:</span> e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value<span class="token entity" title="&#125;">&amp;#125;</span><span class="token punctuation">)</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span><span class="token function">onChange</span><span class="token punctuation">(</span><span class="token entity" title="&#123;">&amp;#123;</span>target<span class="token punctuation">:</span> <span class="token entity" title="&#123;">&amp;#123;</span>value<span class="token punctuation">:</span> e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value<span class="token entity" title="&#125;">&amp;#125;</span><span class="token entity" title="&#125;">&amp;#125;</span><span class="token punctuation">)</span>
+  <span class="token entity" title="&#125;">&amp;#125;</span>
+
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token entity" title="&#123;">&amp;#123;</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Input</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span>&amp;#123;this.state.ip&amp;#125;</span> <span class="token attr-name">onChange</span><span class="token attr-value"><span class="token punctuation">=</span>&amp;#123;this.hdlInputChange&amp;#125;</span> <span class="token punctuation">/></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token entity" title="&#125;">&amp;#125;</span>
+<span class="token entity" title="&#125;">&amp;#125;</span>
+</code></pre>
+<p><a target="_blank" rel="noopener" href="https://codesandbox.io/s/step1-ztch4?fontsize=14">在CodeSandbox中浏览</a></p>
+<h4 id="第二步：在IpInput组件中建立多个Input，并联动"><a href="#第二步：在IpInput组件中建立多个Input，并联动" class="headerlink" title="第二步：在IpInput组件中建立多个Input，并联动"></a>第二步：在IpInput组件中建立多个Input，并联动</h4><p>重点是输出值的拆分与聚合</p>
+<pre class=" language-javascript"><code class="language-javascript">hdlInputChange <span class="token operator">=</span> <span class="token punctuation">(</span>e<span class="token punctuation">,</span> block<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> ipAdressArr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>ablock<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>bblock<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>cblock<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>dblock<span class="token punctuation">]</span>
+    <span class="token keyword">let</span> value <span class="token operator">=</span> e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span><span class="token punctuation">[</span><span class="token template-string"><span class="token string">`$&amp;#123;block&amp;#125;block`</span></span><span class="token punctuation">]</span><span class="token punctuation">:</span> value<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span>
+    ipAdressArr<span class="token punctuation">[</span>blockDict<span class="token punctuation">[</span>block<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">=</span> value
+    <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span><span class="token function">onChange</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>target<span class="token punctuation">:</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>value<span class="token punctuation">:</span> ipAdressArr<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span>
+  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
+<p>详细代码请看：<a target="_blank" rel="noopener" href="https://codesandbox.io/s/step2-b4huv?fontsize=14">CodeSandbox</a></p>
+<p>到这一步一个基本的<code>ip Input</code>输入组件已经成型，但是难点部分还未开始。</p>
+<h4 id="第三步：校验规则处理"><a href="#第三步：校验规则处理" class="headerlink" title="第三步：校验规则处理"></a>第三步：校验规则处理</h4><p>如果现在我们就开始正常使用该组件，4个输入框的报错样式必定是同时出现的。一个是红框的话，其他<br>三个也必定是红框状态。这是<code>ant design</code>的程序设计，<code>FormItem</code>的报错样式由外层容器通过CSS控制。</p>
+<p>上面这段话不容易理解的话自己试一下就明白了。</p>
+<p>也就是说我们需要单独控制4个Input框的校验状态，已经有数字的应为正确状态，没有数字的校验时显示为<br>红色。且这个校验行为要能够被<code>ant design</code>的<code>Form</code>组件触发。</p>
+<p>首先我们建立一个类似<code>ant design</code>原生的<code>Form.Item</code>组件用来包裹每个<code>Input</code>并负责校验逻辑。</p>
+<pre class=" language-jsx"><code class="language-jsx"><span class="token keyword">class</span> <span class="token class-name">FromItemValidatorWarpper</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token entity" title="&#123;">&amp;#123;</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token entity" title="&#123;">&amp;#123;</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span>
+
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token entity" title="&#123;">&amp;#123;</span>
+      validateStatus<span class="token punctuation">:</span> <span class="token string">''</span>
+    <span class="token entity" title="&#125;">&amp;#125;</span>
+  <span class="token entity" title="&#125;">&amp;#125;</span>
+
+  componentDidMount <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token entity" title="&#123;">&amp;#123;</span><span class="token entity" title="&#125;">&amp;#125;</span>
+
+  componentDidUpdate <span class="token punctuation">(</span>prevProps<span class="token punctuation">,</span> prevState<span class="token punctuation">)</span> <span class="token entity" title="&#123;">&amp;#123;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>valiating <span class="token operator">&amp;&amp;</span> prevProps<span class="token punctuation">.</span>validating <span class="token operator">!==</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>valiating<span class="token punctuation">)</span><span class="token entity" title="&#123;">&amp;#123;</span>
+      <span class="token comment" spellcheck="true">// form 触发的 validating</span>
+
+      <span class="token keyword">let</span> validateStatus <span class="token operator">=</span> <span class="token string">''</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getChildProp</span><span class="token punctuation">(</span><span class="token string">"value"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token entity" title="&#123;">&amp;#123;</span>
+        validateStatus <span class="token operator">=</span> <span class="token string">'error'</span>
+      <span class="token entity" title="&#125;">&amp;#125;</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>validateStatus <span class="token operator">!==</span> validateStatus<span class="token punctuation">)</span><span class="token entity" title="&#123;">&amp;#123;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token entity" title="&#123;">&amp;#123;</span>validateStatus<span class="token entity" title="&#125;">&amp;#125;</span><span class="token punctuation">)</span>
+      <span class="token entity" title="&#125;">&amp;#125;</span>
+
+    <span class="token entity" title="&#125;">&amp;#125;</span>
+  <span class="token entity" title="&#125;">&amp;#125;</span>
+
+  <span class="token function">getChildProp</span><span class="token punctuation">(</span>prop<span class="token punctuation">)</span> <span class="token entity" title="&#123;">&amp;#123;</span>
+    <span class="token keyword">const</span> child <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>children
+    <span class="token keyword">return</span> child <span class="token operator">&amp;&amp;</span> child<span class="token punctuation">.</span>props <span class="token operator">&amp;&amp;</span> child<span class="token punctuation">.</span>props<span class="token punctuation">[</span>prop<span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token entity" title="&#125;">&amp;#125;</span>
+
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token entity" title="&#123;">&amp;#123;</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Form.Item</span>
+        <span class="token attr-name">validateStatus</span><span class="token attr-value"><span class="token punctuation">=</span>&amp;#123;this.state.validateStatus&amp;#125;</span>
+      <span class="token punctuation">></span></span>
+        <span class="token entity" title="&#123;">&amp;#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>children<span class="token entity" title="&#125;">&amp;#125;</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Form.Item</span><span class="token punctuation">></span></span>
+    <span class="token punctuation">)</span>
+  <span class="token entity" title="&#125;">&amp;#125;</span>
+<span class="token entity" title="&#125;">&amp;#125;</span>
+</code></pre>
+<p>然后用该组件包裹<code>IpInput</code>组件</p>
+<pre class=" language-jsx"><code class="language-jsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>FromItemValidatorWarpper</span> <span class="token attr-name">valiating</span><span class="token attr-value"><span class="token punctuation">=</span>&amp;#123;this.state.valiating&amp;#125;</span><span class="token punctuation">></span></span>
+  <span class="token operator">&lt;</span>Input value<span class="token operator">=</span><span class="token entity" title="&#123;">&amp;#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>dblock<span class="token entity" title="&#125;">&amp;#125;</span> onChange<span class="token operator">=</span><span class="token entity" title="&#123;">&amp;#123;</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token operator">=</span><span class="token operator">></span><span class="token entity" title="&#123;">&amp;#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">hdlInputChange</span><span class="token punctuation">(</span>e<span class="token punctuation">,</span> <span class="token string">'d'</span><span class="token punctuation">)</span><span class="token entity" title="&#125;">&amp;#125;</span><span class="token entity" title="&#125;">&amp;#125;</span> <span class="token operator">/</span><span class="token operator">></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>FromItemValidatorWarpper</span><span class="token punctuation">></span></span>
+</code></pre>
+<p>在<code>IpInput</code>组件中建立<code>valiating</code>属性，并使其和外层<code>ant design Form</code>组件的<code>validator</code>联动。</p>
+<pre class=" language-jsx"><code class="language-jsx">  <span class="token function">componentDidUpdate</span><span class="token punctuation">(</span>prevProps<span class="token punctuation">)</span> <span class="token entity" title="&#123;">&amp;#123;</span>
+    <span class="token keyword">let</span> dataField <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">[</span><span class="token string">"data-__field"</span><span class="token punctuation">]</span>
+
+    <span class="token keyword">if</span><span class="token punctuation">(</span>dataField<span class="token punctuation">.</span>errors <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>prevProps<span class="token punctuation">[</span><span class="token string">"data-__field"</span><span class="token punctuation">]</span><span class="token punctuation">.</span>errors<span class="token punctuation">)</span><span class="token entity" title="&#123;">&amp;#123;</span>
+      <span class="token comment" spellcheck="true">// valitor 函数触发报错</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token entity" title="&#123;">&amp;#123;</span>valiating<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token entity" title="&#125;">&amp;#125;</span><span class="token punctuation">)</span>
+    <span class="token entity" title="&#125;">&amp;#125;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>dataField<span class="token punctuation">.</span>errors <span class="token operator">&amp;&amp;</span> prevProps<span class="token punctuation">[</span><span class="token string">"data-__field"</span><span class="token punctuation">]</span><span class="token punctuation">.</span>errors<span class="token punctuation">)</span><span class="token entity" title="&#123;">&amp;#123;</span>
+      <span class="token comment" spellcheck="true">// valitor 函数触发清除报错</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token entity" title="&#123;">&amp;#123;</span>valiating<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token entity" title="&#125;">&amp;#125;</span><span class="token punctuation">)</span>
+    <span class="token entity" title="&#125;">&amp;#125;</span>
+  <span class="token entity" title="&#125;">&amp;#125;</span>
+</code></pre>
+<p>最后在使用<code>IpInput</code>的组件位置添加一个正则校验。</p>
+<pre class=" language-jsx"><code class="language-jsx">  <span class="token entity" title="&#123;">&amp;#123;</span><span class="token function">getFieldDecorator</span><span class="token punctuation">(</span><span class="token string">'ip'</span><span class="token punctuation">,</span> <span class="token entity" title="&#123;">&amp;#123;</span>
+    rules<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token entity" title="&#123;">&amp;#123;</span>required<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> message<span class="token punctuation">:</span> <span class="token string">'Please input your ip!'</span><span class="token entity" title="&#125;">&amp;#125;</span><span class="token punctuation">,</span>
+      <span class="token entity" title="&#123;">&amp;#123;</span>
+        pattern<span class="token punctuation">:</span> <span class="token regex">/((?:(?:25[0-5]|2[0-4]\d|((1\d&amp;#123;2&amp;#125;)|([1-9]?\d)))\.)&amp;#123;3&amp;#125;(?:25[0-5]|2[0-4]\d|((1\d&amp;#123;2&amp;#125;)|([1-9]?\d))))/</span><span class="token punctuation">,</span>
+        message<span class="token punctuation">:</span> <span class="token string">'Please finish your ip!'</span>
+      <span class="token entity" title="&#125;">&amp;#125;</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token entity" title="&#125;">&amp;#125;</span><span class="token punctuation">)</span><span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>IpInput</span><span class="token punctuation">/></span></span>
+  <span class="token punctuation">)</span><span class="token entity" title="&#125;">&amp;#125;</span>
+</code></pre>
+<p><a target="_blank" rel="noopener" href="https://codesandbox.io/s/step3-us20k?fontsize=14">请在CodeSandbox中查看效果</a></p>
+<p>OK，我们现在只差最后一步了，即在外层使用组件时使用<code>setFieldsValue</code>初始化组件值的功能。</p>
+<h4 id="第四步：setFieldsValue方法支持"><a href="#第四步：setFieldsValue方法支持" class="headerlink" title="第四步：setFieldsValue方法支持"></a>第四步：<code>setFieldsValue</code>方法支持</h4><p><code>componentDidUpdate</code>方法中加入一段代码判断组件上级value是否和内部value相同，不同且没有进行<br>初始化时进行初始化。</p>
+<pre class=" language-jsx"><code class="language-jsx"><span class="token keyword">if</span><span class="token punctuation">(</span>dataField<span class="token punctuation">.</span>value <span class="token operator">!==</span> <span class="token punctuation">[</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>ablock<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>bblock<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>cblock<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>dblock<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>initialized<span class="token punctuation">)</span><span class="token entity" title="&#123;">&amp;#123;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>initialized <span class="token operator">=</span> <span class="token boolean">true</span>
+  <span class="token keyword">let</span> ipAdressArr <span class="token operator">=</span> dataField<span class="token punctuation">.</span>value<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token entity" title="&#123;">&amp;#123;</span>
+    ablock<span class="token punctuation">:</span> ipAdressArr<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    bblock<span class="token punctuation">:</span> ipAdressArr<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    cblock<span class="token punctuation">:</span> ipAdressArr<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    dblock<span class="token punctuation">:</span> ipAdressArr<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token entity" title="&#125;">&amp;#125;</span><span class="token punctuation">)</span>
+<span class="token entity" title="&#125;">&amp;#125;</span>
+</code></pre>
+<p><a target="_blank" rel="noopener" href="https://codesandbox.io/s/step4-l5jht?fontsize=14">请在CodeSandbox中查看效果</a></p>
+<h3 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h3><p>以上，一个IP输入组件基本完成了。细节包括样式还有很多可以优化的地方，我在这里就不继续了。maybe<br>以后再来更新。</p>
+<p>我把最后的完整代码放在<a target="_blank" rel="noopener" href="https://github.com/mikexfreeze/custom-antd-form">github</a>上,有任何建议可<br>以给我提交issue或下面评论回复，谢谢。</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-09-27T02:58:15.000Z" title="2019/9/27 10:58:15">2019-09-27</time>发表</span><span class="level-item"><time dateTime="2023-04-12T07:08:14.551Z" title="2023/4/12 15:08:14">2023-04-12</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/">随便韶韶</a></span><span class="level-item">2 分钟读完 (大约308个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/lian-tong-g2-40-he-zi-shua-ji-jiao-cheng/">联通G2-40盒子刷机教程</a></p><div class="content"><h2 id="第一步-下载刷机包"><a href="#第一步-下载刷机包" class="headerlink" title="第一步 下载刷机包"></a>第一步 下载刷机包</h2><p>链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1SsFGpNPtKsXQvbpBZLiDRw">百度云</a> 提取码: um8d</p>
+<h2 id="第二步-准备刷机U盘"><a href="#第二步-准备刷机U盘" class="headerlink" title="第二步 准备刷机U盘"></a>第二步 准备刷机U盘</h2><ol>
+<li>U盘格式化为FAT32格式</li>
+<li>解压下载的刷机包，将解压内容复制到U盘根目录</li>
+</ol>
+<img src="/lian-tong-g2-40-he-zi-shua-ji-jiao-cheng/U%E7%9B%98%E6%96%87%E4%BB%B6.jpg" class="" title="U盘包含文件">
+<h2 id="第三部-拆机"><a href="#第三部-拆机" class="headerlink" title="第三部 拆机"></a>第三部 拆机</h2><ol>
+<li>卸下底部的4颗螺丝，卸下顶部面板</li>
+<li><p>短接J38跳线</p>
+<blockquote>
+<p>我使用的是一根回形针，见下图，任何导电的物体皆可。</p>
+</blockquote>
+</li>
+<li><p>插入U盘</p>
+</li>
+</ol>
+<img src="/lian-tong-g2-40-he-zi-shua-ji-jiao-cheng/%E8%B7%B3%E7%BA%BF.jpg" class="" title="跳线位置如图所示">
+<h2 id="第四部-通电开始刷机"><a href="#第四部-通电开始刷机" class="headerlink" title="第四部 通电开始刷机"></a>第四部 通电开始刷机</h2><ol>
+<li>连接HDMI线，电源线开始刷机</li>
+<li>电视出现如下画面说明刷机开始，此时可以拔出跳线，如果到进度条走完还不拔，机器重启之后又会开始刷机。</li>
+</ol>
+<img src="/lian-tong-g2-40-he-zi-shua-ji-jiao-cheng/%E5%88%B7%E6%9C%BA%E7%94%BB%E9%9D%A2.jpg" class="" title="刷机画面">
+<ol start="3">
+<li>等待进度条走完并重启自动进入新系统，至此刷机完成。</li>
+</ol>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>整个过程还是比较简单的，刷机之后的新系统使用起来感觉也很不错。个人感觉要强于小米。<br>真是废物利用的好rom，感谢作者。</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-14T09:52:37.000Z" title="2019/6/14 17:52:37">2019-06-14</time>发表</span><span class="level-item"><time dateTime="2023-04-12T07:08:14.538Z" title="2023/4/12 15:08:14">2023-04-12</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/">技术日志</a></span><span class="level-item">4 分钟读完 (大约661个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/grafana-diao-yan-he-superset-dui-bi/">Grafana调研和Superset对比</a></p><div class="content"><h1 id="Grafana调研"><a href="#Grafana调研" class="headerlink" title="Grafana调研"></a>Grafana调研</h1><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>使用Docker安装</p>
+<p><strong>注意事项：</strong></p>
+<ol>
+<li>启动时需要设置数据库，否则Grafana会使用嵌入式数据库sqlite3。</li>
+</ol>
+<h3 id="支持图表"><a href="#支持图表" class="headerlink" title="支持图表"></a>支持图表</h3><p><a target="_blank" rel="noopener" href="https://grafana.com/docs/features/panels/graph/">官方文档</a>，只有四种类型分别为Graph,Singlestat,Table,Heatmap</p>
+<h3 id="项目引入"><a href="#项目引入" class="headerlink" title="项目引入"></a>项目引入</h3><p>方式一：Dashboard snapshot</p>
+<p> 分享整个Dashboard，不需要额外的权限设置。</p>
+<p>方式二：Share Panel-Embed Panel</p>
+<p> 设置<code>AUTH_ANONYMOUS_ENABLED</code>为<code>true</code>允许<code>anonymous</code>访问。即可单独分享每一个<code>graph panel</code>。</p>
+<h3 id="Dashboard市场"><a href="#Dashboard市场" class="headerlink" title="Dashboard市场"></a>Dashboard市场</h3><p>Grafana有把Dashboard配置通过JSON文件导入/导出功能，同时官方建立了一个在线的市场，方便大家交流。但是因为数据源的差异性，实际用途不大。</p>
+<p>目前市场是下载比较的多的配置，是一些基于通用数据源的配置。例如<a target="_blank" rel="noopener" href="https://prometheus.io/">prometheus</a>，实际上Prometheus也把Grafana当作自己的图形解决方案。</p>
+<h3 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h3><p> Grafana提供了通过插件扩展控能，例如安装饼图插件支持饼图设置，安装数据源插件增加支持的数据源。</p>
+<h3 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h3><p>进行中</p>
+<h3 id="MongoDB连接"><a href="#MongoDB连接" class="headerlink" title="MongoDB连接"></a>MongoDB连接</h3><p>待测试，MongoDB connect BI插件理论上可行</p>
+<h3 id="对比分析"><a href="#对比分析" class="headerlink" title="对比分析"></a>对比分析</h3><p>Grafana star 29.2k+ 有企业版（收费）<a target="_blank" rel="noopener" href="https://play.grafana.org/d/000000012/grafana-play-home?orgId=1">Live Demo</a></p>
+<p>Superset star 24.7k+</p>
+<p><strong>开源许可证都为apache-2.0</strong></p>
+<p>Superset</p>
+<blockquote>
+<p><strong>优点：</strong><br>采用D3图表库初始支持的图表类型就十分丰富</p>
+</blockquote>
+<p>Grafana</p>
+<blockquote>
+<p><strong>优点：</strong>  </p>
+<pre><code>1. 支持插件方便社区为其提供扩展能力  
+2. 项目引入简单，不需要二次开发
+</code></pre></blockquote>
+<h3 id="总结-amp-建议"><a href="#总结-amp-建议" class="headerlink" title="总结&amp;建议"></a>总结&amp;建议</h3><p>经过初步的了解，我的建议是使用Grafana。原因有以下几点：</p>
+<ol>
+<li>目前的流行程度Grafana略微占优，正在使用的企业数量似乎更多（superset没有找到相关数据）。</li>
+<li>Grafana有独立的公司在开发维护，并且同时就在提供商业服务。商业成熟度上远远领先Superset。</li>
+<li>Grafana的插件设计模式更加优秀，方便社区提供能量。</li>
+</ol>
+<p>Grafana的潜在缺点：</p>
+<p>没有选择类似D3的库作为图形上的支持，我觉得有长期的运营打算在其中，也许是在为今后的按图表插件来收费的模式做准备。这样的模式没什么不好，但是长期来看通过自研要做出和D3同样水平的图表库需要很长的时间，最终能否达到同样的水平很难说。</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-05-15T08:29:24.000Z" title="2019/5/15 16:29:24">2019-05-15</time>发表</span><span class="level-item"><time dateTime="2023-04-12T07:08:14.540Z" title="2023/4/12 15:08:14">2023-04-12</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/">技术日志</a></span><span class="level-item">2 分钟读完 (大约298个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/csv-wen-jian-tong-guo-node-js-zhuan-cun-postresql-shu-ju-ku/">csv文件通过node.js转存postresql数据库</a></p><div class="content"><h3 id="排坑"><a href="#排坑" class="headerlink" title="排坑"></a>排坑</h3><p>分享一下代码</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../config'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> pglink <span class="token operator">=</span> config<span class="token punctuation">.</span>pg
+<span class="token keyword">const</span> csv <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'csvtojson'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>Client<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'pg'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> copyFrom <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'pg-copy-streams'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token keyword">from</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">(</span>targetTable<span class="token punctuation">,</span> inputFile<span class="token punctuation">,</span> columnStr<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'开始导入'</span><span class="token punctuation">)</span>
+  <span class="token comment" spellcheck="true">// Connecting to Database</span>
+  <span class="token keyword">const</span> client <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Client</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    connectionString<span class="token punctuation">:</span> pglink<span class="token punctuation">,</span>
+  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span>
+  client<span class="token punctuation">.</span><span class="token function">connect</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+  <span class="token keyword">var</span> stream <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token function">query</span><span class="token punctuation">(</span><span class="token function">copyFrom</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`COPY $&amp;#123;targetTable&amp;#125; ($&amp;#123;columnStr&amp;#125;) FROM STDIN CSV`</span></span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">var</span> fileStream <span class="token operator">=</span> fs<span class="token punctuation">.</span><span class="token function">createReadStream</span><span class="token punctuation">(</span>inputFile<span class="token punctuation">)</span>
+
+  fileStream<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'error'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`Error in creating read stream $&amp;#123;error&amp;#125;`</span></span><span class="token punctuation">)</span>
+  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span>
+  stream<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'error'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`Error in creating stream $&amp;#123;error&amp;#125;`</span></span><span class="token punctuation">)</span>
+  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span>
+  stream<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'end'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`Completed loading data into $&amp;#123;targetTable&amp;#125;`</span></span><span class="token punctuation">)</span>
+    client<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span>
+  fileStream<span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>stream<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
+<p>调用代码示例</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">const</span> copyToPg <span class="token operator">=</span>  <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'/* 上面的代码 */'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> inputFile <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'/csv/country.csv'</span><span class="token punctuation">)</span>
+
+<span class="token function">copyToPg</span><span class="token punctuation">(</span><span class="token string">'Country'</span><span class="token punctuation">,</span> path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'/csv/country.csv'</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token string">'country, code, continent'</span><span class="token punctuation">)</span>
+</code></pre>
+<p>这里有两个坑需要特别说明<code>targetTable</code>这里是区分大小写的，而且只支持小写。。。</p>
+<p>CSV需要使用utf8格式，不然会有中文乱码问题。但是你使用Excel是改不了utf8的，我的操作流程是使用记事本打开csv文件再改变编码转存。<br>之后再使用Excel编辑。</p>
+<h3 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h3><p><a target="_blank" rel="noopener" href="https://www.postgresql.org/docs/9.3/sql-copy.html">官方说明档：sql-copy</a></p>
+<p><a target="_blank" rel="noopener" href="https://medium.com/@sairamkrish/how-to-do-postgresql-bulk-insert-with-node-pg-copy-streams-f4301ec29388">How to do postgresql bulk insert with node-pg-copy-streams</a></p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-04-26T09:46:49.000Z" title="2019/4/26 17:46:49">2019-04-26</time>发表</span><span class="level-item"><time dateTime="2023-04-12T07:08:14.540Z" title="2023/4/12 15:08:14">2023-04-12</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/">技术日志</a></span><span class="level-item">1 分钟读完 (大约214个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/ajax-jie-kou-jie-shou-wen-jian-pai-keng-er/">ajax接口接收文件排坑（二）</a></p><div class="content"><h3 id="错误处理问题"><a href="#错误处理问题" class="headerlink" title="错误处理问题"></a>错误处理问题</h3><p>假设后端传回了一段包含错误message字段的JSON文件，如果将responseType 设置为 blob 将会导致无法解析后端传回的错误数据。</p>
+<p>解决方案是将responseType 设置为 arraybuffer，根据http状态码来判断接口是否报错。假设接口返回400则将返回数据由arraybuffer<br>重新解析为String 或 Object 等我们需要的数据类型。</p>
+<p>解析代码如下</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">errorCallback</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> encodedString <span class="token operator">=</span> String<span class="token punctuation">.</span>fromCharCode<span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Uint8Array</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span>data<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> decodedString <span class="token operator">=</span> <span class="token function">decodeURIComponent</span><span class="token punctuation">(</span><span class="token function">escape</span><span class="token punctuation">(</span>encodedString<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> obj <span class="token operator">=</span> JSON<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>decodedString<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
+<p>其中 <code>var decodedString = decodeURIComponent(escape(encodedString));</code>这段代码的作用是解析utf8字符。</p>
+<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/17191945/conversion-between-utf-8-arraybuffer-and-string">Conversion between UTF-8 ArrayBuffer and String</a></p>
+<p><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/30052567/how-to-read-json-error-response-from-http-if-responsetype-is-arraybuffer">How to read JSON error response from $http if responseType is arraybuffer</a></p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-04-16T03:14:45.000Z" title="2019/4/16 11:14:45">2019-04-16</time>发表</span><span class="level-item"><time dateTime="2023-04-12T07:08:14.558Z" title="2023/4/12 15:08:14">2023-04-12</time>更新</span><span class="level-item"> Micheal </span><span class="level-item"><a class="link-muted" href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/">技术日志</a></span><span class="level-item">4 分钟读完 (大约530个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/ajax-jie-kou-jie-shou-wen-jian-pai-keng/">ajax接口接收文件排坑(一)</a></p><div class="content"><h3 id="先说结论"><a href="#先说结论" class="headerlink" title="先说结论"></a>先说结论</h3><p>如果你在用ajax接口接收文件时遇到文件保存后打开报错的情况，请尝试在请求header头中加入<code>responseType: arraybuffer</code></p>
+<h3 id="排坑过程"><a href="#排坑过程" class="headerlink" title="排坑过程"></a>排坑过程</h3><p>最近在对接前后端文件传输接口时遇到的问题，后端返回xlsx文件，前端使用<code>new blob()</code>方法从接口返回的数据中重新生成文件。但是<br>生成的文件用excel打开总是报错。尝试在浏览器或Postman中调用接口保存文件都没有问题。</p>
+<p>一开始各种尝试改变<code>new blob</code>方法的type参数没有效果。查看<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/Blob">blob方法文档</a>，<br>最坑的就是这里<code>Blob(blobParts[, options])</code>blobParts what fuck is blobParts? 文档中给出的示例有<br><code>new Blob([JSON.stringify(debug, null, 2),&#123;type : &#39;application/json&#39;&#125;);</code>so 一个包含字符串的数组？还有一段从blob中读取数据<br><code>reader.readAsArrayBuffer(blob);</code>可以看出这里读出的数据应该是arraybuffer。</p>
+<p>再看一下<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest/responseType">XMLHttp​Request​.response​Type的官方文档</a><br>arraybuffer的解释 <em>是一个包含二进制数据的 JavaScript ArrayBuffer 。</em>另外我在另一篇<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/16245767/creating-a-blob-from-a-base64-string-in-javascript">Creating a Blob from a base64 string in JavaScript</a><br>的提问中当中看到有高手给出的答案中指出了，想要得到blob你先要得到<em>ArrayBuffer, text, and JSON</em></p>
+<h3 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h3><p>到这里我们基本已经得到答案了，生成blob对象进而生成文件我们需要ArrayBuffer, text, or JSON这种三种数据类型的某一种。</p>
+<h3 id="测试验证"><a href="#测试验证" class="headerlink" title="测试验证"></a>测试验证</h3><p>后端Java，代码当中使用的是 <code>BufferedOutputStream</code> 类来返回数据。前端分别测试了”json””text”””arraybutter””blob”四种responseType<br>arraybutter和blob都可以正确的生成文件。</p>
+<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest/responseType">MDN解释</a><br><a target="_blank" rel="noopener" href="http://www.cnblogs.com/skywang12345/p/io_12.html">java io系列12之 BufferedInputStream(缓冲输入流)的认知、源码和示例</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/wkyseo/article/details/78232485">深入理解xhr的responseType中blob和arrayBuffer</a></p>
+</div></article></div><nav class="pagination" role="navigation" aria-label="pagination"><div class="pagination-previous is-invisible is-hidden-mobile"><a href="/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/page/0/">上一页</a></div><div class="pagination-next"><a href="/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/page/2/">下一页</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link is-current" href="/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/">1</a></li><li><a class="pagination-link" href="/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/page/2/">2</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.png" alt="Michael Xiao"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Michael Xiao</p><p class="is-size-6 is-block">Front-end Developer</p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">39</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">9</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">17</p></a></div></div></nav><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Github" href="https://github.com/mikexfreeze"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="RSS" href="https://blog.duandiwang.com/atom.xml"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">链接</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://hexo.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Hexo</span></span><span class="level-right"><span class="level-item tag">hexo.io</span></span></a></li></ul></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/%E5%A6%84%E4%BA%BA%E5%A6%84%E8%AF%AD/"><span class="level-start"><span class="level-item">妄人妄语</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97/"><span class="level-start"><span class="level-item">学习日志</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%B7%A5%E5%85%B7/"><span class="level-start"><span class="level-item">工具</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"><span class="level-start"><span class="level-item">技术日志</span></span><span class="level-end"><span class="level-item tag">16</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%97%A5%E8%AE%B0/"><span class="level-start"><span class="level-item">日记</span></span><span class="level-end"><span class="level-item tag">9</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%B5%8B%E8%AF%95/"><span class="level-start"><span class="level-item">测试</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%BD%AC%E5%B8%96/"><span class="level-start"><span class="level-item">转帖</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/categories/%E9%87%91%E5%8F%A5%E5%90%8D%E8%A8%80/"><span class="level-start"><span class="level-item">金句名言</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"><span class="level-start"><span class="level-item">随便韶韶</span></span><span class="level-end"><span class="level-item tag">17</span></span></a></li></ul></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">订阅更新</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="订阅"></div></div></form></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">follow.it</h3><form action="" method="post" target="_blank"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="订阅"></div></div></form></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-07-03T08:00:07.000Z">2023-07-03</time></p><p class="title"><a href="/san-ti-dong-hua-guan-hou-gan/">三体动画观后感</a></p><p class="categories"><a href="/categories/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/">随便韶韶</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-04-12T07:32:45.000Z">2023-04-12</time></p><p class="title"><a href="/cosmic-gu-suan-fang-fa-xue-xi-bi-ji/">cosmic估算方法学习笔记</a></p><p class="categories"><a href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/">技术日志</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-12-23T03:11:10.000Z">2021-12-23</time></p><p class="title"><a href="/qian-gou-yong/">钱够用</a></p><p class="categories"><a href="/categories/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/">随便韶韶</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-10-17T03:38:12.000Z">2021-10-17</time></p><p class="title"><a href="/ren-xing-de-deng-ji/">人性的等级</a></p><p class="categories"><a href="/categories/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/">随便韶韶</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-03-11T02:54:32.000Z">2021-03-11</time></p><p class="title"><a href="/qian-duan-bi-shi-xuan-ze-ti/">前端笔试选择题</a></p><p class="categories"><a href="/categories/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/">技术日志</a></p></div></article></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/ajax/"><span class="tag">ajax</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ant-design/"><span class="tag">ant design</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/antd/"><span class="tag">antd</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/responseType/"><span class="tag">responseType</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97/"><span class="tag">学习日志</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%B7%A5%E5%85%B7/"><span class="tag">工具</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%8A%80%E6%9C%AF%E6%97%A5%E5%BF%97/"><span class="tag">技术日志</span><span class="tag">18</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%94%BF%E6%B2%BB/"><span class="tag">政治</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%97%A5%E8%AE%B0/"><span class="tag">日记</span><span class="tag">9</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%B5%8B%E8%AF%84/"><span class="tag">测评</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%B5%8B%E8%AF%95/"><span class="tag">测试</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%BB%8F%E6%B5%8E/"><span class="tag">经济</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%BE%8E%E5%9B%BD/"><span class="tag">美国</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E4%BB%B6/"><span class="tag">自定义组件</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%BD%AC%E5%B8%96/"><span class="tag">转帖</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E9%87%91%E5%8F%A5%E5%90%8D%E8%A8%80/"><span class="tag">金句名言</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E9%9A%8F%E4%BE%BF%E9%9F%B6%E9%9F%B6/"><span class="tag">随便韶韶</span><span class="tag">17</span></a></div></div></div></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2023/07/"><span class="level-start"><span class="level-item">七月 2023</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2023/04/"><span class="level-start"><span class="level-item">四月 2023</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/12/"><span class="level-start"><span class="level-item">十二月 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/10/"><span class="level-start"><span class="level-item">十月 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/03/"><span class="level-start"><span class="level-item">三月 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/01/"><span class="level-start"><span class="level-item">一月 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/11/"><span class="level-start"><span class="level-item">十一月 2020</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/10/"><span class="level-start"><span class="level-item">十月 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/08/"><span class="level-start"><span class="level-item">八月 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/07/"><span class="level-start"><span class="level-item">七月 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/06/"><span class="level-start"><span class="level-item">六月 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/05/"><span class="level-start"><span class="level-item">五月 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/03/"><span class="level-start"><span class="level-item">三月 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/01/"><span class="level-start"><span class="level-item">一月 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/12/"><span class="level-start"><span class="level-item">十二月 2019</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/11/"><span class="level-start"><span class="level-item">十一月 2019</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/10/"><span class="level-start"><span class="level-item">十月 2019</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/09/"><span class="level-start"><span class="level-item">九月 2019</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/08/"><span class="level-start"><span class="level-item">八月 2019</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/06/"><span class="level-start"><span class="level-item">六月 2019</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/05/"><span class="level-start"><span class="level-item">五月 2019</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/04/"><span class="level-start"><span class="level-item">四月 2019</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/03/"><span class="level-start"><span class="level-item">三月 2019</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/02/"><span class="level-start"><span class="level-item">二月 2019</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/12/"><span class="level-start"><span class="level-item">十二月 2018</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/11/"><span class="level-start"><span class="level-item">十一月 2018</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/09/"><span class="level-start"><span class="level-item">九月 2018</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/07/"><span class="level-start"><span class="level-item">七月 2018</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2017/11/"><span class="level-start"><span class="level-item">十一月 2017</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="随便韶韶" height="28"></a><p class="is-size-7"><span>&copy; 2024 Micheal</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p><p class="is-size-7">© 2019</p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
             }
-        });
-    };
-
-    searchFunc('/search.xml', 'searchInput', 'searchResult');
-});
-</script>
-
-    <!-- 白天和黑夜主题 -->
-<div class="stars-con">
-    <div id="stars"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>  
-</div>
-
-<script>
-    function switchNightMode() {
-        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
-        setTimeout(function () {
-            $('body').hasClass('DarkMode') 
-            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
-            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
-            
-            setTimeout(function () {
-            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
-                $(this).remove()
-            })
-            }, 2e3)
-        })
-    }
-</script>
-
-    <!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
-    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-</div>
-
-
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
-
-    
-
-    
-    
-    
-
-    <!-- 雪花特效 -->
-    
-
-    <!-- 鼠标星星特效 -->
-    
-
-     
-        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
-        <script src="/libs/others/TencentCaptcha.js"></script>
-        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
-    
-
-    <!-- Baidu Analytics -->
-
-    <!-- Baidu Push -->
-
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
-
-    
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
-    
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
-    
-
-    
-
-    
-
-    <!--腾讯兔小巢-->
-    
-    
-
-    
-
-    
-
-    
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
-    
-
-</body>
-
-</html>
+        };</script><script data-pjax src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script data-pjax src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script src="/js/pjax.js"></script><!--!--><!--!--><!--!--><script data-pjax src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
